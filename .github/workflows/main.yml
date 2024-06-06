@@ -25,9 +25,15 @@ jobs:
         chmod 600 ~/.ssh/id_rsa
         ssh-keyscan -H home145705756.1and1-data.host >> ~/.ssh/known_hosts
 
+  # - name: Copy files to server
+  #  run: |
+  #    scp -r ./dist/* u39282224@home145705756.1and1-data.host:/GIM-Prod
     - name: Copy files to server
       run: |
-        scp -r ./dist/* u39282224@home145705756.1and1-data.host:/path/to/your/app
+        echo "mkdir -p /GIM-Prod" > sftp_batch
+        echo "put -r ./dist/* /GIM-Prod/" >> sftp_batch
+        
+        sftp -b sftp_batch u39282224@home145705756.1and1-data.host
 
     - name: Run build
       run: |
