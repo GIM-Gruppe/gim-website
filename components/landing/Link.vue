@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { defineProps, withDefaults } from 'vue';
+
 interface Props {
   href: string;
   size?: "md" | "lg";
@@ -38,3 +40,4 @@ const styles = {
     ><slot />
   </NuxtLink>
 </template>
+
