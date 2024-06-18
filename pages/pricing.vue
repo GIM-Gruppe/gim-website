@@ -1,69 +1,79 @@
-<script setup lang="ts">
-const { data: page } = await useAsyncData('pricing', () => queryContent('/pricing').findOne())
-if (!page.value) {
-  throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
-}
+<script setup>
+definePageMeta({
+  layout: "landing",
+});
 
-useSeoMeta({
-  title: page.value.title,
-  ogTitle: page.value.title,
-  description: page.value.description,
-  ogDescription: page.value.description
-})
-
-defineOgImage({
-  component: 'Saas',
-  title: page.value.title,
-  description: page.value.description
-})
-
-const isYearly = ref(false)
+const pricing = [
+  {
+    name: "Personal",
+    price: "Free",
+    popular: false,
+    features: [
+      "Lifetime free",
+      "Up to 3 users",
+      "Unlimited Pages",
+      "Nuxt Sub domain",
+      "Basic Integrations",
+      "Community Support",
+    ],
+    button: {
+      text: "Get Started",
+      link: "/",
+    },
+  },
+  {
+    name: "Startup",
+    price: {
+      monthly: "$19",
+      annual: "$16",
+      discount: "10%",
+      original: "$24",
+    },
+    popular: true,
+    features: [
+      "All Free Features",
+      "Up to 20 users",
+      "20 Custom domains",
+      "Unlimited Collaborators",
+      "Advanced Integrations",
+      "Priority Support",
+    ],
+    button: {
+      text: "Get Started",
+      link: "#",
+    },
+  },
+  {
+    name: "Enterprise",
+    price: "Custom",
+    popular: false,
+    features: [
+      "All Pro Features",
+      "Unlimited Custom domains",
+      "99.99% Uptime SLA",
+      "SAML & SSO Integration",
+      "Dedicated Account Manager",
+      "24/7 Phone Support",
+    ],
+    button: {
+      text: "Contact us",
+      link: "/contact",
+    },
+  },
+];
 </script>
 
 <template>
-  <div v-if="page">
-    <UPageHero v-bind="page.hero">
-      <template #links>
-        <UPricingToggle
-          v-model="isYearly"
-          class="w-48"
-        />
-      </template>
-    </UPageHero>
+  <LandingContainer>
+    <LandingSectionhead>
+      <template v-slot:title>Pricing</template>
+      <template v-slot:desc
+        >Simple & Predictable pricing. No Surprises.</template
+      >
+    </LandingSectionhead>
 
-    <UContainer>
-      <UPricingGrid>
-        <UPricingCard
-          v-for="(plan, index) in page.plans"
-          :key="index"
-          v-bind="plan"
-          :price="isYearly ? plan.price.year : plan.price.month"
-          :cycle="isYearly ? '/year' : '/month'"
-        />
-      </UPricingGrid>
-    </UContainer>
-
-    <ULandingSection>
-      <ULandingLogos>
-        <UIcon
-          v-for="icon in page.logos.icons"
-          :key="icon"
-          :name="icon"
-          class="w-12 h-12 flex-shrink-0 text-gray-500 dark:text-gray-400"
-        />
-      </ULandingLogos>
-    </ULandingSection>
-
-    <ULandingSection
-      :title="page.faq.title"
-      :description="page.faq.description"
-    >
-      <ULandingFAQ
-        :items="page.faq.items"
-        multiple
-        default-open
-        class="max-w-4xl mx-auto"
-      />
-    </ULandingSection>
-  </div>
+    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-screen-lg mt-12">
+      <LandingPricing v-for="item of pricing" :plan="item" />
+    </div>
+  </LandingContainer>
 </template>
