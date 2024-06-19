@@ -36,9 +36,9 @@ const data = {
 		<div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-full lg:items-center lg:px-8 ">
 			<div class="max-w-xl text-left ">
 				<h1 class="text-3xl font-extrabold sm:text-5xl">
-					Lorem ipsum dolor
+					Wir GIM
 
-					<strong class="block font-extrabold text-white"> adipisicing elit. </strong>
+					<strong class="block font-extrabold text-white"> uns Mühe. </strong>
 				</h1>
 
 				<p class="mt-4 max-w-lg sm:text-xl/relaxed">
