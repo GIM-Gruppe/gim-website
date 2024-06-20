@@ -20,19 +20,19 @@
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
       </p>
       <div class="mt-6 flex flex-col sm:flex-row gap-3">
-        <LandingLink
+        <UiLink
           href="https://github.com/Gr33nW33n/nuxtship-template"
           target="_blank"
           rel="noopener"
-          >Book appointment</LandingLink
+          >Book appointment</UiLink
         >
-        <LandingLink
+        <UiLink
           size="lg"
           styleName="outline"
           rel="noopener"
           href="#"
           target="_blank"
-          >View Services</LandingLink
+          >View Services</UiLink
         >
       </div>
     </div>

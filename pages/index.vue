@@ -1,15 +1,19 @@
 <script setup>
-definePageMeta({
-  layout: "landing",
-});
+
+const bannerContent = {
+  title: "Wir GIM",
+  subtitle: "uns Mühe.",
+  description: "Lorem Ad aliquip veniam ipsum quis nulla aliquip eiusmod ullamco et magna.",
+  bgImg: "~/assets/img/tech.jpg",
+}
 </script>
 
 <template>
-   <LandingHighlightBanner></LandingHighlightBanner>
-  <LandingContainer>
-    <LandingHero></LandingHero>
-    <LandingFeatures></LandingFeatures>
+   <HighlightBanner :title="bannerContent.title" :subtitle="bannerContent.subtitle" :description="bannerContent.description" :bgImg="bannerContent.bgImg"></HighlightBanner>
+   <LayoutContainer>
+    <Hero></Hero>s
+    <Features></Features>
     <!-- <LandingLogos></LandingLogos> -->
     <!-- <LandingCta></LandingCta> -->
-  </LandingContainer>
+  </LayoutContainer>
 </template>

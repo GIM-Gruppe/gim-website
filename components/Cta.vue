@@ -7,7 +7,8 @@
       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut.
     </p>
     <div class="flex mt-5">
-      <LandingLink href="#" styleName="inverted">Lorem ipsum </LandingLink>
+      <UiLink href="#" styleName="inverted">Lorem ipsum </UiLink>
     </div>
   </div>
 </template>
+w

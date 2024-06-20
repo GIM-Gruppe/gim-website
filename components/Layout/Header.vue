@@ -22,12 +22,12 @@ const open = ref(false);
 </script>
 
 <template>
-  <LandingContainer>
+  <LayoutContainer class="border-b border-primary">
     <header class="flex flex-col lg:flex-row justify-between items-center my-5">
       <div class="flex w-full lg:w-auto items-center justify-between">
         <a href="/" class="text-lg"
-          ><span class="font-bold text-slate-800">GIM</span
-          ><span class="text-slate-500">-Gruppe</span>
+          ><span class="font-bold text-slate-800 text-primary">GIM</span
+          ><span class="text-slate-500 text-secondary">-Gruppe</span>
         </a>
         <!-- Menu Button for mobile -->
         <div class="block lg:hidden">
@@ -62,7 +62,7 @@ const open = ref(false);
           <li v-for="item of menuitems">
             <a
               :href="item.path"
-              class="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900 c"
+              class="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900 text-secondary"
             >
               {{ item.title }}
             </a>
@@ -82,5 +82,5 @@ const open = ref(false);
         </div>
       </div> -->
     </header>
-  </LandingContainer>
+  </LayoutContainer>
 </template>
