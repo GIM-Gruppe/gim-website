@@ -1,1 +1,3 @@
-media: public/assets/img
+media:
+  input: public/assets/img
+  output: img
