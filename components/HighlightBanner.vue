@@ -15,7 +15,8 @@ const props = withDefaults(defineProps<{
 </script>
 
 <template>
-	<LayoutContainer :class="`bg-[url(${props.bgImg})]`" class="relative h-[500px] bg-cover bg-center bg-no-repeat flex items-center">
+	<LayoutContainer :style="{ backgroundImage: `url(${props.bgImg})` }"
+	class="relative h-[500px] bg-cover bg-center bg-no-repeat flex items-center !max-w-full ">
 		<!-- White Fade Effect -->
 		<div class="absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 sm:bg-gradient-to-r sm:bg-gradient-to-l"></div>
 

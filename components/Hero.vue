@@ -1,40 +1,42 @@
 <template>
-  <main class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-8">
-    <div class="p-24 md:order-1 hidden md:block">
-      <img
-        class="rounded-full transition-transform transform hover:scale-125"
-        src="~/assets/img/digitalisierung.jpg"
-        alt="Starship starts the engine"
-        loading="eager"
-        format="avif"
-        width="512"
-        height="512"
-      />
-    </div>
-
-    <div>
-      <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight">
-        Lorem ipsum dolor sit amet
-      </h1>
-      <p class="text-lg mt-4 text-slate-600 max-w-xl">
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-      </p>
-      <div class="mt-6 flex flex-col sm:flex-row gap-3">
-        <UiLink
-          href="https://github.com/Gr33nW33n/nuxtship-template"
-          target="_blank"
-          rel="noopener"
-          >Book appointment</UiLink
-        >
-        <UiLink
-          size="lg"
-          styleName="outline"
-          rel="noopener"
-          href="#"
-          target="_blank"
-          >View Services</UiLink
-        >
+  <LayoutContainer>
+    <main class="grid lg:grid-cols-2 place-items-center">
+      <div class="p-24 md:order-1 hidden md:block">
+        <img
+          class="rounded-full transition-transform transform hover:scale-125"
+          src="https://loremflickr.com/380/380"
+          alt="Starship starts the engine"
+          loading="eager"
+          format="avif"
+          width="512"
+          height="512"
+        />
       </div>
-    </div>
-  </main>
+
+      <div>
+        <h1 class="text-5xl lg:text-6xl xl:text-7xl lg:tracking-tight">
+          Lorem ipsum dolor sit amet
+        </h1>
+        <p class="text-lg mt-4 text-slate-600 max-w-xl ">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+        </p>
+        <div class="mt-6 flex flex-col sm:flex-row gap-3">
+          <UiButton
+            href="#"
+            target="_blank"
+            label="Book appointment"
+            ></UiButton
+          >
+          <UiButton
+            size="lg"
+            :style="'outline'"
+            href="#"
+            target="_blank"
+            label="View Services"
+            ></UiButton
+          >
+        </div>
+      </div>
+    </main>
+  </LayoutContainer>
 </template>

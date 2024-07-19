@@ -22,12 +22,12 @@ const open = ref(false);
 </script>
 
 <template>
-  <LayoutContainer class="border-b border-primary">
+  <LayoutContainer>
     <header class="flex flex-col lg:flex-row justify-between items-center my-5">
       <div class="flex w-full lg:w-auto items-center justify-between">
         <a href="/" class="text-lg"
           ><span class="font-bold text-slate-800 text-primary">GIM</span
-          ><span class="text-slate-500 text-secondary">-Gruppe</span>
+          ><span class="text-slate-500 text-secondary"> Gesellschaft für integratives Management mbH</span>
         </a>
         <!-- Menu Button for mobile -->
         <div class="block lg:hidden">
@@ -83,4 +83,5 @@ const open = ref(false);
       </div> -->
     </header>
   </LayoutContainer>
+  <div class="border border-primary"></div>
 </template>
