@@ -17,7 +17,7 @@ content:
         type: rich-text
   - name: landing_page_file
     label: Landing Page File
-    path: content/landingPage/content.json
+    path: content/landing_page/content.json
     type: file
     fields:
       - name: title
