@@ -20,6 +20,111 @@ content:
     path: content/landing_page/content.json
     type: file
     fields:
-      - name: title
-        label: Title
-        type: string
+      - name: header
+        label: Header
+        type: object
+        fields:
+          - name: logo
+            label: Logo
+            type: image
+  
+      - name: mainContent
+        label: Main Content
+        type: object
+        fields:
+          - name: section1
+            label: Section 1
+            type: object
+            fields:
+              - name: heading
+                label: Heading
+                type: string
+              - name: text
+                label: Text
+                type: string
+  
+          - name: section2
+            label: Section 2
+            type: object
+            fields:
+              - name: title
+                label: Title
+                type: string
+              - name: text
+                label: Text
+                type: string
+              - name: image
+                label: Image
+                type: image
+  
+          - name: section3
+            label: Section 3
+            type: object
+            fields:
+              - name: title
+                label: Title
+                type: string
+              - name: subtitle
+                label: Subtitle
+                type: string
+              - name: services
+                label: Services
+                type: list
+                fields:
+                  - name: icon
+                    label: Icon
+                    type: image
+                  - name: title
+                    label: Title
+                    type: string
+                  - name: subtitle
+                    label: Subtitle
+                    type: string
+  
+          - name: section4
+            label: Section 4
+            type: object
+            fields:
+              - name: title
+                label: Title
+                type: string
+              - name: text
+                label: Text
+                type: string
+              - name: image
+                label: Image
+                type: image
+  
+          - name: section5
+            label: Section 5
+            type: object
+            fields:
+              - name: title
+                label: Title
+                type: string
+              - name: subtitle
+                label: Subtitle
+                type: string
+              - name: image
+                label: Image
+                type: image
+              - name: cta_button_left
+                label: CTA Button Left
+                type: object
+                fields:
+                  - name: path
+                    label: Path
+                    type: string
+                  - name: label
+                    label: Label
+                    type: string
+              - name: cta_button_right
+                label: CTA Button Right
+                type: object
+                fields:
+                  - name: path
+                    label: Path
+                    type: string
+                  - name: label
+                    label: Label
+                    type: string
