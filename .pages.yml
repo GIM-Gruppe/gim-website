@@ -2,8 +2,8 @@ media:
   input: assets/img
   output: img
 content:
-  - name: landing_page_file
-    label: Landing Page File
+  - name: landing_page
+    label: Landing Page
     path: content/landing_page/content.json
     type: file
     fields:
