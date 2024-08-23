@@ -15,3 +15,11 @@ content:
       - name: subtitle
         label: subtitle
         type: rich-text
+  - name: landing_page_file
+    label: Landing Page File
+    path: content/landingPage/content.json
+    type: file
+    fields:
+      - name: title
+        label: Title
+        type: string
