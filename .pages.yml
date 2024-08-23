@@ -1,3 +1,17 @@
 media:
-  input: public/assets/img
+  input: assets/img
   output: img
+content:
+  - name: landing_page
+    label: Landing Page
+    path: content
+    type: collection
+    view:
+      fields: [ title, subtitle]
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: subtitle
+        label: subtitle
+        type: rich-text
