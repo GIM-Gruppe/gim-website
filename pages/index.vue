@@ -26,7 +26,7 @@ const repeat = 4;
       :description="'Dolor nulla cupidatat anim voluptate cillum et ipsum laborum Lorem consectetur est fugiat. Culpa nostrud consectetur consequat consequat exercitation amet occaecat consequat incididunt amet irure. Velit amet esse magna non irure dolore tempor aute.Veniam mollit nulla dolore minim irure incididunt elit nostrud commodo qui voluptate.'"
     ></ImageWithText>
     <Features></Features>
-    <ServiceShowcase></ServiceShowcase>
+    <!-- <ServiceShowcase></ServiceShowcase> -->
     <ImageWithText
       :imgsrc="'https://loremflickr.com/500/400'"
       :imgalt="'katzen'"
