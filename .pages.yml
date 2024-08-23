@@ -56,7 +56,8 @@ content:
                 type: string
               - name: services
                 label: Services
-                type: list
+                type: object
+                list: true
                 fields:
                   - name: icon
                     label: Icon
