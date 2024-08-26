@@ -1,20 +1,20 @@
 <script setup>
 const menuitems = [
   {
-    title: "Lorem ipsum dolor",
-    path: "#",
+    title: "Leistungen",
+    path: "/services",
+  },
+  // {
+  //   title: "Lorem ipsum dolor",
+  //   path: "#",
+  // },
+  {
+    title: "Das Team",
+    path: "/team",
   },
   {
-    title: "Lorem ipsum dolor",
-    path: "#",
-  },
-  {
-    title: "Lorem ipsum dolor",
-    path: "#",
-  },
-  {
-    title: "Lorem ipsum dolor",
-    path: "#",
+    title: "Über uns",
+    path: "/about",
   },
 ];
 
@@ -25,9 +25,9 @@ const open = ref(false);
   <LayoutContainer>
     <header class="flex flex-col lg:flex-row justify-between items-center my-5">
       <div class="flex w-full lg:w-auto items-center justify-between">
-        <a href="/" class="text-lg"
-          ><span class="font-bold text-slate-800 text-primary">GIM</span
-          ><span class="text-slate-500 text-secondary"> Gesellschaft für integratives Management mbH</span>
+        <a href="/" class="text-lg items-center flex">
+          <img src="/assets/img/GIM-Logo.jpg" class="h-16 ">
+          <p class="text-slate-500 text-secondary"> Gesellschaft für integratives Management mbH</p>
         </a>
         <!-- Menu Button for mobile -->
         <div class="block lg:hidden">

@@ -1,40 +1,40 @@
 <script setup>
 const features = [
   {
-    title: "Lorem ipsum",
+    title: "IT-Support",
     description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut",
-    icon: "bx:bxs-briefcase",
+      "Wir bieten Ihnen einen proaktiven und vorausschauenden IT-Support. Sie müssen sich nicht mehr um die Wartung Ihrer IT kümmern, sondern können sich komplett auf Ihr Tagesgeschäft konzentrieren.",
+    icon: "ph:headset",
   },
   {
-    title: "Lorem ipsum",
+    title: "IT-Sicherheit",
     description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut",
-    icon: "bx:bxs-window-alt",
+      "Überlassen Sie uns den Schutz Ihrer IT und Ihrer sensiblen Daten. Wir kümmern uns um Ihre IT, als wäre diese unsere eigene.",
+    icon: "jam:shield-half",
   },
   {
-    title: "Lorem ipsum",
+    title: "Managed Services",
     description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut ",
-    icon: "bx:bxs-data",
+      "Eine umfassende Lösung für KMUs, um ihre IT-Infrastruktur effizient zu verwalten und von Expertenbetreuung im Bereich SAP Basis Consulting zu profitieren.",
+    icon: "material-symbols:folder-managed",
   },
   {
-    title: "Lorem ipsum",
+    title: "Cloud Lösungen",
     description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut",
-    icon: "bx:bxs-bot",
+      "Cloud Lösungen sind beliebig skalierbar und somit auf Ihre aktuelle Unternehmungslage anpassbar. Sie profitieren von dauerhaft planbaren Konstenstrukturen.",
+    icon: "simple-icons:icloud",
   },
   {
-    title: "Lorem ipsum",
+    title: "SAP Basis",
     description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut",
-    icon: "bx:bxs-file-find",
+      "Unsere SAP Basis Consulting Services optimieren die Leistung und Stabilität Ihrer SAP-Systeme, um Ihr Geschäft reibungslos am Laufen zu halten.",
+    icon: "simple-icons:sap",
   },
   {
-    title: "Lorem ipsum",
+    title: "IT-Infrastruktur",
     description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut",
-    icon: "bx:bxs-user",
+      "Unsere IT-Infrastrukturlösungen bieten Ihnen alle erforderlichen Tools und Technologien für eine effiziente und sichere IT-Umgebung in Ihrem Unternehmen. ",
+    icon: "streamline:industry-innovation-and-infrastructure-solid",
   },
 ];
 </script>
@@ -42,11 +42,11 @@ const features = [
 <template>
   <LayoutContainer topMargin bottomMargin>
     <div class="mt-16 md:mt-0">
-      <h2 class="text-4xl lg:text-5xl  lg:tracking-tight">
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-      </h2>
+      <h1 class="text-2xl lg:text-3xl  lg:tracking-tight font-semibold">
+        Unsere Leidenschaft ist Ihre IT
+      </h1>
       <p class="text-lg mt-4 text-slate-600">
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+       
       </p>
     </div>
 

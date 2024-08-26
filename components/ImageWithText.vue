@@ -21,7 +21,7 @@ const props = withDefaults(defineProps<{
       <div class="flex items-center flex-wrap items-center">
         <div class="grow-0">
           <h1 class="text-3xl font-semibold">{{props.title}}</h1>
-          <p class="text-lg">
+          <p class="text-lg mt-4">
             {{props.description}}
           </p>
         </div>

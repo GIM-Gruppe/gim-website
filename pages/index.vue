@@ -20,18 +20,18 @@ const repeat = 4;
   <LayoutContainer>
     <Logos></Logos>
     <ImageWithText
-      :imgsrc="'https://loremflickr.com/400/300'"
+      :imgsrc="'https://loremflickr.com/400/300/cat'"
       :imgalt="'katzen'"
-      :title="'Lorem ipsum dolor'"
-      :description="'Dolor nulla cupidatat anim voluptate cillum et ipsum laborum Lorem consectetur est fugiat. Culpa nostrud consectetur consequat consequat exercitation amet occaecat consequat incididunt amet irure. Velit amet esse magna non irure dolore tempor aute.Veniam mollit nulla dolore minim irure incididunt elit nostrud commodo qui voluptate.'"
+      :title="'Willkommen bei der GIM '"
+      :description="'Gesellschaft für integratives Management mbH, Ihrem kompetenten Partner für IT-Infrastruktur, Managed Services und SAP Basis Dienstleistungen. Unser Unternehmen wurde gegründet, um gezielt die Bedürfnisse von Mittelständlern zu erfüllen, die häufig mit Herausforderungen wie begrenzten Budgets und knappen Ressourcen konfrontiert sind.'"
     ></ImageWithText>
     <Features></Features>
     <!-- <ServiceShowcase></ServiceShowcase> -->
     <ImageWithText
-      :imgsrc="'https://loremflickr.com/500/400'"
+      :imgsrc="'https://loremflickr.com/500/400/cat'"
       :imgalt="'katzen'"
-      :title="'Lorem ipsum dolor'"
-      :description="'Deserunt deserunt ad deserunt elit nisi commodo. Reprehenderit pariatur amet sit occaecat do irure velit dolor magna. Ullamco adipisicing Lorem duis culpa aliquip nostrud veniam proident in minim cillum aliqua magna. Laboris ullamco amet ad in. Ad laborum culpa reprehenderit excepteur. Mollit fugiat irure sit labore ullamco. Sit Lorem reprehenderit velit labore ad aliqua.Veniam mollit nulla dolore minim irure incididunt elit nostrud commodo qui voluptate.'"
+      :title="'Was zeichnet uns aus'"
+      :description="'Unser Team von Experten besitzt mehrjährige Erfahrung in IT-Infrastruktur, Managed Services und SAP-Basis Diensten. Wir haben von den “Großen” Unternehmen gelernt und möchten den “Kleinen” mit skalierbaren, modernen sowie individuellen Lösungen und Dienstleistungen helfen, ihre Effizienz, Schnelligkeit und Sicherheit zu optimieren und damit den Grundstein für mehr Wachstum zu legen.'"
       :imgPos="'left'"
     ></ImageWithText>
     <!-- <LandingCta></LandingCta> -->
