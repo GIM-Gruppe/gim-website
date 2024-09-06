@@ -5,5 +5,11 @@
     "title1": "Wir GIM",
     "title2": "uns Mühe",
     "background_image": "./assets/img/tech.jpg"
+  },
+  "textimageright": {
+    "title": "Willkommen bei der GIM",
+    "text": "Gesellschaft für integratives Management mbH, Ihrem kompetenten Partner für IT-Infrastruktur, Managed Services und SAP Basis Dienstleistungen. Unser Unternehmen wurde gegründet, um gezielt die Bedürfnisse von Mittelständlern zu erfüllen, die häufig mit Herausforderungen wie begrenzten Budgets und knappen Ressourcen konfrontiert sind.",
+    "image": "./assets/img/startup (2).jpg",
+    "imagealt": "tech image"
   }
 }
