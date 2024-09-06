@@ -45,6 +45,9 @@ content:
           - name: image
             label: Image
             type: image
+          - name: imagealt
+            label: Image Alt
+            type: text
 
       - name: serviceoverview
         label: Service Overview
@@ -84,6 +87,9 @@ content:
           - name: image
             label: Image
             type: image
+          - name: imagealt
+            label: Image Alt
+            type: text
 
       - name: cta
         label: CTA Section
