@@ -1,6 +1,6 @@
 media:
   input: public/assets/img
-  output: img
+  output: public/assets/img
 content:
   - name: home_page
     label: Home Page
