@@ -26,8 +26,8 @@ content:
             label: Text
             type: string
 
-      - name: section2
-        label: Section 2
+      - name: textimageright
+        label: Text with Image (R)
         type: object
         fields:
           - name: title
@@ -40,8 +40,8 @@ content:
             label: Image
             type: image
 
-      - name: section3
-        label: Section 3
+      - name: serviceoverview
+        label: Service Overview
         type: object
         fields:
           - name: title
@@ -65,8 +65,8 @@ content:
                 label: Subtitle
                 type: string
 
-      - name: section4
-        label: Section 4
+      - name: textimageleft
+        label: Text with Image (L)
         type: object
         fields:
           - name: title
@@ -79,8 +79,8 @@ content:
             label: Image
             type: image
 
-      - name: section5
-        label: Section 5
+      - name: cta
+        label: CTA Section
         type: object
         fields:
           - name: title
