@@ -28,6 +28,9 @@ content:
           - name: text
             label: Text
             type: string
+          - name: background_image
+            label: Background Image
+            type: image
 
       - name: textimageright
         label: Text with Image (R)
