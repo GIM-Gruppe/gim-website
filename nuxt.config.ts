@@ -11,4 +11,7 @@ export default defineNuxtConfig({
     "nuxt-icon",
     '@nuxt/content'
   ],
+  routeRules: {
+    '/': { prerender: true }
+  }
 });

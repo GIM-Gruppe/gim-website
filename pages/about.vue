@@ -276,33 +276,33 @@ const mobileMenuOpen = ref(false)
           <div class="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
             <div class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
               <div class="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-                <h1 class="text-4xl font-semibold tracking-tight text-primary-900 sm:text-6xl">Commodo id veniam deserunt minim elit.</h1>
-                <p class="relative mt-6 text-lg leading-8 text-secondary-600 sm:max-w-md lg:max-w-none">Willkommen bei der GIM Gesellschaft für integratives Management mbH, Ihrem kompetenten Partner für IT-Infrastruktur, Managed Services und SAP Basis Dienstleistungen. Unser Unternehmen wurde gegründet, um gezielt die Bedürfnisse von Mittelständlern zu erfüllen, die häufig mit Herausforderungen wie begrenzten Budgets und knappen Ressourcen konfrontiert sind.</p>
+                <h1 class="text-4xl font-semibold tracking-tight text-primary-900 sm:text-6xl">Wir haben die Lösungen für Ihre IT</h1>
+                <p class="relative mt-6 text-xl leading-8 text-secondary-600 sm:max-w-md lg:max-w-none">Willkommen bei der GIM Gesellschaft für integratives Management mbH, Ihrem kompetenten Partner für IT-Infrastruktur, Managed Services und SAP Basis Dienstleistungen. Unser Unternehmen wurde gegründet, um gezielt die Bedürfnisse von Mittelständlern zu erfüllen, die häufig mit Herausforderungen wie begrenzten Budgets und knappen Ressourcen konfrontiert sind.</p>
               </div>
               <div class="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
                 <div class="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
                   <div class="relative">
-                    <img src="https://loremflickr.com/528/412/cat" alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" />
+                    <img :src="`./assets/img/cyberspace.jpg`" alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" />
                     <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                   </div>
                 </div>
                 <div class="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                   <div class="relative">
-                    <img src="https://loremflickr.com/528/423/cat" alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" />
+                    <img :src="`./assets/img/server.jpg`" alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" />
                     <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                   </div>
                   <div class="relative">
-                    <img src="https://loremflickr.com/528/200/cat" alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" />
+                    <img :src="`./assets/img/network.jpg`" alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" />
                     <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                   </div>
                 </div>
                 <div class="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                   <div class="relative">
-                    <img src="https://loremflickr.com/528/800/cat" alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" />
+                    <img :src="`./assets/img/sever.jpg`" alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" />
                     <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                   </div>
                   <div class="relative">
-                    <img src="https://loremflickr.com/528/82/cat" alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" />
+                    <img :src="`./assets/img/electronics.jpg`" alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" />
                     <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                   </div>
                 </div>
@@ -319,7 +319,7 @@ const mobileMenuOpen = ref(false)
           <div class="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
             <div class="lg:w-full lg:max-w-2xl lg:flex-auto">
               <p class="text-xl leading-8 text-secondary-600">Wir sind bestrebt, persönliche und individuelle Beratung zu bieten und Unternehmen dabei zu helfen, ihre IT-Prozesse zu implementieren, ihre Digitalisierung Prozess zu beschleunigen damit Sie das Potenzial ihrer Digitalen Ressourcen voll auszuschöpfen. </p>
-              <div class="mt-10 max-w-xl text-base leading-7 text-secondary-700">
+              <div class="mt-10 max-w-xl text-base leading-7 text-secondary-700 text-l">
                 <p>Unsere Aufgabe bei der GIM Gruppe ist es, KMUs durch die Optimierung ihrer IT-Infrastruktur und digitalen Prozesse zu unterstützen. Die IT ist ein Grundbestandteil ihre Unternehmenstrategie damit alles reibungslos funktioniert. </p>
                 <p class="mt-10">Unser Ziel ist es, Managed Services und SAP-Basis-Services anzubieten, die speziell auf die Bedürfnisse jedes einzelnen Kunden zugeschnitten sind.</p>
                 <p class="mt-10">
@@ -387,7 +387,7 @@ const mobileMenuOpen = ref(false)
       <!-- Team section -->
       <div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-48 lg:px-8">
         <div class="mx-auto max-w-2xl lg:mx-0">
-          <h2 class="text-3xl font-bold tracking-tight text-primary-900 sm:text-4xl">Unser team</h2>
+          <h2 class="text-3xl font-bold tracking-tight text-primary-900 sm:text-4xl">Unser Team</h2>
           <p class="mt-6 text-lg leading-8 text-gray-600">Sit facilis neque ab nulla vel. Cum eos in laudantium. Temporibus eos totam in dolorum. Nemo vel facere repellendus ut eos dolores similique.</p>
         </div>
         <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-2 gap-x-8 gap-y-16 text-center sm:grid-cols-3 md:grid-cols-4 lg:mx-0 lg:max-w-none lg:grid-cols-5 xl:grid-cols-6">

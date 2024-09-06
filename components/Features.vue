@@ -42,10 +42,10 @@ const features = [
 <template>
   <LayoutContainer topMargin bottomMargin>
     <div class="mt-16 md:mt-0">
-      <h1 class="text-2xl lg:text-3xl  lg:tracking-tight font-semibold">
+      <h1 class="text-2xl lg:text-4xl  lg:tracking-tight font-semibold">
         Unsere Leidenschaft ist Ihre IT
       </h1>
-      <p class="text-lg mt-4 text-slate-600">
+      <p class="text-xl mt-4 text-slate-600">
        
       </p>
     </div>
@@ -56,8 +56,8 @@ const features = [
           <Icon class="text-white" :name="item.icon" />
         </div>
         <div>
-          <h3 class="font-semibold text-lg">{{ item.title }}</h3>
-          <p class="text-slate-500 mt-2 leading-relaxed">
+          <h3 class="font-semibold text-xl">{{ item.title }}</h3>
+          <p class="text-slate-500 mt-2 leading-relaxed text-l">
             {{ item.description }}
           </p>
         </div>

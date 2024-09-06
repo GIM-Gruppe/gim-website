@@ -9,7 +9,7 @@ const props = withDefaults(defineProps<{
 })
 </script>
 <template>
-  <div class="max-w-screen-xl mx-auto " :class="{'mt-20': topMargin, 'mb-20': bottomMargin}">
+  <div class="max-w-screen-xl mx-auto  " :class="{'mt-20': topMargin, 'mb-20': bottomMargin}">
     <slot />
   </div>
 </template>

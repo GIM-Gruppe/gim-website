@@ -11,7 +11,7 @@
     "start dev": "npm run dev"
   },
   "devDependencies": {
-    "@nuxt/content": "^2.0.0",
+    "@nuxt/content": "^2.13.2",
     "@tailwindcss/typography": "^0.5.10",
     "autoprefixer": "^10.4.16",
     "nuxt": "^3.9.0",
