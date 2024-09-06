@@ -15,104 +15,100 @@ content:
             label: Logo
             type: image
   
-      - name: mainContent
-        label: Main Content
+      - name: banner
+        label: Banner
         type: object
         fields:
-          - name: section1
-            label: Section 1
+          - name: heading
+            label: Heading
+            type: string
+          - name: text
+            label: Text
+            type: string
+
+      - name: section2
+        label: Section 2
+        type: object
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: text
+            label: Text
+            type: string
+          - name: image
+            label: Image
+            type: image
+
+      - name: section3
+        label: Section 3
+        type: object
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: subtitle
+            label: Subtitle
+            type: string
+          - name: services
+            label: Services
             type: object
+            list: true
             fields:
-              - name: heading
-                label: Heading
-                type: string
-              - name: text
-                label: Text
-                type: string
-  
-          - name: section2
-            label: Section 2
-            type: object
-            fields:
-              - name: title
-                label: Title
-                type: string
-              - name: text
-                label: Text
-                type: string
-              - name: image
-                label: Image
+              - name: icon
+                label: Icon
                 type: image
-  
-          - name: section3
-            label: Section 3
-            type: object
-            fields:
               - name: title
                 label: Title
                 type: string
               - name: subtitle
                 label: Subtitle
                 type: string
-              - name: services
-                label: Services
-                type: object
-                list: true
-                fields:
-                  - name: icon
-                    label: Icon
-                    type: image
-                  - name: title
-                    label: Title
-                    type: string
-                  - name: subtitle
-                    label: Subtitle
-                    type: string
-  
-          - name: section4
-            label: Section 4
+
+      - name: section4
+        label: Section 4
+        type: object
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: text
+            label: Text
+            type: string
+          - name: image
+            label: Image
+            type: image
+
+      - name: section5
+        label: Section 5
+        type: object
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: subtitle
+            label: Subtitle
+            type: string
+          - name: image
+            label: Image
+            type: image
+          - name: cta_button_left
+            label: CTA Button Left
             type: object
             fields:
-              - name: title
-                label: Title
+              - name: path
+                label: Path
                 type: string
-              - name: text
-                label: Text
+              - name: label
+                label: Label
                 type: string
-              - name: image
-                label: Image
-                type: image
-  
-          - name: section5
-            label: Section 5
+          - name: cta_button_right
+            label: CTA Button Right
             type: object
             fields:
-              - name: title
-                label: Title
+              - name: path
+                label: Path
                 type: string
-              - name: subtitle
-                label: Subtitle
+              - name: label
+                label: Label
                 type: string
-              - name: image
-                label: Image
-                type: image
-              - name: cta_button_left
-                label: CTA Button Left
-                type: object
-                fields:
-                  - name: path
-                    label: Path
-                    type: string
-                  - name: label
-                    label: Label
-                    type: string
-              - name: cta_button_right
-                label: CTA Button Right
-                type: object
-                fields:
-                  - name: path
-                    label: Path
-                    type: string
-                  - name: label
-                    label: Label
-                    type: string
