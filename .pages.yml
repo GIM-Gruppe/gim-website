@@ -33,13 +33,13 @@ content:
             type: string
           - name: text
             label: Text
-            type: string
+            type: text
           - name: image
             label: Image
             type: image
           - name: imagealt
             label: Image Alt
-            type: text
+            type: string
 
       - name: serviceoverview
         label: Service Overview
