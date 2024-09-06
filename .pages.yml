@@ -1,5 +1,5 @@
 media:
-  input: assets/img
+  input: public/assets/img
   output: img
 content:
   - name: home_page
