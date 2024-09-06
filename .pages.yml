@@ -7,14 +7,6 @@ content:
     path: content/home/content.json
     type: file
     fields:
-      - name: header
-        label: Header
-        type: object
-        fields:
-          - name: logo
-            label: Logo
-            type: image
-  
       - name: banner
         label: Banner
         type: object
