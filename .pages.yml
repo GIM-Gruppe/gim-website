@@ -19,8 +19,11 @@ content:
         label: Banner
         type: object
         fields:
-          - name: heading
-            label: Heading
+          - name: title1
+            label: Title1
+            type: string
+          - name: title2
+            label: Title2
             type: string
           - name: text
             label: Text
