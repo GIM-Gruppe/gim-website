@@ -10,14 +10,13 @@ const bannerContent = {
 const repeat = 4;
 
 const { data } = await useAsyncData('home', () => queryContent('/home/content').findOne())
-console.log(data)
 </script> 
 
 <template>
   <HighlightBanner
-    :title="bannerContent.title"
-    :subtitle="bannerContent.subtitle"
-    :description="bannerContent.description"
+    :title="data.banner.title1"
+    :subtitle="data.banner.title2"
+    :description="data.banner.text"
     :bgImg="bannerContent.bgImg"
   ></HighlightBanner>
   <LayoutContainer>
