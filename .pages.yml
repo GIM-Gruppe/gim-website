@@ -58,13 +58,13 @@ content:
             fields:
               - name: icon
                 label: Icon
-                type: image
+                type: string
               - name: title
                 label: Title
                 type: string
-              - name: subtitle
-                label: Subtitle
-                type: string
+              - name: description
+                label: Description
+                type: text
 
       - name: textimageleft
         label: Text with Image (L)
