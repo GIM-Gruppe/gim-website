@@ -46,5 +46,11 @@
         "description": "Unsere IT-Infrastrukturlösungen bieten Ihnen alle erforderlichen Tools und Technologien für eine effiziente und sichere IT-Umgebung in Ihrem Unternehmen."
       }
     ]
+  },
+  "textimageleft": {
+    "title": "Was zeichnet uns aus",
+    "text": "Unser Team von Experten besitzt mehrjährige Erfahrung in IT-Infrastruktur, Managed Services und SAP-Basis Diensten. Wir haben von den “Großen” Unternehmen gelernt und möchten den “Kleinen” mit skalierbaren, modernen sowie individuellen Lösungen und Dienstleistungen helfen, ihre Effizienz, Schnelligkeit und Sicherheit zu optimieren und damit den Grundstein für mehr Wachstum zu legen.",
+    "image": "./assets/img/fiber.jpg",
+    "imagealt": "fiber"
   }
 }
