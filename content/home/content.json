@@ -52,5 +52,18 @@
     "text": "Unser Team von Experten besitzt mehrjährige Erfahrung in IT-Infrastruktur, Managed Services und SAP-Basis Diensten. Wir haben von den “Großen” Unternehmen gelernt und möchten den “Kleinen” mit skalierbaren, modernen sowie individuellen Lösungen und Dienstleistungen helfen, ihre Effizienz, Schnelligkeit und Sicherheit zu optimieren und damit den Grundstein für mehr Wachstum zu legen.",
     "image": "./assets/img/fiber.jpg",
     "imagealt": "fiber"
+  },
+  "cta": {
+    "title": "Bist du auf dem Weg, dein Unternehmen zu neuen Höhen zu bringen?",
+    "subtitle": "Lass dich noch heute von uns unverbindlich und persönlich beraten und entdecke, wie unsere maßgeschneiderten IT-Lösungen deine Effizienz und Leistung steigern können.",
+    "image": "./assets/img/laptop.jpg",
+    "cta_button_left": {
+      "path": "#",
+      "label": "Termin vereinbaren"
+    },
+    "cta_button_right": {
+      "path": "/services",
+      "label": "Zu den Leistungen"
+    }
   }
 }
