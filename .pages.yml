@@ -204,3 +204,35 @@ content:
                 label: Image
                 type: image
             
+  - name: services
+    label: Leistungen
+    path: content/services/content.json
+    type: file
+    list: true
+    fields:
+      - name: name
+        label: Name
+        type: string
+      - name: title
+        label: Title
+        type: string
+      - name: subtitle
+        label: Subtitle
+        type: string
+      - name: description
+        label: Description
+        type: text
+      - name: image
+        label: Image
+        type: image
+      - name: imagealt
+        label: ImageAlt
+        type: string
+      - name: subservice
+        label: Sub Services
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Titel
+            type: string
