@@ -58,7 +58,7 @@
     "subtitle": "Lass dich noch heute von uns unverbindlich und persönlich beraten und entdecke, wie unsere maßgeschneiderten IT-Lösungen deine Effizienz und Leistung steigern können.",
     "image": "./assets/img/laptop.jpg",
     "cta_button_left": {
-      "path": "#",
+      "path": "/contact",
       "label": "Termin vereinbaren"
     },
     "cta_button_right": {
