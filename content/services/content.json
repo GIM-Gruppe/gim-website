@@ -24,7 +24,27 @@
       "subtitle": "SAP Landschaften jeder Größe",
       "description": "Unsere SAP Basis Consulting Services optimieren die Leistung und Stabilität Ihrer SAP-Systeme, um Ihr Geschäft reibungslos am Laufen zu halten.\n\n",
       "image": "./assets/img/robot.jpg",
-      "imagealt": "sap"
+      "imagealt": "sap",
+      "subservice": [
+        {
+          "title": "SAP-Basis Betreuung"
+        },
+        {
+          "title": "SAP-Basis Hosting"
+        },
+        {
+          "title": "SAP-Sicherheitschecks"
+        },
+        {
+          "title": "SAP-Router"
+        },
+        {
+          "title": "Überwachung und Monitoring"
+        },
+        {
+          "title": "Solution Manager"
+        }
+      ]
     }
   ]
 }
