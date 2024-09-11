@@ -14,9 +14,9 @@ const { data } = await useAsyncData('home', () => queryContent('/home/content').
 
 <template>
   <HighlightBanner
-    :title="data.banner.title1"
-    :subtitle="data.banner.title2"
-    :description="data.banner.text"
+    :title="data?.banner.title1"
+    :subtitle="data?.banner.title2"
+    :description="data?.banner.text"
     :bgImg="bannerContent.bgImg"
   ></HighlightBanner>
   <LayoutContainer>
