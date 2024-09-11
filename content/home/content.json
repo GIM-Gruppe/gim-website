@@ -4,12 +4,12 @@
     "text": "We strive to deliver the best service to our customers.",
     "title1": "Wir GIM",
     "title2": "uns Mühe",
-    "background_image": "./assets/img/tech.jpg"
+    "background_image": "/assets/img/tech.jpg"
   },
   "textimageright": {
     "title": "Willkommen bei der GIM",
     "text": "Gesellschaft für integratives Management mbH, Ihrem kompetenten Partner für IT-Infrastruktur, Managed Services und SAP Basis Dienstleistungen. Unser Unternehmen wurde gegründet, um gezielt die Bedürfnisse von Mittelständlern zu erfüllen, die häufig mit Herausforderungen wie begrenzten Budgets und knappen Ressourcen konfrontiert sind.",
-    "image": "./assets/img/startup (2).jpg",
+    "image": "/assets/img/startup (2).jpg",
     "imagealt": "tech image"
   },
   "serviceoverview": {
@@ -50,13 +50,13 @@
   "textimageleft": {
     "title": "Was zeichnet uns aus",
     "text": "Unser Team von Experten besitzt mehrjährige Erfahrung in IT-Infrastruktur, Managed Services und SAP-Basis Diensten. Wir haben von den “Großen” Unternehmen gelernt und möchten den “Kleinen” mit skalierbaren, modernen sowie individuellen Lösungen und Dienstleistungen helfen, ihre Effizienz, Schnelligkeit und Sicherheit zu optimieren und damit den Grundstein für mehr Wachstum zu legen.",
-    "image": "./assets/img/fiber.jpg",
+    "image": "/assets/img/fiber.jpg",
     "imagealt": "fiber"
   },
   "cta": {
     "title": "Bist du auf dem Weg, dein Unternehmen zu neuen Höhen zu bringen?",
     "subtitle": "Lass dich noch heute von uns unverbindlich und persönlich beraten und entdecke, wie unsere maßgeschneiderten IT-Lösungen deine Effizienz und Leistung steigern können.",
-    "image": "./assets/img/laptop.jpg",
+    "image": "/assets/img/laptop.jpg",
     "cta_button_left": {
       "path": "/contact",
       "label": "Termin vereinbaren"
