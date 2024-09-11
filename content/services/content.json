@@ -1,42 +1,24 @@
-[
-  {
-    "name": "SAP",
-    "title": "SAP Basis Consulting",
-    "subtitle": "SAP Landschaften jeder Größe",
-    "description": "Unsere SAP Basis Consulting Services optimieren die Leistung und Stabilität Ihrer SAP-Systeme, um Ihr Geschäft reibungslos am Laufen zu halten.\n",
-    "image": "./assets/img/robot.jpg",
-    "imagealt": "sap",
-    "subservice": [
-      {
-        "title": "SAP-Basis Betreuung"
-      },
-      {
-        "title": "SAP-Basis Hosting"
-      },
-      {
-        "title": "SAP-Sicherheitschecks"
-      },
-      {
-        "title": "SAP-Router"
-      },
-      {
-        "title": "Überwachung und Monitoring"
-      },
-      {
-        "title": "Solution Manager"
-      }
-    ]
-  },
-  {
-    "name": "IT-Infrastruktur",
-    "title": "IT-Infrastruktur",
-    "subtitle": "Ihre IT verdient den besten Support",
-    "description": "Unsere IT-Infrastrukturlösungen bieten Ihnen alle erforderlichen Tools und Technologien für eine effiziente und sichere IT-Umgebung in Ihrem Unternehmen. "
-  },
-  {
-    "name": "Managed Services",
-    "title": "Managed Services",
-    "subtitle": "Unsere Managed Services für einen reibungslosen Betrieb",
-    "description": "Eine umfassende Lösung für KMUs, um ihre IT-Infrastruktur effizient zu verwalten und von Expertenbetreuung im Bereich SAP Basis Consulting zu profitieren."
-  }
-]
+{
+  "title": "Unsere Leistungen",
+  "subtitle": "Get the help you need",
+  "services": [
+    {
+      "name": "IT-Infrastruktur",
+      "title": "IT-Infrastruktur",
+      "subtitle": "IT-Infrastruktur",
+      "description": "Unsere IT-Infrastrukturlösungen bieten Ihnen alle erforderlichen Tools und Technologien für eine effiziente und sichere IT-Umgebung in Ihrem Unternehmen. \n\n"
+    },
+    {
+      "name": "Managed Services",
+      "title": "Managed Services",
+      "subtitle": "Managed Services",
+      "description": "Eine umfassende Lösung für KMUs, um ihre IT-Infrastruktur effizient zu verwalten und von Expertenbetreuung im Bereich SAP Basis Consulting zu profitieren.\n\n"
+    },
+    {
+      "name": "SAP Basis",
+      "title": "SAP Basis",
+      "subtitle": "SAP Landschaften jeder Größe",
+      "description": "Unsere SAP Basis Consulting Services optimieren die Leistung und Stabilität Ihrer SAP-Systeme, um Ihr Geschäft reibungslos am Laufen zu halten.\n\n"
+    }
+  ]
+}
