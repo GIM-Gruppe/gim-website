@@ -1,4 +1,10 @@
-<script setup>
+<script setup lang="ts">
+
+const props = defineProps<{
+  title: string
+  services: any
+}>()
+
 const features = [
   {
     title: "IT-Support",
@@ -43,7 +49,7 @@ const features = [
   <LayoutContainer topMargin bottomMargin>
     <div class="mt-16 md:mt-0">
       <h1 class="text-2xl lg:text-4xl  lg:tracking-tight font-semibold">
-        Unsere Leidenschaft ist Ihre IT
+        {{props.title}}
       </h1>
       <p class="text-xl mt-4 text-slate-600">
        
@@ -51,7 +57,7 @@ const features = [
     </div>
 
     <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
-      <div v-for="item of features" class="flex gap-4 items-start">
+      <div v-for="item of props.services" class="flex gap-4 items-start">
         <div class="mt-1 bg-black rounded-full p-2 w-8 h-8 shrink-0">
           <Icon class="text-white" :name="item.icon" />
         </div>

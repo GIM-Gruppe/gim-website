@@ -3,5 +3,6 @@
   <div class="pb-6">
     <slot/>
   </div>
-  <LayoutFooter></LayoutFooter>
+  <!-- <LayoutFooter></LayoutFooter> -->
+  <SimpleCenteredFooter></SimpleCenteredFooter>
 </template>

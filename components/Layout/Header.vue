@@ -4,18 +4,15 @@ const menuitems = [
     title: "Leistungen",
     path: "/services",
   },
-  // {
-  //   title: "Lorem ipsum dolor",
-  //   path: "#",
-  // },
-  {
-    title: "Das Team",
-    path: "/team",
-  },
   {
     title: "Über uns",
     path: "/about",
   },
+  {
+    title: "Kontakt",
+    path: "/contact",
+  },
+
 ];
 
 const open = ref(false);

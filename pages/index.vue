@@ -1,15 +1,9 @@
 <script setup lang="ts">
-const bannerContent = {
-  title: "Wir GIM",
-  subtitle: "uns Mühe.",
-  description:
-    "Lorem Ad aliquip veniam ipsum quis nulla aliquip eiusmod ullamco et magna.",
-  bgImg: "./assets/img/tech.jpg",
-};
 
 const repeat = 4;
 
 const { data } = await useAsyncData('home', () => queryContent('/home/content').findOne())
+console.log(data)
 </script> 
 
 <template>
@@ -17,28 +11,28 @@ const { data } = await useAsyncData('home', () => queryContent('/home/content').
     :title="data?.banner.title1"
     :subtitle="data?.banner.title2"
     :description="data?.banner.text"
-    :bgImg="bannerContent.bgImg"
+    :bgImg="data?.banner.background_image"
   ></HighlightBanner>
   <LayoutContainer>
     <Logos></Logos>
     <ImageWithText
       class="pb-20"
-      :imgsrc="'./assets/img/startup (2).jpg'"
-      :imgalt="'katzen'"
-      :title="'Willkommen bei der GIM '"
-      :description="'Gesellschaft für integratives Management mbH, Ihrem kompetenten Partner für IT-Infrastruktur, Managed Services und SAP Basis Dienstleistungen. Unser Unternehmen wurde gegründet, um gezielt die Bedürfnisse von Mittelständlern zu erfüllen, die häufig mit Herausforderungen wie begrenzten Budgets und knappen Ressourcen konfrontiert sind.'"
+      :imgsrc="data?.textimageright.image"
+      :imgalt="data?.textimageright.imagealt"
+      :title="data?.textimageright.title"
+      :description="data?.textimageright.text"
     ></ImageWithText>
-    <Features class="pb-20"></Features>
+    <Features class="pb-20" :title="data?.serviceoverview.title" :services="data?.serviceoverview.services"></Features>
     <!-- <ServiceShowcase></ServiceShowcase> -->
     <ImageWithText
       class="pb-20"
-      :imgsrc="'./assets/img/service.jpg'"
-      :imgalt="'katzen'"
-      :title="'Was zeichnet uns aus'"
-      :description="'Unser Team von Experten besitzt mehrjährige Erfahrung in IT-Infrastruktur, Managed Services und SAP-Basis Diensten. Wir haben von den “Großen” Unternehmen gelernt und möchten den “Kleinen” mit skalierbaren, modernen sowie individuellen Lösungen und Dienstleistungen helfen, ihre Effizienz, Schnelligkeit und Sicherheit zu optimieren und damit den Grundstein für mehr Wachstum zu legen.'"
+      :imgsrc="data?.textimageleft.image"
+      :imgalt="data?.textimageleft.imagealt"
+      :title="data?.textimageleft.title"
+      :description="data?.textimageleft.text"
       :imgPos="'left'"
     ></ImageWithText>
     <!-- <LandingCta></LandingCta> -->
-    <Hero class="pb-20"></Hero>
+    <Hero class="pb-20" :title="data?.cta.title" :subtitle="data?.cta.subtitle" :img="data?.cta.image" :imgalt="``" :buttonleft="data?.cta.cta_button_left" :buttonright="data?.cta.cta_button_right" ></Hero>
   </LayoutContainer>
 </template>
