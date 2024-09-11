@@ -3,21 +3,21 @@
   "subtitle": "Get the help you need",
   "services": [
     {
-      "name": "IT-Infrastruktur",
+      "name": "it-infrastructure",
       "title": "IT-Infrastruktur",
       "subtitle": "IT-Infrastruktur",
       "description": "Unsere IT-Infrastrukturlösungen bieten Ihnen alle erforderlichen Tools und Technologien für eine effiziente und sichere IT-Umgebung in Ihrem Unternehmen. \n\n",
       "image": "./assets/img/network (2).jpg"
     },
     {
-      "name": "Managed Services",
+      "name": "managed-services",
       "title": "Managed Services",
       "subtitle": "Managed Services",
       "description": "Eine umfassende Lösung für KMUs, um ihre IT-Infrastruktur effizient zu verwalten und von Expertenbetreuung im Bereich SAP Basis Consulting zu profitieren.\n\n",
       "image": "./assets/img/fiber.jpg"
     },
     {
-      "name": "SAP Basis",
+      "name": "sap",
       "title": "SAP Basis",
       "subtitle": "SAP Landschaften jeder Größe",
       "description": "Unsere SAP Basis Consulting Services optimieren die Leistung und Stabilität Ihrer SAP-Systeme, um Ihr Geschäft reibungslos am Laufen zu halten.\n\n",
