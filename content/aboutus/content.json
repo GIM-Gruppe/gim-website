@@ -4,15 +4,15 @@
     "subtitle": "Willkommen bei der GIM Gesellschaft für integratives Management mbH, Ihrem kompetenten Partner für IT-Infrastruktur, Managed Services und SAP Basis Dienstleistungen. Unser Unternehmen wurde gegründet, um gezielt die Bedürfnisse von Mittelständlern zu erfüllen, die häufig mit Herausforderungen wie begrenzten Budgets und knappen Ressourcen konfrontiert sind.",
     "images": [
       {
-        "image": "./assets/img/electronics.jpg",
+        "image": "/assets/img/cpu.jpg",
         "imagealt": "prozessor"
       },
       {
-        "image": "./assets/img/network (2).jpg",
+        "image": "/assets/img/sever.jpg",
         "imagealt": "server"
       },
       {
-        "image": "./assets/img/cyberspace.jpg",
+        "image": "/assets/img/network.jpg",
         "imagealt": "kabel"
       }
     ]
@@ -22,7 +22,7 @@
     "subtitle": "Wir sind bestrebt, persönliche und individuelle Beratung zu bieten und Unternehmen dabei zu helfen, ihre IT-Prozesse zu implementieren, ihre Digitalisierung Prozess zu beschleunigen damit Sie das Potenzial ihrer Digitalen Ressourcen voll auszuschöpfen.",
     "text": "Unsere Aufgabe bei der GIM Gruppe ist es, KMUs durch die Optimierung ihrer IT-Infrastruktur und digitalen Prozesse zu unterstützen. Die IT ist ein Grundbestandteil ihre Unternehmenstrategie damit alles reibungslos funktioniert.\n\nUnser Ziel ist es, Managed Services und SAP-Basis-Services anzubieten, die speziell auf die Bedürfnisse jedes einzelnen Kunden zugeschnitten sind.\n\nDurch den Einsatz neuester Technologien und unseres Expertenwissens sorgen wir dafür, dass die Systeme unserer Kunden stets aktuell, effizient und zuverlässig sind und bleiben."
   },
-  "breakImage": "./assets/img/john-schnobrich-FlPc9_VocJ4-unsplash.jpg",
+  "breakImage": "/assets/img/john-schnobrich-FlPc9_VocJ4-unsplash.jpg",
   "gruende": {
     "title": "Wir sind die IT-Kompetenz",
     "subtitle": "Sechs Gründe für unser Unternehmen.",
