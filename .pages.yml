@@ -1,0 +1,247 @@
+media:
+  input: public/assets/img
+  output: /assets/img
+content:
+  - name: home_page
+    label: Home Page
+    path: content/home/content.json
+    type: file
+    fields:
+      - name: banner
+        label: Banner
+        type: object
+        fields:
+          - name: title1
+            label: Title1
+            type: string
+          - name: title2
+            label: Title2
+            type: string
+          - name: text
+            label: Text
+            type: string
+          - name: background_image
+            label: Background Image
+            type: image
+
+      - name: textimageright
+        label: Text with Image (R)
+        type: object
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: text
+            label: Text
+            type: text
+          - name: image
+            label: Image
+            type: image
+          - name: imagealt
+            label: Image Alt
+            type: string
+
+      - name: serviceoverview
+        label: Service Overview
+        type: object
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: services
+            label: Services
+            type: object
+            list: true
+            fields:
+              - name: icon
+                label: Icon
+                type: string
+              - name: title
+                label: Title
+                type: string
+              - name: description
+                label: Description
+                type: text
+
+      - name: textimageleft
+        label: Text with Image (L)
+        type: object
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: text
+            label: Text
+            type: text
+          - name: image
+            label: Image
+            type: image
+          - name: imagealt
+            label: Image Alt
+            type: string
+
+      - name: cta
+        label: CTA Section
+        type: object
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: subtitle
+            label: Subtitle
+            type: string
+          - name: image
+            label: Image
+            type: image
+          - name: cta_button_left
+            label: CTA Button Left
+            type: object
+            fields:
+              - name: path
+                label: Path
+                type: string
+              - name: label
+                label: Label
+                type: string
+          - name: cta_button_right
+            label: CTA Button Right
+            type: object
+            fields:
+              - name: path
+                label: Path
+                type: string
+              - name: label
+                label: Label
+                type: string
+
+  - name: aboutus_page
+    label: About Us Page
+    path: content/aboutus/content.json
+    type: file
+    fields:
+      - name: intro
+        label: Intro Text with Image
+        type: object
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: subtitle
+            label: Subtitle
+            type: text
+          - name: images
+            label: Images
+            type: object
+            list: true
+            fields:
+              - name: image
+                label: Image
+                type: image
+              - name: imagealt
+                label: ImageAlt
+                type: string
+      - name: mission
+        label: Unsere Mission
+        type: object
+        fields:
+          - name: title
+            label: title
+            type: string
+          - name: subtitle
+            label: Subtitle
+            type: text
+          - name: text
+            label: Text
+            type: text
+      - name: breakImage
+        label: Break Image
+        type: image
+        
+      - name: gruende
+        label: Gründe für das Unternehmen
+        type: object
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: subtitle
+            label: Subtitle
+            type: string
+          - name: gruende
+            label: Gründe
+            type: object
+            list: true
+            fields:
+              - name: title
+                label: Title
+                type: string
+              - name: description
+                label: Description
+                type: text
+            
+      - name: team
+        label: Team
+        type: object
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: subtitle
+            label: Subtitle
+            type: string
+          - name: persons
+            label: Personen
+            type: object
+            list: true
+            fields:
+              - name: name
+                label: Name
+                type: string
+              - name: position
+                label: Position
+                type: string
+              - name: image
+                label: Image
+                type: image
+  - name: services
+    label: Leistungen
+    path: content/services/content.json
+    type: file
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: subtitle
+        label: Subtitle
+        type: string
+      - name: services
+        label: Leistungen
+        type: object
+        list: true
+        fields:
+          - name: name
+            label: Name
+            type: string
+          - name: title
+            label: Title
+            type: string
+          - name: subtitle
+            label: Subtitle
+            type: string
+          - name: description
+            label: Description
+            type: text
+          - name: image
+            label: Image
+            type: image
+          - name: imagealt
+            label: ImageAlt
+            type: string
+          - name: subservice
+            label: Sub Services
+            type: object
+            list: true
+            fields:
+              - name: title
+                label: Titel
+                type: string
