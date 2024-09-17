@@ -4,5 +4,5 @@
     <slot/>
   </div>
   <!-- <LayoutFooter></LayoutFooter> -->
-  <SimpleCenteredFooter></SimpleCenteredFooter>
+  <LayoutSimpleCenteredFooter></LayoutSimpleCenteredFooter>
 </template>

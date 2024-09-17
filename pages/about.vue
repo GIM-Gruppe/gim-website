@@ -4,8 +4,6 @@
 // });
 
 import { defineComponent, h, ref } from 'vue'
-import { Dialog, DialogPanel } from '@headlessui/vue'
-import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 
 const navigation = [
   { name: 'Product', href: '#' },
@@ -204,7 +202,7 @@ const mobileMenuOpen = ref(false)
 </script>
 
 <template>
-  <LandingContainer>
+  <LayoutContainer>
     <div class="bg-white">
     <!-- 'Header
     <header class="absolute inset-x-0 top-0 z-50">
@@ -293,16 +291,6 @@ const mobileMenuOpen = ref(false)
                   </div>
                   <div class="relative">
                     <img :src="`./assets/img/network.jpg`" alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" />
-                    <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
-                  </div>
-                </div>
-                <div class="w-44 flex-none space-y-8 pt-32 sm:pt-0">
-                  <div class="relative">
-                    <img :src="`./assets/img/sever.jpg`" alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" />
-                    <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
-                  </div>
-                  <div class="relative">
-                    <img :src="`./assets/img/electronics.jpg`" alt="" class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg" />
                     <div class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                   </div>
                 </div>
@@ -450,5 +438,5 @@ const mobileMenuOpen = ref(false)
       <p class="mt-10 text-center text-xs leading-5 text-gray-500">&copy; 2020 Your Company, Inc. All rights reserved.</p>
     </footer> -->
   </div>
-  </LandingContainer>
+  </LayoutContainer>
 </template>

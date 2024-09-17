@@ -1,8 +1,16 @@
 <script setup>
 const menuitems = [
   {
-    title: "Leistungen",
-    path: "/services",
+    title: "IT-Infrastruktur",
+    path: "/services/it-infrastructure",
+  },
+  {
+    title: "Managed Services",
+    path: "/services/managed-services",
+  },
+  {
+    title: "SAP Basis",
+    path: "/services/sap",
   },
   {
     title: "Über uns",

@@ -18,7 +18,7 @@ const props = withDefaults(defineProps<{
 <template>
   <a
     :href="props.href"
-    class="rounded  border-2 text-center text-sm font-bold transition focus:ring-1 ring-offset-2 ring-primary transform hover:scale-110 sm:w-auto  "
+    class=" cursor-pointer flex rounded border-2 text-center text-sm font-bold transition focus:ring-1 ring-offset-2 ring-primary transform hover:scale-110 sm:w-fit   "
     :class="{
       'px-4 py-2': size == 'md',
       'px-7 py-3': size == 'lg',

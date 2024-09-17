@@ -13,20 +13,20 @@
           <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
         </a>
       </div>
-      <p class="mt-10 text-center text-sm leading-5 text-accent">&copy; GIM Gesellschaft für integratives Management GmbH. All rights reserved.</p>
+      <p class="mt-10 text-center text-sm leading-5 text-accent">&copy; GIM Gesellschaft für integratives Management mbH. All rights reserved.</p>
     </div>
   </footer>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { defineComponent, h } from 'vue'
 
 const navigation = {
   main: [
-    { name: 'Über Uns', href: 'about' },
-    {name: 'Kontakt', href: 'contact'},
-    { name: 'Impressum', href: '#' },
-    { name: 'Datenschutz', href: '#' },
+    { name: 'Über Uns', href: '/about' },
+    {name: 'Kontakt', href: '/contact'},
+    { name: 'Impressum', href: '/impressum'},
+    { name: 'Datenschutz', href: '/datenschutz' },
   ],
   social: [
     {
