@@ -31,6 +31,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Detect package manager
         id: detect-package-manager
         run: |
@@ -46,11 +47,13 @@ jobs:
             echo "Unable to determine package manager"
             exit 1
           fi
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
@@ -59,6 +62,7 @@ jobs:
           #
           # You may remove this line if you want to manage the configuration yourself.
           static_site_generator: nuxt
+
       - name: Restore cache
         uses: actions/cache@v4
         with:
@@ -68,10 +72,41 @@ jobs:
           key: ${{ runner.os }}-nuxt-build-${{ hashFiles('dist') }}
           restore-keys: |
             ${{ runner.os }}-nuxt-build-
-      - name: Install dependencies
-        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
-      - name: Static HTML export with Nuxt
-        run: ${{ steps.detect-package-manager.outputs.manager }} run generate
+
+      - name: Install dependencies with retry and verbose logs
+        run: |
+          attempt=0
+          until [ $attempt -ge 3 ]
+          do
+            echo "Attempt $((attempt+1)): Installing dependencies..."
+            ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }} --verbose && break
+            attempt=$((attempt+1))
+            echo "Attempt $attempt failed, retrying in 5 seconds..."
+            sleep 5
+          done
+
+      - name: Static HTML export with Nuxt (Verbose)
+        run: |
+          echo "Running Nuxt static generation..."
+          if ! ${{ steps.detect-package-manager.outputs.manager }} run generate --verbose; then
+            echo "Nuxt generate command failed. See the logs above for details." >&2
+            exit 1
+          fi
+
+      - name: Save build logs in case of failure
+        if: failure()
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-logs
+          path: ./logs
+
+      - name: Verify build output
+        run: |
+          if [ ! -d "./dist" ]; then
+            echo "Build output missing. ./dist directory not found." >&2
+            exit 1
+          fi
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
