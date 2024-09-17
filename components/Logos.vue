@@ -5,7 +5,7 @@
 <template>
   <LayoutContainer bottomMargin >
     <div class="pb-10 ">
-      <h2 class="text-center text-slate-500">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</h2>
+      <h2 class="text-center text-sm text-slate-500">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</h2>
       <div
         class="flex gap-8 md:gap-20 items-center justify-center mt-10 flex-wrap"
       >

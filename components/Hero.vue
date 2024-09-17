@@ -25,10 +25,10 @@
       </div>
 
       <div>
-        <h1 class="text-xl lg:text-3xl xl:text-4xl lg:tracking-tight font-semibold">
+        <h1 class="lg:tracking-tight font-semibold">
           {{props.title}}
         </h1>
-        <p class="text-xl mt-4 text-slate-600 max-w-xl ">
+        <p class=" mt-4 text-slate-600 max-w-xl ">
           {{props.subtitle}}
         </p>
         <div class="mt-6 flex flex-col sm:flex-row gap-3">

@@ -20,8 +20,8 @@ const props = withDefaults(defineProps<{
 
       <div class="flex items-center flex-wrap items-center">
         <div class="grow-0">
-          <h1 class="text-4xl font-semibold">{{props.title}}</h1>
-          <p class="text-xl mt-4">
+          <h1 class=" font-semibold">{{props.title}}</h1>
+          <p class=" mt-4">
             {{props.description}}
           </p>
         </div>

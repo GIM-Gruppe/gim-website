@@ -36,7 +36,7 @@ console.log(data);
     >
       <a
         :href="`/services/${service.name}`"
-        class="transition transform hover:scale-110 sm:w-auto"
+        class="flex transition transform hover:scale-110 sm:w-auto"
       >
         <article
           class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 w-80"

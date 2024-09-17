@@ -30,11 +30,11 @@ const open = ref(false);
     <LayoutContainer>
       <header class="flex flex-col lg:flex-row justify-between items-center">
         <div class="flex w-full lg:w-auto items-center justify-between">
-          <a href="/" class="text-lg items-center flex">
+          <a href="/" class="items-center flex">
             <img src="/assets/img/GIM-Logo.jpg" class="h-24" />
-            <p class="text-slate-500 text-secondary">
+            <text class="text-slate-500 text-secondary">
               Gesellschaft für integratives Management mbH
-            </p>
+            </text>
           </a>
           <!-- Menu Button for mobile -->
           <div class="block lg:hidden">

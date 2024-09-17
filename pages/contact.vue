@@ -1,37 +1,6 @@
 <script setup lang="ts">
-import { ref } from "vue";
 
-// List of people/services with their corresponding Microsoft Bookings links
-const people = [
-  {
-    id: 1,
-    name: "John Doe",
-    link: "https://outlook.office365.com/owa/calendar/test@gim-gruppe.com/bookings/", // replace with real link
-  },
-  {
-    id: 2,
-    name: "Jane Smith",
-    link: "https://bookings.microsoft.com/[JANE_SMITH_BOOKINGS_LINK]", // replace with real link
-  },
-  {
-    id: 3,
-    name: "Michael Brown",
-    link: "https://bookings.microsoft.com/[MICHAEL_BROWN_BOOKINGS_LINK]", // replace with real link
-  },
-];
 
-// Reactive variable to store the selected booking URL
-const selectedBookingLink = ref<string | null>(null);
-
-// Function to set the selected person's booking URL
-const selectPerson = (link: string) => {
-  selectedBookingLink.value = link;
-};
-
-// Commented function that opens in a new tab, now replaced with embedded iframe
-// const openBookingPage = (link: string) => {
-//   window.open(link, "_blank"); // Open the booking page in a new tab
-// };
 </script>
 
 <template>
@@ -46,24 +15,24 @@ const selectPerson = (link: string) => {
           >
             Kontakt
           </p>
-          <h2
-            class="font-heading mb-4 font-bold tracking-tight text-secondary text-3xl sm:text-5xl"
+          <h1
+            class="font-heading font-bold tracking-tight text-secondary"
           >
             Kontaktiere uns!
-          </h2>
-          <p class="mx-auto mt-4 max-w-3xl text-xl text-secondary/80">
+          </h1>
+          <div class="mx-auto mt-4 max-w-3xl text-secondary/80">
             Termin vereinbaren
-          </p>
+          </div>
         </div>
       </div>
       <div class="flex items-stretch justify-center">
         <div class="grid md:grid-cols-2">
           <div class="h-full pr-6">
-            <p class="mt-3 mb-12 text-lg text-secondary">
+            <div class="mt-3 mb-12 text-secondary">
               Wir freuen uns, dass Sie mit uns in Verbindung treten möchten.
               Unser engagiertes Team steht Ihnen gerne zur Verfügung und bemüht
               sich, Ihnen so schnell wie möglich zu antworten.
-            </p>
+            </div>
             <ul class="mb-6 md:mb-0">
               <li class="flex">
                 <div
@@ -88,11 +57,11 @@ const selectPerson = (link: string) => {
                   </svg>
                 </div>
                 <div class="ml-4 mb-4">
-                  <h3 class="mb-2 text-lg font-medium leading-6 text-secondary">
+                  <h2 class="mb-2 text-lg font-medium leading-6 text-secondary">
                     Anschrift
-                  </h3>
-                  <p class="text-secondary">Südportal 7</p>
-                  <p class="text-secondary">22848 Norderstedt</p>
+                  </h2>
+                  <p class="text-secondary text-base">Südportal 7</p>
+                  <p class="text-secondary text-base">22848 Norderstedt</p>
                 </div>
               </li>
               <li class="flex">
@@ -122,8 +91,7 @@ const selectPerson = (link: string) => {
                   <h3 class="mb-2 text-lg font-medium leading-6 text-secondary">
                     Kontakt
                   </h3>
-                  <p class="text-secondary">Telefonnummer: +49 4321 5638719</p>
-                  <!-- <p class="text-secondary">E-Mail: info@gim-gruppe.com</p> -->
+                  <p class="text-secondary text-base">Telefonnummer: +49 4321 5638719</p>
                 </div>
               </li>
               <li class="flex">
@@ -134,37 +102,8 @@ const selectPerson = (link: string) => {
             </ul>
           </div>
 
-          <!-- <div class="h-fit max-w-6xl p-5 md:p-12" id="form">
-            <h2 class="mb-4 text-2xl font-bold text-secondary">
-              Ready to Get Started?
-            </h2>
-            <p class="mx-auto mt-4 max-w-3xl text-xl text-secondary/80">
-              Choose the person you would like to book an appointment with:
-            </p>
-
-            <div class="flex flex-col md:flex-row justify-center gap-6 my-8">
-              <button
-                v-for="person in people"
-                :key="person.id"
-                @click="selectPerson(person.link)"
-                class="bg-primary text-white px-6 py-2 rounded-md hover:bg-primary/90"
-              >
-                {{ person.name }}
-              </button>
-            </div>
-
-             Display the selected booking iframe -
-            <div v-if="selectedBookingLink" class="mt-8">
-              <iframe
-                :src="selectedBookingLink"
-                class="w-full h-[600px] border-0"
-                allow="fullscreen"
-              ></iframe>
-            </div> -->
-
-          <!-- Commented form as per the original request -->
           <form id="contactForm">
-            <div class="mb-6">
+            <div class="mb-6 mt-5">
               <div class="mx-0 mb-1 sm:mb-4">
                 <div class="mx-0 mb-1 sm:mb-4">
                   <label

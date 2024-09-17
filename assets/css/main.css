@@ -5,13 +5,29 @@
 @tailwind utilities;
 
 /* Apply Montserrat to all headings */
-h1, h2, h3, h4, h5, h6 {
+ h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: #6bb836;
+  font-size: 1.5rem;
+
+}
+
+h1{
+  font-size: 3rem;
   font-family: 'Montserrat', sans-serif;
   color: #6bb836;
 }
 
 /* Apply Roboto to body text */
-body {
+body, text {
   font-family: 'Roboto', sans-serif;
   color: #676662;
+  font-size: 1.125rem;
+}
+
+
+p {
+  font-family: 'Roboto', sans-serif;
+  color: #676662;
+  font-size: 1.5rem;
 }
