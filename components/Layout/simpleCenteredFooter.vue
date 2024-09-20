@@ -4,14 +4,14 @@
     <div class="mx-auto max-w-7xl overflow-hidden px-6 py-10 sm:py-15 lg:px-8">
       <nav class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
         <div v-for="item in navigation.main" :key="item.name" class="pb-6">
-          <a :href="item.href" class=" leading-6 text-gray-600 hover:text-gray-900">{{ item.name }}</a>
+          <NuxtLink :to="item.href" class=" leading-6 text-gray-600 hover:text-gray-900">{{ item.name }}</NuxtLink>
         </div>
       </nav>
       <div class="mt-10 flex justify-center space-x-10">
-        <a v-for="item in navigation.social" :key="item.name" :href="item.href" class="text-gray-400 hover:text-gray-500">
+        <NuxtLink v-for="item in navigation.social" :key="item.name" :to="item.href" class="text-gray-400 hover:text-gray-500">
           <span class="sr-only">{{ item.name }}</span>
           <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
-        </a>
+        </NuxtLink>
       </div>
       <p class="mt-10 text-center text-sm leading-5 text-accent">&copy; GIM Gesellschaft für integratives Management mbH. All rights reserved.</p>
     </div>
