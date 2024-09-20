@@ -1,5 +1,5 @@
 media:
-  input: gim-website/public/assets/img
+  input: public/assets/img
   output: assets/img
 content:
   - name: home_page
