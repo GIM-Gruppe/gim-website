@@ -1,94 +1,21 @@
 <script setup lang="ts">
 import { defineComponent, h, ref } from "vue";
 
-const { data } = await useAsyncData("about", () =>
+const { data, pending, error } = await useAsyncData("about", () =>
   queryContent("/aboutus/content").findOne()
 );
 console.log(data);
-
-const values = [
-  {
-    name: "Langjährige Erfahrung",
-    description:
-      "Seit 1994 Beraten und Betreuen wir Unternehmen jeder Größe. Das Resultat: auf Ihre Bedürfnisse zugeschnittene IT-Lösungen.",
-  },
-  {
-    name: "Expertenwissen",
-    description:
-      "Kaum ein Feld entwickelt sich so schnell weiter wie die IT. Unsere Mitarbeiter werden daher regelmäßig geschult, um Sie zu jeder Zeit umfassend zu beraten.",
-  },
-  {
-    name: "Persönliche Ansprechpartner",
-    description:
-      "IT ist Vertrauenssache. Daher erhalten Sie bei uns von Beginn an einen persönlichen Ansprechpartner, an den Sie sich bei Fragen und Problemen jederzeit wenden können.",
-  },
-  {
-    name: "Alles aus einer Hand",
-    description:
-      "Um welche Komponente es sich auch handelt: Wir werden auf Ihren Wunsch hin zum zentralen Ansprechpartner für Ihre IT.",
-  },
-  {
-    name: "Schnelle Reaktionszeiten",
-    description:
-      "Bei gravierenden IT-Problemen ist schnelle Abhilfe gefragt. Als Ihr lokaler IT-Dienstleister sind wir daher schnellstmöglich zur Stelle, um Ihre Systeme wieder auf Vordermann zu bringen.",
-  },
-  {
-    name: "Wir reden Klartext",
-    description:
-      "Wir klären im Dialog mit Ihnen, welche IT-Produkte sich für Ihren Betrieb eignen. Uns ist wichtig, dass Sie genau nachvollziehen können, wie unsere Empfehlungen zustande kommen.",
-  },
-];
-const team = [
-  {
-    name: "Lutz Thiele",
-    role: "CEO",
-    imageUrl: "https://avatar.iran.liara.run/public/boy?username=Lutz",
-  },
-  {
-    name: "Jonas Grossen",
-    role: "CTO",
-    imageUrl: "https://avatar.iran.liara.run/public/boy?username=Jonas",
-  },
-  {
-    name: "Sven Schmidt",
-    role: "CIO",
-    imageUrl: "https://avatar.iran.liara.run/public/boy?username=Sven",
-  },
-  {
-    name: "Herlinda Martinez Ortega",
-    role: "IT Projektmanagerin",
-    imageUrl: "https://avatar.iran.liara.run/public/girl?username=Linda",
-  },
-  {
-    name: "Sebastian Reckow",
-    role: "VP SAP-Basis",
-    imageUrl: "https://avatar.iran.liara.run/public/boy?username=Sebastian",
-  },
-  {
-    name: "Tony Tu",
-    role: "IT-Consultant Infrastruktur und Entwicklung",
-    imageUrl: "https://avatar.iran.liara.run/public/boy?username=Tony",
-  },
-  {
-    name: "Beata Schaffelke",
-    role: "Buchhaltung",
-    imageUrl: "https://avatar.iran.liara.run/public/girl?username=Beata",
-  },
-  {
-    name: "Isabella Krämer",
-    role: "SAP Consulting",
-    imageUrl: "https://avatar.iran.liara.run/public/girl?username=Isa",
-  },
-  // More people...
-];
 
 const mobileMenuOpen = ref(false);
 </script>
 
 <template>
-  <LayoutContainer>
-    <div class="bg-white">
-      <!-- 'Header
+  <div v-if="pending">Loading...</div>
+  <div v-else-if="error">Failed to load content</div>
+  <div v-else>
+    <LayoutContainer>
+      <div class="bg-white">
+        <!-- 'Header
     <header class="absolute inset-x-0 top-0 z-50">
       <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div class="flex lg:flex-1">
@@ -137,148 +64,148 @@ const mobileMenuOpen = ref(false);
       </Dialog>
     </header>' -->
 
-      <main class="isolate">
-        <!-- Hero section -->
-        <div class="relative isolate -z-10">
-          <svg
-            class="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
-            aria-hidden="true"
-          >
-            <defs>
-              <pattern
-                id="1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84"
-                width="200"
-                height="200"
-                x="50%"
-                y="-1"
-                patternUnits="userSpaceOnUse"
-              >
-                <path d="M.5 200V.5H200" fill="none" />
-              </pattern>
-            </defs>
-            <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
-              <path
-                d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
+        <main class="isolate">
+          <!-- Hero section -->
+          <div class="relative isolate -z-10">
+            <svg
+              class="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
+              aria-hidden="true"
+            >
+              <defs>
+                <pattern
+                  id="1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84"
+                  width="200"
+                  height="200"
+                  x="50%"
+                  y="-1"
+                  patternUnits="userSpaceOnUse"
+                >
+                  <path d="M.5 200V.5H200" fill="none" />
+                </pattern>
+              </defs>
+              <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
+                <path
+                  d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
+                  stroke-width="0"
+                />
+              </svg>
+              <rect
+                width="100%"
+                height="100%"
                 stroke-width="0"
+                fill="url(#1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84)"
               />
             </svg>
-            <rect
-              width="100%"
-              height="100%"
-              stroke-width="0"
-              fill="url(#1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84)"
-            />
-          </svg>
-          <div
-            class="absolute left-1/2 right-0 top-0 -z-10 -ml-24 transform-gpu overflow-hidden blur-3xl lg:ml-24 xl:ml-48"
-            aria-hidden="true"
-          >
             <div
-              class="aspect-[801/1036] w-[50.0625rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
-              style="
-                clip-path: polygon(
-                  63.1% 29.5%,
-                  100% 17.1%,
-                  76.6% 3%,
-                  48.4% 0%,
-                  44.6% 4.7%,
-                  54.5% 25.3%,
-                  59.8% 49%,
-                  55.2% 57.8%,
-                  44.4% 57.2%,
-                  27.8% 47.9%,
-                  35.1% 81.5%,
-                  0% 97.7%,
-                  39.2% 100%,
-                  35.2% 81.4%,
-                  97.2% 52.8%,
-                  63.1% 29.5%
-                );
-              "
-            />
-          </div>
-          <div class="overflow-hidden">
-            <div
-              class="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32"
+              class="absolute left-1/2 right-0 top-0 -z-10 -ml-24 transform-gpu overflow-hidden blur-3xl lg:ml-24 xl:ml-48"
+              aria-hidden="true"
             >
               <div
-                class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center"
+                class="aspect-[801/1036] w-[50.0625rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
+                style="
+                  clip-path: polygon(
+                    63.1% 29.5%,
+                    100% 17.1%,
+                    76.6% 3%,
+                    48.4% 0%,
+                    44.6% 4.7%,
+                    54.5% 25.3%,
+                    59.8% 49%,
+                    55.2% 57.8%,
+                    44.4% 57.2%,
+                    27.8% 47.9%,
+                    35.1% 81.5%,
+                    0% 97.7%,
+                    39.2% 100%,
+                    35.2% 81.4%,
+                    97.2% 52.8%,
+                    63.1% 29.5%
+                  );
+                "
+              />
+            </div>
+            <div class="overflow-hidden">
+              <div
+                class="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32"
               >
-                <div class="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-                  <h1 class="font-semibold tracking-tight text-primary-900">
-                    {{ data?.intro.title }}
-                  </h1>
-                  <p
-                    class="relative mt-6 leading-8 text-secondary-600 sm:max-w-md lg:max-w-none"
-                  >
-                    {{ data?.intro.subtitle }}
-                  </p>
-                </div>
                 <div
-                  class="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0"
+                  class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center"
                 >
-                  <div
-                    class="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80"
-                  >
-                    <div class="relative">
-                      <img
-                        :src="data?.intro.images[0].image"
-                        :alt="data?.intro.images[0].imagealt"
-                        class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
-                      />
-                      <div
-                        class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"
-                      />
-                    </div>
+                  <div class="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
+                    <h1 class="font-semibold tracking-tight text-primary-900">
+                      {{ data?.intro.title }}
+                    </h1>
+                    <p
+                      class="relative mt-6 leading-8 text-secondary-600 sm:max-w-md lg:max-w-none"
+                    >
+                      {{ data?.intro.subtitle }}
+                    </p>
                   </div>
                   <div
-                    class="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36"
+                    class="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0"
                   >
-                    <div class="relative">
-                      <img
-                        :src="data?.intro.images[1].image"
-                        :alt="data?.intro.images[1].imagealt"
-                        class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
-                      />
-                      <div
-                        class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"
-                      />
+                    <div
+                      class="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80"
+                    >
+                      <div class="relative">
+                        <img
+                          :src="data?.intro.images[0].image"
+                          :alt="data?.intro.images[0].imagealt"
+                          class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                        />
+                        <div
+                          class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"
+                        />
+                      </div>
                     </div>
-                    <div class="relative">
-                      <img
-                        :src="data?.intro.images[2].image"
-                        :alt="data?.intro.images[2].imagealt"
-                        class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
-                      />
-                      <div
-                        class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"
-                      />
+                    <div
+                      class="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36"
+                    >
+                      <div class="relative">
+                        <img
+                          :src="data?.intro.images[1].image"
+                          :alt="data?.intro.images[1].imagealt"
+                          class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                        />
+                        <div
+                          class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"
+                        />
+                      </div>
+                      <div class="relative">
+                        <img
+                          :src="data?.intro.images[2].image"
+                          :alt="data?.intro.images[2].imagealt"
+                          class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                        />
+                        <div
+                          class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Content section -->
-        <div class="mx-auto -mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-8">
-          <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
-            <h1 class="font-bold tracking-tight text-primary-900">
-              {{ data?.mission.title }}
-            </h1>
-            <div class="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
-              <div class="lg:w-full lg:max-w-2xl lg:flex-auto">
-                <p class="leading-8 text-secondary-600">
-                  {{ data?.mission.subtitle }}
-                </p>
-                <div
-                  class="mt-10 max-w-xl text-base leading-7 text-secondary-700"
-                >
-                  {{ data?.mission.text }}
+          <!-- Content section -->
+          <div class="mx-auto -mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-8">
+            <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
+              <h1 class="font-bold tracking-tight text-primary-900">
+                {{ data?.mission.title }}
+              </h1>
+              <div class="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
+                <div class="lg:w-full lg:max-w-2xl lg:flex-auto">
+                  <p class="leading-8 text-secondary-600">
+                    {{ data?.mission.subtitle }}
+                  </p>
+                  <div
+                    class="mt-10 max-w-xl text-base leading-7 text-secondary-700"
+                  >
+                    {{ data?.mission.text }}
+                  </div>
                 </div>
-              </div>
-              <!-- <div class="lg:flex lg:flex-auto lg:justify-center">
+                <!-- <div class="lg:flex lg:flex-auto lg:justify-center">
               <dl class="w-64 space-y-8 xl:w-80">
                 <div v-for="stat in stats" :key="stat.label" class="flex flex-col-reverse gap-y-4">
                   <dt class="text-base leading-7 text-gray-600">{{ stat.label }}</dt>
@@ -286,41 +213,43 @@ const mobileMenuOpen = ref(false);
                 </div>
               </dl>
             </div> -->
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Image section -->
-        <div class="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
-          <img
-            :src="data?.breakImage"
-            alt=""
-            class="aspect-[5/2] w-full object-cover xl:rounded-3xl"
-          />
-        </div>
-
-        <!-- Values section -->
-        <div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
-          <div class="mx-auto max-w-2xl lg:mx-0">
-            <h1 class="font-semibold tracking-tight text-primary-900">
-              {{ data?.gruende.title }}
-            </h1>
-            <p class="mt-6 leading-8 text-secondary-600">
-              {{ data?.gruende.subtitle }}
-            </p>
+          <!-- Image section -->
+          <div class="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
+            <img
+              :src="data?.breakImage"
+              alt=""
+              class="aspect-[5/2] w-full object-cover xl:rounded-3xl"
+            />
           </div>
-          <dl
-            class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3"
-          >
-            <div v-for="value in data?.gruende.gruende" :key="value.name">
-              <dt class="font-semibold text-primary-900">{{ value.title }}</dt>
-              <dd class="mt-1 text-secondary-600">{{ value.description }}</dd>
-            </div>
-          </dl>
-        </div>
 
-        <!-- Logo cloud -->
-        <!-- <div class="relative isolate -z-10 mt-32 sm:mt-48">
+          <!-- Values section -->
+          <div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
+            <div class="mx-auto max-w-2xl lg:mx-0">
+              <h1 class="font-semibold tracking-tight text-primary-900">
+                {{ data?.gruende.title }}
+              </h1>
+              <p class="mt-6 leading-8 text-secondary-600">
+                {{ data?.gruende.subtitle }}
+              </p>
+            </div>
+            <dl
+              class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3"
+            >
+              <div v-for="value in data?.gruende.gruende" :key="value.name">
+                <dt class="font-semibold text-primary-900">
+                  {{ value.title }}
+                </dt>
+                <dd class="mt-1 text-secondary-600">{{ value.description }}</dd>
+              </div>
+            </dl>
+          </div>
+
+          <!-- Logo cloud -->
+          <!-- <div class="relative isolate -z-10 mt-32 sm:mt-48">
         <div class="absolute inset-x-0 top-1/2 -z-10 flex -translate-y-1/2 justify-center overflow-hidden [mask-image:radial-gradient(50%_45%_at_50%_55%,white,transparent)]">
           <svg class="h-[40rem] w-[80rem] flex-none stroke-gray-200" aria-hidden="true">
             <defs>
@@ -346,38 +275,40 @@ const mobileMenuOpen = ref(false);
         </div>
       </div> -->
 
-        <!-- Team section -->
-        <div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-48 lg:px-8">
-          <div class="mx-auto max-w-2xl lg:mx-0">
-            <h1 class="font-bold tracking-tight text-primary-900">
-              {{ data?.team.title }}
-            </h1>
-            <p class="mt-6 leading-8 text-gray-600">
-              {{ data?.team.subtitle }}
-            </p>
-          </div>
-          <ul
-            role="list"
-            class="mx-auto mt-20 grid max-w-2xl grid-cols-2 gap-x-8 gap-y-16 text-center sm:grid-cols-3 md:grid-cols-4 lg:mx-0 lg:max-w-none lg:grid-cols-5 xl:grid-cols-6"
-          >
-            <li v-for="person in data?.team.persons" :key="person.name">
-              <img
-                class="mx-auto h-24 w-24 rounded-full"
-                :src="person.image"
-                alt=""
-              />
-              <p
-                class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900"
-              >
-                {{ person.name }}
+          <!-- Team section -->
+          <div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-48 lg:px-8">
+            <div class="mx-auto max-w-2xl lg:mx-0">
+              <h1 class="font-bold tracking-tight text-primary-900">
+                {{ data?.team.title }}
+              </h1>
+              <p class="mt-6 leading-8 text-gray-600">
+                {{ data?.team.subtitle }}
               </p>
-              <div class="leading-6 text-gray-600 text-sm">{{ person.position }}</div>
-            </li>
-          </ul>
-        </div>
+            </div>
+            <ul
+              role="list"
+              class="mx-auto mt-20 grid max-w-2xl grid-cols-2 gap-x-8 gap-y-16 text-center sm:grid-cols-3 md:grid-cols-4 lg:mx-0 lg:max-w-none lg:grid-cols-5 xl:grid-cols-6"
+            >
+              <li v-for="person in data?.team.persons" :key="person.name">
+                <img
+                  class="mx-auto h-24 w-24 rounded-full"
+                  :src="person.image"
+                  alt=""
+                />
+                <p
+                  class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900"
+                >
+                  {{ person.name }}
+                </p>
+                <div class="leading-6 text-gray-600 text-sm">
+                  {{ person.position }}
+                </div>
+              </li>
+            </ul>
+          </div>
 
-        <!-- Blog section -->
-        <!-- <div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
+          <!-- Blog section -->
+          <!-- <div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
         <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
           <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">From the blog</h2>
           <p class="mt-2 text-lg leading-8 text-gray-600">Vel dolorem qui facilis soluta sint aspernatur totam cumque.</p>
@@ -409,10 +340,10 @@ const mobileMenuOpen = ref(false);
           </article>
         </div>
       </div> -->
-      </main>
+        </main>
 
-      <!-- Footer -->
-      <!-- <footer class="mx-auto mt-40 max-w-7xl overflow-hidden px-6 pb-20 sm:mt-64 sm:pb-24 lg:px-8">
+        <!-- Footer -->
+        <!-- <footer class="mx-auto mt-40 max-w-7xl overflow-hidden px-6 pb-20 sm:mt-64 sm:pb-24 lg:px-8">
       <nav class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
         <div v-for="item in footerNavigation.main" :key="item.name" class="pb-6">
           <a :href="item.href" class="text-sm leading-6 text-gray-600 hover:text-gray-900">{{ item.name }}</a>
@@ -426,6 +357,7 @@ const mobileMenuOpen = ref(false);
       </div>
       <p class="mt-10 text-center text-xs leading-5 text-gray-500">&copy; 2020 Your Company, Inc. All rights reserved.</p>
     </footer> -->
-    </div>
-  </LayoutContainer>
+      </div>
+    </LayoutContainer>
+  </div>
 </template>
