@@ -2,9 +2,9 @@
 export default defineNuxtConfig({
   css: ["~/assets/css/main.css"],
 
-  // app: {
-  //   baseURL: '/gim-website/', // This ensures the assets' URLs are correctly prefixed
-  // },
+  app: {
+    baseURL: '/gim-website/', // This ensures the assets' URLs are correctly prefixed
+  },
 
   postcss: {
     plugins: {
