@@ -2,14 +2,14 @@
 const { data, pending, error } = await useAsyncData("sap", async () => {
   try {
     const response = await queryContent('/services/content').findOne();
-    console.log(response); // Log response for debugging
+    // console.log(response); // Log response for debugging
     return response;
   } catch (err) {
     console.error(err); // Log any errors
     return null;
   }
 });
-// console.log(data);
+// // console.log(data);
 </script>
 
 <template>

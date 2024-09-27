@@ -10,7 +10,7 @@
 const { data, pending, error } = await useAsyncData("services", async () => {
   try {
     const response = await queryContent('/services/content').findOne();
-    console.log(response); // Log response for debugging
+    // console.log(response); // Log response for debugging
     return response;
   } catch (err) {
     console.error(err); // Log any errors

@@ -4,14 +4,14 @@ import { defineComponent, h, ref } from "vue";
 const { data, pending, error } = await useAsyncData("about", async () => {
   try {
     const response = await queryContent('/aboutus/content').findOne();
-    console.log(response); // Log response for debugging
+    // console.log(response); // Log response for debugging
     return response;
   } catch (err) {
     console.error(err); // Log any errors
     return null;
   }
 });
-// console.log(data);
+// // console.log(data);
 
 const mobileMenuOpen = ref(false);
 </script>

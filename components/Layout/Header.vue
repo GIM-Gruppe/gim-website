@@ -31,7 +31,7 @@ const open = ref(false);
       <header class="flex flex-col lg:flex-row justify-between items-center">
         <div class="flex w-full lg:w-auto items-center justify-between">
           <NuxtLink to="/" class="items-center flex">
-            <img src="/assets/img/GIM-Logo.jpg" class="h-24" />
+            <img src="assets/img/GIM-Logo.jpg" class="h-24" />
             <text class="text-slate-500 text-secondary">
               Gesellschaft für integratives Management mbH
             </text>
