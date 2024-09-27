@@ -52,7 +52,7 @@ const { data, pending, error } = await useAsyncData("services", async () => {
             class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 w-80"
           >
             <img
-              :src="service.image"
+              :src="$sanitizeImagePath(service.image)"
               :alt="service.imagealt"
               class="absolute inset-0 h-full w-full object-cover"
             />

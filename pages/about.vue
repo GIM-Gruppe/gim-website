@@ -156,8 +156,8 @@ const mobileMenuOpen = ref(false);
                     >
                       <div class="relative">
                         <img
-                          :src="data?.intro.images[0].image"
-                          :alt="data?.intro.images[0].imagealt"
+                          :src="$sanitizeImagePath(data?.intro.images[0].image)"
+                          :alt="$sanitizeImagePath(data?.intro.images[0].imagealt)"
                           class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                         />
                         <div
@@ -170,8 +170,8 @@ const mobileMenuOpen = ref(false);
                     >
                       <div class="relative">
                         <img
-                          :src="data?.intro.images[1].image"
-                          :alt="data?.intro.images[1].imagealt"
+                          :src="$sanitizeImagePath(data?.intro.images[1].image)"
+                          :alt="$sanitizeImagePath(data?.intro.images[1].imagealt)"
                           class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                         />
                         <div
@@ -180,8 +180,8 @@ const mobileMenuOpen = ref(false);
                       </div>
                       <div class="relative">
                         <img
-                          :src="data?.intro.images[2].image"
-                          :alt="data?.intro.images[2].imagealt"
+                          :src="$sanitizeImagePath(data?.intro.images[2].image)"
+                          :alt="$sanitizeImagePath(data?.intro.images[2].imagealt)"
                           class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                         />
                         <div
@@ -227,7 +227,7 @@ const mobileMenuOpen = ref(false);
           <!-- Image section -->
           <div class="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
             <img
-              :src="data?.breakImage"
+              :src="$sanitizeImagePath(data?.breakImage)"
               alt=""
               class="aspect-[5/2] w-full object-cover xl:rounded-3xl"
             />
@@ -299,7 +299,7 @@ const mobileMenuOpen = ref(false);
               <li v-for="person in data?.team.persons" :key="person.name">
                 <img
                   class="mx-auto h-24 w-24 rounded-full"
-                  :src="person.image"
+                  :src="$sanitizeImagePath(person.image)"
                   alt=""
                 />
                 <p

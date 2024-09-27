@@ -2,6 +2,7 @@
 import { defineNuxtConfig } from 'nuxt/config'
 export default defineNuxtConfig({
   css: ["~/assets/css/main.css"],
+  plugins: ["~/plugins/sanitizeImagePath.js"],
 
   app: {
     baseURL: process.env.NODE_ENV === 'production' ? '/gim-website/' : '/',

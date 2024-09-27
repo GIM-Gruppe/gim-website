@@ -25,13 +25,13 @@ const { data, pending, error } = await useAsyncData('home', async () => {
       :title="data?.banner.title1"
       :subtitle="data?.banner.title2"
       :description="data?.banner.text"
-      :bgImg="data?.banner.background_image"
+      :bgImg="$sanitizeImagePath(data?.banner.background_image)"
     ></HighlightBanner>
     <LayoutContainer>
       <Logos></Logos>
       <ImageWithText
         class="pb-20"
-        :imgsrc="data?.textimageright.image"
+        :imgsrc="$sanitizeImagePath(data?.textimageright.image)"
         :imgalt="data?.textimageright.imagealt"
         :title="data?.textimageright.title"
         :description="data?.textimageright.text"
@@ -40,14 +40,14 @@ const { data, pending, error } = await useAsyncData('home', async () => {
       <!-- <ServiceShowcase></ServiceShowcase> -->
       <ImageWithText
         class="pb-20"
-        :imgsrc="data?.textimageleft.image"
+        :imgsrc="$sanitizeImagePath(data?.textimageleft.image)"
         :imgalt="data?.textimageleft.imagealt"
         :title="data?.textimageleft.title"
         :description="data?.textimageleft.text"
         :imgPos="'left'"
       ></ImageWithText>
       <!-- <LandingCta></LandingCta> -->
-      <Hero class="pb-20" :title="data?.cta.title" :subtitle="data?.cta.subtitle" :img="data?.cta.image" :imgalt="``" :buttonleft="data?.cta.cta_button_left" :buttonright="data?.cta.cta_button_right" ></Hero>
+      <Hero class="pb-20" :title="data?.cta.title" :subtitle="data?.cta.subtitle" :img="$sanitizeImagePath(data?.cta.image)" :imgalt="``" :buttonleft="data?.cta.cta_button_left" :buttonright="data?.cta.cta_button_right" ></Hero>
     </LayoutContainer>
   </div>
 </template>

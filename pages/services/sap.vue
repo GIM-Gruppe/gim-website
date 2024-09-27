@@ -22,7 +22,7 @@ const { data, pending, error } = await useAsyncData("sap", async () => {
         :title="data?.services[2].title"
         :subtitle="data?.services[2].subtitle"
         :description="data?.services[2].description"
-        :image="data?.services[2].image"
+        :image="$sanitizeImagePath(data?.services[2].image)"
         :imagealt="data?.services[2].imagealt"
         :features="data?.services[2].subservice"
       ></WithProductScreenshotPanel>
