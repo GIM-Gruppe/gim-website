@@ -1,7 +1,14 @@
 <script setup lang="ts">
-const { data, pending, error } = await useAsyncData("managedservices", () =>
-  queryContent("/services/content").findOne()
-);
+const { data, pending, error } = await useAsyncData("managedservices", async () => {
+  try {
+    const response = await queryContent('/services/content').findOne();
+    console.log(response); // Log response for debugging
+    return response;
+  } catch (err) {
+    console.error(err); // Log any errors
+    return null;
+  }
+});
 </script>
 
 <template>

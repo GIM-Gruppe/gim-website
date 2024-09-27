@@ -2,9 +2,18 @@
 
 const repeat = 4;
 
-const { data, pending, error } = await useAsyncData('home', () => queryContent('/home/content').findOne());
+const { data, pending, error } = await useAsyncData('home', async () => {
+  try {
+    const response = await queryContent('/home/content').findOne();
+    console.log(response); // Log response for debugging
+    return response;
+  } catch (err) {
+    console.error(err); // Log any errors
+    return null;
+  }
+});
 
-console.log(data?.banner.background_image); // Check if this path is correct
+// console.log(data?.banner.background_image); // Check if this path is correct
 
 </script> 
 

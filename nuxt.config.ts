@@ -1,9 +1,10 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+// nuxt.config.js
+import { defineNuxtConfig } from 'nuxt/config'
 export default defineNuxtConfig({
   css: ["~/assets/css/main.css"],
 
   app: {
-    baseURL: '/gim-website/', // This ensures the assets' URLs are correctly prefixed
+    baseURL: process.env.NODE_ENV === 'production' ? '/gim-website/' : '/',
   },
 
   postcss: {
@@ -23,14 +24,18 @@ export default defineNuxtConfig({
   },
 
   router: {
-    base: process.env.NODE_ENV === 'production' ? '/gim-website/' : '/',
-    mode: 'hash',
+    base: process.env.NODE_ENV === 'production' ? '/gim-website/' : '/', // Ensure this is being set properly
+    mode: 'hash', // Consider switching to 'history' mode unless you need hash-based routing
   },
 
   runtimeConfig: {
     public: {
       baseURL: process.env.NODE_ENV === 'production' ? '/gim-website/' : '/',
     },
+  },
+
+  generate: {
+    dir: 'docs', // Set the output directory for generated files
   },
 
   compatibilityDate: "2024-09-10"
