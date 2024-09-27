@@ -3,6 +3,9 @@
 const repeat = 4;
 
 const { data, pending, error } = await useAsyncData('home', () => queryContent('/home/content').findOne());
+
+console.log(data?.banner.background_image); // Check if this path is correct
+
 </script> 
 
 <template>

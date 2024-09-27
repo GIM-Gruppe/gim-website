@@ -22,10 +22,16 @@ export default defineNuxtConfig({
     '/': { prerender: true }
   },
 
-  // router: {
-  //   base: '/gim-website/',
-  //   mode: 'hash',
-  // },
+  router: {
+    base: process.env.NODE_ENV === 'production' ? '/gim-website/' : '/',
+    mode: 'hash',
+  },
+
+  runtimeConfig: {
+    public: {
+      baseURL: process.env.NODE_ENV === 'production' ? '/gim-website/' : '/',
+    },
+  },
 
   compatibilityDate: "2024-09-10"
 });
