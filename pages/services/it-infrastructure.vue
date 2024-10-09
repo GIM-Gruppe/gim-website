@@ -22,7 +22,7 @@ const { data, pending, error } = await useAsyncData("infra", async () => {
         :title="data?.services[0].title"
         :subtitle="data?.services[0].subtitle"
         :description="data?.services[0].description"
-        :image="$sanitizeImagePath(data?.services[0].image)"
+        :image=" data?.services[0].image"
         :imagealt="data?.services[0].imagealt"
         :features="data?.services[0].subservice"
       ></WithProductScreenshotPanel>

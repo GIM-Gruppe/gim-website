@@ -21,7 +21,7 @@ const { data, pending, error } = await useAsyncData("managedservices", async () 
         :title="data?.services[1].title"
         :subtitle="data?.services[1].subtitle"
         :description="data?.services[1].description"
-        :image="$sanitizeImagePath(data?.services[1].image)"
+        :image=" data?.services[1].image"
         :imagealt="data?.services[1].imagealt"
         :features="data?.services[1].subservice"
       ></WithProductScreenshotPanel>

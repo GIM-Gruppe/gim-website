@@ -184,7 +184,7 @@
         </div>
         <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-2 gap-x-8 gap-y-16 text-center sm:grid-cols-3 md:grid-cols-4 lg:mx-0 lg:max-w-none lg:grid-cols-5 xl:grid-cols-6">
           <li v-for="person in team" :key="person.name">
-            <img class="mx-auto h-24 w-24 rounded-full" :src="$sanitizeImagePath(person.imageUrl)" alt="" />
+            <img class="mx-auto h-24 w-24 rounded-full" :src=" person.imageUrl" alt="" />
             <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">{{ person.name }}</h3>
             <p class="text-sm leading-6 text-gray-600">{{ person.role }}</p>
           </li>
@@ -199,7 +199,7 @@
         </div>
         <div class="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           <article v-for="post in blogPosts" :key="post.id" class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80">
-            <img :src="$sanitizeImagePath(post.imageUrl)" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
+            <img :src=" post.imageUrl" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover" />
             <div class="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40" />
             <div class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
 
@@ -210,7 +210,7 @@
                   <circle cx="1" cy="1" r="1" />
                 </svg>
                 <div class="flex gap-x-2.5">
-                  <img :src="$sanitizeImagePath(post.author.imageUrl)" alt="" class="h-6 w-6 flex-none rounded-full bg-white/10" />
+                  <img :src=" post.author.imageUrl" alt="" class="h-6 w-6 flex-none rounded-full bg-white/10" />
                   {{ post.author.name }}
                 </div>
               </div>
