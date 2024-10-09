@@ -8,7 +8,6 @@ export default defineNuxtConfig({
   plugins: ["~/plugins/sanitizeImagePath.js"],
 
   app: {
-    buildAssetsDir: '/static/'
   },
 
   postcss: {
