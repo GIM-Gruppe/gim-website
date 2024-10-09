@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   plugins: ["~/plugins/sanitizeImagePath.js"],
 
   app: {
-    baseURL: process.env.NODE_ENV === 'production' ? '/gim-website/' : '/',
+    // baseURL: process.env.NODE_ENV === 'production' ? '/gim-website/' : '/',
   },
 
   postcss: {
@@ -28,13 +28,13 @@ export default defineNuxtConfig({
   },
 
   router: {
-    base: process.env.NODE_ENV === 'production' ? '/gim-website/' : '/', // Ensure this is being set properly
+    // base: process.env.NODE_ENV === 'production' ? '/gim-website/' : '/', // Ensure this is being set properly
     // mode: 'hash', // Consider switching to 'history' mode unless you need hash-based routing
   },
 
   runtimeConfig: {
     public: {
-      baseURL: process.env.NODE_ENV === 'production' ? '/gim-website/' : '/',
+      // baseURL: process.env.NODE_ENV === 'production' ? '/gim-website/' : '/',
     },
   },
 
