@@ -1,7 +1,7 @@
 // nuxt.config.js
 import { defineNuxtConfig } from 'nuxt/config'
 
-console.log(`NODE_ENV: ${process.env.NODE_ENV}`); // This will log the current environment mode
+// console.log(`NODE_ENV: ${process.env.NODE_ENV}`); // This will log the current environment mode
 
 export default defineNuxtConfig({
   css: ["~/assets/css/main.css"],
