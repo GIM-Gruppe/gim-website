@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   plugins: ["~/plugins/sanitizeImagePath.js"],
 
   app: {
-    // baseURL: process.env.NODE_ENV === 'production' ? '/gim-website/' : '/',
+    buildAssetsDir: '/static/'
   },
 
   postcss: {
