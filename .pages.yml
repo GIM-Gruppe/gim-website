@@ -3,7 +3,7 @@ media:
   output: assets/img
 content:
   - name: home_page
-    label: Home Page
+    label: Startseite
     path: content/home/content.json
     type: file
     fields:
@@ -12,160 +12,160 @@ content:
         type: object
         fields:
           - name: title1
-            label: Title1
+            label: Titel1
             type: string
           - name: title2
-            label: Title2
+            label: Titel2
             type: string
           - name: text
             label: Text
             type: string
           - name: background_image
-            label: Background Image
+            label: Hintergrundbild
             type: image
 
       - name: textimageright
-        label: Text with Image (R)
+        label: Text mit Bild (R)
         type: object
         fields:
           - name: title
-            label: Title
+            label: Titel
             type: string
           - name: text
             label: Text
             type: text
           - name: image
-            label: Image
+            label: Bild
             type: image
           - name: imagealt
-            label: Image Alt
+            label: Bildbeschreibung
             type: string
 
       - name: serviceoverview
-        label: Service Overview
+        label: Serviceübersicht
         type: object
         fields:
           - name: title
-            label: Title
+            label: Titel
             type: string
           - name: services
-            label: Services
+            label: Dienstleistungen
             type: object
             list: true
             fields:
               - name: icon
-                label: Icon
+                label: Symbol
                 type: string
               - name: title
-                label: Title
+                label: Titel
                 type: string
               - name: description
-                label: Description
+                label: Beschreibung
                 type: text
 
       - name: textimageleft
-        label: Text with Image (L)
+        label: Text mit Bild (L)
         type: object
         fields:
           - name: title
-            label: Title
+            label: Titel
             type: string
           - name: text
             label: Text
             type: text
           - name: image
-            label: Image
+            label: Bild
             type: image
           - name: imagealt
-            label: Image Alt
+            label: Bildbeschreibung
             type: string
 
       - name: cta
-        label: CTA Section
+        label: CTA Bereich
         type: object
         fields:
           - name: title
-            label: Title
+            label: Titel
             type: string
           - name: subtitle
-            label: Subtitle
+            label: Untertitel
             type: string
           - name: image
-            label: Image
+            label: Bild
             type: image
           - name: cta_button_left
-            label: CTA Button Left
+            label: CTA-Schaltfläche links
             type: object
             fields:
               - name: path
-                label: Path
+                label: Pfad
                 type: string
               - name: label
-                label: Label
+                label: Bezeichnung
                 type: string
           - name: cta_button_right
-            label: CTA Button Right
+            label: CTA-Schaltfläche rechts
             type: object
             fields:
               - name: path
-                label: Path
+                label: Pfad
                 type: string
               - name: label
-                label: Label
+                label: Bezeichnung
                 type: string
 
   - name: aboutus_page
-    label: About Us Page
+    label: Über uns Seite
     path: content/aboutus/content.json
     type: file
     fields:
       - name: intro
-        label: Intro Text with Image
+        label: Einleitungstext mit Bild
         type: object
         fields:
           - name: title
-            label: Title
+            label: Titel
             type: string
           - name: subtitle
-            label: Subtitle
+            label: Untertitel
             type: text
           - name: images
-            label: Images
+            label: Bilder
             type: object
             list: true
             fields:
               - name: image
-                label: Image
+                label: Bild
                 type: image
               - name: imagealt
-                label: ImageAlt
+                label: Bildbeschreibung
                 type: string
       - name: mission
         label: Unsere Mission
         type: object
         fields:
           - name: title
-            label: title
+            label: Titel
             type: string
           - name: subtitle
-            label: Subtitle
+            label: Untertitel
             type: text
           - name: text
             label: Text
             type: text
       - name: breakImage
-        label: Break Image
+        label: Trennbild
         type: image
         
       - name: gruende
-        label: Gründe für das Unternehmen
+        label: Gründe für unser Unternehmen
         type: object
         fields:
           - name: title
-            label: Title
+            label: Titel
             type: string
           - name: subtitle
-            label: Subtitle
+            label: Untertitel
             type: string
           - name: gruende
             label: Gründe
@@ -173,21 +173,46 @@ content:
             list: true
             fields:
               - name: title
-                label: Title
+                label: Titel
                 type: string
               - name: description
-                label: Description
+                label: Beschreibung
                 type: text
+
+      - name: kooperationen
+        label: Kooperationspartner
+        type: object
+        fields:
+          - name: title
+            label: Titel
+            type: string
+          - name: subtitle
+            label: Untertitel
+            type: string
+          - name: partner
+            label: Partner
+            type: object
+            list: true
+            fields:
+              - name: partnername
+                label: Partnername
+                type: string
+              - name: description
+                label: Beschreibung
+                type: text
+              - name: partnerimage
+                label: Partnerlogo
+                type: image
             
       - name: team
         label: Team
         type: object
         fields:
           - name: title
-            label: Title
+            label: Titel
             type: string
           - name: subtitle
-            label: Subtitle
+            label: Untertitel
             type: string
           - name: persons
             label: Personen
@@ -201,7 +226,7 @@ content:
                 label: Position
                 type: string
               - name: image
-                label: Image
+                label: Bild
                 type: image
   - name: services
     label: Leistungen
@@ -209,10 +234,10 @@ content:
     type: file
     fields:
       - name: title
-        label: Title
+        label: Titel
         type: string
       - name: subtitle
-        label: Subtitle
+        label: Untertitel
         type: string
       - name: services
         label: Leistungen
@@ -223,22 +248,22 @@ content:
             label: Name
             type: string
           - name: title
-            label: Title
+            label: Titel
             type: string
           - name: subtitle
-            label: Subtitle
+            label: Untertitel
             type: string
           - name: description
-            label: Description
+            label: Beschreibung
             type: text
           - name: image
-            label: Image
+            label: Bild
             type: image
           - name: imagealt
-            label: ImageAlt
+            label: Bildbeschreibung
             type: string
           - name: subservice
-            label: Sub Services
+            label: Unterleistungen
             type: object
             list: true
             fields:
