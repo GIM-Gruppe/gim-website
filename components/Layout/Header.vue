@@ -1,4 +1,6 @@
 <script setup>
+const { locale, setLocale } = useI18n()
+
 const menuitems = [
   {
     title: "IT-Infrastruktur",
@@ -89,6 +91,11 @@ const open = ref(false);
           <LandingLink href="#" size="md">Sign up</LandingLink>
         </div>
       </div> -->
+      <div>
+      <button @click="setLocale('en')">en</button>
+      <button @click="setLocale('de')">de</button>
+      <p>{{ $t('welcome') }}</p>
+    </div>
       </header>
     </LayoutContainer>
     <div class="border border-primary"></div>

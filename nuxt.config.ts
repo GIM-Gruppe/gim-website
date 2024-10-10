@@ -1,7 +1,5 @@
-// nuxt.config.js
 import { defineNuxtConfig } from 'nuxt/config'
 
-// console.log(`NODE_ENV: ${process.env.NODE_ENV}`); // This will log the current environment mode
 
 export default defineNuxtConfig({
   css: ["~/assets/css/main.css"],
@@ -17,25 +15,24 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: [
-    "nuxt-icon",
-    '@nuxt/content'
-  ],
+  modules: ["nuxt-icon", '@nuxt/content', '@nuxtjs/i18n'],
+
+  i18n: {
+    vueI18n: './i18n.config.ts', // if you are using custom path, default
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root' // recommended
+    },
+    strategy: 'prefix_except_default',
+    locales: ['en', 'de'], // used in URL path prefix
+    defaultLocale: 'de', // default locale of your project for Nuxt pages and routings
+  },
 
   routeRules: {
     '/': { prerender: true }
   },
 
-  router: {
-    // base: process.env.NODE_ENV === 'production' ? '/gim-website/' : '/', // Ensure this is being set properly
-    // mode: 'hash', // Consider switching to 'history' mode unless you need hash-based routing
-  },
-
-  runtimeConfig: {
-    public: {
-      // baseURL: process.env.NODE_ENV === 'production' ? '/gim-website/' : '/',
-    },
-  },
 
   compatibilityDate: "2024-09-10"
 });

@@ -3,7 +3,7 @@ import { defineComponent, h, ref } from "vue";
 
 const { data, pending, error } = await useAsyncData("about", async () => {
   try {
-    const response = await queryContent('/aboutus/content').findOne();
+    const response = await queryContent("/aboutus/content").findOne();
     // console.log(response); // Log response for debugging
     return response;
   } catch (err) {
@@ -227,7 +227,7 @@ const mobileMenuOpen = ref(false);
           <!-- Image section -->
           <div class="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
             <img
-              :src=" data?.breakImage"
+              :src="data?.breakImage"
               alt=""
               class="aspect-[5/2] w-full object-cover xl:rounded-3xl"
             />
@@ -251,6 +251,42 @@ const mobileMenuOpen = ref(false);
                   {{ value.title }}
                 </dt>
                 <dd class="mt-1 text-secondary-600">{{ value.description }}</dd>
+              </div>
+            </dl>
+          </div>
+
+          <!-- Cooperation section -->
+          <div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
+            <div class="mx-auto max-w-2xl lg:mx-0">
+              <h1 class="font-semibold tracking-tight text-primary-900">
+                {{ data?.gruende.title }}
+              </h1>
+              <p class="mt-6 leading-8 text-secondary-600">
+                {{ data?.gruende.subtitle }}
+              </p>
+            </div>
+            <dl
+              class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-2"
+            >
+              <div
+                v-for="value in data?.gruende.gruende"
+                :key="value.name"
+                class="flex gap-x-4 mb-6 items-center"
+              >
+                <img
+                  :src="value.image"
+                  alt="Image for {{ value.title }}"
+                  class="w-16 h-16 rounded-lg object-cover shadow-md"
+                />
+
+                <div>
+                  <dt class="font-semibold text-primary-900">
+                    {{ value.title }}
+                  </dt>
+                  <dd class="mt-1 text-secondary-600">
+                    {{ value.description }}
+                  </dd>
+                </div>
               </div>
             </dl>
           </div>
@@ -299,7 +335,7 @@ const mobileMenuOpen = ref(false);
               <li v-for="person in data?.team.persons" :key="person.name">
                 <img
                   class="mx-auto h-24 w-24 rounded-full"
-                  :src=" person.image"
+                  :src="person.image"
                   alt=""
                 />
                 <p
