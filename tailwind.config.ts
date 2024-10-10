@@ -1,6 +1,8 @@
 import defaultTheme from "tailwindcss/defaultTheme";
 
 /** @type {import('tailwindcss').Config} */
+
+const { addDynamicIconSelectors } = require('@iconify/tailwind');
 export default {
   content: [
     "./components/**/*.{js,vue,ts}",
@@ -24,7 +26,7 @@ export default {
       }
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [require("@tailwindcss/typography"), addDynamicIconSelectors()],
   function ({ addBase, theme }) {
     addBase({
       ':root': {

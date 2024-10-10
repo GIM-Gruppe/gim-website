@@ -1,5 +1,5 @@
 <script setup>
-const { locale, setLocale } = useI18n()
+const { locale, setLocale } = useI18n();
 
 const menuitems = [
   {
@@ -25,6 +25,7 @@ const menuitems = [
 ];
 
 const open = ref(false);
+
 </script>
 
 <template>
@@ -91,11 +92,28 @@ const open = ref(false);
           <LandingLink href="#" size="md">Sign up</LandingLink>
         </div>
       </div> -->
-      <div>
-      <button @click="setLocale('en')">en</button>
-      <button @click="setLocale('de')">de</button>
-      <p>{{ $t('welcome') }}</p>
-    </div>
+
+        <!-- Language Change  -->
+        <!-- Set locale here and have prefix in cms for folder structure and fetch from folder for correct language ....queryContent("$(locale)/aboutus/content") -->
+        <div class="hidden lg:flex items-center gap-2">
+          <!-- English Language Button -->
+          <button @click="setLocale('en')">
+            <img
+              src="/assets/img/circle-flags--uk.png"
+              alt="English"
+              class="w-4 h-4 rounded-full object-cover"
+            />
+          </button>
+          <p>|</p>
+          <!-- German Language Button -->
+          <button @click="setLocale('de')">
+            <img
+              src="/assets/img/circle-flags--de.png"
+              alt="Deutsch"
+              class="w-4 h-4 rounded-full object-cover"
+            />
+          </button>
+        </div>
       </header>
     </LayoutContainer>
     <div class="border border-primary"></div>

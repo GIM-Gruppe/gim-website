@@ -18,7 +18,7 @@
           <h1
             class="font-heading font-bold tracking-tight text-secondary"
           >
-            Kontaktiere uns!
+            Wir sind für Sie da!
           </h1>
           <div class="mx-auto mt-4 max-w-3xl text-secondary/80">
             Termin vereinbaren
