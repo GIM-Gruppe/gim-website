@@ -1,6 +1,11 @@
 {
   "carousel": [
     {
+      "title1": "Von Visionen zu Lösungen",
+      "title2": "wir gestalten Ihre IT!",
+      "background_image": "assets/img/tech.jpg"
+    },
+    {
       "title1": "IT",
       "title2": "Infrastruktur Services",
       "text": "Umfassende Bedarfsanalyse",
@@ -10,7 +15,7 @@
       "title1": "IT",
       "title2": "Managed Services",
       "text": "Schnelle Pragmatische Unterstützung und Beratung ",
-      "background_image": "assets/img/job.jpg"
+      "background_image": "assets/img/electronics.jpg"
     },
     {
       "title1": "SAP",
