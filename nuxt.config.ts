@@ -39,6 +39,9 @@ export default defineNuxtConfig({
     indexable: false,
   },
 
+  generate: {
+    dir: '/docs/',
+  },
   compatibilityDate: "2024-09-10"
 });
 
