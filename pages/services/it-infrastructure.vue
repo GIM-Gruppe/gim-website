@@ -1,4 +1,11 @@
 <script setup lang="ts">
+import { useSeoMeta } from '~/composables/seo'
+
+useSeoMeta(
+  'GIM Website - IT-Infrastruktur', // Title: Reflects that the page is about IT infrastructure
+  'Erfahren Sie mehr über die IT-Infrastruktur der GIM Gesellschaft für integratives Management mbH. Wir bieten maßgeschneiderte IT-Lösungen und modernste Technologien zur Unterstützung Ihrer Unternehmensanforderungen.' // Description: Relevant and concise description for the IT infrastructure page
+)
+
 const { data, pending, error } = await useAsyncData("infra", async () => {
   try {
     const response = await queryContent('/services/content').findOne();

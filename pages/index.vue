@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useSeoMeta } from '~/composables/seo'
 
 const repeat = 4;
 
@@ -13,7 +14,11 @@ const { data, pending, error } = await useAsyncData('home', async () => {
   }
 });
 
-</script> 
+useSeoMeta(
+  'GIM Website - Home',
+  'Welcome to GIM Website - Your trusted partner for IT solutions'
+)
+</script>
 
 <template>
   <div v-if="pending">Loading...</div>

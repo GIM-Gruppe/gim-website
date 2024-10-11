@@ -1,4 +1,14 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+
+import { useSeoMeta } from '~/composables/seo'
+
+useSeoMeta(
+  'GIM Website - Kontakt', // Title: Reflects that the page is about contact
+  'Kontaktieren Sie die GIM Gesellschaft für integratives Management mbH. Finden Sie hier unsere Kontaktdaten und erreichen Sie uns per Telefon, E-Mail oder über unser Kontaktformular.' // Description: Relevant and concise description for the contact page
+)
+
+</script>
+
 
 <template>
   <LayoutContainer>

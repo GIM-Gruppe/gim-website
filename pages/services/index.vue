@@ -6,6 +6,13 @@
 //   subtitle: string
 //   services: any
 // }>()
+import { useSeoMeta } from '~/composables/seo'
+
+useSeoMeta(
+  'GIM Website - Leistungsübersicht', // Title: Reflects that the page is about services
+  'Entdecken Sie die umfangreichen Dienstleistungen der GIM Gesellschaft für integratives Management mbH. Erfahren Sie mehr über unsere Beratungsleistungen und maßgeschneiderte Lösungen.' // Description: Relevant and concise description for the service overview page
+)
+
 
 const { data, pending, error } = await useAsyncData("services", async () => {
   try {

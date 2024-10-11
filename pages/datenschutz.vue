@@ -1,3 +1,15 @@
+<script setup lang="ts">
+
+import { useSeoMeta } from '~/composables/seo'
+
+useSeoMeta(
+  'GIM Website - Datenschutz', // Title: Reflects that the page is about privacy
+  'Erfahren Sie mehr über den Datenschutz der GIM Gesellschaft für integratives Management mbH, einschließlich Informationen zur Datenverarbeitung und Ihren Rechten gemäß der DSGVO.' // Description: Relevant and concise description for privacy policy
+)
+
+</script>
+
+
 <template>
   <div class="privacy-policy-container py-14 sm:py-16">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">

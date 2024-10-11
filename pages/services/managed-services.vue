@@ -1,4 +1,11 @@
 <script setup lang="ts">
+import { useSeoMeta } from '~/composables/seo'
+
+useSeoMeta(
+  'GIM Website - Managed Services', // Title: Reflects that the page is about managed services
+  'Entdecken Sie die Managed Services der GIM Gesellschaft für integratives Management mbH. Wir bieten umfassende IT-Wartung, Support und Management für Unternehmen, um einen reibungslosen Betrieb zu gewährleisten.' // Description: Relevant and concise description for the managed services page
+)
+
 const { data, pending, error } = await useAsyncData("managedservices", async () => {
   try {
     const response = await queryContent('/services/content').findOne();

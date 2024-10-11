@@ -13,15 +13,17 @@ const props = withDefaults(defineProps<{
 
 <template>
   <LayoutContainer>
-    <div class="flex gap-16">
-      <div class="shrink-0" :class="{'order-last':imgPos=='right'}">
+    <div class="flex flex-col md:flex-row gap-16">
+      <!-- Image block -->
+      <div class="shrink-0" :class="{'md:order-last':imgPos=='right'}">
         <img :src="imgsrc" :alt="imgalt" class="w-70 h-80 rounded-full object-cover" />
       </div>
 
-      <div class="flex items-center flex-wrap items-center">
+      <!-- Text block -->
+      <div class="flex items-center flex-wrap">
         <div class="grow-0">
-          <h1 class=" font-semibold">{{props.title}}</h1>
-          <p class=" mt-4">
+          <h1 class="font-semibold">{{props.title}}</h1>
+          <p class="mt-4">
             {{props.description}}
           </p>
         </div>

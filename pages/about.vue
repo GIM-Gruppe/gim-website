@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { defineComponent, h, ref } from "vue";
+import { useSeoMeta } from "~/composables/seo";
 
 const { data, pending, error } = await useAsyncData("about", async () => {
   try {
@@ -12,6 +13,12 @@ const { data, pending, error } = await useAsyncData("about", async () => {
   }
 });
 // // console.log(data);
+
+
+useSeoMeta(
+  "GIM Website - Über uns", // Title: Reflects that the page is about the company
+  "Erfahren Sie mehr über die GIM Gesellschaft für integratives Management mbH. Entdecken Sie unsere Unternehmensgeschichte, Vision, Werte und unser Team." // Description: Relevant and concise description for the about us page
+);
 
 const mobileMenuOpen = ref(false);
 </script>

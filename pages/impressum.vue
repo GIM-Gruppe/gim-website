@@ -1,4 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useSeoMeta } from '~/composables/seo'
+
+useSeoMeta(
+  'GIM Website - Impressum',
+  'Rechtliche Informationen und Kontaktdaten der GIM Gesellschaft für integratives Management mbH'
+)
+</script>
 
 <template>
   <div class="p-6 max-w-4xl mx-auto bg-white">

@@ -11,7 +11,8 @@
 
 <template>
   <LayoutContainer>
-    <main class="grid lg:grid-cols-2 place-items-center">
+    <main class="grid md:grid-cols-2 place-items-center">
+      <!-- Image block -->
       <div class="p-24 md:order-1 hidden md:block">
         <NuxtLink to="/contact">
           <img
@@ -26,28 +27,29 @@
         </NuxtLink>
       </div>
 
-      <div>
+      <!-- Text block -->
+      <div class="flex flex-col items-center md:items-start">
         <h1 class="lg:tracking-tight font-semibold">
           {{props.title}}
         </h1>
-        <p class=" mt-4 text-secondary max-w-xl ">
+        <p class="mt-4 text-secondary max-w-xl text-center md:text-left">
           {{props.subtitle}}
         </p>
-        <div class="mt-6 flex flex-col sm:flex-row gap-3">
+        <div class="mt-6 flex flex-col sm:flex-row gap-3 w-full">
           <UiButton
             :href="props.buttonleft.path"
             target="_blank"
             :label="props.buttonleft.label"
-            ></UiButton
-          >
+            class="w-full sm:w-auto" 
+          ></UiButton>
           <UiButton
             size="lg"
             :style="'outline'"
             :href="props.buttonright.path"
             target="_blank"
             :label="props.buttonright.label"
-            ></UiButton
-          >
+            class="w-full sm:w-auto" 
+          ></UiButton>
         </div>
       </div>
     </main>
