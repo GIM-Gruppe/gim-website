@@ -15,7 +15,7 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["nuxt-icon", '@nuxt/content', '@nuxtjs/i18n'],
+  modules: ["nuxt-icon", '@nuxt/content', '@nuxtjs/i18n', '@nuxtjs/seo'],
 
   i18n: {
     detectBrowserLanguage: {
@@ -32,6 +32,12 @@ export default defineNuxtConfig({
     '/': { prerender: true }
   },
 
+  site: {
+    url: 'https://gim-gruppe.com',
+    name: 'GIM Gruppe',
+    description: 'Willkommen bei der GIM!',
+    indexable: false,
+  },
 
   compatibilityDate: "2024-09-10"
 });
