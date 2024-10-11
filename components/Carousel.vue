@@ -66,7 +66,7 @@ onUnmounted(() => {
               {{ slide.title1 }}
               <strong class="block font-extrabold text-primary">{{ slide.title2 }}</strong>
             </h1>
-            <p class="mt-4 max-w-lg ">
+            <p class="mt-4 max-w-lg text-white ">
               {{ slide.text }}
             </p>
           </div>
