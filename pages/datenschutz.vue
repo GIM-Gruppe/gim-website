@@ -30,11 +30,11 @@ useSeoMeta(
           Verantwortlicher für die Datenverarbeitung auf dieser Website ist:
         </p>
         <p class="mt-2 text-secondary">
-          <strong>Firmenname</strong><br />
-          Musterstraße 1, 12345 Musterstadt<br />
+          <strong>GIM Gesellschaft für integratives Management mbH</strong><br />
+          Südportal 7, 22848 Norderstedt<br />
           Deutschland<br />
-          Telefon: +49 (0) 123 456789<br />
-          E-Mail: info@firmenname.de
+          Telefon: +49 40 22898595<br />
+          E-Mail: info@gim-gruppe.com
         </p>
       </section>
 
@@ -65,7 +65,7 @@ useSeoMeta(
       <section class="mb-10">
         <h2 class=" font-semibold text-accent-800">6. Änderungen dieser Datenschutzerklärung</h2>
         <p class="mt-4 text-secondary-700">
-          Diese Datenschutzerklärung ist aktuell gültig und hat den Stand [Datum]. Durch Änderungen unserer Website oder rechtliche Vorgaben kann eine Anpassung dieser Erklärung erforderlich werden. 
+          Diese Datenschutzerklärung ist aktuell gültig und hat den Stand 11.10.2024. Durch Änderungen unserer Website oder rechtliche Vorgaben kann eine Anpassung dieser Erklärung erforderlich werden. 
         </p>
       </section>
     </div>

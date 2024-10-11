@@ -30,7 +30,7 @@ useSeoMeta(
     <div class="mb-4">
       <h2 class="text-xl font-semibold">Kontakt:</h2>
       <p class="mt-2">
-        Telefon: +49 4321 5638719<br />
+        Telefon: +49 40 22898595<br />
         E-Mail:
         <NuxtLink
           :to="`mailto:info@gim-gruppe.com`"
