@@ -7,8 +7,9 @@ content:
     path: content/home/content.json
     type: file
     fields:
-      - name: banner
-        label: Banner
+      - name: carousel
+        label: Karusell
+        list: true
         type: object
         fields:
           - name: title1
