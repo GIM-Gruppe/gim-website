@@ -58,15 +58,15 @@ onUnmounted(() => {
         :class="index === activeIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'"
       >
         <!-- Background Image dim -->
-        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="absolute inset-0 bg-black/50 "></div>
 
         <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-full lg:items-center lg:px-8">
-          <div class="max-w-xl text-left">
+          <div class="max-w-xl text-left text-shadow ">
             <h1 class="font-extrabold">
               {{ slide.title1 }}
-              <strong class="block font-extrabold text-secondary">{{ slide.title2 }}</strong>
+              <strong class="block font-extrabold text-primary">{{ slide.title2 }}</strong>
             </h1>
-            <p class="mt-4 max-w-lg">
+            <p class="mt-4 max-w-lg ">
               {{ slide.text }}
             </p>
           </div>
@@ -84,3 +84,4 @@ onUnmounted(() => {
       </button>
     </LayoutContainer>
   </template>
+
