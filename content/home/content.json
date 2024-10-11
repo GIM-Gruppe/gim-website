@@ -1,22 +1,28 @@
 {
   "carousel": [
     {
-      "title1": "test",
-      "title2": "test",
-      "text": "test",
+      "title1": "IT",
+      "title2": "Infrastruktur Services",
+      "text": "Umfassende Bedarfsanalyse",
       "background_image": "assets/img/ai-generated-7957987_1920.jpg"
     },
     {
-      "title1": "test",
-      "title2": "test",
-      "text": "test",
-      "background_image": "assets/img/ai-generated-7957987_1920.jpg"
+      "title1": "IT",
+      "title2": "Managed Services",
+      "text": "Schnelle Pragmatische Unterstützung und Beratung ",
+      "background_image": "assets/img/job.jpg"
+    },
+    {
+      "title1": "SAP",
+      "title2": "Basis",
+      "text": "Fundiertes Expertenwissen und Persönliche Betreuung  ",
+      "background_image": "assets/img/ai-generated-8540921_1920.jpg"
     }
   ],
   "textimageright": {
     "title": "Willkommen bei der GIM",
     "text": "Gesellschaft für integratives Management mbH, Ihrem kompetenten Partner für IT-Infrastruktur, Managed Services und SAP Basis Dienstleistungen. Unser Unternehmen wurde gegründet, um gezielt die Bedürfnisse von Mittelständlern zu erfüllen, die häufig mit Herausforderungen wie begrenzten Budgets und knappen Ressourcen konfrontiert sind.",
-    "image": "/assets/img/startup (2).jpg",
+    "image": "assets/img/startup (2).jpg",
     "imagealt": "tech image"
   },
   "serviceoverview": {
@@ -57,13 +63,13 @@
   "textimageleft": {
     "title": "Was zeichnet uns aus",
     "text": "Unser Team von Experten besitzt mehrjährige Erfahrung in IT-Infrastruktur, Managed Services und SAP-Basis Diensten. Wir haben von den “Großen” Unternehmen gelernt und möchten den “Kleinen” mit skalierbaren, modernen sowie individuellen Lösungen und Dienstleistungen helfen, ihre Effizienz, Schnelligkeit und Sicherheit zu optimieren und damit den Grundstein für mehr Wachstum zu legen.",
-    "image": "/assets/img/fiber.jpg",
+    "image": "assets/img/fiber.jpg",
     "imagealt": "fiber"
   },
   "cta": {
     "title": "Bist du auf dem Weg, dein Unternehmen zu neuen Höhen zu bringen?",
     "subtitle": "Lass dich noch heute von uns unverbindlich und persönlich beraten und entdecke, wie unsere maßgeschneiderten IT-Lösungen deine Effizienz und Leistung steigern können.",
-    "image": "/assets/img/laptop.jpg",
+    "image": "assets/img/laptop.jpg",
     "cta_button_left": {
       "path": "/contact",
       "label": "Termin vereinbaren"
