@@ -4,10 +4,10 @@ import { ref, onMounted, onUnmounted } from 'vue';
 
 const props = defineProps<{
   slides: { 
-    title: string, 
-    subtitle: string, 
-    description: string, 
-    bgImg: string 
+    title1: string, 
+    title2: string, 
+    text: string, 
+    background_image: string 
   }[]
 }>()
 
@@ -53,7 +53,7 @@ onUnmounted(() => {
       <div 
         v-for="(slide, index) in props.slides" 
         :key="index"
-        :style="{ backgroundImage: `url(${slide.bgImg})` }"
+        :style="{ backgroundImage: `url(${slide.background_image})` }"
         class="absolute inset-0 bg-cover bg-center bg-no-repeat flex items-center transition-opacity duration-1000 ease-in-out"
         :class="index === activeIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'"
       >
@@ -63,11 +63,11 @@ onUnmounted(() => {
         <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-full lg:items-center lg:px-8">
           <div class="max-w-xl text-left">
             <h1 class="font-extrabold">
-              {{ slide.title }}
-              <strong class="block font-extrabold text-secondary">{{ slide.subtitle }}</strong>
+              {{ slide.title1 }}
+              <strong class="block font-extrabold text-secondary">{{ slide.title2 }}</strong>
             </h1>
             <p class="mt-4 max-w-lg">
-              {{ slide.description }}
+              {{ slide.text }}
             </p>
           </div>
         </div>
