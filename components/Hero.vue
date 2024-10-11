@@ -28,7 +28,7 @@
         <h1 class="lg:tracking-tight font-semibold">
           {{props.title}}
         </h1>
-        <p class=" mt-4 text-slate-600 max-w-xl ">
+        <p class=" mt-4 text-secondary max-w-xl ">
           {{props.subtitle}}
         </p>
         <div class="mt-6 flex flex-col sm:flex-row gap-3">

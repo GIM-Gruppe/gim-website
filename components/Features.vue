@@ -25,7 +25,7 @@ const props = defineProps<{
         </div>
         <div>
           <h2 class="font-semibold">{{ item.title }}</h2>
-          <text class="text-slate-500 mt-2 leading-relaxed">
+          <text class="text-secondary mt-2 leading-relaxed">
             {{ item.description }}
           </text>
         </div>

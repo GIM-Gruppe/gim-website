@@ -27,11 +27,11 @@ const { data, pending, error } = await useAsyncData("services", async () => {
     <div class="bg-white py-14 sm:py-16">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-2xl lg:mx-0">
-          <p class="text-base font-semibold leading-7 text-primary">
+          <p class="text-base font-semibold leading-7 text-secondary">
             {{ data?.subtitle }}
           </p>
           <h2
-            class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl"
+            class="mt-2 text-4xl font-bold tracking-tight text-primary sm:text-6xl"
           >
             {{ data?.title }}
           </h2>

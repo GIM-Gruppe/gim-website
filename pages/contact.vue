@@ -1,7 +1,4 @@
-<script setup lang="ts">
-
-
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <LayoutContainer>
@@ -11,13 +8,11 @@
           class="mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12"
         >
           <p
-            class="text-base font-semibold uppercase tracking-wide text-primary"
+            class="text-base font-semibold uppercase tracking-wide text-secondary"
           >
             Kontakt
           </p>
-          <h1
-            class="font-heading font-bold tracking-tight text-secondary"
-          >
+          <h1 class="font-heading font-bold tracking-tight text-primary">
             Wir sind für Sie da!
           </h1>
           <div class="mx-auto mt-4 max-w-3xl text-secondary/80">
@@ -26,8 +21,8 @@
         </div>
       </div>
       <div class="flex items-stretch justify-center">
-        <div class="grid md:grid-cols-2">
-          <div class="h-full pr-6">
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="md:col-span-2 pr-6">
             <div class="mt-3 mb-12 text-secondary">
               Wir freuen uns, dass Sie mit uns in Verbindung treten möchten.
               Unser engagiertes Team steht Ihnen gerne zur Verfügung und bemüht
@@ -91,7 +86,9 @@
                   <h3 class="mb-2 text-lg font-medium leading-6 text-secondary">
                     Kontakt
                   </h3>
-                  <p class="text-secondary text-base">Telefonnummer: +49 40 22898595</p>
+                  <p class="text-secondary text-base">
+                    Telefonnummer: +49 40 22898595
+                  </p>
                 </div>
               </li>
               <li class="flex">
@@ -101,59 +98,13 @@
               </li>
             </ul>
           </div>
-
-          <form id="contactForm">
-            <div class="mb-6 mt-5">
-              <div class="mx-0 mb-1 sm:mb-4">
-                <div class="mx-0 mb-1 sm:mb-4">
-                  <label
-                    for="name"
-                    class="pb-1 text-xs uppercase tracking-wider"
-                  ></label
-                  ><input
-                    type="text"
-                    id="name"
-                    autocomplete="given-name"
-                    placeholder="Your name"
-                    class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
-                    name="name"
-                  />
-                </div>
-                <div class="mx-0 mb-1 sm:mb-4">
-                  <label
-                    for="email"
-                    class="pb-1 text-xs uppercase tracking-wider"
-                  ></label
-                  ><input
-                    type="email"
-                    id="email"
-                    autocomplete="email"
-                    placeholder="Your email address"
-                    class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
-                    name="email"
-                  />
-                </div>
-              </div>
-              <div class="mx-0 mb-1 sm:mb-4">
-                <label
-                  for="textarea"
-                  class="pb-1 text-xs uppercase tracking-wider"
-                ></label
-                ><textarea
-                  id="textarea"
-                  name="textarea"
-                  cols="30"
-                  rows="5"
-                  placeholder="Write your message..."
-                  class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
-                ></textarea>
-              </div>
-            </div>
-            <div class="text-center">
-              <UiButton  type="submit" :label="'Absenden'" :style="'outline'">
-              </UiButton>
-            </div>
-          </form>
+          <div class="h-full flex items-center justify-center">
+            <img
+              src="/assets/img/hands.jpg"
+              alt="Contact Image"
+              class="w-full h-auto rounded-xl shadow-md object-cover"
+            />
+          </div>
         </div>
       </div>
     </div>

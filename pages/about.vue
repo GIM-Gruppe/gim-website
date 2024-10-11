@@ -259,29 +259,29 @@ const mobileMenuOpen = ref(false);
           <div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
             <div class="mx-auto max-w-2xl lg:mx-0">
               <h1 class="font-semibold tracking-tight text-primary-900">
-                {{ data?.gruende.title }}
+                {{ data?.kooperationen.title }}
               </h1>
               <p class="mt-6 leading-8 text-secondary-600">
-                {{ data?.gruende.subtitle }}
+                {{ data?.kooperationen.subtitle }}
               </p>
             </div>
             <dl
               class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-2"
             >
               <div
-                v-for="value in data?.gruende.gruende"
-                :key="value.name"
+                v-for="value in data?.kooperationen.partner"
+                :key="value.partnername"
                 class="flex gap-x-4 mb-6 items-center"
               >
                 <img
-                  :src="value.image"
-                  alt="Image for {{ value.title }}"
+                  :src="value.partnerimage"
+                  alt="Image for {{ value.partnername }}"
                   class="w-16 h-16 rounded-lg object-cover shadow-md"
                 />
 
                 <div>
                   <dt class="font-semibold text-primary-900">
-                    {{ value.title }}
+                    {{ value.partnername }}
                   </dt>
                   <dd class="mt-1 text-secondary-600">
                     {{ value.description }}

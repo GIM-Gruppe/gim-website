@@ -35,14 +35,14 @@ const open = ref(false);
         <div class="flex w-full lg:w-auto items-center justify-between">
           <NuxtLink to="/" class="items-center flex">
             <img src="/assets/img/GIM-Logo.jpg" alt="GIM Logo" class="h-24" />
-            <text class="text-slate-500 text-secondary">
+            <text class=" text-secondary">
               Gesellschaft für integratives Management mbH
             </text>
           </NuxtLink>
 
           <!-- Menu Button for mobile -->
           <div class="block lg:hidden">
-            <button @click="open = !open" class="text-gray-800">
+            <button @click="open = !open" class="text-secondary">
               <svg
                 fill="currentColor"
                 class="w-4 h-4"
@@ -73,7 +73,7 @@ const open = ref(false);
             <li v-for="item of menuitems">
               <NuxtLink
                 :to="item.path"
-                class="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900 text-secondary"
+                class="flex lg:px-3 py-2 text-secondary hover:text-gray-900"
               >
                 {{ item.title }}
               </NuxtLink>
@@ -95,25 +95,25 @@ const open = ref(false);
 
         <!-- Language Change  -->
         <!-- Set locale here and have prefix in cms for folder structure and fetch from folder for correct language ....queryContent("$(locale)/aboutus/content") -->
-        <div class="hidden lg:flex items-center gap-2">
+        <!-- <div class="hidden lg:flex items-center gap-2"> -->
           <!-- English Language Button -->
-          <button @click="setLocale('en')">
+          <!-- <button @click="setLocale('en')">
             <img
               src="/assets/img/circle-flags--uk.png"
               alt="English"
               class="w-4 h-4 rounded-full object-cover"
             />
           </button>
-          <p>|</p>
+          <p>|</p> -->
           <!-- German Language Button -->
-          <button @click="setLocale('de')">
+          <!-- <button @click="setLocale('de')">
             <img
               src="/assets/img/circle-flags--de.png"
               alt="Deutsch"
               class="w-4 h-4 rounded-full object-cover"
             />
-          </button>
-        </div>
+          </button> -->
+        <!-- </div> -->
       </header>
     </LayoutContainer>
     <div class="border border-primary"></div>
