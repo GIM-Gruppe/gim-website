@@ -13,20 +13,39 @@ const { data, pending, error } = await useAsyncData('home', async () => {
   }
 });
 
-// // console.log(data?.banner.background_image); // Check if this path is correct
-
+const carouselSlides = [
+  { 
+    title: "Slide 1 Title", 
+    subtitle: "Slide 1 Subtitle", 
+    description: "Description for Slide 1", 
+    bgImg: "/assets/img/ai-generated-8540921_1920.jpg" 
+  },
+  { 
+    title: "Slide 2 Title", 
+    subtitle: "Slide 2 Subtitle", 
+    description: "Description for Slide 2", 
+    bgImg: "/assets/img/ai-generated-7957987_1920.jpg" 
+  },
+  { 
+    title: "Slide 3 Title", 
+    subtitle: "Slide 3 Subtitle", 
+    description: "Description for Slide 3", 
+    bgImg: "/assets/img/computer.jpg" 
+  },
+];
 </script> 
 
 <template>
   <div v-if="pending">Loading...</div>
   <div v-else-if="error">Failed to load content</div>
   <div v-else>
-    <HighlightBanner
+    <!-- <HighlightBanner
       :title="data?.banner.title1"
       :subtitle="data?.banner.title2"
       :description="data?.banner.text"
       :bgImg=" data?.banner.background_image"
-    ></HighlightBanner>
+    ></HighlightBanner> -->
+    <Carousel :slides="carouselSlides"></Carousel>
     <LayoutContainer>
       <Logos></Logos>
       <ImageWithText

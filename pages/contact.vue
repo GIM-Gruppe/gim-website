@@ -91,7 +91,7 @@
                   <h3 class="mb-2 text-lg font-medium leading-6 text-secondary">
                     Kontakt
                   </h3>
-                  <p class="text-secondary text-base">Telefonnummer: +49 4321 5638719</p>
+                  <p class="text-secondary text-base">Telefonnummer: +49 40 22898595</p>
                 </div>
               </li>
               <li class="flex">
