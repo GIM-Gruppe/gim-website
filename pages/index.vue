@@ -21,9 +21,9 @@ const { data, pending, error } = await useAsyncData('home', async () => {
   <div v-else>
     <Carousel :slides="data?.carousel"></Carousel>
     <LayoutContainer>
-      <Logos></Logos>
+      <!-- <Logos></Logos> -->
       <ImageWithText
-        class="pb-20"
+        class="py-20"
         :imgsrc=" data?.textimageright.image"
         :imgalt="data?.textimageright.imagealt"
         :title="data?.textimageright.title"

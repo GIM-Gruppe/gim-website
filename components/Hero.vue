@@ -13,15 +13,17 @@
   <LayoutContainer>
     <main class="grid lg:grid-cols-2 place-items-center">
       <div class="p-24 md:order-1 hidden md:block">
-        <img
-          class="rounded-full transition-transform transform hover:scale-125"
-          :src="props.img"
-          :alt="props.imgalt"
-          loading="eager"
-          format="avif"
-          width="500"
-          height="500"
-        />
+        <NuxtLink to="/contact">
+          <img
+            class="rounded-full transition-transform transform hover:scale-125 cursor-pointer"
+            :src="props.img"
+            :alt="props.imgalt"
+            loading="eager"
+            format="avif"
+            width="500"
+            height="500"
+          />
+        </NuxtLink>
       </div>
 
       <div>
