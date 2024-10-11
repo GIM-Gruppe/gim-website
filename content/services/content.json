@@ -1,11 +1,11 @@
 {
   "title": "Unsere Leistungen",
-  "subtitle": "Get the help you need",
+  "subtitle": "Erhalten Sie die Unterstützung, die Sie brauchen – schnell und unkompliziert.",
   "services": [
     {
       "name": "it-infrastructure",
       "title": "IT-Infrastruktur",
-      "subtitle": "IT-Infrastruktur",
+      "subtitle": "Erhalten Sie die IT-Infrastruktur, die Sie brauchen – zuverlässig und effizient.",
       "description": "Unsere IT-Infrastrukturlösungen bieten Ihnen alle erforderlichen Tools und Technologien für eine effiziente und sichere IT-Umgebung in Ihrem Unternehmen. \n\n",
       "image": "assets/img/processor.jpg",
       "imagealt": "infrastruktur",
