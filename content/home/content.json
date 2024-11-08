@@ -1,7 +1,7 @@
 {
   "carousel": [
     {
-      "title1": "Von Visionen zu Lösungen",
+      "title1": "Von Visionen zu Lösungen -",
       "title2": "wir gestalten Ihre IT!",
       "background_image": "assets/img/tech.jpg"
     },
@@ -14,13 +14,13 @@
     {
       "title1": "IT",
       "title2": "Managed Services",
-      "text": "Schnelle Pragmatische Unterstützung und Beratung ",
+      "text": "Schnelle pragmatische Unterstützung und Beratung ",
       "background_image": "assets/img/electronics.jpg"
     },
     {
       "title1": "SAP",
       "title2": "Basis",
-      "text": "Fundiertes Expertenwissen und Persönliche Betreuung  ",
+      "text": "Fundiertes Expertenwissen und persönliche Betreuung  ",
       "background_image": "assets/img/ai-generated-8540921_1920.jpg"
     }
   ],
@@ -51,7 +51,7 @@
       {
         "icon": "simple-icons:icloud",
         "title": "Cloud Lösungen",
-        "description": "Cloud Lösungen sind beliebig skalierbar und somit auf Ihre aktuelle Unternehmungslage anpassbar. Sie profitieren von dauerhaft planbaren Konstenstrukturen."
+        "description": "Cloud Lösungen sind beliebig skalierbar und somit auf Ihre aktuelle Unternehmenslage anpassbar. Sie profitieren von dauerhaft planbaren Konstenstrukturen."
       },
       {
         "icon": "simple-icons:sap",
@@ -72,8 +72,8 @@
     "imagealt": "fiber"
   },
   "cta": {
-    "title": "Bist du auf dem Weg, dein Unternehmen zu neuen Höhen zu bringen?",
-    "subtitle": "Lass dich noch heute von uns unverbindlich und persönlich beraten und entdecke, wie unsere maßgeschneiderten IT-Lösungen deine Effizienz und Leistung steigern können.",
+    "title": "Sind Sie bereit, Ihr Unternehmen auf ein neues Niveau zu heben? ",
+    "subtitle": "Lassen Sie sich noch heute von uns unverbindlich und persönlich beraten und erfahren Sie, wie unsere maßgeschneiderten IT-Lösungen Ihre Effizienz und Leistungsfähigkeit steigern können.",
     "image": "assets/img/laptop.jpg",
     "cta_button_left": {
       "path": "/contact",
