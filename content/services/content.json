@@ -79,7 +79,7 @@
           "title": "Solution Manager"
         },
         {
-          "title": "Cloud Computing (z.B. SAP BTP)"
+          "title": "Cloud Computing / Cloud Services  (z.B. SAP BTP)"
         },
         {
           "title": "Compliance, Datenschutz und Sicherheit"
@@ -94,7 +94,7 @@
           "title": "Bereitstellung Fully Activated S/4 HANA"
         },
         {
-          "title": "Systemwartung (Upgrades, Installationen, Systemkopien)"
+          "title": "Systemwartung (Upgrades, Installationen, Systemkopien, Mandantenkopien, Migrationen)"
         }
       ]
     }
