@@ -41,7 +41,7 @@ const open = ref(false);
           </NuxtLink>
 
           <!-- Menu Button for mobile -->
-          <div class="block lg:hidden">
+          <div class="block lg:hidden px-5">
             <button @click="open = !open" class="text-secondary">
               <svg
                 fill="currentColor"
@@ -66,7 +66,7 @@ const open = ref(false);
           </div>
         </div>
         <nav
-          class="w-full lg:w-auto mt-2 lg:flex lg:mt-0"
+          class="w-full lg:w-auto mt-2 lg:flex lg:mt-0 px-4 sm:px-0"
           :class="{ block: open, hidden: !open }"
         >
           <ul class="flex flex-col lg:flex-row lg:gap-3">

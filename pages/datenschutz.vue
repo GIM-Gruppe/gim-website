@@ -12,8 +12,8 @@ useSeoMeta(
 
 <template>
   <div class="privacy-policy-container py-14 sm:py-16">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <h1 class=" font-bold text-primary mb-6">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 ">
+      <h1 class=" font-bold text-primary mb-6 break-words text-wrap text-3xl lg:text-5xl ">
         Datenschutzerklärung
       </h1>
 
