@@ -77,6 +77,24 @@
         },
         {
           "title": "Solution Manager"
+        },
+        {
+          "title": "Cloud Computing (z.B. SAP BTP)"
+        },
+        {
+          "title": "Compliance, Datenschutz und Sicherheit"
+        },
+        {
+          "title": "Benutzer- und Berechtigungsverwaltung"
+        },
+        {
+          "title": "Beratung hybrider SAP-Landschaften"
+        },
+        {
+          "title": "Bereitstellung Fully Activated S/4 HANA"
+        },
+        {
+          "title": "Systemwartung (Upgrades, Installationen, Systemkopien)"
         }
       ]
     }
