@@ -3,9 +3,9 @@ name: Rebuild and Deploy Website
 on:
   push:
     branches:
-      - main  # Replace with your default branch if different
+      - main  # Default branch to watch for content changes
     paths:
-      - 'content/**'  # Adjust to the path where your CMS updates content
+      - 'content/**'  # Directory where your CMS updates content
 
 jobs:
   build-and-deploy:
@@ -18,7 +18,7 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '18'  # Use the version required by your project
+        node-version: '20'  # Node.js version required by your project
 
     - name: Install Dependencies
       run: npm install
@@ -30,12 +30,28 @@ jobs:
       run: |
         rsync -av --delete dist/ docs/ --exclude=".nojekyll" --exclude="CNAME"
 
-    - name: Commit and Push Changes
+    - name: Commit Changes
       run: |
         git config --global user.name "github-actions[bot]"
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git checkout -b update-generated-site  # Create a new branch
         git add docs/
         git commit -m "Update static site content"
-        git push
+
+    - name: Push Changes to New Branch
+      run: |
+        git push -u origin update-generated-site
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v5
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: "Update static site content"
+        branch: update-generated-site
+        title: "Automated Update of Static Site"
+        body: |
+          This pull request updates the static site content in the `docs` folder. 
+          Generated files were synced with the latest changes from the `content` folder.
+
