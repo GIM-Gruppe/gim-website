@@ -24,11 +24,9 @@
       "background_image": "assets/img/ai-generated-8540921_1920.jpg"
     }
   ],
-  "textimageright": {
+  "textwithcta": {
     "title": "Willkommen bei der GIM",
-    "text": "Gesellschaft für integratives Management mbH, Ihrem kompetenten Partner für IT-Infrastruktur, Managed Services und SAP Basis Dienstleistungen. Unser Unternehmen wurde gegründet, um gezielt die Bedürfnisse von Mittelständlern zu erfüllen, die häufig mit Herausforderungen wie begrenzten Budgets und knappen Ressourcen konfrontiert sind.",
-    "image": "assets/img/startup (2).jpg",
-    "imagealt": "tech image"
+    "text": "Gesellschaft für integratives Management mbH, Ihrem kompetenten Partner für IT-Infrastruktur, Managed Services und SAP Basis Dienstleistungen. Unser Unternehmen wurde gegründet, um gezielt die Bedürfnisse von Mittelständlern zu erfüllen, die häufig mit Herausforderungen wie begrenzten Budgets und knappen Ressourcen konfrontiert sind."
   },
   "serviceoverview": {
     "title": "Unsere Leidenschaft ist Ihre IT",
@@ -70,18 +68,5 @@
     "text": "Unser Team von Experten besitzt mehrjährige Erfahrung in IT-Infrastruktur, Managed Services und SAP-Basis Diensten. Wir haben von den “Großen” Unternehmen gelernt und möchten den “Kleinen” mit skalierbaren, modernen sowie individuellen Lösungen und Dienstleistungen helfen, ihre Effizienz, Schnelligkeit und Sicherheit zu optimieren und damit den Grundstein für mehr Wachstum zu legen.",
     "image": "/assets/img/fiber.jpg",
     "imagealt": "fiber"
-  },
-  "cta": {
-    "title": "Sind Sie bereit, Ihr Unternehmen auf ein neues Niveau zu heben? ",
-    "subtitle": "Lassen Sie sich noch heute von uns unverbindlich und persönlich beraten und erfahren Sie, wie unsere maßgeschneiderten IT-Lösungen Ihre Effizienz und Leistungsfähigkeit steigern können.",
-    "image": "assets/img/laptop.jpg",
-    "cta_button_left": {
-      "path": "/contact",
-      "label": "Termin vereinbaren"
-    },
-    "cta_button_right": {
-      "path": "/services",
-      "label": "Zu den Leistungen"
-    }
   }
 }
