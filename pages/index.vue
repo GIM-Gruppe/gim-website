@@ -27,13 +27,11 @@ useSeoMeta(
     <Carousel :slides="data?.carousel"></Carousel>
     <LayoutContainer>
       <!-- <Logos></Logos> -->
-      <ImageWithText
+      <TextWithCta
         class="py-20"
-        :imgsrc=" data?.textimageright.image"
-        :imgalt="data?.textimageright.imagealt"
-        :title="data?.textimageright.title"
-        :description="data?.textimageright.text"
-      ></ImageWithText>
+        :title="data?.textwithcta.title"
+        :description="data?.textwithcta.text"
+      ></TextWithCta>
       <Features class="pb-20" :title="data?.serviceoverview.title" :services="data?.serviceoverview.services"></Features>
       <!-- <ServiceShowcase></ServiceShowcase> -->
       <ImageWithText
@@ -45,7 +43,7 @@ useSeoMeta(
         :imgPos="'left'"
       ></ImageWithText>
       <!-- <LandingCta></LandingCta> -->
-      <Hero class="pb-20" :title="data?.cta.title" :subtitle="data?.cta.subtitle" :img=" data?.cta.image" :imgalt="``" :buttonleft="data?.cta.cta_button_left" :buttonright="data?.cta.cta_button_right" ></Hero>
+      <!-- <Hero class="pb-20" :title="data?.cta.title" :subtitle="data?.cta.subtitle" :img=" data?.cta.image" :imgalt="``" :buttonleft="data?.cta.cta_button_left" :buttonright="data?.cta.cta_button_right" ></Hero> -->
     </LayoutContainer>
   </div>
 </template>
