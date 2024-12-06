@@ -66,35 +66,42 @@
       {
         "name": "Lutz Thiele",
         "position": "CEO",
-        "image": "/assets/img/bcecc589-2179-4078-9a09-633255b3a21b1.png"
+        "image": "/assets/img/Placeholder Images/bcecc589-2179-4078-9a09-633255b3a21bsfaf.png"
       },
       {
         "name": "Jonas Grossen",
-        "position": "CTO"
+        "position": "CTO",
+        "image": "/assets/img/Placeholder Images/bcecc589-2179-4078-9a09-633255b3a21bsd.png"
       },
       {
         "name": "Sven Schmidt",
-        "position": "CIO"
+        "position": "CIO",
+        "image": "/assets/img/Placeholder Images/53a5cab2-84a8-42aa-9deb-57135ad83092sad.jpg"
       },
       {
         "name": "Herlinda Martinez Ortega",
-        "position": "IT Projektmanagerin"
+        "position": "IT Projektmanagerin",
+        "image": "/assets/img/Placeholder Images/bcecc589-2179-4078-9a09-633255b3a21b.png"
       },
       {
         "name": "Sebastian Reckow",
-        "position": "VP SAP-Basis"
+        "position": "VP SAP-Basis",
+        "image": "/assets/img/Placeholder Images/53a5cab2-84a8-42aa-9deb-57135ad83092agbfd.jpg"
       },
       {
         "name": "Tony Tu",
-        "position": "IT-Consultant Infrastruktur und Entwicklung"
+        "position": "IT-Consultant Infrastruktur und Entwicklung",
+        "image": "/assets/img/Placeholder Images/29d49274-903e-4e78-a168-sfhghd.png"
       },
       {
         "name": "Beata Schaffelke",
-        "position": "Buchhaltung"
+        "position": "Buchhaltung",
+        "image": "/assets/img/Placeholder Images/29d49274-903e-4e78-a168-6a7cf68629f5afgfbh.png"
       },
       {
         "name": "Isabella Krämer",
-        "position": "SAP Consulting"
+        "position": "SAP Consulting",
+        "image": "/assets/img/Placeholder Images/29d49274-903e-4e78-a168-6a7cf68629f5adb.png"
       }
     ]
   }
