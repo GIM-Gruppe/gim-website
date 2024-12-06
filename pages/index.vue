@@ -18,6 +18,8 @@ useSeoMeta(
   'GIM Website - Home',
   'Welcome to GIM Website - Your trusted partner for IT solutions'
 )
+
+
 </script>
 
 <template>
