@@ -108,12 +108,9 @@ content:
           - name: title
             label: Titel
             type: string
-          - name: subtitle
-            label: Untertitel
-            type: text
           - name: text
             label: Text
-            type: text
+            type: rich-text
       - name: breakImage
         label: Trennbild
         type: image
