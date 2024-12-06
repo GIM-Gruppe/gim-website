@@ -21,6 +21,24 @@ useSeoMeta(
 );
 
 const mobileMenuOpen = ref(false);
+
+const team = [
+  {
+    image: "https://avatar.iran.liara.run/public/boy?username=Lut",
+  },
+  {
+    image: "/images/team/thomas.jpg",
+  },
+  {
+    image: "/images/team/thomas.jpg",
+  },
+  {
+    image: "/images/team/thomas.jpg",
+  },
+  {
+    image: "/images/team/thomas.jpg",
+  },
+  ]
 </script>
 
 <template>
@@ -326,7 +344,7 @@ const mobileMenuOpen = ref(false);
       </div> -->
 
           <!-- Team section -->
-          <div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-48 lg:px-8">
+          <div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
             <div class="mx-auto max-w-2xl lg:mx-0">
               <h1 class="font-bold tracking-tight text-primary-900">
                 {{ data?.team.title }}
@@ -340,11 +358,11 @@ const mobileMenuOpen = ref(false);
               class="mx-auto mt-20 grid max-w-2xl grid-cols-2 gap-x-8 gap-y-16 text-center sm:grid-cols-3 md:grid-cols-4 lg:mx-0 lg:max-w-none lg:grid-cols-5 xl:grid-cols-6"
             >
               <li v-for="person in data?.team.persons" :key="person.name">
-                <!-- <img
+                <img
                   class="mx-auto h-24 w-24 rounded-full"
                   :src="person.image"
                   alt=""
-                /> -->
+                />
                 <p
                   class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900"
                 >
