@@ -65,7 +65,8 @@
     "persons": [
       {
         "name": "Lutz Thiele",
-        "position": "CEO"
+        "position": "CEO",
+        "image": "/assets/img/bcecc589-2179-4078-9a09-633255b3a21b1.png"
       },
       {
         "name": "Jonas Grossen",
