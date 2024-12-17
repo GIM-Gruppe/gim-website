@@ -20,6 +20,27 @@ useSeoMeta(
 
 const mobileMenuOpen = ref(false);
 
+const missionBlocks = [
+  { title: "Mission", text: "Wir sind bestrebt, persönliche und individuelle Beratung zu bieten und Unternehmen dabei zu helfen, ihre IT-Prozesse zu implementieren, ihre Digitalisierung Prozess zu beschleunigen damit Sie das Potenzial ihrer Digitalen Ressourcen voll auszuschöpfen. " },
+  { title: "Alleinstellungsmerkmal", text: "Unser Team von Experten besitzt mehrjährige Erfahrung in IT-Infrastruktur, Managed Services und SAP-Basis Diensten. Wir haben von den “Großen” Unternehmen gelernt und möchten den “Kleinen” mit skalierbaren, modernen sowie individuellen Lösungen und Dienstleistungen helfen, ihre Effizienz, Schnelligkeit und Sicherheit zu optimieren und damit den Grundstein für mehr Wachstum zu legen." },
+  // Add more blocks as needed
+];
+const leftBlocks = missionBlocks.slice(0, 1); // First block
+const rightBlocks = missionBlocks.slice(1, 2); // Second block
+
+const leftText = ref("");
+const rightText = ref("");
+
+watchEffect(async () => {
+  if (data.value?.mission?.textLeft) {
+    leftText.value = await marked(data.value.mission.textLeft);
+  }
+  if (data.value?.mission?.textRight) {
+    rightText.value = await marked(data.value.mission.textRight);
+  }
+});
+
+
 // Reactive reference to the mission text (for ensuring proper updates)
 const missionText = ref("");
 
@@ -112,17 +133,46 @@ watchEffect(async () => {
           </div>
 
           <!-- Content section (only renders after missionText is populated) -->
-          <div class="mx-auto -mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-8">
+          <!-- <div class="mx-auto -mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-8">
             <div class="mx-auto max-w-4xl lg:mx-0 lg:max-w-full">
               <h1 class="font-bold tracking-tight text-primary-900">
                 {{ data?.mission.title }}
               </h1>
-              <div class="mt-6 lg:mt-10 leading-8 text-secondary-600">
+              <div class="mt-6 lg:mt-10 leading-8 text-secondary-600"> -->
                 <!-- Only render the content after markdown has been parsed -->
-                <div v-if="missionText" v-html="missionText"></div>
+                <!-- <div v-if="missionText" v-html="missionText"></div>
               </div>
             </div>
-          </div>
+          </div> -->
+
+ <!-- Content section -->
+<div class="mx-auto -mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-8">
+  <div class="mx-auto max-w-4xl lg:mx-0 lg:max-w-full">
+    <h1 class="font-bold tracking-tight text-primary-900">
+      {{ data?.mission.title }}
+    </h1>
+    <div class="mt-6 lg:mt-10 grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-8">
+      <!-- Left blocks -->
+      <div class="leading-8 text-secondary-600">
+        <div v-for="block in leftBlocks" :key="block.title">
+          <h3 class="font-semibold mb-2">{{ block.title }}</h3>
+          <p>{{ block.text }}</p>
+        </div>
+      </div>
+      <!-- Right blocks -->
+      <div class="leading-8 text-secondary-600 lg:mt-[50%]">
+        <div v-for="block in rightBlocks" :key="block.title">
+          <h3 class="font-semibold mb-2">{{ block.title }}</h3>
+          <p>{{ block.text }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
 
           <!-- Image section -->
           <div class="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
