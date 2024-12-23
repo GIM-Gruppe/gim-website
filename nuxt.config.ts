@@ -39,6 +39,10 @@ export default defineNuxtConfig({
     indexable: false,
   },
 
+  content: {
+    documentDriven: true
+  },
+
   generate: {
     dir: '/docs/',
   },
