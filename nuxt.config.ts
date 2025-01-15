@@ -24,7 +24,7 @@ export default defineNuxtConfig({
       redirectOn: 'root' // recommended
     },
     strategy: 'prefix_except_default',
-    locales: ['en', 'de'], // used in URL path prefix
+    locales: ['de'], // used in URL path prefix
     defaultLocale: 'de', // default locale of your project for Nuxt pages and routings
   },
 
