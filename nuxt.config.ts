@@ -6,6 +6,11 @@ export default defineNuxtConfig({
   plugins: ["~/plugins/sanitizeImagePath.js"],
 
   app: {
+    head: {
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      ]
+    }
   },
 
   postcss: {
