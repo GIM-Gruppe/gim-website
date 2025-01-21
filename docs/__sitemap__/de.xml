@@ -2,13 +2,11 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://gim-gruppe.com/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://gim-gruppe.com/en" />
         <xhtml:link rel="alternate" hreflang="de" href="https://gim-gruppe.com/" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://gim-gruppe.com/" />
     </url>
     <url>
         <loc>https://gim-gruppe.com/about</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://gim-gruppe.com/en/about" />
         <xhtml:link rel="alternate" hreflang="de" href="https://gim-gruppe.com/about" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://gim-gruppe.com/about" />
         <image:image>
@@ -50,93 +48,38 @@
     </url>
     <url>
         <loc>https://gim-gruppe.com/contact</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://gim-gruppe.com/en/contact" />
         <xhtml:link rel="alternate" hreflang="de" href="https://gim-gruppe.com/contact" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://gim-gruppe.com/contact" />
     </url>
     <url>
         <loc>https://gim-gruppe.com/datenschutz</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://gim-gruppe.com/en/datenschutz" />
         <xhtml:link rel="alternate" hreflang="de" href="https://gim-gruppe.com/datenschutz" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://gim-gruppe.com/datenschutz" />
     </url>
     <url>
         <loc>https://gim-gruppe.com/impressum</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://gim-gruppe.com/en/impressum" />
         <xhtml:link rel="alternate" hreflang="de" href="https://gim-gruppe.com/impressum" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://gim-gruppe.com/impressum" />
     </url>
     <url>
         <loc>https://gim-gruppe.com/services</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://gim-gruppe.com/en/services" />
         <xhtml:link rel="alternate" hreflang="de" href="https://gim-gruppe.com/services" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://gim-gruppe.com/services" />
     </url>
     <url>
-        <loc>https://gim-gruppe.com/template</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://gim-gruppe.com/en/template" />
-        <xhtml:link rel="alternate" hreflang="de" href="https://gim-gruppe.com/template" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://gim-gruppe.com/template" />
-        <image:image>
-            <image:loc>https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&amp;amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;h=528&amp;amp;q=80</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-4.0.3&amp;amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;h=528&amp;amp;q=80</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&amp;amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;crop=focalpoint&amp;amp;fp-x=.4&amp;amp;w=396&amp;amp;h=528&amp;amp;q=80</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://images.unsplash.com/photo-1670272504528-790c24957dda?ixlib=rb-4.0.3&amp;amp;ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;crop=left&amp;amp;w=400&amp;amp;h=528&amp;amp;q=80</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://images.unsplash.com/photo-1670272505284-8faba1c31f7d?ixlib=rb-4.0.3&amp;amp;ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;h=528&amp;amp;q=80</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&amp;amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=2832&amp;amp;q=80</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&amp;amp;auto=format&amp;amp;fit=facearea&amp;amp;facepad=8&amp;amp;w=1024&amp;amp;h=1024&amp;amp;q=80</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&amp;amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;amp;auto=format&amp;amp;fit=crop&amp;amp;w=3603&amp;amp;q=80</image:loc>
-        </image:image>
-        <image:image>
-            <image:loc>https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&amp;amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;amp;auto=format&amp;amp;fit=facearea&amp;amp;facepad=2&amp;amp;w=256&amp;amp;h=256&amp;amp;q=80</image:loc>
-        </image:image>
-    </url>
-    <url>
         <loc>https://gim-gruppe.com/services/it-infrastructure</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://gim-gruppe.com/en/services/it-infrastructure" />
         <xhtml:link rel="alternate" hreflang="de" href="https://gim-gruppe.com/services/it-infrastructure" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://gim-gruppe.com/services/it-infrastructure" />
     </url>
     <url>
         <loc>https://gim-gruppe.com/services/managed-services</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://gim-gruppe.com/en/services/managed-services" />
         <xhtml:link rel="alternate" hreflang="de" href="https://gim-gruppe.com/services/managed-services" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://gim-gruppe.com/services/managed-services" />
     </url>
     <url>
         <loc>https://gim-gruppe.com/services/sap</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://gim-gruppe.com/en/services/sap" />
         <xhtml:link rel="alternate" hreflang="de" href="https://gim-gruppe.com/services/sap" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://gim-gruppe.com/services/sap" />
     </url>
 </urlset>
-<!-- XML Sitemap generated by @nuxtjs/sitemap v6.1.1 at 2024-12-17T08:54:14.219Z -->
+<!-- XML Sitemap generated by @nuxtjs/sitemap v6.1.1 at 2025-01-21T12:22:19.472Z -->

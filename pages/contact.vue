@@ -1,6 +1,8 @@
 <script setup lang="ts">
 
 import { useSeoMeta } from '~/composables/seo'
+definePageMeta({ documentDriven: { page: false, surround: false, }, });
+
 
 useSeoMeta(
   'GIM Website - Kontakt', // Title: Reflects that the page is about contact

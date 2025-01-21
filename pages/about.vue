@@ -2,6 +2,8 @@
 import { defineComponent, h, ref, watchEffect } from "vue";
 import { useSeoMeta } from "~/composables/seo";
 import { marked } from "marked"; // Importing markdown parser
+definePageMeta({ documentDriven: { page: false, surround: false, }, });
+
 
 const { data, pending, error } = await useAsyncData("about", async () => {
   try {

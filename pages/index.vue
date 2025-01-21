@@ -1,7 +1,11 @@
 <script setup lang="ts">
 import { useSeoMeta } from '~/composables/seo'
 
+definePageMeta({ documentDriven: { page: false, surround: false, }, });
+
+
 const repeat = 4;
+
 
 const { data, pending, error } = await useAsyncData('home', async () => {
   try {

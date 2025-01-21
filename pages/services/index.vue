@@ -7,6 +7,8 @@
 //   services: any
 // }>()
 import { useSeoMeta } from '~/composables/seo'
+definePageMeta({ documentDriven: { page: false, surround: false, }, });
+
 
 useSeoMeta(
   'GIM Website - Leistungsübersicht', // Title: Reflects that the page is about services
