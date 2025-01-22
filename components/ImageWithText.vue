@@ -13,14 +13,14 @@ const props = withDefaults(defineProps<{
 
 <template>
   <LayoutContainer>
-    <div class="flex flex-col md:flex-row gap-16">
+    <div class="flex flex-col md:flex-row gap-10">
       <!-- Image block -->
-      <div class="shrink-0" :class="{'md:order-last':imgPos=='right'}">
-        <img :src="imgsrc" :alt="imgalt" class="w-70 h-80 rounded-full object-cover" />
+      <div :class="{'md:order-last': imgPos=='right'}" class="basis-1/3">
+        <img :src="imgsrc" :alt="imgalt" class="w-auto h-80 rounded-full object-cover" />
       </div>
 
       <!-- Text block -->
-      <div class="flex items-center flex-wrap">
+      <div class="flex items-center flex-wrap flex-1">
         <div class="grow-0">
           <h1 class="font-semibold">{{props.title}}</h1>
           <p class="mt-4">
@@ -31,3 +31,4 @@ const props = withDefaults(defineProps<{
     </div>
   </LayoutContainer>
 </template>
+
