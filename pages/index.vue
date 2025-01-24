@@ -19,9 +19,10 @@ const { data, pending, error } = await useAsyncData('home', async () => {
 });
 
 useSeoMeta(
-  'GIM Website - Home',
-  'Welcome to GIM Website - Your trusted partner for IT solutions'
-)
+  'GIM-Website - Startseite',
+  'Willkommen auf der GIM-Website – Ihr vertrauenswürdiger Partner für IT-Lösungen'
+);
+
 
 
 </script>
