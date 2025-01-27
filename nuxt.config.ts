@@ -41,7 +41,6 @@ export default defineNuxtConfig({
     url: 'https://gim-gruppe.com',
     name: 'GIM Gruppe',
     description: 'Willkommen bei der GIM!',
-    indexable: false,
   },
 
   content: {
