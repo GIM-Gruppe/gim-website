@@ -47,9 +47,13 @@ export default defineNuxtConfig({
     documentDriven: true
   },
 
-  generate: {
-    dir: '/docs/',
+  nitro: {
+    output: {
+      dir: 'docs',
+      publicDir: 'docs'
+    }
   },
+
   compatibilityDate: "2024-09-10"
 });
 
