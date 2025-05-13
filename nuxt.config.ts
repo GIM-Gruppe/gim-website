@@ -13,7 +13,7 @@ export default defineNuxtConfig({
           hid: 'linkedin-insight-inline',
           type: 'text/javascript',
           textContent: `
-            _linkedin_partner_id = "DEINE_PARTNER_ID";
+            _linkedin_partner_id = "7175042";
             window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
             window._linkedin_data_partner_ids.push(_linkedin_partner_id);
           `,
