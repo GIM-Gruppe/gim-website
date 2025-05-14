@@ -8,24 +8,29 @@ export default defineNuxtConfig({
   app: {
     head: {
       script: [
+        // 1) Inline the partner-ID snippet
         {
-          // Inline-Part des Insight-Tags
-          hid: 'linkedin-insight-inline',
-          type: 'text/javascript',
+          hid: 'linkedin-partner-init',
+          // ⚠️ this is sanitized on SSR, then applied via el.textContent
           textContent: `
             _linkedin_partner_id = "7175042";
             window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
             window._linkedin_data_partner_ids.push(_linkedin_partner_id);
-          `,
-          tagPosition: 'bodyClose',
+          `
         },
+        // 2) Then load the external Insight script async
         {
-          // Externer Loader
-          hid: 'linkedin-insight-loader',
           src: 'https://snap.licdn.com/li.lms-analytics/insight.min.js',
-          async: true,
-          tagPosition: 'bodyClose',
-        },
+          async: true
+        }
+      ],
+      noscript: [
+        {
+          hid: 'linkedin-noscript',
+          // noscript only allows `textContent` for children
+          textContent: `<img height="1" width="1" style="display:none" alt=""
+            src="https://px.ads.linkedin.com/collect/?pid=7175042&fmt=gif" />`
+        }
       ],
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' }
