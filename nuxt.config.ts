@@ -7,6 +7,29 @@ export default defineNuxtConfig({
 
   app: {
     head: {
+      script: [
+        // 1) Inline setup
+        {
+          children: `
+            _linkedin_partner_id = "7175042";
+            window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+            window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+          `,
+          type: 'text/javascript'
+        },
+        // 2) External loader
+        {
+          src: 'https://snap.licdn.com/li.lms-analytics/insight.min.js',
+          async: true,
+          type: 'text/javascript'
+        }
+      ],
+      noscript: [
+        // 3) Fallback for users with JS disabled
+        {
+          children: `<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=7175042&fmt=gif" />`
+        }
+      ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
       ]
