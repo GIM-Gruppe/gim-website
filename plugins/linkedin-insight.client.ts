@@ -1,5 +1,6 @@
 // plugins/linkedin-insight.client.ts
 import { defineNuxtPlugin } from '#app'
+console.log('[LinkedIn Insight] plugin initialized')
 
 export default defineNuxtPlugin(() => {
   if (process.client) {
