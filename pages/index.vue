@@ -23,8 +23,6 @@ useSeoMeta(
   'Willkommen auf der GIM-Website – Ihr vertrauenswürdiger Partner für IT-Lösungen'
 );
 
-
-
 </script>
 
 <template>

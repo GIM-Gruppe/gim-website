@@ -4,6 +4,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  /* default mobile root size */
+  html {
+    font-size: 14px;    /* <-- everything sized in rem will scale off this */
+  }
+  /* from “sm” (640px) up, use a bigger root */
+  @screen sm {
+    html {
+      font-size: 18px;
+    }
+  }
+}
+
+
 /* Apply Montserrat to all headings */
  h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
@@ -13,7 +27,7 @@
 }
 
 h1{
-  font-size: 3rem;
+  font-size: 36px;
   font-family: 'Montserrat', sans-serif;
   color: #6bb836;
 }
@@ -22,14 +36,14 @@ h1{
 body, text {
   font-family: 'Roboto', sans-serif;
   color: #676662;
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 
 
 p {
   font-family: 'Roboto', sans-serif;
   color: #676662;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .text-shadow {

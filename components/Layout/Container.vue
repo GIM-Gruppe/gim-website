@@ -12,8 +12,8 @@ const props = withDefaults(defineProps<{
   <div
     class="container mx-auto"
     :class="{
-      'mt-16 sm:mt-20': props.topMargin,
-      'mb-16 sm:mb-20': props.bottomMargin
+      'mt-10 sm:mt-20': props.topMargin,
+      'mb-10 sm:mb-20': props.bottomMargin
     }"
   >
     <slot />

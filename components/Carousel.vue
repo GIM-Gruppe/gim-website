@@ -38,7 +38,7 @@ onUnmounted(() => {
 
 </script>
   <template>
-    <LayoutContainer class="relative h-[500px] flex items-center !max-w-full">
+    <LayoutContainer class="relative h-[300px] lg:h-[500px] flex items-center !max-w-full">
       <!-- Previous slide button -->
       <button 
         @click="goToPreviousSlide" 
