@@ -6,7 +6,15 @@ const isVisible = ref(false);
 
 // Function to show the overlay
 const openOverlay = () => {
+  if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+  window.open(
+    "https://outlook.office365.com/owa/calendar/GIMGesellschaftfampuumlrintegrativesManagement@gim-gruppe.com/bookings/",
+    "_blank"
+  );
+} else {
   isVisible.value = true;
+}
+
 };
 
 // Function to hide the overlay
