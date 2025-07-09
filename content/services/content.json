@@ -88,6 +88,10 @@
           "title": "Systemwartung (Upgrades, Installationen, Systemkopien, Mandantenkopien, Migrationen)"
         }
       ]
+    },
+    {
+      "name": "training",
+      "title": "Resilienztraining"
     }
   ]
 }
