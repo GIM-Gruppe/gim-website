@@ -8,6 +8,7 @@ const props = defineProps<{
   image: string
   imagealt: string
   features: any
+  bookings?: string
 }>()
 
 </script>
@@ -39,7 +40,7 @@ const props = defineProps<{
             <img :src="props.image" :alt="props.imagealt" class="-mb-12 w-[30rem] rounded-xl bg-gray-800" />
           </div>
         </div>
-        <Bookings/>
+        <Bookings :bookings="props.bookings" />
       </div>
     </div>
   </div>

@@ -17,7 +17,8 @@ const props = defineProps<{
     <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
       <div v-for="item of props.services" class="flex gap-4 items-start">
         <div
-          class="flex justify-center items-center mt-1 bg-black rounded-full w-8 h-8 shrink-0"
+          class="flex justify-center items-center mt-1 rounded-full w-8 h-8 shrink-0"
+          :class="{ 'bg-black': item.icon }"
         >
           <Icon class="text-white w-4 h-4" :name="item.icon" />
         </div>

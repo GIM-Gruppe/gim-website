@@ -15,6 +15,10 @@ const menuitems = [
     path: "/services/sap",
   },
   {
+    title: "Resilienztraining",
+    path: "/services/resilienz",
+  },
+  {
     title: "Über uns",
     path: "/about",
   },
@@ -39,10 +43,10 @@ const open = ref(false);
         ]"
       >
         <!-- logo + burger -->
-        <div class="flex w-full lg:w-auto items-center justify-between">
-          <NuxtLink to="/" class="flex items-center">
+        <div class="flex w-full lg:w-auto items-center justify-start">
+          <NuxtLink to="/" class="flex items-center ">
             <img src="/assets/img/GIM-Logo.jpg" alt="GIM Logo" class="h-24" />
-            <span class="ml-2 text-secondary">
+            <span class="ml-2 text-secondary text-sm">
               Gesellschaft für integratives Management mbH
             </span>
           </NuxtLink>
@@ -67,7 +71,7 @@ const open = ref(false);
         </div>
 
         <nav class="w-full lg:w-auto mt-2 lg:flex lg:mt-0 px-4 sm:px-0">
-          <ul class="flex flex-col lg:flex-row lg:gap-3 bg-white">
+          <ul class="flex flex-col lg:flex-row lg:gap-6 bg-white">
             <li
               v-for="(item, index) in menuitems"
               :key="item.path"
@@ -87,7 +91,7 @@ const open = ref(false);
             >
               <NuxtLink
                 :to="item.path"
-                class="block lg:inline-block lg:px-3 py-2 text-secondary hover:text-gray-900"
+                class="block text-sm lg:inline-block lg:px-3 py-2 text-secondary hover:text-gray-900 whitespace-nowrap "
               >
                 {{ item.title }}
               </NuxtLink>

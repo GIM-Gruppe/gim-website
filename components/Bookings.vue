@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
+const props = defineProps<{
+  bookings?: string;
+}>();
+
 // Reactive variable to manage overlay visibility
 const isVisible = ref(false);
 
@@ -59,7 +63,15 @@ const closeOverlay = () => {
           </svg>
         </button>
 
-        <iframe
+
+        <iframe v-if="bookings == 'resilienz'"
+          src="https://outlook.office.com/book/Resilienztraining@gim-gruppe.com/?ismsaljsauthenabled"
+          width="700"
+          height="800"
+          frameborder="0"
+          class="rounded"
+        ></iframe>
+        <iframe v-else
           src="https://outlook.office365.com/owa/calendar/GIMGesellschaftfampuumlrintegrativesManagement@gim-gruppe.com/bookings/"
           width="700"
           height="800"
