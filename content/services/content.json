@@ -91,7 +91,25 @@
     },
     {
       "name": "training",
-      "title": "Resilienztraining"
+      "title": "Resilienztraining für Unternehmen",
+      "subtitle": "Mentale Stärke gezielt fördern",
+      "description": "Unser Resilienztraining unterstützt Mitarbeitende dabei, Belastungen besser zu bewältigen und ihre psychische Gesundheit nachhaltig zu stärken.",
+      "image": "/assets/img/resilience-7451906_1920.jpg",
+      "imagealt": "Person shielding a plant in the rain – symbol of resilience and growth.",
+      "subservice": [
+        {
+          "title": "Stressbewältigung im Berufsalltag"
+        },
+        {
+          "title": "Achtsamkeits- und Entspannungstechniken"
+        },
+        {
+          "title": "Stärkung der emotionalen Intelligenz"
+        },
+        {
+          "title": "Umgang mit Veränderungen und Krisen"
+        }
+      ]
     }
   ]
 }
