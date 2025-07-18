@@ -47,33 +47,26 @@ const { data, pending, error } = await useAsyncData("services", async () => {
         </div>
       </div>
     </div>
-    <div class="flex flex-wrap justify-center gap-20">
-      <div
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-6 max-w-7xl mx-auto">
+      <NuxtLink
         v-for="service in data?.services"
         :key="service.name"
-        class="flex-none"
+        :to="`/services/${service.name}`"
+        class="block transition transform hover:scale-105"
       >
-        <NuxtLink
-          :to="`/services/${service.name}`"
-          class="flex transition transform hover:scale-110 sm:w-auto"
-        >
-          <article
-            class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 w-80"
-          >
+        <article class="relative aspect-[4/3] rounded-2xl overflow-hidden flex items-end">
           <img
             :src="service.image"
             :alt="service.imagealt"
-              class="absolute inset-0 h-full w-full object-cover"
+            class="absolute inset-0 w-full h-full object-cover"
           />
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"
-            ></div>
-            <h3 class="z-10 mt-3 text-2xl font-bold text-white">
-              {{ service.title }}
-            </h3>
-          </article>
-        </NuxtLink>
-      </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40" />
+          <h3 class="relative z-10 text-white text-lg font-bold p-4">
+            {{ service.title }}
+          </h3>
+        </article>
+      </NuxtLink>
     </div>
+
   </div>
 </template>
