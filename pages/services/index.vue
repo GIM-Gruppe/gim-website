@@ -36,11 +36,11 @@ const { data, pending, error } = await useAsyncData("services", async () => {
     <div class="bg-white py-8 sm:py-16">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-2xl lg:mx-0">
-          <p class="text-base font-semibold leading-7 text-secondary">
+          <p class="font-semibold leading-7 text-secondary">
             {{ data?.subtitle }}
           </p>
           <h2
-            class="mt-2 text-4xl font-bold tracking-tight text-primary sm:text-6xl"
+            class="mt-2 font-bold tracking-tight text-primary sm:text-4xl"
           >
             {{ data?.title }}
           </h2>
@@ -60,11 +60,11 @@ const { data, pending, error } = await useAsyncData("services", async () => {
           <article
             class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 w-80"
           >
-            <img
-              :src="service.image"
-              :alt="service.imagealt"
+          <img
+            :src="service.image"
+            :alt="service.imagealt"
               class="absolute inset-0 h-full w-full object-cover"
-            />
+          />
             <div
               class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"
             ></div>
