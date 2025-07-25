@@ -12,11 +12,13 @@ defineProps<{
   <section class="py-6 px-6 bg-white">
     <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8">
       <!-- Portrait -->
-      <img
-        :src="image"
-        :alt="imageAlt || `Portrait von ${name}`"
-        class="w-40 h-40 rounded-full object-cover shadow-md"
-      />
+      <div class="relative w-60 h-60 min-w-[15rem] min-h-[15rem]">
+        <img
+          :src="image"
+          :alt="imageAlt || `Portrait von ${name}`"
+          class="absolute top-0 left-0 w-full h-full rounded-full object-cover shadow-md transform translate-x-2 -translate-y-1"
+        />
+      </div>
 
       <!-- Text -->
       <div class="text-center md:text-left">
