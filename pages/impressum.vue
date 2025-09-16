@@ -17,7 +17,7 @@ useSeoMeta(
       <h2 class="text-xl font-semibold">Angaben gemäß § 5 TMG:</h2>
       <p class="mt-2">
         <strong>GIM Gesellschaft für integratives Management mbH</strong><br />
-        Südportal 7<br />
+        Gutenbergring 69A<br />
         22848 Norderstedt
       </p>
     </div>
@@ -27,6 +27,8 @@ useSeoMeta(
         Vertreten durch die Geschäftsführer:
       </h2>
       <p class="mt-2">Lutz Thiele</p>
+      <p class="mt-2">Jonas Grossen</p>
+
     </div>
 
     <div class="mb-4">
@@ -56,22 +58,6 @@ useSeoMeta(
         Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:
       </h2>
       <p class="mt-2">DE165 916 544</p>
-    </div>
-
-    <div>
-      <h2 class="text-xl font-semibold">EU-Streitschlichtung:</h2>
-      <p class="mt-2">
-        Die Europäische Kommission stellt eine Plattform zur
-        Online-Streitbeilegung (OS) bereit:
-        <NuxtLink
-          to="https://ec.europa.eu/consumers/odr/"
-          class="text-blue-600 hover:underline"
-          >https://ec.europa.eu/consumers/odr/</NuxtLink
-        >.<br />
-        Unsere E-Mail-Adresse finden Sie oben im Impressum.<br />
-        Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren
-        vor einer Verbraucherschlichtungsstelle teilzunehmen.
-      </p>
     </div>
   </div>
 </template>
