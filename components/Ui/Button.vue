@@ -46,7 +46,6 @@ const props = withDefaults(
         style == 'outline',
     }"
     :aria-disabled="props.disabled"
-    target="_blank"
   >
     <!-- Render Icon if Provided -->
     <span v-if="props.icon" class="mr-2">

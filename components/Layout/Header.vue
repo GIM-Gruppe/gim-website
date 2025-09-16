@@ -15,8 +15,18 @@ const menuitems = [
     path: "/services/sap",
   },
   {
-    title: "Resilienztraining",
-    path: "/services/resilienz",
+    title: "Trainings",
+    path: "/services/trainings",
+    children: [
+      {
+        title: "Resilienztraining",
+        path: "/services/trainings/resilienz",
+      },
+      {
+        title: "CORESZON® Training",
+        path: "/services/trainings/coreszon",
+      }
+    ]
   },
   {
     title: "Über uns",
@@ -38,8 +48,8 @@ const open = ref(false);
       <header
         :class="[
           'flex flex-col lg:flex-row justify-between items-center',
-          'overflow-hidden transition-all duration-1000 ease-out',
-          open ? 'max-h-[400px]' : 'max-h-[96px]'
+          'transition-all duration-1000 ease-out',
+          open ? 'max-h-[400px] lg:overflow-visible' : 'max-h-auto lg:overflow-visible overflow-hidden'
         ]"
       >
         <!-- logo + burger -->
@@ -89,12 +99,36 @@ const open = ref(false);
                   : `300ms`
               }"
             >
-              <NuxtLink
-                :to="item.path"
-                class="block text-sm lg:inline-block lg:px-3 py-2 text-secondary hover:text-gray-900 whitespace-nowrap "
+              <div v-if="item.children" class="relative group">
+              <button
+                class="block text-sm lg:inline-block lg:px-3 py-2 text-secondary hover:text-gray-900 whitespace-nowrap"
               >
                 {{ item.title }}
-              </NuxtLink>
+              </button>
+              <ul
+                class="absolute left-0 top-full mt-1 hidden group-hover:block lg:min-w-[200px] bg-white shadow-md z-50 border border-gray-200"
+              >
+                <li
+                  v-for="child in item.children"
+                  :key="child.path"
+                  class="hover:bg-gray-100"
+                >
+                  <NuxtLink
+                    :to="child.path"
+                    class="block px-4 py-2 text-sm text-secondary hover:text-gray-900 whitespace-nowrap"
+                  >
+                    {{ child.title }}
+                  </NuxtLink>
+                </li>
+              </ul>
+            </div>
+            <NuxtLink
+              v-else
+              :to="item.path"
+              class="block text-sm lg:inline-block lg:px-3 py-2 text-secondary hover:text-gray-900 whitespace-nowrap "
+            >
+              {{ item.title }}
+            </NuxtLink>
             </li>
           </ul>
         </nav>

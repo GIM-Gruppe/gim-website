@@ -77,7 +77,7 @@ const serviceoverview = {
       />
       <Intro
       name="Herlinda Martinez Ortega"
-      role="Expertin für Resilienztraining, systemische Beratung für Organisationen und erfahrene IT-Projektmanagerin"
+      role="Expertin für Resilienztraining, ausgebildete CORESZON Trainerin, systemische Beratung für Organisationen und erfahrene IT-Projektmanagerin"
       image="/assets/img/Linda-21.07.2025.jpg"
       intro="Mit über 12 Jahren Erfahrung begleite ich Teams und Einzelpersonen dabei, berufliche Herausforderungen mit mehr Resilienz zu meistern und ihre Stärken gezielt weiterzuentwickeln. Durch praxisorientierte Methoden und empathische Begleitung finden wir gemeinsam sowohl sofort umsetzbare Lösungen als auch Wege für nachhaltige Veränderungen, die langfristig wirken."
     />

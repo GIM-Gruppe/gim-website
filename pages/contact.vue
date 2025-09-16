@@ -67,7 +67,7 @@ useSeoMeta(
                   <h2 class="mb-2 text-lg font-medium leading-6 text-secondary">
                     Anschrift
                   </h2>
-                  <p class="text-secondary text-base">Südportal 7</p>
+                  <p class="text-secondary text-base">Gutenbergring 69A</p>
                   <p class="text-secondary text-base">22848 Norderstedt</p>
                 </div>
               </li>
