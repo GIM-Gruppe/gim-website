@@ -110,6 +110,31 @@
           "title": "Umgang mit Veränderungen und Krisen"
         }
       ]
+    },
+    {
+      "name": "coreszon",
+      "title": "CORESZON Trainings",
+      "subtitle": " Mit der Garten-Methode mehr Halt und Stärke im Alltag finden",
+      "description": "Mit den CORESZON Trainings fördern Sie mentale Gesundheit, Stresskompetenz und Zusammenarbeit im Team – auf Basis der bewährten Garten-Methode.",
+      "image": "/assets/img/3cd295da-5b75-4bfc-984b-5e0cd8cf595d2.png",
+      "imagealt": "corszon gartenmethode ",
+      "subservice": [
+        {
+          "title": "Aufmerksamkeit zu fokussieren"
+        },
+        {
+          "title": "Sicherheit im Körper zu aktivieren"
+        },
+        {
+          "title": "Mit starken Emotionen umzugehen"
+        },
+        {
+          "title": "Herausforderungen zu analysieren"
+        },
+        {
+          "title": "Lösungswege gemeinsam zu entwickeln"
+        }
+      ]
     }
   ]
 }
