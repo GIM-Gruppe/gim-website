@@ -16,7 +16,7 @@ const props = defineProps<{
 <template>
   <div class="overflow-hidden bg-white py-8 sm:py-16">
     <div class="mx-auto max-w-7xl md:px-6 lg:px-8">
-      <div class="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start">
+      <div class="grid grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-10 lg:grid-cols-2 lg:items-start">
         <div class="px-6 lg:px-0 lg:pr-4 lg:pt-4">
           <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
             <h2 class="text-base font-semibold leading-7 text-secondary">{{props.subtitle}}</h2>
@@ -37,7 +37,7 @@ const props = defineProps<{
         </div>
         <div class="sm:px-6 lg:px-0">
           <div class="mx-auto max-w-2xl sm:mx-0 sm:max-w-none">
-            <img :src="props.image" :alt="props.imagealt" class="-mb-12 w-[30rem] rounded-xl bg-gray-800" />
+            <img :src="props.image" :alt="props.imagealt" class="-mb-12 w-[30rem] rounded-xl bg-white" />
           </div>
         </div>
         <Bookings :bookings="props.bookings" />

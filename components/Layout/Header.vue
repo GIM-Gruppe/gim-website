@@ -1,5 +1,7 @@
 <script setup>
 const { locale, setLocale } = useI18n();
+const open = ref(false);
+const menuRef = ref(null);
 
 const menuitems = [
   {
@@ -38,7 +40,17 @@ const menuitems = [
   },
 ];
 
-const open = ref(false);
+watch(open, (val) => {
+  if (menuRef.value) {
+    if (val) {
+      // expand
+      menuRef.value.style.maxHeight = menuRef.value.scrollHeight + "px";
+    } else {
+      // collapse
+      menuRef.value.style.maxHeight = "0px";
+    }
+  }
+});
 
 </script>
 
@@ -46,22 +58,19 @@ const open = ref(false);
   <div class="sticky top-0 z-50 bg-white">
     <LayoutContainer>
       <header
-        :class="[
-          'flex flex-col lg:flex-row justify-between items-center',
-          'transition-all duration-1000 ease-out',
-          open ? 'max-h-[400px] lg:overflow-visible' : 'max-h-auto lg:overflow-visible overflow-hidden'
-        ]"
+        class="flex flex-col lg:flex-row justify-between items-center"
       >
-        <!-- logo + burger -->
-        <div class="flex w-full lg:w-auto items-center justify-start">
-          <NuxtLink to="/" class="flex items-center ">
-            <img src="/assets/img/GIM-Logo.jpg" alt="GIM Logo" class="h-24" />
+        <!-- logo + burger immer sichtbar -->
+        <div class="flex w-full lg:w-auto items-center justify-between">
+          <NuxtLink to="/" class="flex items-center">
+            <img src="/assets/img/GIM-Logo.jpg" alt="GIM Logo" class="h-20" />
             <span class="ml-2 text-secondary text-sm">
               Gesellschaft für integratives Management mbH
             </span>
           </NuxtLink>
           <div class="block lg:hidden px-5">
             <button @click="open = !open" class="text-secondary focus:outline-none">
+              <!-- burger icon -->
               <svg fill="currentColor" class="w-6 h-6" viewBox="0 0 20 20">
                 <title>Menu</title>
                 <path
@@ -80,59 +89,61 @@ const open = ref(false);
           </div>
         </div>
 
-        <nav class="w-full lg:w-auto mt-2 lg:flex lg:mt-0 px-4 sm:px-0">
-          <ul class="flex flex-col lg:flex-row lg:gap-6 bg-white">
+        <!-- NUR das Menü collapsen -->
+        <nav
+          ref="menuRef"
+          class="w-full lg:w-auto transition-[max-height] duration-700 ease-in-out overflow-hidden lg:overflow-visible"
+          style="max-height: 0px"
+        >
+          <ul class="flex flex-col lg:flex-row lg:gap-6 bg-white px-4 sm:px-0">
             <li
               v-for="(item, index) in menuitems"
               :key="item.path"
               :class="[
                 'transform transition-opacity transition-transform duration-300',
                 open ? 'ease-out opacity-100 translate-y-0'
-                      : 'ease-in  opacity-0  -translate-y-2',
-                'lg:opacity-100 lg:translate-y-0'
+                      : 'ease-in opacity-0 -translate-y-2',
+                'lg:opacity-100 lg:translate-y--0'
               ]"
               :style="{
-                // on open: stagger each item by 75ms
-                // on close: wait 300ms (header collapse) before fading out
-                transitionDelay: open
-                  ? `${index * 75}ms`
-                  : `300ms`
+                transitionDelay: open ? `${index * 75}ms` : '0ms'
               }"
             >
               <div v-if="item.children" class="relative group">
-              <button
+                <button
+                  class="block text-sm lg:inline-block lg:px-3 py-2 text-secondary hover:text-gray-900 whitespace-nowrap"
+                >
+                  {{ item.title }}
+                </button>
+                <ul
+                  class="absolute left-0 top-full mt-1 hidden group-hover:block lg:min-w-[200px] bg-white shadow-md z-50 border border-gray-200"
+                >
+                  <li
+                    v-for="child in item.children"
+                    :key="child.path"
+                    class="hover:bg-gray-100"
+                  >
+                    <NuxtLink
+                      :to="child.path"
+                      class="block px-4 py-2 text-sm text-secondary hover:text-gray-900 whitespace-nowrap"
+                    >
+                      {{ child.title }}
+                    </NuxtLink>
+                  </li>
+                </ul>
+              </div>
+              <NuxtLink
+                v-else
+                :to="item.path"
                 class="block text-sm lg:inline-block lg:px-3 py-2 text-secondary hover:text-gray-900 whitespace-nowrap"
               >
                 {{ item.title }}
-              </button>
-              <ul
-                class="absolute left-0 top-full mt-1 hidden group-hover:block lg:min-w-[200px] bg-white shadow-md z-50 border border-gray-200"
-              >
-                <li
-                  v-for="child in item.children"
-                  :key="child.path"
-                  class="hover:bg-gray-100"
-                >
-                  <NuxtLink
-                    :to="child.path"
-                    class="block px-4 py-2 text-sm text-secondary hover:text-gray-900 whitespace-nowrap"
-                  >
-                    {{ child.title }}
-                  </NuxtLink>
-                </li>
-              </ul>
-            </div>
-            <NuxtLink
-              v-else
-              :to="item.path"
-              class="block text-sm lg:inline-block lg:px-3 py-2 text-secondary hover:text-gray-900 whitespace-nowrap "
-            >
-              {{ item.title }}
-            </NuxtLink>
+              </NuxtLink>
             </li>
           </ul>
         </nav>
       </header>
+
           <!-- <div class="lg:hidden flex items-center mt-3 gap-4">
           <LandingLink href="#" styleName="muted" block size="md"
             >Log in</LandingLink

@@ -9,11 +9,11 @@ definePageMeta({
 })
 
 useSeoMeta(
-  'GIM Website - Resilienztraining',
-  'Erfahren Sie mehr über unser Resilienztraining bei der GIM Gesellschaft für integratives Management mbH. Stärken Sie Ihre mentale Widerstandskraft und fördern Sie nachhaltige Gesundheit im Arbeitsalltag.'
+  'GIM Website - Coreszon Training',
+  'Erfahren Sie mehr über unser Coreszon Training bei der GIM Gesellschaft für integratives Management mbH. Stärken Sie Ihre mentale Widerstandskraft und fördern Sie nachhaltige Gesundheit im Arbeitsalltag.'
 )
 
-const { data, pending, error } = await useAsyncData("resilienz", async () => {
+const { data, pending, error } = await useAsyncData("coreszon", async () => {
   try {
     const response = await queryContent('/services/content').findOne();
     // console.log(response); // Log response for debugging
@@ -25,30 +25,32 @@ const { data, pending, error } = await useAsyncData("resilienz", async () => {
 });
 
 const serviceoverview = {
-  title: "Unsere Trainingsbausteine",
+  title: '<a href="https://coreszon.com/de/uber-uns/die-garten-methode/">Die Garten-Methode</a>',
   services: [
     {
-      title: "Einzelcoachings",
-      description: "Individuelle Begleitung zur persönlichen Resilienzförderung.",
+      title: "Aufmerksamkeit zu fokussieren",
+      description: "",
       icon: 'heroicons-outline:user',
     },
     {
-      title: "Workshops & Seminare",
-      description: "Gruppenformate für praxisnahe Übungen und Austausch.",
+      title: "Sicherheit im Körper zu aktivieren",
+      description: "",
       icon: 'heroicons-outline:users',
     },
     {
-      title: "Online-Trainings",
-      description: "Flexibles Lernen mit digitalen Inhalten und Live-Sessions.",
+      title: "Mit starken Emotionen umzugehen",
+      description: "",
       icon: 'heroicons-outline:computer-desktop',
     },
     {
-      title: "",
+      title: "Herausforderungen zu analysieren",
       description: "",
+      icon: 'heroicons-outline:arrow-path',
+
     },
     {
-      title: "Follow-Up Programme",
-      description: "Langfristige Begleitung zur Stärkung der Resilienz im Alltag.",
+      title: "Lösungswege gemeinsam zu entwickeln",
+      description: "",
       icon: 'heroicons-outline:arrow-path',
     },
   ]
@@ -61,20 +63,15 @@ const serviceoverview = {
   <div v-else>
     <LayoutContainer>
       <WithProductScreenshotPanel
-        :title="data?.services[3].title"
-        :subtitle="data?.services[3].subtitle"
-        :description="data?.services[3].description"
-        :image="data?.services[3].image"
-        :imagealt="data?.services[3].imagealt"
-        :features="data?.services[3].subservice"
-        bookings="resilienz"
+        :title="data?.services[4].title"
+        :subtitle="data?.services[4].subtitle"
+        :description="data?.services[4].description"
+        :image="data?.services[4].image"
+        :imagealt="data?.services[4].imagealt"
+        :features="data?.services[4].subservice"
+        bookings="coreszon"
       />
-
-      <Features
-        class="pb-8"
-        :title="serviceoverview.title ?? ''"
-        :services="serviceoverview.services"
-      />
+      <CoreszoneInfo />
       <Intro
       name="Herlinda Martinez Ortega"
       role="Expertin für Resilienztraining, ausgebildete CORESZON Trainerin, systemische Beratung für Organisationen und erfahrene IT-Projektmanagerin"
