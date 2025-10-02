@@ -183,7 +183,7 @@
 
         <!-- CTA Button im Vordergrund -->
         <div class="flex mt-12 items-center justify-center">
-          <Bookings bookings="resilienz" label="Jetzt Workshop anfragen" />
+          <Bookings bookings="coreszon" label="Jetzt Workshop anfragen" />
         </div>
 
       </div>

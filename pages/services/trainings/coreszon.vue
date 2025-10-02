@@ -64,7 +64,7 @@ const serviceoverview = {
         :image="data?.image"
         :imagealt="data?.imagealt"
         :features="data?.subservice"
-        bookings="resilienz"
+        bookings="coreszon"
       />
       <CoreszoneInfo />
       <Intro

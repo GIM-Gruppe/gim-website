@@ -76,6 +76,14 @@ const closeOverlay = () => {
           class="rounded"
         ></iframe>
         <iframe
+          v-else-if="bookings == 'coreszon'"
+          src="https://outlook.office.com/book/CoreszonTraining@gim-gruppe.com/?ismsaljsauthenabled"
+          width="700"
+          height="800"
+          frameborder="0"
+          class="rounded"
+        ></iframe>
+        <iframe
           v-else
           src="https://outlook.office365.com/owa/calendar/GIMGesellschaftfampuumlrintegrativesManagement@gim-gruppe.com/bookings/"
           width="700"
