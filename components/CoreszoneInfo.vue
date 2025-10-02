@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import Bookings from './Bookings.vue';
 
 </script>
 
@@ -67,7 +66,7 @@ import Bookings from './Bookings.vue';
         <div class="md:w-1/2 space-y-6">
           <h3 class="text-2xl font-bold mt-6 mb-2">
             <a 
-              href="https://www.coreszon.com/garten-methode" 
+              href="https://coreszon.com/de/uber-uns/die-garten-methode/" 
               target="_blank" 
               rel="noopener noreferrer" 
               class="text-blue-600 hover:underline"

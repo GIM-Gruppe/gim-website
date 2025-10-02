@@ -58,7 +58,7 @@ watch(open, (val) => {
   <div class="sticky top-0 z-50 bg-white">
     <LayoutContainer>
       <header
-        class="flex flex-col lg:flex-row justify-between items-center"
+        class="flex flex-col lg:flex-row justify-between items-center lg:h-20"
       >
         <!-- logo + burger immer sichtbar -->
         <div class="flex w-full lg:w-auto items-center justify-between">
@@ -95,12 +95,12 @@ watch(open, (val) => {
           class="w-full lg:w-auto transition-[max-height] duration-700 ease-in-out overflow-hidden lg:overflow-visible"
           style="max-height: 0px"
         >
-          <ul class="flex flex-col lg:flex-row lg:gap-6 bg-white px-4 sm:px-0">
+          <ul class="flex flex-col lg:flex lg:flex-row lg:gap-6 lg:items-center bg-white px-4 sm:px-0">
             <li
               v-for="(item, index) in menuitems"
               :key="item.path"
               :class="[ 
-                'transform transition-opacity transition-transform duration-300',
+                'transform transition-opacity transition-transform duration-300 flex items-center',
                 open ? 'ease-out opacity-100 translate-y-0'
                       : 'ease-in opacity-0 -translate-y-2',
                 'lg:opacity-100 lg:translate-y-0'
@@ -110,10 +110,10 @@ watch(open, (val) => {
               }"
             >
               <!-- Menüpunkt mit Dropdown -->
-              <div v-if="item.children" class="relative lg:group">
+              <div v-if="item.children" class="relative lg:group flex items-center">
                 <button
                   @click="submenuOpen = submenuOpen === index ? null : index"
-                  class="flex items-center justify-between w-full text-sm lg:inline-flex lg:w-auto lg:px-3 py-2 text-secondary hover:text-gray-900 whitespace-nowrap"
+                  class="flex items-center justify-between w-full text-sm lg:flex lg:items-center lg:h-20 lg:w-auto lg:px-3 lg:py-0 py-2 text-secondary hover:text-gray-900 whitespace-nowrap"
                 >
                   {{ item.title }}
                   <!-- Pfeil Icon -->
@@ -148,7 +148,7 @@ watch(open, (val) => {
               <NuxtLink
                 v-else
                 :to="item.path"
-                class="flex items-center text-sm lg:inline-flex lg:px-3 py-2 text-secondary hover:text-gray-900 whitespace-nowrap"
+                class="flex items-center text-sm lg:flex lg:items-center lg:h-20 lg:px-3 lg:py-0 py-2 text-secondary hover:text-gray-900 whitespace-nowrap"
               >
                 {{ item.title }}
               </NuxtLink>
@@ -195,3 +195,4 @@ watch(open, (val) => {
     <div class="border border-primary"></div>
   </div>
 </template>
+
