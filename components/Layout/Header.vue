@@ -1,8 +1,12 @@
 <script setup>
+import { ref, watch } from "vue";
+import { useI18n } from "vue-i18n";
+
 const { locale, setLocale } = useI18n();
-const open = ref(false);
+
+const open = ref(false); // mobile menu
+const submenuOpen = ref(null); // submenu toggle (mobile + desktop)
 const menuRef = ref(null);
-const submenuOpen = ref(null); // Für mobile Submenus
 
 const menuitems = [
   {
@@ -28,8 +32,8 @@ const menuitems = [
       {
         title: "CORESZON® Training",
         path: "/services/trainings/coreszon",
-      }
-    ]
+      },
+    ],
   },
   {
     title: "Über uns",
@@ -41,13 +45,12 @@ const menuitems = [
   },
 ];
 
+// Animation für Mobile Menü
 watch(open, (val) => {
   if (menuRef.value) {
     if (val) {
-      // expand
       menuRef.value.style.maxHeight = menuRef.value.scrollHeight + "px";
     } else {
-      // collapse
       menuRef.value.style.maxHeight = "0px";
     }
   }
@@ -55,144 +58,181 @@ watch(open, (val) => {
 </script>
 
 <template>
-  <div class="sticky top-0 z-50 bg-white">
-    <LayoutContainer>
-      <header
-        class="flex flex-col lg:flex-row justify-between items-center lg:h-20"
-      >
-        <!-- logo + burger immer sichtbar -->
-        <div class="flex w-full lg:w-auto items-center justify-between">
-          <NuxtLink to="/" class="flex items-center">
-            <img src="/assets/img/GIM-Logo.jpg" alt="GIM Logo" class="h-20" />
-            <span class="ml-2 text-secondary text-sm">
-              Gesellschaft für integratives Management mbH
-            </span>
-          </NuxtLink>
-          <div class="block lg:hidden px-5">
-            <button @click="open = !open" class="text-secondary focus:outline-none">
-              <!-- burger icon -->
-              <svg fill="currentColor" class="w-6 h-6" viewBox="0 0 20 20">
-                <title>Menu</title>
+  <header
+    class="sticky top-0 z-50 bg-white border-b border-primary shadow-sm"
+  >
+    <div
+      class="max-w-7xl mx-auto flex items-center justify-between px-4 lg:px-8 h-20"
+    >
+      <!-- Branding -->
+      <NuxtLink to="/" class="flex items-center space-x-3">
+        <img
+          src="/assets/img/GIM-Logo.jpg"
+          alt="GIM Logo"
+          class="h-14 w-auto"
+        />
+        <span class="text-secondary font-medium text-sm sm:text-base text-center">
+          Gesellschaft für integratives<br class="hidden sm:block" />
+          Management mbH
+        </span>
+      </NuxtLink>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden lg:flex items-center space-x-8">
+        <div
+          v-for="(item, index) in menuitems"
+          :key="index"
+          class="relative group"
+        >
+          <!-- Menüpunkt mit Dropdown -->
+          <div v-if="item.children" class="relative">
+            <button
+              @click="submenuOpen = submenuOpen === index ? null : index"
+              class="flex items-center text-secondary hover:text-gray-900 text-sm"
+            >
+              {{ item.title }}
+              <svg
+                class="w-4 h-4 ml-1 transform transition-transform duration-300"
+                :class="{ 'rotate-180': submenuOpen === index }"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
                 <path
-                  v-show="open"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M18.278 16.864a1 1 0 01-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 01-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 011.414-1.414l4.829 4.828 4.828-4.828a1 1 0 111.414 1.414l-4.828 4.829 4.828 4.828z"
-                />
-                <path
-                  v-show="!open"
-                  fill-rule="evenodd"
-                  d="M4 5h16a1 1 0 010 2H4a1 1 0 110-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2zm0 6h16a1 1 0 010 2H4a1 1 0 010-2z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
                 />
               </svg>
             </button>
-          </div>
-        </div>
 
-        <!-- NUR das Menü collapsen -->
-        <nav
-          ref="menuRef"
-          class="w-full lg:w-auto transition-[max-height] duration-700 ease-in-out overflow-hidden lg:overflow-visible"
-          style="max-height: 0px"
-        >
-          <ul class="flex flex-col lg:flex lg:flex-row lg:gap-6 lg:items-center bg-white px-4 sm:px-0">
-            <li
-              v-for="(item, index) in menuitems"
-              :key="item.path"
-              :class="[ 
-                'transform transition-opacity transition-transform duration-300 flex items-center',
-                open ? 'ease-out opacity-100 translate-y-0'
-                      : 'ease-in opacity-0 -translate-y-2',
-                'lg:opacity-100 lg:translate-y-0'
-              ]"
-              :style="{
-                transitionDelay: open ? `${index * 75}ms` : '0ms'
-              }"
+            <!-- Dropdown -->
+            <ul
+              class="absolute left-0 top-full mt-2 bg-white shadow-md rounded-md overflow-hidden transform scale-y-0 group-hover:scale-y-100 transition-transform origin-top duration-300"
+              :class="{ 'scale-y-100': submenuOpen === index }"
             >
-              <!-- Menüpunkt mit Dropdown -->
-              <div v-if="item.children" class="relative lg:group flex items-center">
-                <button
-                  @click="submenuOpen = submenuOpen === index ? null : index"
-                  class="flex items-center justify-between w-full text-sm lg:flex lg:items-center lg:h-20 lg:w-auto lg:px-3 lg:py-0 py-2 text-secondary hover:text-gray-900 whitespace-nowrap"
-                >
-                  {{ item.title }}
-                  <!-- Pfeil Icon -->
-                  <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M19 9l-7 7-7-7" />
-                  </svg>
-                </button>
-                <ul
-                  class="lg:absolute left-0 lg:top-full lg:mt-1 lg:min-w-[200px] bg-white lg:shadow-md border-gray-200"
-                  :class="{
-                    'hidden lg:group-hover:block': submenuOpen !== index,
-                    'block': submenuOpen === index
-                  }"
-                >
-                  <li
-                    v-for="child in item.children"
-                    :key="child.path"
-                    class="hover:bg-gray-100"
-                  >
-                    <NuxtLink
-                      :to="child.path"
-                      class="block px-4 py-2 text-sm text-secondary hover:text-gray-900 whitespace-nowrap"
-                    >
-                      {{ child.title }}
-                    </NuxtLink>
-                  </li>
-                </ul>
-              </div>
-
-              <!-- normaler Menüpunkt -->
-              <NuxtLink
-                v-else
-                :to="item.path"
-                class="flex items-center text-sm lg:flex lg:items-center lg:h-20 lg:px-3 lg:py-0 py-2 text-secondary hover:text-gray-900 whitespace-nowrap"
+              <li
+                v-for="child in item.children"
+                :key="child.path"
+                class="border-b last:border-0"
               >
-                {{ item.title }}
-              </NuxtLink>
-            </li>
-          </ul>
-        </nav>
-      </header>
+                <NuxtLink
+                  :to="child.path"
+                  class="block px-4 py-2 text-sm text-secondary hover:bg-gray-100 hover:text-gray-900"
+                >
+                  {{ child.title }}
+                </NuxtLink>
+              </li>
+            </ul>
+          </div>
 
-          <!-- <div class="lg:hidden flex items-center mt-3 gap-4">
-          <LandingLink href="#" styleName="muted" block size="md"
-            >Log in</LandingLink
+          <!-- Normaler Menüpunkt -->
+          <NuxtLink
+            v-else
+            :to="item.path"
+            class="text-secondary hover:text-gray-900 text-sm"
           >
-          <LandingLink href="#" size="md" block>Sign up</LandingLink>
-        </div> -->
-        <!-- <div>
-        <div class="hidden lg:flex items-center gap-4">
-          <a href="#">Log in</a>
-          <LandingLink href="#" size="md">Sign up</LandingLink>
+            {{ item.title }}
+          </NuxtLink>
         </div>
-      </div> -->
+      </nav>
 
-        <!-- Language Change  -->
-        <!-- Set locale here and have prefix in cms for folder structure and fetch from folder for correct language ....queryContent("$(locale)/aboutus/content") -->
-        <!-- <div class="hidden lg:flex items-center gap-2"> -->
-          <!-- English Language Button -->
-          <!-- <button @click="setLocale('en')">
-            <img
-              src="/assets/img/circle-flags--uk.png"
-              alt="English"
-              class="w-4 h-4 rounded-full object-cover"
-            />
-          </button>
-          <p>|</p> -->
-          <!-- German Language Button -->
-          <!-- <button @click="setLocale('de')">
-            <img
-              src="/assets/img/circle-flags--de.png"
-              alt="Deutsch"
-              class="w-4 h-4 rounded-full object-cover"
-            />
-          </button> -->
-        <!-- </div> -->
-    </LayoutContainer>
-    <div class="border border-primary"></div>
-  </div>
+      <!-- Mobile Burger -->
+      <button
+        @click="open = !open"
+        class="lg:hidden text-secondary focus:outline-none"
+      >
+        <svg
+          v-if="!open"
+          class="w-7 h-7"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+        <svg
+          v-else
+          class="w-7 h-7"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <nav
+      ref="menuRef"
+      class="lg:hidden overflow-hidden transition-[max-height] duration-500 ease-in-out"
+      style="max-height: 0px"
+    >
+      <ul class="flex flex-col bg-white border-t border-gray-200">
+        <li v-for="(item, index) in menuitems" :key="index">
+          <!-- Dropdown im Mobile -->
+          <div v-if="item.children" class="flex flex-col">
+            <button
+              @click="submenuOpen = submenuOpen === index ? null : index"
+              class="flex items-center justify-between w-full px-4 py-3 text-sm text-secondary hover:text-gray-900"
+            >
+              {{ item.title }}
+              <svg
+                class="w-4 h-4 ml-2 transform transition-transform duration-300"
+                :class="{ 'rotate-180': submenuOpen === index }"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+            <ul
+              v-show="submenuOpen === index"
+              class="pl-6 bg-gray-50 overflow-hidden transition-all duration-300"
+            >
+              <li
+                v-for="child in item.children"
+                :key="child.path"
+                class="border-b last:border-0"
+              >
+                <NuxtLink
+                  :to="child.path"
+                  class="block px-4 py-2 text-sm text-secondary hover:bg-gray-100"
+                >
+                  {{ child.title }}
+                </NuxtLink>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Normaler Menüpunkt -->
+          <NuxtLink
+            v-else
+            :to="item.path"
+            class="block px-4 py-3 text-sm text-secondary hover:bg-gray-100"
+          >
+            {{ item.title }}
+          </NuxtLink>
+        </li>
+      </ul>
+    </nav>
+  </header>
 </template>
-
