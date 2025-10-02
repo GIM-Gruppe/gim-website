@@ -3,6 +3,7 @@ import { ref } from "vue";
 
 const props = defineProps<{
   bookings?: string;
+  label?: string;
 }>();
 
 // Reactive variable to manage overlay visibility
@@ -11,14 +12,13 @@ const isVisible = ref(false);
 // Function to show the overlay
 const openOverlay = () => {
   if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-  window.open(
-    "https://outlook.office365.com/owa/calendar/GIMGesellschaftfampuumlrintegrativesManagement@gim-gruppe.com/bookings/",
-    "_blank"
-  );
-} else {
-  isVisible.value = true;
-}
-
+    window.open(
+      "https://outlook.office365.com/owa/calendar/GIMGesellschaftfampuumlrintegrativesManagement@gim-gruppe.com/bookings/",
+      "_blank"
+    );
+  } else {
+    isVisible.value = true;
+  }
 };
 
 // Function to hide the overlay
@@ -29,8 +29,10 @@ const closeOverlay = () => {
 
 <template>
   <div>
-    <UiButton @click="openOverlay" :label="'Termin vereinbaren'"  />
+    <!-- Button mit flexiblem Label -->
+    <UiButton @click="openOverlay" :label="label || 'Termin vereinbaren'" />
 
+    <!-- Overlay -->
     <div
       class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-70 transition-opacity duration-300 delay-100 ease-out"
       :class="{
@@ -42,9 +44,10 @@ const closeOverlay = () => {
         class="relative bg-white p-4 rounded shadow-lg transform transition-transform duration-300 ease-out"
         :class="isVisible ? 'scale-100' : 'scale-95'"
       >
+        <!-- Close Button -->
         <button
           @click="closeOverlay"
-          class="absolute top-5 right-9 p-3 text-secondary rounded-full hover:bg-secondary/20 "
+          class="absolute top-5 right-9 p-3 text-secondary rounded-full hover:bg-secondary/20"
           aria-label="Close overlay"
         >
           <svg
@@ -63,15 +66,17 @@ const closeOverlay = () => {
           </svg>
         </button>
 
-
-        <iframe v-if="bookings == 'resilienz'"
+        <!-- Booking Iframes -->
+        <iframe
+          v-if="bookings == 'resilienz'"
           src="https://outlook.office.com/book/Resilienztraining@gim-gruppe.com/?ismsaljsauthenabled"
           width="700"
           height="800"
           frameborder="0"
           class="rounded"
         ></iframe>
-        <iframe v-else
+        <iframe
+          v-else
           src="https://outlook.office365.com/owa/calendar/GIMGesellschaftfampuumlrintegrativesManagement@gim-gruppe.com/bookings/"
           width="700"
           height="800"
