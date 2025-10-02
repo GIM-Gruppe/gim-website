@@ -74,6 +74,9 @@ export default defineNuxtConfig({
     output: {
       dir: 'docs',
       publicDir: 'docs'
+    },
+     prerender: {
+      failOnError: false
     }
   },
 

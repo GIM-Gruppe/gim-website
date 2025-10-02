@@ -13,16 +13,11 @@ useSeoMeta(
   'Erfahren Sie mehr über unser Resilienztraining bei der GIM Gesellschaft für integratives Management mbH. Stärken Sie Ihre mentale Widerstandskraft und fördern Sie nachhaltige Gesundheit im Arbeitsalltag.'
 )
 
-const { data, pending, error } = await useAsyncData("resilienz", async () => {
-  try {
-    const response = await queryContent('/services/content').findOne();
-    // console.log(response); // Log response for debugging
-    return response;
-  } catch (err) {
-    console.error(err); // Log any errors
-    return null;
-  }
+const { data } = await useAsyncData("resilienz", async () => {
+  const response = await queryContent('/services/content').findOne();
+  return response?.services.find(s => s.name === "resilienz");
 });
+
 
 const serviceoverview = {
   title: "Unsere Trainingsbausteine",
@@ -61,12 +56,12 @@ const serviceoverview = {
   <div v-else>
     <LayoutContainer>
       <WithProductScreenshotPanel
-        :title="data?.services[3].title"
-        :subtitle="data?.services[3].subtitle"
-        :description="data?.services[3].description"
-        :image="data?.services[3].image"
-        :imagealt="data?.services[3].imagealt"
-        :features="data?.services[3].subservice"
+        :title="data?.title"
+        :subtitle="data?.subtitle"
+        :description="data?.description"
+        :image="data?.image"
+        :imagealt="data?.imagealt"
+        :features="data?.subservice"
         bookings="resilienz"
       />
 

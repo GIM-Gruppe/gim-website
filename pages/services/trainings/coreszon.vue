@@ -13,16 +13,11 @@ useSeoMeta(
   'Erfahren Sie mehr über unser Coreszon Training bei der GIM Gesellschaft für integratives Management mbH. Stärken Sie Ihre mentale Widerstandskraft und fördern Sie nachhaltige Gesundheit im Arbeitsalltag.'
 )
 
-const { data, pending, error } = await useAsyncData("coreszon", async () => {
-  try {
-    const response = await queryContent('/services/content').findOne();
-    // console.log(response); // Log response for debugging
-    return response;
-  } catch (err) {
-    console.error(err); // Log any errors
-    return null;
-  }
+const { data } = await useAsyncData("coreszon", async () => {
+  const response = await queryContent('/services/content').findOne();
+  return response?.services.find(s => s.name === "coreszon");
 });
+
 
 const serviceoverview = {
   title: '<a href="https://coreszon.com/de/uber-uns/die-garten-methode/">Die Garten-Methode</a>',
@@ -63,12 +58,12 @@ const serviceoverview = {
   <div v-else>
     <LayoutContainer>
       <WithProductScreenshotPanel
-        :title="data?.services[4].title"
-        :subtitle="data?.services[4].subtitle"
-        :description="data?.services[4].description"
-        :image="data?.services[4].image"
-        :imagealt="data?.services[4].imagealt"
-        :features="data?.services[4].subservice"
+        :title="data?.title"
+        :subtitle="data?.subtitle"
+        :description="data?.description"
+        :image="data?.image"
+        :imagealt="data?.imagealt"
+        :features="data?.subservice"
         bookings="resilienz"
       />
       <CoreszoneInfo />
