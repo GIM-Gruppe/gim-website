@@ -2,12 +2,12 @@
 const props = withDefaults(
   defineProps<{
     size?: "sm" | "md" | "lg" | "xl";
-    block?: boolean; // Controls whether the button should be full-width
+    block?: boolean;
     style?: "outline" | "primary" | "secondary";
-    label?: string; // The button label
-    href?: string; // Target link
-    icon?: string; // Optional icon name or path
-    disabled?: boolean; // Disabled state for the button
+    label?: string;
+    href?: string;
+    icon?: string;
+    disabled?: boolean;
   }>(),
   {
     size: "lg",
@@ -16,41 +16,74 @@ const props = withDefaults(
     disabled: false,
   }
 );
+
+const isLink = computed(() => !!props.href && !props.disabled);
 </script>
 
 <template>
+  <!-- Wenn href vorhanden und nicht disabled: Link -->
   <NuxtLink
+    v-if="isLink"
     :to="props.href"
-    :disabled="props.disabled"
-    class="cursor-pointer flex items-center justify-center rounded border-2 text-center font-bold transition focus:ring-2 ring-offset-2 ring-primary transform hover:scale-105"
+    class="inline-flex items-center justify-center rounded border-2 text-center font-bold transition focus:ring-2 ring-offset-2 ring-primary"
     :class="{
       // Size Classes
-      'px-2 py-1 text-xs': size == 'sm',
-      'px-4 py-2 text-sm': size == 'md',
-      'px-7 py-3 text-base': size == 'lg',
-      'px-9 py-4 text-lg': size == 'xl',
+      'px-2 py-1 text-xs': props.size === 'sm',
+      'px-4 py-2 text-sm': props.size === 'md',
+      'px-7 py-3 text-base': props.size === 'lg',
+      'px-9 py-4 text-lg': props.size === 'xl',
 
       // Width Control
-      'w-full': block,
-      'sm:w-fit': !block,
+      'w-full': props.block,
+      'sm:w-fit': !props.block,
+
+      // Style Classes (barriereärmere Varianten)
+      'bg-white text-primary border-primary hover:bg-primary/10':
+        props.style === 'primary',
+      'bg-white text-secondary border-secondary hover:bg-secondary/10':
+        props.style === 'secondary',
+      'bg-white text-secondary border-primary hover:bg-primary/10':
+        props.style === 'outline',
+    }"
+  >
+    <span v-if="props.icon" class="mr-2" aria-hidden="true">
+      <img :src="props.icon" alt="" class="w-5 h-5" />
+    </span>
+    {{ props.label }}
+  </NuxtLink>
+
+  <!-- Wenn kein href oder disabled: echtes Button-Element -->
+  <button
+    v-else
+    type="button"
+    class="inline-flex items-center justify-center rounded border-2 text-center font-bold transition focus:ring-2 ring-offset-2 ring-primary"
+    :class="{
+      // Size Classes
+      'px-2 py-1 text-xs': props.size === 'sm',
+      'px-4 py-2 text-sm': props.size === 'md',
+      'px-7 py-3 text-base': props.size === 'lg',
+      'px-9 py-4 text-lg': props.size === 'xl',
+
+      // Width Control
+      'w-full': props.block,
+      'sm:w-fit': !props.block,
 
       // Disabled State
       'opacity-50 cursor-not-allowed': props.disabled,
 
       // Style Classes
-      'bg-primary text-white active:bg-primary/70 border-transparent':
-        style == 'primary',
-      'bg-gray-100 text-black border-gray-300 active:bg-gray-200':
-        style == 'secondary',
-      'bg-white text-black border-primary active:bg-primary':
-        style == 'outline',
+      'bg-white text-primary border-primary hover:bg-primary/10':
+        props.style === 'primary',
+      'bg-white text-secondary border-secondary hover:bg-secondary/10':
+        props.style === 'secondary',
+      'bg-white text-secondary border-primary hover:bg-primary/10':
+        props.style === 'outline',
     }"
-    :aria-disabled="props.disabled"
+    :disabled="props.disabled"
   >
-    <!-- Render Icon if Provided -->
-    <span v-if="props.icon" class="mr-2">
-      <img :src="props.icon" alt="icon" class="w-5 h-5" />
+    <span v-if="props.icon" class="mr-2" aria-hidden="true">
+      <img :src="props.icon" alt="" class="w-5 h-5" />
     </span>
     {{ props.label }}
-  </NuxtLink>
+  </button>
 </template>

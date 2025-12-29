@@ -60,24 +60,36 @@ watchEffect(async () => {
   <div v-else>
     <LayoutContainer>
       <div class="bg-white">
-        <main class="isolate">
+        <!-- WICHTIG: kein weiteres <main> hier, das gibt es schon im Layout -->
+        <div class="isolate">
           <!-- Hero section -->
-          <div class="relative isolate -z-10">
+          <section
+            class="relative isolate -z-10"
+            aria-labelledby="about-hero-title"
+          >
             <div class="overflow-hidden">
               <div
                 class="mx-auto max-w-7xl pb-32 pt-8 sm:pt-16 lg:pt-24"
               >
-                <div class="mx-auto max-w-2xl gap-x-6 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
+                <div
+                  class="mx-auto max-w-2xl gap-x-6 lg:mx-0 lg:flex lg:max-w-none lg:items-center"
+                >
                   <div class="w-full max-w-xl lg:shrink-1 xl:max-w-2xl">
-                    <h1 class="font-semibold tracking-tight text-primary-900">
+                    <!-- Das zentrale h1 der Seite -->
+                    <h1
+                      id="about-hero-title"
+                      class="font-semibold tracking-tight text-primary"
+                    >
                       {{ data?.intro.title }}
                     </h1>
                     <p
-                      class="relative mt-6 leading-8 text-secondary-600 sm:max-w-md lg:max-w-none"
+                      class="relative mt-6 leading-8 text-secondary sm:max-w-md lg:max-w-none"
                     >
                       {{ data?.intro.subtitle }}
                     </p>
                   </div>
+
+                  <!-- Bildgruppe -->
                   <div
                     class="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0"
                   >
@@ -89,9 +101,11 @@ watchEffect(async () => {
                           :src="data?.intro.images[0].image"
                           :alt="data?.intro.images[0].imagealt"
                           class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                          loading="lazy"
                         />
                         <div
                           class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"
+                          aria-hidden="true"
                         />
                       </div>
                     </div>
@@ -103,9 +117,11 @@ watchEffect(async () => {
                           :src="data?.intro.images[1].image"
                           :alt="data?.intro.images[1].imagealt"
                           class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                          loading="lazy"
                         />
                         <div
                           class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"
+                          aria-hidden="true"
                         />
                       </div>
                       <div class="relative">
@@ -113,9 +129,11 @@ watchEffect(async () => {
                           :src="data?.intro.images[2].image"
                           :alt="data?.intro.images[2].imagealt"
                           class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                          loading="lazy"
                         />
                         <div
                           class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"
+                          aria-hidden="true"
                         />
                       </div>
                     </div>
@@ -123,88 +141,113 @@ watchEffect(async () => {
                 </div>
               </div>
             </div>
-          </div>
+          </section>
 
-          <!-- Content section (only renders after missionText is populated) -->
-          <!-- <div class="mx-auto -mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-8">
+          <!-- Mission / Textblöcke -->
+          <section
+            class="mx-auto -mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-8"
+            aria-labelledby="mission-title"
+          >
             <div class="mx-auto max-w-4xl lg:mx-0 lg:max-w-full">
-              <h1 class="font-bold tracking-tight text-primary-900">
+              <!-- h2 statt h1, da wir oben schon ein Seitentitel-h1 haben -->
+              <h2
+                id="mission-title"
+                class="font-bold tracking-tight text-primary"
+              >
                 {{ data?.mission.title }}
-              </h1>
-              <div class="mt-6 lg:mt-10 leading-8 text-secondary-600"> -->
-                <!-- Only render the content after markdown has been parsed -->
-                <!-- <div v-if="missionText" v-html="missionText"></div>
+              </h2>
+              <div
+                class="mt-6 lg:mt-10 grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-8"
+              >
+                <!-- Left blocks -->
+                <div class="leading-8 text-secondary">
+                  <div
+                    v-for="block in leftBlocks"
+                    :key="block.title"
+                    class="mb-6"
+                  >
+                    <h3 class="font-semibold mb-2">
+                      {{ block.title }}
+                    </h3>
+                    <p>{{ block.text }}</p>
+                  </div>
+                </div>
+                <!-- Right blocks -->
+                <div class="leading-8 text-secondary lg:mt-[50%]">
+                  <div
+                    v-for="block in rightBlocks"
+                    :key="block.title"
+                    class="mb-6"
+                  >
+                    <h3 class="font-semibold mb-2">
+                      {{ block.title }}
+                    </h3>
+                    <p>{{ block.text }}</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div> -->
-
- <!-- Content section -->
-<div class="mx-auto -mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-8">
-  <div class="mx-auto max-w-4xl lg:mx-0 lg:max-w-full">
-    <h1 class="font-bold tracking-tight text-primary-900">
-      {{ data?.mission.title }}
-    </h1>
-    <div class="mt-6 lg:mt-10 grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-8">
-      <!-- Left blocks -->
-      <div class="leading-8 text-secondary-600">
-        <div v-for="block in leftBlocks" :key="block.title">
-          <h3 class="font-semibold mb-2">{{ block.title }}</h3>
-          <p>{{ block.text }}</p>
-        </div>
-      </div>
-      <!-- Right blocks -->
-      <div class="leading-8 text-secondary-600 lg:mt-[50%]">
-        <div v-for="block in rightBlocks" :key="block.title">
-          <h3 class="font-semibold mb-2">{{ block.title }}</h3>
-          <p>{{ block.text }}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
+          </section>
 
           <!-- Image section -->
-          <div class="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
+          <section
+            class="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8"
+            aria-label="Team und Arbeitsumgebung"
+          >
             <img
               :src="data?.breakImage"
               alt=""
               class="aspect-[5/2] w-full object-cover xl:rounded-3xl"
+              loading="lazy"
             />
-          </div>
+          </section>
 
           <!-- Values section -->
-          <div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
+          <section
+            class="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8"
+            aria-labelledby="values-title"
+          >
             <div class="mx-auto max-w-2xl lg:mx-0">
-              <h1 class="font-semibold tracking-tight text-primary-900">
+              <h2
+                id="values-title"
+                class="font-semibold tracking-tight text-primary"
+              >
                 {{ data?.gruende.title }}
-              </h1>
-              <p class="mt-6 leading-8 text-secondary-600">
+              </h2>
+              <p class="mt-6 leading-8 text-secondary">
                 {{ data?.gruende.subtitle }}
               </p>
             </div>
             <dl
               class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3"
             >
-              <div v-for="value in data?.gruende.gruende" :key="value.name">
-                <dt class="font-semibold text-primary-900">
+              <div
+                v-for="value in data?.gruende.gruende"
+                :key="value.title"
+              >
+                <dt class="font-semibold text-primary">
                   {{ value.title }}
                 </dt>
-                <dd class="mt-1 text-secondary-600">{{ value.description }}</dd>
+                <dd class="mt-1 text-secondary">
+                  {{ value.description }}
+                </dd>
               </div>
             </dl>
-          </div>
+          </section>
 
           <!-- Team section -->
-          <div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
+          <section
+            class="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8"
+            aria-labelledby="team-title"
+          >
             <div class="mx-auto max-w-2xl lg:mx-0">
-              <h1 class="font-bold tracking-tight text-primary-900">
+              <h2
+                id="team-title"
+                class="font-bold tracking-tight text-primary"
+              >
                 {{ data?.team.title }}
-              </h1>
-              <p class="mt-6 leading-8 text-gray-600">
+              </h2>
+              <p class="mt-6 leading-8 text-secondary">
                 {{ data?.team.subtitle }}
               </p>
             </div>
@@ -212,11 +255,16 @@ watchEffect(async () => {
               role="list"
               class="mx-auto mt-20 grid max-w-2xl grid-cols-2 gap-x-8 gap-y-16 text-center sm:grid-cols-3 md:grid-cols-4 lg:mx-0 lg:max-w-none lg:grid-cols-5 xl:grid-cols-6"
             >
-              <li v-for="person in data?.team.persons" :key="person.name">
+              <li
+                v-for="person in data?.team.persons"
+                :key="person.name"
+              >
                 <img
                   class="mx-auto h-24 w-24 rounded-full"
                   :src="person.image"
-                  alt="Person Image"
+                  alt=""
+                  aria-hidden="true"
+                  loading="lazy"
                 />
                 <p
                   class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900"
@@ -228,8 +276,8 @@ watchEffect(async () => {
                 </div>
               </li>
             </ul>
-          </div>
-        </main>
+          </section>
+        </div>
       </div>
     </LayoutContainer>
   </div>

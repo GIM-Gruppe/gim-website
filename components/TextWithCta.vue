@@ -1,41 +1,49 @@
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted, computed } from 'vue';
+import { ref, onMounted, onUnmounted, computed } from "vue";
 
 const props = defineProps<{
   title: string;
   description: string;
 }>();
 
-// Reactive flag for mobile (<640px)
 const isMobile = ref(false);
-let mq: MediaQueryList;
+let mq: MediaQueryList | null = null;
+
+// Handler separat definieren, damit removeEventListener funktioniert
+const handleMqChange = (e: MediaQueryListEvent) => {
+  isMobile.value = e.matches;
+};
 
 onMounted(() => {
-  // set up media‐query listener
-  mq = window.matchMedia('(max-width: 639px)');
+  if (typeof window === "undefined") return;
+
+  mq = window.matchMedia("(max-width: 639px)");
   isMobile.value = mq.matches;
-  mq.addEventListener('change', (e) => {
-    isMobile.value = e.matches;
-  });
+  mq.addEventListener("change", handleMqChange);
 });
 
 onUnmounted(() => {
-  mq.removeEventListener('change', () => {});
+  if (mq) {
+    mq.removeEventListener("change", handleMqChange);
+  }
 });
 
-// Compute button size based on isMobile
-const btnSize = computed<'lg' | 'xl'>(() =>
-  isMobile.value ? 'lg' : 'xl'
+const btnSize = computed<"lg" | "xl">(() =>
+  isMobile.value ? "lg" : "xl"
 );
 </script>
 
 <template>
-  <LayoutContainer>
+  <LayoutContainer as="section">
     <!-- Text block -->
     <div class="flex items-center flex-wrap">
-      <div class="grow-0">
-        <h1 class="font-semibold">{{ props.title }}</h1>
-        <p class="mt-4">{{ props.description }}</p>
+      <div class="grow-0 max-w-3xl">
+        <h2 class="font-semibold">
+          {{ props.title }}
+        </h2>
+        <p class="mt-4 text-secondary">
+          {{ props.description }}
+        </p>
       </div>
     </div>
 
