@@ -1,1 +1,0 @@
-import{e as a,o as n,c as s,A as r,v as m}from"./CtcpAeYO.js";const c=a({__name:"Container",props:{topMargin:{type:Boolean,default:!1},bottomMargin:{type:Boolean,default:!1}},setup(o){const e=o;return(t,l)=>(n(),s("div",{class:m(["container mx-auto",{"mt-10 sm:mt-20":e.topMargin,"mb-10 sm:mb-20":e.bottomMargin}])},[r(t.$slots,"default")],2))}});export{c as _};
