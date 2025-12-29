@@ -1,12 +1,31 @@
 <script setup lang="ts">
+import { onMounted } from 'vue'
 import { useSeoMeta } from '~/composables/seo'
-definePageMeta({ documentDriven: { page: false, surround: false, }, });
 
+definePageMeta({
+  documentDriven: { page: false, surround: false }
+})
 
 useSeoMeta(
   'GIM Website - Impressum',
   'Rechtliche Informationen und Kontaktdaten der GIM Gesellschaft für integratives Management mbH'
 )
+
+// Clientseitige E-Mail-Erzeugung mit Base64
+onMounted(() => {
+  // "info@gim-gruppe.com" in Base64
+  const encoded = 'aW5mb0BnaW0tZ3J1cHBlLmNvbQ=='  // kannst du leicht austauschen
+  const email = atob(encoded)
+
+  const container = document.getElementById('email-container')
+  if (container) {
+    const link = document.createElement('a')
+    link.href = `mailto:${email}`
+    link.textContent = email
+    link.className = 'text-blue-600 hover:underline'
+    container.replaceChildren(link)
+  }
+})
 </script>
 
 <template>
@@ -28,7 +47,6 @@ useSeoMeta(
       </h2>
       <p class="mt-2">Lutz Thiele</p>
       <p class="mt-2">Jonas Grossen</p>
-
     </div>
 
     <div class="mb-4">
@@ -36,11 +54,11 @@ useSeoMeta(
       <p class="mt-2">
         Telefon: +49 40 22898595<br />
         E-Mail:
-        <NuxtLink
-          :to="`mailto:info@gim-gruppe.com`"
-          class="text-blue-600 hover:underline"
-          >info@gim-gruppe.com</NuxtLink
-        >
+        <span id="email-container" class="ml-1"></span>
+
+        <noscript>
+          E-Mail: info [at] gim-gruppe [dot] com
+        </noscript>
       </p>
     </div>
 
