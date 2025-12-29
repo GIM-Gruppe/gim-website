@@ -22,6 +22,11 @@ export default defineNuxtConfig({
           src: 'https://snap.licdn.com/li.lms-analytics/insight.min.js',
           async: true,
           type: 'text/javascript'
+        },
+        {
+          src: "http://umami.gim.at-gim.cloud:3000/script.js",
+          defer: true,
+          "data-website-id": "675fbe79-a183-44a7-b1e9-f77549d9be12"
         }
       ],
       noscript: [
