@@ -48,8 +48,8 @@ useSeoMeta(
       <h2 class="text-xl font-semibold">Registereintrag:</h2>
       <p class="mt-2">
         Eintragung im Handelsregister.<br />
-        Registergericht: Amtsgericht Hamburg<br />
-        Registernummer: HRB 56282
+        Registergericht: Amtsgericht Kiel<br />
+        Registernummer: HRB 28539
       </p>
     </div>
 
