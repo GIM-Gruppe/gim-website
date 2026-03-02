@@ -64,7 +64,7 @@
           "title": "SAP-Basis Betreuung"
         },
         {
-          "title": "SAP-Router"
+          "title": "S/4 HANA Migration"
         },
         {
           "title": "Überwachung und Monitoring"
@@ -86,6 +86,50 @@
         },
         {
           "title": "Systemwartung (Upgrades, Installationen, Systemkopien, Mandantenkopien, Migrationen)"
+        }
+      ]
+    },
+    {
+      "name": "resilienz",
+      "title": "Resilienztraining für Unternehmen",
+      "subtitle": "Mentale Stärke gezielt fördern",
+      "description": "Unser Resilienztraining unterstützt Mitarbeitende dabei, Belastungen besser zu bewältigen und ihre psychische Gesundheit nachhaltig zu stärken.",
+      "image": "/assets/img/resilience-7451906_1920.jpg",
+      "imagealt": "Person shielding a plant in the rain – symbol of resilience and growth.",
+      "subservice": [
+        {
+          "title": "Stressbewältigung im Berufsalltag"
+        },
+        {
+          "title": "Achtsamkeits- und Entspannungstechniken"
+        },
+        {
+          "title": "Stärkung der emotionalen Intelligenz"
+        },
+        {
+          "title": "Umgang mit Veränderungen und Krisen"
+        }
+      ]
+    },
+    {
+      "name": "coreszon",
+      "title": "CORESZON Trainings",
+      "subtitle": "Mehr Halt und Stärke im Alltag finden",
+      "description": "Mit den CORESZON Trainings fördern Sie mentale Gesundheit, Stresskompetenz und Zusammenarbeit im Team – auf Basis der bewährten Garten-Methode.",
+      "image": "/assets/img/3cd295da-5b75-4bfc-984b-5e0cd8cf595d2.png",
+      "imagealt": "corszon gartenmethode ",
+      "subservice": [
+        {
+          "title": "CORESZON (Community Resilience Network)"
+        },
+        {
+          "title": "Die Garten-Methode"
+        },
+        {
+          "title": "Ideal für Führungskräfte & Mitarbeitende in Klein und Mittlere Unternehmen"
+        },
+        {
+          "title": "Mehr Resilienz, stärkere Bindung, weniger Stress, praxisnah"
         }
       ]
     }

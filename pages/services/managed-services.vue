@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { useSeoMeta } from '~/composables/seo'
+definePageMeta({ documentDriven: { page: false, surround: false, }, });
+
 
 useSeoMeta(
   'GIM Website - Managed Services', // Title: Reflects that the page is about managed services

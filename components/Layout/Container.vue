@@ -1,15 +1,24 @@
 <script setup lang="ts">
-
 const props = withDefaults(defineProps<{
   topMargin?: boolean
   bottomMargin?: boolean
-}>(),{
+  as?: string
+}>(), {
   topMargin: false,
-  bottomMargin: false
+  bottomMargin: false,
+  as: 'div',
 })
 </script>
+
 <template>
-  <div class="max-w-screen-xl mx-auto  " :class="{'mt-20': topMargin, 'mb-20': bottomMargin}">
+  <component
+    :is="props.as"
+    class="container mx-auto"
+    :class="{
+      'mt-10 sm:mt-20': props.topMargin,
+      'mb-10 sm:mb-20': props.bottomMargin
+    }"
+  >
     <slot />
-  </div>
+  </component>
 </template>
