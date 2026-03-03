@@ -2,8 +2,8 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://gim-gruppe.com/</loc>
-        <xhtml:link rel="alternate" hreflang="de" href="https://gim-gruppe.com/" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://gim-gruppe.com/" />
+        <xhtml:link rel="alternate" href="https://gim-gruppe.com/" hreflang="x-default" />
+        <xhtml:link rel="alternate" href="https://gim-gruppe.com/" hreflang="de" />
         <image:image>
             <image:loc>https://gim-gruppe.com/assets/img/hand-3044387_1280.jpg</image:loc>
         </image:image>
@@ -13,8 +13,8 @@
     </url>
     <url>
         <loc>https://gim-gruppe.com/about</loc>
-        <xhtml:link rel="alternate" hreflang="de" href="https://gim-gruppe.com/about" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://gim-gruppe.com/about" />
+        <xhtml:link rel="alternate" href="https://gim-gruppe.com/about" hreflang="x-default" />
+        <xhtml:link rel="alternate" href="https://gim-gruppe.com/about" hreflang="de" />
         <image:image>
             <image:loc>https://gim-gruppe.com/assets/img/processor.jpg</image:loc>
         </image:image>
@@ -54,8 +54,8 @@
     </url>
     <url>
         <loc>https://gim-gruppe.com/contact</loc>
-        <xhtml:link rel="alternate" hreflang="de" href="https://gim-gruppe.com/contact" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://gim-gruppe.com/contact" />
+        <xhtml:link rel="alternate" href="https://gim-gruppe.com/contact" hreflang="x-default" />
+        <xhtml:link rel="alternate" href="https://gim-gruppe.com/contact" hreflang="de" />
         <image:image>
             <image:loc>https://gim-gruppe.com/assets/img/hands.jpg</image:loc>
         </image:image>
@@ -65,24 +65,24 @@
     </url>
     <url>
         <loc>https://gim-gruppe.com/datenschutz</loc>
-        <xhtml:link rel="alternate" hreflang="de" href="https://gim-gruppe.com/datenschutz" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://gim-gruppe.com/datenschutz" />
+        <xhtml:link rel="alternate" href="https://gim-gruppe.com/datenschutz" hreflang="x-default" />
+        <xhtml:link rel="alternate" href="https://gim-gruppe.com/datenschutz" hreflang="de" />
         <image:image>
             <image:loc>https://px.ads.linkedin.com/collect?pid=7175042&amp;amp;fmt=gif</image:loc>
         </image:image>
     </url>
     <url>
         <loc>https://gim-gruppe.com/impressum</loc>
-        <xhtml:link rel="alternate" hreflang="de" href="https://gim-gruppe.com/impressum" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://gim-gruppe.com/impressum" />
+        <xhtml:link rel="alternate" href="https://gim-gruppe.com/impressum" hreflang="x-default" />
+        <xhtml:link rel="alternate" href="https://gim-gruppe.com/impressum" hreflang="de" />
         <image:image>
             <image:loc>https://px.ads.linkedin.com/collect?pid=7175042&amp;amp;fmt=gif</image:loc>
         </image:image>
     </url>
     <url>
         <loc>https://gim-gruppe.com/services</loc>
-        <xhtml:link rel="alternate" hreflang="de" href="https://gim-gruppe.com/services" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://gim-gruppe.com/services" />
+        <xhtml:link rel="alternate" href="https://gim-gruppe.com/services" hreflang="x-default" />
+        <xhtml:link rel="alternate" href="https://gim-gruppe.com/services" hreflang="de" />
         <image:image>
             <image:loc>https://gim-gruppe.com/assets/img/processor.jpg</image:loc>
         </image:image>
@@ -106,11 +106,14 @@
         <loc>https://gim-gruppe.com/services/coreszon</loc>
         <xhtml:link rel="alternate" href="https://gim-gruppe.com/services/coreszon" hreflang="x-default" />
         <xhtml:link rel="alternate" href="https://gim-gruppe.com/services/coreszon" hreflang="de" />
+        <image:image>
+            <image:loc>https://px.ads.linkedin.com/collect?pid=7175042&amp;amp;fmt=gif</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://gim-gruppe.com/services/it-infrastructure</loc>
-        <xhtml:link rel="alternate" hreflang="de" href="https://gim-gruppe.com/services/it-infrastructure" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://gim-gruppe.com/services/it-infrastructure" />
+        <xhtml:link rel="alternate" href="https://gim-gruppe.com/services/it-infrastructure" hreflang="x-default" />
+        <xhtml:link rel="alternate" href="https://gim-gruppe.com/services/it-infrastructure" hreflang="de" />
         <image:image>
             <image:loc>https://gim-gruppe.com/assets/img/processor.jpg</image:loc>
         </image:image>
@@ -120,8 +123,8 @@
     </url>
     <url>
         <loc>https://gim-gruppe.com/services/managed-services</loc>
-        <xhtml:link rel="alternate" hreflang="de" href="https://gim-gruppe.com/services/managed-services" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://gim-gruppe.com/services/managed-services" />
+        <xhtml:link rel="alternate" href="https://gim-gruppe.com/services/managed-services" hreflang="x-default" />
+        <xhtml:link rel="alternate" href="https://gim-gruppe.com/services/managed-services" hreflang="de" />
         <image:image>
             <image:loc>https://gim-gruppe.com/assets/img/fiber.jpg</image:loc>
         </image:image>
@@ -133,11 +136,14 @@
         <loc>https://gim-gruppe.com/services/resilienz</loc>
         <xhtml:link rel="alternate" href="https://gim-gruppe.com/services/resilienz" hreflang="x-default" />
         <xhtml:link rel="alternate" href="https://gim-gruppe.com/services/resilienz" hreflang="de" />
+        <image:image>
+            <image:loc>https://px.ads.linkedin.com/collect?pid=7175042&amp;amp;fmt=gif</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://gim-gruppe.com/services/sap</loc>
-        <xhtml:link rel="alternate" hreflang="de" href="https://gim-gruppe.com/services/sap" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://gim-gruppe.com/services/sap" />
+        <xhtml:link rel="alternate" href="https://gim-gruppe.com/services/sap" hreflang="x-default" />
+        <xhtml:link rel="alternate" href="https://gim-gruppe.com/services/sap" hreflang="de" />
         <image:image>
             <image:loc>https://gim-gruppe.com/assets/img/Basis-System-Administrator.jpg</image:loc>
         </image:image>
@@ -147,8 +153,8 @@
     </url>
     <url>
         <loc>https://gim-gruppe.com/services/trainings/coreszon</loc>
-        <xhtml:link rel="alternate" hreflang="de" href="https://gim-gruppe.com/services/trainings/coreszon" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://gim-gruppe.com/services/trainings/coreszon" />
+        <xhtml:link rel="alternate" href="https://gim-gruppe.com/services/trainings/coreszon" hreflang="x-default" />
+        <xhtml:link rel="alternate" href="https://gim-gruppe.com/services/trainings/coreszon" hreflang="de" />
         <image:image>
             <image:loc>https://gim-gruppe.com/assets/img/3cd295da-5b75-4bfc-984b-5e0cd8cf595d2.png</image:loc>
         </image:image>
@@ -167,8 +173,8 @@
     </url>
     <url>
         <loc>https://gim-gruppe.com/services/trainings/resilienz</loc>
-        <xhtml:link rel="alternate" hreflang="de" href="https://gim-gruppe.com/services/trainings/resilienz" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://gim-gruppe.com/services/trainings/resilienz" />
+        <xhtml:link rel="alternate" href="https://gim-gruppe.com/services/trainings/resilienz" hreflang="x-default" />
+        <xhtml:link rel="alternate" href="https://gim-gruppe.com/services/trainings/resilienz" hreflang="de" />
         <image:image>
             <image:loc>https://gim-gruppe.com/assets/img/resilience-7451906_1920.jpg</image:loc>
         </image:image>
@@ -180,4 +186,4 @@
         </image:image>
     </url>
 </urlset>
-<!-- XML Sitemap generated by @nuxtjs/sitemap v6.1.1 at 2025-12-29T11:27:59.954Z -->
+<!-- XML Sitemap generated by @nuxtjs/sitemap v7.6.0 at 2026-03-03T07:08:20.375Z -->

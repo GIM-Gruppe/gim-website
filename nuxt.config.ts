@@ -44,7 +44,7 @@ export default defineNuxtConfig({
   },
 
   // Modules
-  modules: ['@nuxt/content', '@nuxtjs/i18n', '@nuxt/icon', '@nuxt/image'],
+  modules: ['@nuxt/content', '@nuxtjs/i18n', '@nuxt/icon', '@nuxt/image', '@nuxtjs/sitemap'],
 
   // Nuxt Icon (@nuxt/icon)
   icon: {
@@ -72,6 +72,10 @@ export default defineNuxtConfig({
     url: 'https://gim-gruppe.com',
     name: 'GIM Gruppe',
     description: 'Willkommen bei der GIM!'
+  },
+
+    sitemap: {
+    siteUrl: 'https://gim-gruppe.com',
   },
 
   content: {
