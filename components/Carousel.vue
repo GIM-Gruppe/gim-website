@@ -1,14 +1,16 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from "vue";
 
-const props = defineProps<{
-  slides: {
-    title1: string;
-    title2: string;
-    text: string;
-    background_image: string;
-  }[];
-}>();
+const props = withDefaults(defineProps<{
+  slides?: {
+    title1: string
+    title2: string
+    text: string
+    background_image: string
+  }[]
+}>(), {
+  slides: () => []
+})
 
 const activeIndex = ref(0);
 const intervalDuration = 6000; // 6 Sekunden

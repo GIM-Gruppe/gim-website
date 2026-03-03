@@ -5,15 +5,11 @@ import { marked } from "marked"; // Importing markdown parser
 definePageMeta({ documentDriven: { page: false, surround: false, }, });
 
 
-const { data, pending, error } = await useAsyncData("about", async () => {
-  try {
-    const response = await queryContent("/aboutus/content").findOne();
-    return response;
-  } catch (err) {
-    console.error(err); // Log any errors
-    return null;
-  }
-});
+
+const { data, pending, error } = await useAsyncData('about', async () => {
+  const doc = await queryCollection('content').path('/aboutus/content').first()
+  return doc?.meta ?? null
+})
 
 useSeoMeta(
   "GIM Website - Über uns", // Title

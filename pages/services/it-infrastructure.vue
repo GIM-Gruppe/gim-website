@@ -8,16 +8,11 @@ useSeoMeta(
   'Erfahren Sie mehr über die IT-Infrastruktur der GIM Gesellschaft für integratives Management mbH. Wir bieten maßgeschneiderte IT-Lösungen und modernste Technologien zur Unterstützung Ihrer Unternehmensanforderungen.' // Description: Relevant and concise description for the IT infrastructure page
 )
 
-const { data, pending, error } = await useAsyncData("infra", async () => {
-  try {
-    const response = await queryContent('/services/content').findOne();
-    // console.log(response); // Log response for debugging
-    return response;
-  } catch (err) {
-    console.error(err); // Log any errors
-    return null;
-  }
-});
+
+const { data, pending, error } = await useAsyncData('infra', async () => {
+  const doc = await queryCollection('content').path('/services/content').first()
+  return doc?.meta ?? null
+})
 // console.log(data);
 </script>
 

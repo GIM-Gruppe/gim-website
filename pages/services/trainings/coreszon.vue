@@ -13,10 +13,29 @@ useSeoMeta(
   'Erfahren Sie mehr über unser Coreszon Training bei der GIM Gesellschaft für integratives Management mbH. Stärken Sie Ihre mentale Widerstandskraft und fördern Sie nachhaltige Gesundheit im Arbeitsalltag.'
 )
 
-const { data } = await useAsyncData("coreszon", async () => {
-  const response = await queryContent('/services/content').findOne();
-  return response?.services.find(s => s.name === "coreszon");
-});
+
+const { data, pending, error } = await useAsyncData('coreszon', async () => {
+  const doc = await queryCollection('content')
+    .path('/services/content')
+    .first()
+
+  // Bei dir steckt es (wie beim Home) unter meta.*
+  const services = doc?.meta?.services ?? []
+
+  const item = services.find((s: any) => s.name === 'coreszon') ?? null
+
+  // in das Shape bringen, das dein Panel erwartet:
+  return item
+    ? {
+        title: item.title ?? '',
+        subtitle: item.subtitle ?? '',
+        description: item.description ?? '',
+        image: item.image ?? '',
+        imagealt: item.imagealt ?? '',
+        features: item.subservice ?? [] // <- dein JSON heißt subservice
+      }
+    : null
+})
 
 
 const serviceoverview = {

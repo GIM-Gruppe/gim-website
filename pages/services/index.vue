@@ -15,17 +15,10 @@ useSeoMeta(
   'Entdecken Sie die umfangreichen Dienstleistungen der GIM Gesellschaft für integratives Management mbH. Erfahren Sie mehr über unsere Beratungsleistungen und maßgeschneiderte Lösungen.' // Description: Relevant and concise description for the service overview page
 )
 
-
-const { data, pending, error } = await useAsyncData("services", async () => {
-  try {
-    const response = await queryContent('/services/content').findOne();
-    // console.log(response); // Log response for debugging
-    return response;
-  } catch (err) {
-    console.error(err); // Log any errors
-    return null;
-  }
-});
+const { data, pending, error } = await useAsyncData('services', async () => {
+  const doc = await queryCollection('content').path('/services/content').first()
+  return doc?.meta ?? null
+})
 // console.log(data);
 </script>
 

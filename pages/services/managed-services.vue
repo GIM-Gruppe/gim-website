@@ -8,16 +8,10 @@ useSeoMeta(
   'Entdecken Sie die Managed Services der GIM Gesellschaft für integratives Management mbH. Wir bieten umfassende IT-Wartung, Support und Management für Unternehmen, um einen reibungslosen Betrieb zu gewährleisten.' // Description: Relevant and concise description for the managed services page
 )
 
-const { data, pending, error } = await useAsyncData("managedservices", async () => {
-  try {
-    const response = await queryContent('/services/content').findOne();
-    // console.log(response); // Log response for debugging
-    return response;
-  } catch (err) {
-    console.error(err); // Log any errors
-    return null;
-  }
-});
+const { data, pending, error } = await useAsyncData('managedservices', async () => {
+  const doc = await queryCollection('content').path('/services/content').first()
+  return doc?.meta ?? null
+})
 </script>
 
 <template>

@@ -13,11 +13,28 @@ useSeoMeta(
   'Erfahren Sie mehr über unser Resilienztraining bei der GIM Gesellschaft für integratives Management mbH. Stärken Sie Ihre mentale Widerstandskraft und fördern Sie nachhaltige Gesundheit im Arbeitsalltag.'
 )
 
-const { data } = await useAsyncData("resilienz", async () => {
-  const response = await queryContent('/services/content').findOne();
-  return response?.services.find(s => s.name === "resilienz");
-});
+const { data, pending, error } = await useAsyncData('resilienz', async () => {
+  const doc = await queryCollection('content')
+    .path('/services/content')
+    .first()
 
+  // Bei dir steckt es (wie beim Home) unter meta.*
+  const services = doc?.meta?.services ?? []
+
+  const item = services.find((s: any) => s.name === 'resilienz') ?? null
+
+  // in das Shape bringen, das dein Panel erwartet:
+  return item
+    ? {
+        title: item.title ?? '',
+        subtitle: item.subtitle ?? '',
+        description: item.description ?? '',
+        image: item.image ?? '',
+        imagealt: item.imagealt ?? '',
+        features: item.subservice ?? [] // <- dein JSON heißt subservice
+      }
+    : null
+})
 
 const serviceoverview = {
   title: "Unsere Trainingsbausteine",
@@ -25,17 +42,17 @@ const serviceoverview = {
     {
       title: "Einzelcoachings",
       description: "Individuelle Begleitung zur persönlichen Resilienzförderung.",
-      icon: 'heroicons-outline:user',
+      icon: 'ph:user',
     },
     {
       title: "Workshops & Seminare",
       description: "Gruppenformate für praxisnahe Übungen und Austausch.",
-      icon: 'heroicons-outline:users',
+      icon: 'heroicons:users',
     },
     {
       title: "Online-Trainings",
       description: "Flexibles Lernen mit digitalen Inhalten und Live-Sessions.",
-      icon: 'heroicons-outline:computer-desktop',
+      icon: 'heroicons:computer-desktop',
     },
     {
       title: "",
@@ -44,7 +61,7 @@ const serviceoverview = {
     {
       title: "Follow-Up Programme",
       description: "Langfristige Begleitung zur Stärkung der Resilienz im Alltag.",
-      icon: 'heroicons-outline:arrow-path',
+      icon: 'heroicons:arrow-path',
     },
   ]
 }

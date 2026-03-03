@@ -28,12 +28,12 @@ const props = defineProps<{
           class="flex justify-center items-center mt-1 rounded-full w-8 h-8 shrink-0"
           :class="{ 'bg-gray-100': item.icon }"
         >
-          <Icon
-            v-if="item.icon"
-            class="text-primary w-4 h-4"
-            :name="item.icon"
-            aria-hidden="true"
-          />
+        <Icon
+          v-if="item.icon"
+          :name="item.icon"
+          style="width:16px;height:16px;color:black;display:block;"
+          aria-hidden="true"
+        />
         </div>
         <div>
           <h3 class="font-semibold">

@@ -1,15 +1,21 @@
 <script setup lang="ts">
 import { CheckBadgeIcon } from "@heroicons/vue/20/solid";
 
-const props = defineProps<{
-  title: string;
-  subtitle: string;
-  description: string;
-  image: string;
-  imagealt: string;
-  features: { title: string }[];
-  bookings?: string;
-}>();
+const props = withDefaults(defineProps<{
+  title: string
+  subtitle: string
+  description: string
+  image: string
+  imagealt: string
+  features: any[]
+}>(), {
+  title: '',
+  subtitle: '',
+  description: '',
+  image: '',
+  imagealt: '',
+  features: () => []
+})
 </script>
 
 <template>

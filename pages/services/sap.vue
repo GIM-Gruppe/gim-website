@@ -8,16 +8,10 @@ useSeoMeta(
   'Entdecken Sie die SAP Basis Services der GIM Gesellschaft für integratives Management mbH. Unser Expertenteam unterstützt Sie bei der Wartung, Optimierung und Verwaltung Ihrer SAP-Systeme.' // Description: Relevant and concise description for the SAP Basis services page
 )
 
-const { data, pending, error } = await useAsyncData("sap", async () => {
-  try {
-    const response = await queryContent('/services/content').findOne();
-    // console.log(response); // Log response for debugging
-    return response;
-  } catch (err) {
-    console.error(err); // Log any errors
-    return null;
-  }
-});
+const { data, pending, error } = await useAsyncData('sap', async () => {
+  const doc = await queryCollection('content').path('/services/content').first()
+  return doc?.meta ?? null
+})
 // // console.log(data);
 </script>
 
