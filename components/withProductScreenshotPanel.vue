@@ -8,6 +8,7 @@ const props = withDefaults(defineProps<{
   image: string
   imagealt: string
   features: any[]
+  bookings: string
 }>(), {
   title: '',
   subtitle: '',
