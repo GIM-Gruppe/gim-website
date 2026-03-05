@@ -44,7 +44,9 @@ const { data, pending, error } = await useAsyncData('services', async () => {
       <NuxtLink
         v-for="service in data?.services"
         :key="service.name"
-        :to="`/services/${service.name}`"
+        :to="['resilienz', 'coreszon'].includes(service.name)
+          ? `/services/trainings/${service.name}`
+          : `/services/${service.name}`"
         class="block transition transform hover:scale-105"
       >
         <article class="relative aspect-[4/3] rounded-2xl overflow-hidden flex items-end">
