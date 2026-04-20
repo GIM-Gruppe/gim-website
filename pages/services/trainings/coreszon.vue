@@ -75,6 +75,10 @@ const serviceoverview = {
   <div v-if="pending">Lade Inhalte...</div>
   <div v-else-if="error">Fehler beim Laden der Inhalte</div>
   <div v-else>
+    <Breadcrumbs :items="[
+      { label: 'Leistungen', to: '/services' },
+      { label: 'CORESZON® Training' }
+    ]" />
     <LayoutContainer>
       <WithProductScreenshotPanel
         :title="data?.title"

@@ -1,0 +1,38 @@
+<script setup lang="ts">
+import { useSeoMeta } from '~/composables/seo'
+definePageMeta({ documentDriven: { page: false, surround: false, }, });
+
+
+useSeoMeta(
+  'GIM Website - SAP Basis Services', // Title: Reflects that the page is about SAP Basis services
+  'Entdecken Sie die SAP Basis Services der GIM Gesellschaft für integratives Management mbH. Unser Expertenteam unterstützt Sie bei der Wartung, Optimierung und Verwaltung Ihrer SAP-Systeme.' // Description: Relevant and concise description for the SAP Basis services page
+)
+
+const { data, pending, error } = await useAsyncData('sap', async () => {
+  const doc = await queryCollection('content').path('/services/content').first()
+  return doc?.meta ?? null
+})
+// // console.log(data);
+</script>
+
+<template>
+  <div v-if="pending">Loading...</div>
+  <div v-else-if="error">Failed to load content</div>
+  <div v-else>
+    <Breadcrumbs :items="[
+      { label: 'Leistungen', to: '/services' },
+      { label: 'SAP Basis' }
+    ]" />
+    <LayoutContainer>
+      <!-- <ServiceCard></ServiceCard> -->
+      <withProductScreenshotPanel
+        :title="data?.services[2].title"
+        :subtitle="data?.services[2].subtitle"
+        :description="data?.services[2].description"
+        :image=" data?.services[2].image"
+        :imagealt="data?.services[2].imagealt"
+        :features="data?.services[2].subservice"
+      ></withProductScreenshotPanel>
+    </LayoutContainer>
+  </div>
+</template>
