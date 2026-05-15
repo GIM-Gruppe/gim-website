@@ -23,6 +23,14 @@ const menuitems = [
     clickable: true,
     children: [
       {
+        title: "SAP Beratung",
+        path: "/services/sap/sap-beratung",
+      },
+      {
+        title: "SAP-Basisdienstleister",
+        path: "/services/sap/sap-basisdienstleister",
+      },
+      {
         title: "S4/Hana Migration",
         path: "/services/sap/s4hana-migration",
       },
