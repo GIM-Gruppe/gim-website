@@ -51,6 +51,10 @@ const menuitems = [
     ],
   },
   {
+    title: "KIS-Guard",
+    path: "/services/kis-guard",
+  },
+  {
     title: "Über uns",
     path: "/about",
   },
