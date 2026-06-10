@@ -13,7 +13,7 @@ const { data, pending, error } = await useAsyncData('about', async () => {
 
 useSeoMeta(
   "GIM Website - Über uns", // Title
-  "Erfahren Sie mehr über die GIM Gesellschaft für integratives Management mbH. Entdecken Sie unsere Unternehmensgeschichte, Vision, Werte und unser Team." // Description
+  "Erfahren Sie mehr über die GGIM GmbH. Entdecken Sie unsere Unternehmensgeschichte, Vision, Werte und unser Team." // Description
 );
 
 const mobileMenuOpen = ref(false);
@@ -93,10 +93,11 @@ watchEffect(async () => {
                       class="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80"
                     >
                       <div class="relative">
-                        <img
+                        <LightboxImage
                           :src="data?.intro.images[0].image"
                           :alt="data?.intro.images[0].imagealt"
-                          class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                          img-class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                          button-class="w-full rounded-xl"
                           loading="lazy"
                         />
                         <div
@@ -109,10 +110,11 @@ watchEffect(async () => {
                       class="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36"
                     >
                       <div class="relative">
-                        <img
+                        <LightboxImage
                           :src="data?.intro.images[1].image"
                           :alt="data?.intro.images[1].imagealt"
-                          class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                          img-class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                          button-class="w-full rounded-xl"
                           loading="lazy"
                         />
                         <div
@@ -121,10 +123,11 @@ watchEffect(async () => {
                         />
                       </div>
                       <div class="relative">
-                        <img
+                        <LightboxImage
                           :src="data?.intro.images[2].image"
                           :alt="data?.intro.images[2].imagealt"
-                          class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                          img-class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                          button-class="w-full rounded-xl"
                           loading="lazy"
                         />
                         <div
@@ -190,10 +193,11 @@ watchEffect(async () => {
             class="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8"
             aria-label="Team und Arbeitsumgebung"
           >
-            <img
+            <LightboxImage
               :src="data?.breakImage"
-              alt=""
-              class="aspect-[5/2] w-full object-cover xl:rounded-3xl"
+              alt="Team und Arbeitsumgebung"
+              img-class="aspect-[5/2] w-full object-cover xl:rounded-3xl"
+              button-class="w-full xl:rounded-3xl"
               loading="lazy"
             />
           </section>
@@ -255,11 +259,11 @@ watchEffect(async () => {
                 v-for="person in data?.team.persons"
                 :key="person.name"
               >
-                <img
-                  class="mx-auto h-24 w-24 rounded-full"
+                <LightboxImage
                   :src="person.image"
-                  alt=""
-                  aria-hidden="true"
+                  :alt="person.name"
+                  img-class="mx-auto h-24 w-24 rounded-full"
+                  button-class="mx-auto h-24 w-24 rounded-full"
                   loading="lazy"
                 />
                 <p

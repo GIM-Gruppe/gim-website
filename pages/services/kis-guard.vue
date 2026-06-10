@@ -13,10 +13,55 @@ const functionsImage = '/assets/img/kis-guard-funktionen.png'
 const processImage = '/assets/img/kis-guard-sicherheit.png'
 const securityImage = '/assets/img/KIS GUARD - visual selection 7.png'
 
+
+const solutionFeatures = [
+  {
+    title: 'Automatisierte Datensynchronisation',
+    points: [
+      'Synchronisiert aus SMB/CIFS-Freigaben, Netzlaufwerken und lokalen Verzeichnissen',
+      'Zeitgesteuert per integriertem Scheduler',
+      'Ansible-basiert: reproduzierbar und versionierbar'
+    ]
+  },
+  {
+    title: 'Sichere Patientendaten-Aufbereitung',
+    points: [
+      'Dokumente werden technisch neu aufgebaut (Content Reconstruction)',
+      'Eingebettete Risikoinhalte werden entfernt',
+      'Klinische Workflows bleiben unverändert'
+    ]
+  },
+  {
+    title: 'Rollenbasierte Benutzerverwaltung',
+    points: [
+      'Zentrale Kontoverwaltung mit Rechtezuweisung',
+      'Bcrypt-Passwortspeicherung',
+      'Passwortänderung nach Erstlogin',
+      'Mail-Benachrichtigung bei erster Anmeldung'
+    ]
+  },
+  {
+    title: 'Webbasiertes Admin-Panel',
+    points: [
+      'Keine Softwareinstallation nötig',
+      'Verwaltung von Datenquellen, Rollen, Logs und Wartungsstatus',
+      'Live-Logs und Fehleranalyse direkt im Browser'
+    ]
+  },
+  {
+    title: 'Dezentrale Stationsbereitstellung',
+    points: [
+      'Lokale Satelliten-Clients auf Stationsebene',
+      'Dokumente verfügbar – auch ohne Zugriff auf zentrale Systeme',
+      'Kürzere Wege, schnellere Reaktion im Notbetrieb'
+    ]
+  }
+]
+
 const capabilities = [
   {
     title: 'Automatisierte Datensynchronisation aus definierten Quellen',
-    text: 'KIS GUARD synchronisiert klinische Dokumente automatisiert aus bestehenden Datenquellen, darunter SMB/CIFS-Freigaben, Netzlaufwerke und lokale Verzeichnisse. Ein integrierter Scheduler übernimmt die zeitgesteuerte Ausführung ohne manuellen Eingriff. Die zugrundeliegenden Prozesse sind Ansible-basiert und damit reproduzierbar, versionierbar und strukturiert erweiterbar.'
+    text: 'KIS GUARD synchronisiert klinische Dokumente automatisiert aus bestehenden Datenquellen, darunter SMB/CIFS-Freigaben, Netzlaufwerke und lokale Verzeichnisse. Ein integrierter Scheduler übernimmt die zeitgesteuerte Ausführung ohne manuellen Eingriff. Die zugrundeliegenden Prozesse sind reproduzierbar, versionierbar und strukturiert erweiterbar.'
   },
   {
     title: 'Sichere PDF-Aufbereitung für den klinischen Betrieb',
@@ -128,22 +173,51 @@ const faqItems = [
     />
 
     <LayoutContainer as="section" bottomMargin>
-      <div class="grid gap-10 rounded-[2rem] bg-gray-50 px-6 py-10 md:px-10 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:items-center">
-        <div>
-          <p class="text-sm font-semibold uppercase tracking-[0.2em] text-secondary">Digitale Resilienz</p>
-          <h2 class="mt-3 font-semibold">Warum Krankenhaus-IT heute auf ein KIS-Notfallsystem angewiesen ist</h2>
-          <div class="mt-6 space-y-4 text-secondary leading-relaxed">
-            <p>Die Abhängigkeit klinischer Prozesse von digitalen Systemen ist in den letzten Jahren erheblich gestiegen. Gleichzeitig haben Cyberangriffe auf Gesundheitseinrichtungen, Ransomware-Vorfälle und technische Betriebsunterbrechungen deutlich zugenommen.</p>
-            <p>Fällt ein KIS aus, fehlen häufig genau die Informationen, die für eine sichere Patientenversorgung notwendig sind. Papierbasierte Notfallprozesse sind aufwändig, fehleranfällig und oft nicht ausreichend vorbereitet.</p>
-            <p>KIS GUARD schafft eine zusätzliche Dokumentationsebene, die unabhängig vom zentralen Krankenhaus-Informationssystem funktioniert. So bleiben klinische Abläufe auch im Notbetrieb handlungsfähig.</p>
+      <div class="rounded-[2rem] bg-gray-50 px-6 py-10 md:px-10">
+        <div class="grid gap-10 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] lg:items-center">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-secondary">Digitale Resilienz</p>
+            <h2 class="mt-3 font-semibold">Warum Krankenhaus-IT heute auf ein KIS-Notfallsystem angewiesen ist</h2>
+            <div class="mt-6 space-y-4 text-secondary leading-relaxed">
+              <p>Die Abhängigkeit klinischer Prozesse von digitalen Systemen ist in den letzten Jahren erheblich gestiegen. Gleichzeitig haben Cyberangriffe auf Gesundheitseinrichtungen, Ransomware-Vorfälle und technische Betriebsunterbrechungen deutlich zugenommen.</p>
+              <p>Fällt ein KIS aus, fehlen häufig genau die Informationen, die für eine sichere Patientenversorgung notwendig sind. Papierbasierte Notfallprozesse sind aufwändig, fehleranfällig und oft nicht ausreichend vorbereitet.</p>
+            </div>
+
+            <div class="mt-8 rounded-3xl bg-white p-6 shadow-sm ring-1 ring-black/5">
+              <p class="text-sm font-semibold uppercase tracking-[0.18em] text-primary">Die Lösung</p>
+              <h3 class="mt-2 font-semibold text-xl">KIS GUARD</h3>
+              <div class="mt-4 space-y-4 text-secondary leading-relaxed">
+                <p>KIS GUARD schafft eine unabhängige Dokumentationsebene parallel zum KIS.</p>
+                <p><strong class="text-primary">Kernprinzip:</strong> Wichtige klinische Dokumente werden automatisiert synchronisiert, sicher aufbereitet und dezentral bereitgestellt – unabhängig vom Zentralsystem.</p>
+              </div>
+            </div>
+          </div>
+          <LightboxImage
+            :src="functionsImage"
+            alt="Zentrale Funktionen und Vorteile von KIS GUARD"
+            img-class="w-full rounded-[1.75rem] bg-white object-cover shadow-sm"
+            button-class="w-full rounded-[1.75rem]"
+          />
+        </div>
+
+        <div class="mt-10">
+          <p class="text-sm font-semibold uppercase tracking-[0.18em] text-secondary">5 zentrale Funktionen</p>
+          <div class="mt-5 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+            <article
+              v-for="feature in solutionFeatures"
+              :key="feature.title"
+              class="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-black/5"
+            >
+              <h3 class="font-semibold leading-snug text-xl hyphens-auto break-words">{{ feature.title }}</h3>
+              <ul class="mt-4 space-y-3 text-sm text-secondary leading-relaxed">
+                <li v-for="point in feature.points" :key="point" class="flex gap-2">
+                  <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" aria-hidden="true" />
+                  <span>{{ point }}</span>
+                </li>
+              </ul>
+            </article>
           </div>
         </div>
-        <img
-          :src="functionsImage"
-          alt="Zentrale Funktionen und Vorteile von KIS GUARD"
-          class="w-full rounded-[1.75rem] bg-white object-cover shadow-sm"
-          loading="lazy"
-        />
       </div>
     </LayoutContainer>
 
@@ -169,11 +243,11 @@ const faqItems = [
     <section class="bg-gray-50 py-12 md:py-16 lg:py-20">
       <LayoutContainer>
         <div class="grid gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-center">
-          <img
+          <LightboxImage
             :src="securityImage"
             alt="Sicherheitsrahmen von KIS GUARD"
-            class="w-full rounded-[1.75rem] bg-white object-cover shadow-sm"
-            loading="lazy"
+            img-class="w-full rounded-[1.75rem] bg-white object-cover shadow-sm"
+            button-class="w-full rounded-[1.75rem]"
           />
           <div>
             <p class="text-sm font-semibold uppercase tracking-[0.2em] text-secondary">Zielgruppen und Sicherheit</p>
@@ -200,14 +274,14 @@ const faqItems = [
           <h2 class="mt-3 font-semibold">Sicherheit und Nachvollziehbarkeit als Grundprinzip</h2>
           <div class="mt-6 space-y-4 text-secondary leading-relaxed">
             <p>KIS GUARD wurde mit Fokus auf kontrollierte Prozesse, Betriebssicherheit und Nachvollziehbarkeit entwickelt. Dazu gehören getrennte Betriebs- und Fehlerlogs, rollenbasierte Rechteverwaltung, sichere Passwortspeicherung und eine dokumentierte Synchronisationshistorie.</p>
-            <p>Das System macht keine absoluten Sicherheitsversprechen. Es schafft aber eine strukturierte, technisch durchdachte Ergänzungsebene für klinische IT-Infrastrukturen, die auf Resilienz und Betriebsstabilität ausgelegt ist.</p>
+            <p>Es schafft eine strukturierte, technisch durchdachte Ergänzungsebene für klinische IT-Infrastrukturen, die auf Resilienz und Betriebsstabilität ausgelegt ist.</p>
           </div>
         </div>
-        <img
+        <LightboxImage
           :src="processImage"
           alt="KIS GUARD Prozesskette von KIS-Quelle bis Zugriff im Notbetrieb"
-          class="w-full rounded-[1.75rem] bg-white object-cover shadow-sm"
-          loading="lazy"
+          img-class="w-full rounded-[1.75rem] bg-white object-cover shadow-sm"
+          button-class="w-full rounded-[1.75rem]"
         />
       </div>
     </LayoutContainer>

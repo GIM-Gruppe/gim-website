@@ -252,7 +252,7 @@ const faqItems = [
               <p>Wenn Sie ein gewachsenes IT-System migrieren, gibt es Stolpersteine. Sie müssen die <strong>technischen Herausforderungen erfüllen</strong> und Ihr <strong>System auf die neue Plattform übertragen</strong>. Hier gibt es in der Regel <strong>komplexe Abhängigkeiten zwischen Ihren IT-Systemen, Ihrer Infrastruktur und Ihrem Betrieb</strong>. Eine S/4HANA-Migration ist zudem ein <strong>anspruchsvoller Prozess, der oftmals viele Stakeholder einbindet</strong>. Zeitliche Abhängigkeiten in diesem Kontext können ebenso zu Problemen führen wie Schnittstellen zu Drittsystemen. <strong>Häufig führen fehlendes Wissen und Dokumentation zu unerwarteten Fehlern.</strong></p>
             </div>
           </div>
-          <img :src="risks" alt="SAP Basis Architektur" class="h-[300px] w-full rounded-[1.75rem] object-cover md:h-[420px]" loading="lazy" />
+          <LightboxImage :src="risks" alt="SAP Basis Architektur" img-class="h-[300px] w-full rounded-[1.75rem] object-cover md:h-[420px]" button-class="w-full rounded-[1.75rem]" loading="lazy" />
         </div>
       </LayoutContainer>
     </section>
@@ -275,7 +275,7 @@ const faqItems = [
     <section class="bg-white">
       <LayoutContainer class="py-10 md:py-14 lg:py-16">
         <div class="grid gap-10 lg:grid-cols-[minmax(280px,0.9fr)_minmax(0,1.1fr)] lg:items-center">
-          <img :src="analysisImage" alt="SAP Beratung" class="h-[320px] w-full rounded-[1.75rem] object-cover md:h-[440px]" loading="lazy" />
+          <LightboxImage :src="analysisImage" alt="SAP Beratung" img-class="h-[320px] w-full rounded-[1.75rem] object-cover md:h-[440px]" button-class="w-full rounded-[1.75rem]" loading="lazy" />
           <div class="max-w-3xl">
             <h2 class="font-semibold">Ihre IT-Consulting-Firma für S/4HANA-Migration in Hamburg und Umgebung</h2>
             <div class="mt-6 space-y-4 text-secondary leading-relaxed [&_strong]:font-semibold">
@@ -364,7 +364,7 @@ const faqItems = [
               <UiButton href="/contact" label="Jetzt kontaktieren!" />
             </div>
           </div>
-          <img :src="stabilization" alt="Beratung zur S/4HANA-Migration" class="h-[320px] w-full rounded-[1.75rem] object-cover md:h-[420px]" loading="lazy" />
+          <LightboxImage :src="stabilization" alt="Beratung zur S/4HANA-Migration" img-class="h-[320px] w-full rounded-[1.75rem] object-cover md:h-[420px]" button-class="w-full rounded-[1.75rem]" loading="lazy" />
         </div>
       </LayoutContainer>
     </section>
@@ -372,7 +372,7 @@ const faqItems = [
     <section class="bg-white">
       <LayoutContainer class="py-10 md:py-14 lg:py-16">
         <div class="grid gap-10 lg:grid-cols-[minmax(280px,0.85fr)_minmax(0,1.15fr)] lg:items-center">
-          <img :src="process" alt="Regionaler Ansprechpartner SAP" class="h-[320px] w-full rounded-[1.75rem] object-cover md:h-[420px]" loading="lazy" />
+          <LightboxImage :src="process" alt="Regionaler Ansprechpartner SAP" img-class="h-[320px] w-full rounded-[1.75rem] object-cover md:h-[420px]" button-class="w-full rounded-[1.75rem]" loading="lazy" />
           <div class="max-w-3xl">
             <h2 class="font-semibold">S/4HANA-Migration in Hamburg und Umgebung mit regionalem Ansprechpartner und technischer Tiefe</h2>
             <div class="mt-6 space-y-4 text-secondary leading-relaxed [&_strong]:font-semibold">
@@ -415,7 +415,7 @@ const faqItems = [
               <UiButton href="/contact" label="Jetzt für Erstgespräch kontaktieren!" class="!border-white !text-primary hover:!bg-white/90" />
             </div>
           </div>
-          <img :src="golive" alt="S/4HANA Erstgespräch" class="h-72 w-full rounded-[1.75rem] object-cover" loading="lazy" />
+          <LightboxImage :src="golive" alt="S/4HANA Erstgespräch" img-class="h-72 w-full rounded-[1.75rem] object-cover" button-class="w-full rounded-[1.75rem]" loading="lazy" />
         </div>
       </div>
     </LayoutContainer>

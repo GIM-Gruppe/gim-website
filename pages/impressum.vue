@@ -8,7 +8,7 @@ definePageMeta({
 
 useSeoMeta(
   'GIM Website - Impressum',
-  'Rechtliche Informationen und Kontaktdaten der GIM Gesellschaft für integratives Management mbH'
+  'Rechtliche Informationen und Kontaktdaten der GIM GmbH'
 )
 
 // Clientseitige E-Mail-Erzeugung mit Base64
@@ -48,7 +48,7 @@ onMounted(() => {
           Angaben gemäß § 5 TMG:
         </h2>
         <address class="mt-2 not-italic text-secondary leading-relaxed">
-          <strong>GIM Gesellschaft für integratives Management mbH</strong><br />
+          <strong>GIM GmbH</strong><br />
           Gutenbergring 69A<br />
           22848 Norderstedt<br />
           Deutschland

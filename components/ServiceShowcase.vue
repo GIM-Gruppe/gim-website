@@ -14,10 +14,11 @@ const props = defineProps<{
         class="h-full relative overflow-hidden group max-w-md w-full rounded-lg shadow-md bg-black"
       >
         <!-- Background Image -->
-        <img
-          :src="props.imgsrc || 'https://loremflickr.com/800/600'}"
+        <LightboxImage
+          :src="props.imgsrc || 'https://loremflickr.com/800/600'"
           :alt="props.imgalt || (props.title ? `Illustration zu ${props.title}` : '')"
-          class="w-full h-64 object-cover"
+          img-class="w-full h-64 object-cover"
+          button-class="w-full"
           loading="lazy"
         />
 

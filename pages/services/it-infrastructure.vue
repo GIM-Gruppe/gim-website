@@ -5,7 +5,7 @@ definePageMeta({ documentDriven: { page: false, surround: false, }, });
 
 useSeoMeta(
   'GIM Website - IT-Infrastruktur', // Title: Reflects that the page is about IT infrastructure
-  'Erfahren Sie mehr über die IT-Infrastruktur der GIM Gesellschaft für integratives Management mbH. Wir bieten maßgeschneiderte IT-Lösungen und modernste Technologien zur Unterstützung Ihrer Unternehmensanforderungen.' // Description: Relevant and concise description for the IT infrastructure page
+  'Erfahren Sie mehr über die IT-Infrastruktur der GIM GmbH. Wir bieten maßgeschneiderte IT-Lösungen und modernste Technologien zur Unterstützung Ihrer Unternehmensanforderungen.' // Description: Relevant and concise description for the IT infrastructure page
 )
 
 

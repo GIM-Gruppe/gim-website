@@ -16,10 +16,11 @@ const props = defineProps<{
     <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8">
       <!-- Portrait -->
       <div class="relative w-60 h-60 min-w-[15rem] min-h-[15rem]">
-        <img
+        <LightboxImage
           :src="props.image"
           :alt="props.imageAlt || `Portrait von ${props.name}`"
-          class="absolute top-0 left-0 w-full h-full rounded-full object-cover shadow-md transform translate-x-2 -translate-y-1"
+          img-class="w-full h-full rounded-full object-cover shadow-md transform translate-x-2 -translate-y-1"
+          button-class="relative block w-full h-full rounded-full"
           loading="lazy"
         />
       </div>

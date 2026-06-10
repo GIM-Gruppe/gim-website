@@ -76,10 +76,11 @@ const props = withDefaults(defineProps<{
         <!-- Bildblock -->
         <div class="sm:px-6 lg:px-0">
           <div class="mx-auto max-w-2xl sm:mx-0 sm:max-w-none">
-            <img
+            <LightboxImage
               :src="props.image"
               :alt="props.imagealt"
-              class="-mb-12 w-[30rem] max-w-full rounded-xl bg-white"
+              img-class="-mb-12 w-[30rem] max-w-full rounded-xl bg-white"
+              button-class="max-w-full rounded-xl"
               loading="lazy"
             />
           </div>

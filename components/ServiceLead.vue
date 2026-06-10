@@ -32,11 +32,11 @@ const props = defineProps<{
         </div>
 
         <div v-if="props.imageSrc" class="flex items-center justify-center lg:justify-end">
-          <img
+          <LightboxImage
             :src="props.imageSrc"
             :alt="props.imageAlt || props.title"
-            class="h-[320px] w-full max-w-xl rounded-[1.75rem] object-cover md:h-[420px]"
-            loading="lazy"
+            img-class="h-[320px] w-full max-w-xl rounded-[1.75rem] object-cover md:h-[420px]"
+            button-class="w-full max-w-xl rounded-[1.75rem]"
           />
         </div>
       </div>

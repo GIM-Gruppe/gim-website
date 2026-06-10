@@ -224,7 +224,7 @@ const faqItems = [
               <UiButton href="/contact" label="Jetzt Erstgespräch anfragen!" />
             </div>
           </div>
-          <img :src="analysisImage" alt="SAP Beratung Analyse" class="h-[300px] w-full rounded-[1.75rem] object-cover md:h-[420px]" loading="lazy" />
+          <LightboxImage :src="analysisImage" alt="SAP Beratung Analyse" img-class="h-[300px] w-full rounded-[1.75rem] object-cover md:h-[420px]" button-class="w-full rounded-[1.75rem]" loading="lazy" />
         </div>
       </LayoutContainer>
     </section>
@@ -260,7 +260,7 @@ const faqItems = [
     <section class="bg-gray-50">
       <LayoutContainer class="py-10 md:py-14 lg:py-16">
         <div class="grid gap-10 lg:grid-cols-[minmax(280px,0.82fr)_minmax(0,1.18fr)] lg:items-start">
-          <img :src="processImage" alt="SAP Beratung Prozess" class="h-[320px] w-full rounded-[1.75rem] object-cover md:h-[460px] lg:sticky lg:top-24" loading="lazy" />
+          <LightboxImage :src="processImage" alt="SAP Beratung Prozess" img-class="h-[320px] w-full rounded-[1.75rem] object-cover md:h-[460px]" button-class="w-full rounded-[1.75rem] lg:sticky lg:top-24" loading="lazy" />
           <div>
             <p class="text-sm font-semibold uppercase tracking-[0.18em] text-primary">Relevanz</p>
             <h2 class="mt-3 font-semibold">Für welche Unternehmen in Hamburg und Umgebung SAP-Beratung besonders relevant ist</h2>
@@ -355,7 +355,7 @@ const faqItems = [
               <UiButton href="/contact" label="Jetzt Erstgespräch buchen!" />
             </div>
           </div>
-          <img :src="stabilization" alt="SAP Beratung Stabilität" class="h-[320px] w-full rounded-[1.75rem] object-cover md:h-[420px]" loading="lazy" />
+          <LightboxImage :src="stabilization" alt="SAP Beratung Stabilität" img-class="h-[320px] w-full rounded-[1.75rem] object-cover md:h-[420px]" button-class="w-full rounded-[1.75rem]" loading="lazy" />
         </div>
       </LayoutContainer>
     </section>
@@ -375,7 +375,7 @@ const faqItems = [
               <UiButton href="/contact" label="Jetzt Erstberatung anfragen!" class="!border-white !text-primary hover:!bg-white/90" />
             </div>
           </div>
-          <img :src="golive" alt="SAP Beratung Erstberatung" class="h-72 w-full rounded-[1.75rem] object-cover" loading="lazy" />
+          <LightboxImage :src="golive" alt="SAP Beratung Erstberatung" img-class="h-72 w-full rounded-[1.75rem] object-cover" button-class="w-full rounded-[1.75rem]" loading="lazy" />
         </div>
       </div>
     </LayoutContainer>

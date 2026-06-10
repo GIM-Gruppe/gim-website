@@ -39,10 +39,11 @@
 
         <!-- Bild -->
         <div class="md:w-1/2 flex justify-center">
-          <img
+          <LightboxImage
             src="/assets/img/Untitled_Artwork-332-1024x530.png"
             alt="Visualisierung des CORESZON Resilienzansatzes"
-            class="max-w-full h-auto rounded my-4"
+            img-class="max-w-full h-auto rounded my-4"
+            button-class="max-w-full rounded"
             loading="lazy"
           />
         </div>
@@ -54,10 +55,11 @@
       <div class="container mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
         <!-- Bild -->
         <div class="md:w-1/2 flex justify-center">
-          <img
+          <LightboxImage
             src="/assets/img/CTA_Auftaktworkshop-5.png"
             alt="Darstellung eines CORESZON Workshops"
-            class="max-w-full h-auto rounded my-4"
+            img-class="max-w-full h-auto rounded my-4"
+            button-class="max-w-full rounded"
             loading="lazy"
           />
         </div>

@@ -10,7 +10,7 @@ definePageMeta({
 
 useSeoMeta(
   'GIM Website - Coreszon Training',
-  'Erfahren Sie mehr über unser Coreszon Training bei der GIM Gesellschaft für integratives Management mbH. Stärken Sie Ihre mentale Widerstandskraft und fördern Sie nachhaltige Gesundheit im Arbeitsalltag.'
+  'Erfahren Sie mehr über unser Coreszon Training bei der GIM GmbH. Stärken Sie Ihre mentale Widerstandskraft und fördern Sie nachhaltige Gesundheit im Arbeitsalltag.'
 )
 
 

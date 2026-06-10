@@ -7,7 +7,7 @@ definePageMeta({
 
 useSeoMeta(
   'GIM Website - Datenschutz',
-  'Erfahren Sie mehr über den Datenschutz der GIM Gesellschaft für integratives Management mbH, einschließlich Informationen zur Datenverarbeitung und Ihren Rechten gemäß DSGVO.'
+  'Erfahren Sie mehr über den Datenschutz der GIM GmbH, einschließlich Informationen zur Datenverarbeitung und Ihren Rechten gemäß DSGVO.'
 )
 </script>
 
@@ -45,7 +45,7 @@ useSeoMeta(
         </p>
 
         <address class="mt-2 not-italic text-secondary leading-relaxed">
-          <strong>GIM Gesellschaft für integratives Management mbH</strong><br />
+          <strong>GIM GmbH</strong><br />
           Gutenbergring 69A<br />
           22848 Norderstedt<br />
           Deutschland<br />

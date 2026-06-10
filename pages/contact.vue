@@ -5,7 +5,7 @@ definePageMeta({ documentDriven: { page: false, surround: false } })
 
 useSeoMeta(
   'GIM Website - Kontakt',
-  'Kontaktieren Sie die GIM Gesellschaft für integratives Management mbH. Finden Sie hier unsere Kontaktdaten und erreichen Sie uns per Telefon, E-Mail oder über unser Kontaktformular.'
+  'Kontaktieren Sie die GIM GmbH. Finden Sie hier unsere Kontaktdaten und erreichen Sie uns per Telefon, E-Mail oder über unser Kontaktformular.'
 )
 </script>
 
@@ -130,10 +130,11 @@ useSeoMeta(
 
           <!-- Bild -->
           <div class="h-full flex items-center justify-center">
-            <img
+            <LightboxImage
               src="/assets/img/hands.jpg"
               alt="Zwei Hände, die Zusammenarbeit symbolisieren"
-              class="w-full h-auto rounded-xl shadow-md object-cover"
+              img-class="w-full h-auto rounded-xl shadow-md object-cover"
+              button-class="w-full rounded-xl"
               loading="lazy"
             />
           </div>

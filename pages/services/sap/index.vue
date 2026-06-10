@@ -5,7 +5,7 @@ definePageMeta({ documentDriven: { page: false, surround: false, }, });
 
 useSeoMeta(
   'GIM Website - SAP Basis Services', // Title: Reflects that the page is about SAP Basis services
-  'Entdecken Sie die SAP Basis Services der GIM Gesellschaft für integratives Management mbH. Unser Expertenteam unterstützt Sie bei der Wartung, Optimierung und Verwaltung Ihrer SAP-Systeme.' // Description: Relevant and concise description for the SAP Basis services page
+  'Entdecken Sie die SAP Basis Services der GIM GmbH. Unser Expertenteam unterstützt Sie bei der Wartung, Optimierung und Verwaltung Ihrer SAP-Systeme.' // Description: Relevant and concise description for the SAP Basis services page
 )
 
 const { data, pending, error } = await useAsyncData('sap', async () => {

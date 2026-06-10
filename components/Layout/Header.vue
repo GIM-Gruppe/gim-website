@@ -81,8 +81,7 @@ watch(open, (val) => {
       <NuxtLink to="/" class="flex items-center space-x-3">
         <img src="/assets/img/GIM-Logo.jpg" alt="GIM Logo" class="h-14 w-auto" />
         <span class="text-secondary font-medium text-sm sm:text-base text-center">
-          Gesellschaft für integratives<br class="hidden sm:block" />
-          Management mbH
+          GIM GmbH <br class="hidden sm:block" />
         </span>
       </NuxtLink>
 

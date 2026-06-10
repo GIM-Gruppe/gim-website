@@ -21,10 +21,11 @@ const props = withDefaults(
         class="basis-1/3"
         :class="{ 'md:order-last': props.imgPos === 'right' }"
       >
-        <img
+        <LightboxImage
           :src="props.imgsrc"
           :alt="props.imgalt"
-          class="w-auto h-80 rounded-full object-cover"
+          img-class="w-auto h-80 rounded-full object-cover"
+          button-class="rounded-full"
           loading="lazy"
         />
       </div>

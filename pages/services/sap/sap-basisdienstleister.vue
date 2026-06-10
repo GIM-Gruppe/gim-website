@@ -299,7 +299,7 @@ const faqItems = [
             </div>
           </div>
 
-          <img :src="analysisImage" alt="SAP-Basis Analyse" class="h-[300px] w-full rounded-[1.75rem] object-cover md:h-[420px]" loading="lazy" />
+          <LightboxImage :src="analysisImage" alt="SAP-Basis Analyse" img-class="h-[300px] w-full rounded-[1.75rem] object-cover md:h-[420px]" button-class="w-full rounded-[1.75rem]" loading="lazy" />
         </div>
       </LayoutContainer>
     </section>
@@ -338,7 +338,7 @@ const faqItems = [
     <section class="bg-gray-50">
       <LayoutContainer class="py-10 md:py-14 lg:py-16">
         <div class="grid gap-10 lg:grid-cols-[minmax(280px,0.82fr)_minmax(0,1.18fr)] lg:items-start">
-          <img :src="processImage" alt="SAP-Basis Support Prozess" class="h-[320px] w-full rounded-[1.75rem] object-cover md:h-[460px] lg:sticky lg:top-24" loading="lazy" />
+          <LightboxImage :src="processImage" alt="SAP-Basis Support Prozess" img-class="h-[320px] w-full rounded-[1.75rem] object-cover md:h-[460px]" button-class="w-full rounded-[1.75rem] lg:sticky lg:top-24" loading="lazy" />
           <div>
             <p class="text-sm font-semibold uppercase tracking-[0.18em] text-primary">Relevanz</p>
             <h2 class="mt-3 font-semibold">Für welche Unternehmen in Hamburg und Umgebung SAP-Basis-Support besonders relevant ist</h2>
@@ -388,7 +388,7 @@ const faqItems = [
               <p><strong>Wir können beispielsweise folgende SAP-Aufgaben für Sie übernehmen:</strong></p>
             </div>
           </div>
-          <img :src="risksImage" alt="SAP-Basis typische Aufgaben" class="hidden h-56 w-full rounded-[1.75rem] object-cover lg:block" loading="lazy" />
+          <LightboxImage :src="risksImage" alt="SAP-Basis typische Aufgaben" img-class="h-56 w-full rounded-[1.75rem] object-cover" button-class="hidden w-full rounded-[1.75rem] lg:block" loading="lazy" />
         </div>
 
         <div class="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -455,7 +455,7 @@ const faqItems = [
             </div>
           </div>
 
-          <img :src="golive" alt="SAP-Basis Verlässlichkeit" class="h-[320px] w-full rounded-[1.75rem] object-cover md:h-[420px]" loading="lazy" />
+          <LightboxImage :src="golive" alt="SAP-Basis Verlässlichkeit" img-class="h-[320px] w-full rounded-[1.75rem] object-cover md:h-[420px]" button-class="w-full rounded-[1.75rem]" loading="lazy" />
         </div>
       </LayoutContainer>
     </section>
@@ -489,7 +489,7 @@ const faqItems = [
             </div>
           </div>
 
-          <img :src="hero" alt="SAP-Basis regionaler Ansprechpartner" class="h-72 w-full rounded-[1.75rem] object-cover" loading="lazy" />
+          <LightboxImage :src="hero" alt="SAP-Basis regionaler Ansprechpartner" img-class="h-72 w-full rounded-[1.75rem] object-cover" button-class="w-full rounded-[1.75rem]" loading="lazy" />
         </div>
       </div>
     </LayoutContainer>
