@@ -84,7 +84,7 @@ const navigation = {
     },
     {
       name: 'Instagram',
-      href: 'https://www.instagram.com/DEIN_INSTAGRAM_ACCOUNT/',
+      href: 'https://www.instagram.com/gimgruppe/',
       icon: defineComponent({
         render: () =>
           h('svg', { fill: 'currentColor', viewBox: '0 0 24 24' }, [
