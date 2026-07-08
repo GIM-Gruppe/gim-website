@@ -7,116 +7,327 @@ definePageMeta({
 
 useSeoMeta(
   'GIM Website - Datenschutz',
-  'Erfahren Sie mehr über den Datenschutz der GIM GmbH, einschließlich Informationen zur Datenverarbeitung und Ihren Rechten gemäß DSGVO.'
+  'Datenschutzhinweise der GIM GmbH: Informationen zur Verarbeitung personenbezogener Daten, Rechtsgrundlagen, Webseitenfunktionen und Betroffenenrechten gemäß DSGVO.'
 )
 </script>
 
 <template>
   <LayoutContainer as="section" aria-labelledby="privacy-policy-title">
     <div class="mx-auto max-w-7xl px-6 py-14 sm:py-16 lg:px-8">
-
-      <!-- Haupttitel -->
       <h1
         id="privacy-policy-title"
         class="font-bold text-primary mb-6 break-words text-3xl lg:text-5xl"
       >
-        Datenschutzerklärung
+        Datenschutzhinweise
       </h1>
 
-      <!-- Abschnitt 1 -->
-      <section class="mb-10" aria-labelledby="pp-intro">
-        <h2 id="pp-intro" class="font-semibold text-accent text-2xl">
-          1. Einleitung
-        </h2>
-        <p class="mt-4 text-secondary">
-          Der Schutz Ihrer persönlichen Daten ist uns ein wichtiges Anliegen.
-          Diese Website dient rein informativen Zwecken. Wir verarbeiten
-          keinerlei personenbezogene Daten und verwenden keine Cookies oder Tracking-Tools.
+        <p class="mt-4 text-secondary leading-relaxed">
+          Der Schutz Ihrer Privatsphäre und Ihrer personenbezogenen Daten hat für uns höchste Priorität. Daher legen wir großen Wert auf einen verantwortungsvollen Umgang mit personenbezogenen Informationen sowie auf deren sichere Verarbeitung. Dabei beachten wir die jeweils geltenden datenschutzrechtlichen Vorgaben, insbesondere die Bestimmungen der Datenschutz-Grundverordnung (DSGVO).
         </p>
-      </section>
-
-      <!-- Abschnitt 2 -->
-      <section class="mb-10" aria-labelledby="pp-controller">
-        <h2 id="pp-controller" class="font-semibold text-accent text-2xl">
-          2. Verantwortlicher
-        </h2>
-        <p class="mt-4 text-secondary">
-          Verantwortlicher für die Datenverarbeitung auf dieser Website ist:
+        <p class="mt-4 text-secondary leading-relaxed">
+          Durch den Einsatz geeigneter technischer und organisatorischer Maßnahmen stellen wir sicher, dass personenbezogene Daten bestmöglich vor unbefugtem Zugriff, Verlust, Missbrauch oder sonstigen unzulässigen Verarbeitungen geschützt werden.
         </p>
-
-        <address class="mt-2 not-italic text-secondary leading-relaxed">
-          <strong>GIM GmbH</strong><br />
+        <h2 id="1-allgemeine-hinweise" class="mt-12 font-semibold text-accent text-2xl lg:text-3xl">
+          1. Allgemeine Hinweise
+        </h2>
+        <h3 id="1-1-verantwortliche-stelle" class="mt-8 font-semibold text-accent text-xl lg:text-2xl">
+          1.1 Verantwortliche Stelle
+        </h3>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Verantwortliche Stelle gemäß Art. 4 Nr. 7 DSGVO ist
+        </p>
+        <address class="mt-3 not-italic text-secondary leading-relaxed">
+          GIM GmbH<br />
           Gutenbergring 69A<br />
           22848 Norderstedt<br />
           Deutschland<br />
-          Telefon:
-          <a href="tel:+494022898595" class="underline hover:no-underline">
-            +49 40 22898595
-          </a><br />
-          E-Mail:
-          <a href="mailto:info@gim-gruppe.com" class="underline hover:no-underline">
-            info@gim-gruppe.com
-          </a>
+          Telefon: <a href="tel:+494022898595" class="underline hover:no-underline">+49 40 22898595</a><br />
+          E-Mail: <a href="mailto:info@gim-gruppe.com" class="underline hover:no-underline">info@gim-gruppe.com</a>
         </address>
-      </section>
-
-      <!-- Abschnitt 3 -->
-      <section class="mb-10" aria-labelledby="pp-none">
-        <h2 id="pp-none" class="font-semibold text-accent text-2xl">
-          3. Keine Erhebung personenbezogener Daten
+        <p class="mt-4 text-secondary leading-relaxed">
+          Weitere Informationen finden Sie im Impressum.
+        </p>
+        <h2 id="1-2-personenbezogene-daten" class="mt-12 font-semibold text-accent text-2xl lg:text-3xl">
+          1.2 Personenbezogene Daten
         </h2>
-        <p class="mt-4 text-secondary">
-          Wir erheben, speichern oder verarbeiten keinerlei personenbezogene Daten,
-          wenn Sie diese Website besuchen. Es werden keine Informationen automatisch erfasst,
-          keine IP-Adressen gespeichert und keine Nutzungsdaten gesammelt.
+        <p class="mt-4 text-secondary leading-relaxed">
+          Personenbezogene oder personenbeziehbare Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Hierzu gehören beispielsweise Name, Anschrift, Telefonnummer oder E-Mail-Adresse sowie Informationen über das Nutzungs- und Surfverhalten, sofern diese einer Person direkt oder indirekt zugeordnet werden können.
         </p>
-      </section>
-
-      <!-- Abschnitt 4 -->
-      <section class="mb-10" aria-labelledby="pp-cookies">
-        <h2 id="pp-cookies" class="font-semibold text-accent text-2xl">
-          4. Keine Cookies oder Tracking-Tools
+        <p class="mt-4 text-secondary leading-relaxed">
+          Die „betroffene Person“ im Sinne der DSGVO ist jede natürliche Person, über deren persönliche oder sachliche Verhältnisse die persönlichen Daten etwas aussagen.
+        </p>
+        <h3 id="1-3-datenuebermittlung-an-dritte-subunternehmer-und-drittanbieter" class="mt-8 font-semibold text-accent text-xl lg:text-2xl">
+          1.3 Datenübermittlung an Dritte, Subunternehmer und Drittanbieter
+        </h3>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Personenbezogene Daten werden von uns ausschließlich unter Beachtung der geltenden gesetzlichen Bestimmungen an Dritte weitergegeben. Eine Übermittlung erfolgt insbesondere dann, wenn dies zur Erfüllung vertraglicher Pflichten, zur Durchführung von Abrechnungsprozessen oder aufgrund einer gesetzlichen Verpflichtung erforderlich ist.
+        </p>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Soweit wir zur Bereitstellung unseres Online-Angebots externe Dienstleister oder Subunternehmer einsetzen, haben wir mit diesen entsprechende vertragliche Vereinbarungen geschlossen und angemessene technische sowie organisatorische Maßnahmen zum Schutz personenbezogener Daten umgesetzt.
+        </p>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Nutzen wir Inhalte, Dienste oder sonstige Leistungen von Unternehmen mit Sitz außerhalb der Europäischen Union bzw. des Europäischen Wirtschaftsraums (nachfolgend gemeinsam „Drittanbieter“), kann es im Rahmen der Nutzung dieser Angebote zu einer Übermittlung personenbezogener Daten in sogenannte Drittländer kommen. Eine solche Datenübermittlung erfolgt nur, sofern die gesetzlichen Voraussetzungen erfüllt sind, insbesondere wenn für das betreffende Drittland ein angemessenes Datenschutzniveau besteht, die betroffene Person eingewilligt hat oder eine andere gesetzliche Grundlage die Übermittlung erlaubt.
+        </p>
+        <h3 id="1-4-datensicherheit" class="mt-8 font-semibold text-accent text-xl lg:text-2xl">
+          1.4 Datensicherheit
+        </h3>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Zum Schutz personenbezogener Daten setzen wir umfassende technische und organisatorische Maßnahmen ein. Diese dienen dazu, Daten vor unbefugtem Zugriff, unbeabsichtigtem Verlust, unzulässiger Veränderung oder sonstiger missbräuchlicher Nutzung zu bewahren. Unsere Sicherheitsstandards überprüfen wir regelmäßig und passen diese bei Bedarf an neue technische Entwicklungen und aktuelle Sicherheitsanforderungen an.
+        </p>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Die Übertragung von Daten über unsere Website erfolgt verschlüsselt. Hierfür verwenden wir ein anerkanntes Verschlüsselungsverfahren (Secure Sockets Layer kurz SSL), dass die Vertraulichkeit der übermittelten Informationen während der Übertragung gewährleistet.
+        </p>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Auch intern legen wir großen Wert auf einen sorgfältigen und verantwortungsbewussten Umgang mit personenbezogenen Daten. Alle Mitarbeitende, werden regelmäßig für Datenschutz- und Sicherheitsanforderungen sensibilisiert. Zudem sind sie zur Wahrung der Vertraulichkeit sowie zur Einhaltung der datenschutzrechtlichen Vorgaben verpflichtet.
+        </p>
+        <h3 id="1-5-rechtsgrundlagen" class="mt-8 font-semibold text-accent text-xl lg:text-2xl">
+          1.5 Rechtsgrundlagen
+        </h3>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Die Verarbeitung personenbezogener Daten erfolgt ausschließlich auf Grundlage der einschlägigen Bestimmungen der Datenschutz-Grundverordnung (DSGVO). Je nach Art und Zweck der Datenverarbeitung stützen wir uns dabei insbesondere auf folgende Rechtsgrundlagen:
+        </p>
+        <p class=" mt-6 font-semibold text-primary text-lg"> 
+          Vertragserfüllung und vorvertragliche Maßnahmen (Art. 6 Abs. 1 lit. b DSGVO)<br />
+        </p>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Die Verarbeitung personenbezogener Daten erfolgt, soweit dies zur Anbahnung, Durchführung oder Abwicklung eines Vertragsverhältnisses erforderlich ist.
+        </p>
+        <p class=" mt-6 font-semibold text-primary text-lg"> 
+          Erfüllung rechtlicher Verpflichtungen (Art. 6 Abs. 1 lit. c DSGVO)<br />
+        </p>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Darüber hinaus verarbeiten wir personenbezogene Daten, wenn dies zur Erfüllung gesetzlicher oder behördlicher Vorgaben erforderlich ist.
+        </p>
+         <p class=" mt-6 font-semibold text-primary text-lg"> 
+          Berechtigte Interessen (Art. 6 Abs. 1 lit. f DSGVO)<br />
+        </p>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Eine Verarbeitung kann zudem erfolgen, wenn sie zur Wahrung berechtigter Interessen unseres Unternehmens oder Dritter notwendig ist. Dabei achten wir stets darauf, dass keine überwiegenden schutzwürdigen Interessen, Grundrechte oder Grundfreiheiten der betroffenen Personen entgegenstehen.
+        </p>
+        <p class=" mt-6 font-semibold text-primary text-lg"> 
+          §25 TDDDG
+        </p>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Ferner verarbeiten wir Ihre Daten auf Basis des §25 Telekommunikation-Digitale-Dienste-Datenschutz-Gesetz (TDDDG). Das Speichern von Informationen auf dem Endgerät eines Nutzers oder der Zugriff darauf ist grundsätzlich nur mit vorheriger Einwilligung zulässig. Eine Einwilligung ist jedoch nicht erforderlich, wenn dies technisch notwendig für die Datenübertragung oder zur Bereitstellung eines ausdrücklich vom Nutzer gewünschten digitalen Dienstes ist.
+        </p>
+        <h3 id="1-6-ihre-datenschutzrechte" class="mt-8 font-semibold text-accent text-xl lg:text-2xl">
+          1.6 Ihre Datenschutzrechte
+        </h3>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Betroffenen Personen stehen im Zusammenhang mit der Verarbeitung ihrer personenbezogenen Daten die folgenden Rechte nach den geltenden datenschutzrechtlichen Bestimmungen zu:
+        </p>
+        <ul class="mt-4 list-disc space-y-2 pl-6 text-secondary leading-relaxed">
+          <li>Recht auf Auskunft über die verarbeiteten personenbezogenen Daten,</li>
+          <li>Recht auf Berichtigung unrichtiger oder Vervollständigung unvollständiger personenbezogener Daten,</li>
+          <li>Recht auf Löschung personenbezogener Daten, sofern keine gesetzlichen Aufbewahrungs- oder sonstigen gesetzlichen Verpflichtungen entgegenstehen,</li>
+          <li>Recht auf Einschränkung der Verarbeitung unter den gesetzlichen Voraussetzungen,</li>
+          <li>Recht auf Datenübertragbarkeit, soweit die Verarbeitung auf einer Einwilligung oder einem Vertrag beruht und mithilfe automatisierter Verfahren erfolgt,</li>
+          <li>Recht auf Widerspruch gegen die Verarbeitung personenbezogener Daten aus Gründen, die sich aus der besonderen Situation der betroffenen Person ergeben,</li>
+          <li>Recht auf Widerruf einer erteilten Einwilligung mit Wirkung für die Zukunft. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Verarbeitung bleibt hiervon unberührt.</li>
+        </ul>
+        <h3 id="1-7-beschwerderecht" class="mt-8 font-semibold text-accent text-xl lg:text-2xl">
+          1.7 Beschwerderecht
+        </h3>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Sie haben das Recht, eine Beschwerde bei der zuständigen Datenschutzaufsichtsbehörde einzureichen, wenn die Sie der Ansicht sind, dass die Verarbeitung Ihrer personenbezogenen Daten gegen datenschutzrechtliche Vorschriften verstößt.
+        </p>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Die für uns zuständige Aufsichtsbehörde ist:
+        </p>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Unabhängiges Landeszentrum für Datenschutz Schleswig-Holstein
+Holstenstraße 98, 24103 Kiel
+        </p>
+        <p class="mt-4 text-secondary leading-relaxed">
+          <a href="https://www.datenschutzzentrum.de" target="_blank" rel="noopener noreferrer" class="underline hover:no-underline">https://www.datenschutzzentrum.de</a>
+        </p>
+        <h3 id="1-8-ansprechpartner" class="mt-8 font-semibold text-accent text-xl lg:text-2xl">
+          1.8 Ansprechpartner
+        </h3>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Sollten Sie Fragen zur Verarbeitung Ihrer personenbezogenen Daten oder zur Ausübung Ihrer Betroffenenrechte haben, dann wenden Sie sich bitte an:
+        </p>
+        <p class="mt-4 text-secondary leading-relaxed">
+          <a href="mailto:info@gim-gruppe.com" class="underline hover:no-underline">info@gim-gruppe.com</a>
+        </p>
+        <h2 id="2-datenverarbeitung-im-rahmen-der-nutzung-von-webseitenfunktionen" class="mt-12 font-semibold text-accent text-2xl lg:text-3xl">
+          2. Datenverarbeitung im Rahmen der Nutzung von Webseitenfunktionen
         </h2>
-        <p class="mt-4 text-secondary">
-          Auf unserer Website werden keine Cookies verwendet. Es kommen auch keine Analysetools
-          wie Google Analytics oder andere Tracking-Tools zum Einsatz.
+        <h3 id="2-1-abruf-der-webseite" class="mt-8 font-semibold text-accent text-xl lg:text-2xl">
+          2.1 Abruf der Webseite
+        </h3>
+        <h4 id="verarbeitungszweck" class="mt-6 font-semibold text-primary text-lg">
+          Verarbeitungszweck
+        </h4>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Zweck der Verarbeitung ist die Sicherstellung der Funktionalität der Webseite und der Sicherheit unserer informationstechnischen Systeme.
         </p>
-      </section>
-
-      <!-- Abschnitt 5 -->
-      <section class="mb-10" aria-labelledby="pp-rights">
-        <h2 id="pp-rights" class="font-semibold text-accent text-2xl">
-          5. Ihre Rechte
+        <h4 id="art-der-daten" class="mt-6 font-semibold text-primary text-lg">
+          Art der Daten
+        </h4>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Bei jedem Zugriff auf die Website werden durch die eingesetzten Webserver und Systeme automatisch bestimmte technische Informationen erfasst und verarbeitet. Dies ist erforderlich, um die Funktionsfähigkeit, Sicherheit und Stabilität des Online-Angebots sicherzustellen.
+        </p>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Dabei können insbesondere folgende Daten verarbeitet werden:
+        </p>
+        <ul class="mt-4 list-disc space-y-2 pl-6 text-secondary leading-relaxed">
+          <li>Informationen zum verwendeten Endgerät und Browser (z. B. Gerätetyp, Betriebssystem, Browsertyp, Bildschirmauflösung und technische Einstellungen),</li>
+          <li>die IP-Adresse des anfragenden Endgeräts,</li>
+          <li>Datum und Uhrzeit des Zugriffs,</li>
+          <li>Angaben zum Internetdienstanbieter,</li>
+          <li>technische Anfragedaten (HTTP-Request),</li>
+          <li>Sitzungs- bzw. Session-Identifikationsnummern,</li>
+          <li>aufgerufene Seiten und Inhalte innerhalb des Online-Angebots,</li>
+          <li>die Internetseite, von der aus der Zugriff erfolgt ist (Referrer),</li>
+          <li>weitere Webseiten oder Inhalte, die über das Online-Angebot aufgerufen werden.</li>
+        </ul>
+        <h4 id="rechtsgrundlage" class="mt-6 font-semibold text-primary text-lg">
+          Rechtsgrundlage
+        </h4>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO sowie § 25 Abs. 2 Nr. 2 TDDDG. Sie ist erforderlich, um die technische Bereitstellung, Funktionsfähigkeit und Sicherheit der Website zu gewährleisten.
+        </p>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Das berechtigte Interesse liegt insbesondere in einem stabilen, sicheren und ordnungsgemäßen Betrieb des Online-Angebots sowie im Schutz der eingesetzten IT-Systeme. Ihr Vertraulichkeitsinteresse tritt damit zurück. Ohne die Verarbeitung bestimmter technischer Daten kann die Website nicht zuverlässig bereitgestellt, betrieben und abgesichert werden.
+        </p>
+        <h4 id="dauer-der-speicherung" class="mt-6 font-semibold text-primary text-lg">
+          Dauer der Speicherung
+        </h4>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Die Daten werden gelöscht, sobald sie für die Erreichung des Zweckes ihrer Erhebung nicht mehr erforderlich sind.
+        </p>
+        <h4 id="widerrufs-widerspruchs-und-loeschungsmoeglichkeit" class="mt-6 font-semibold text-primary text-lg">
+          Widerrufs-/ Widerspruchs- und Löschungsmöglichkeit
+        </h4>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Die Erhebung und Verarbeitung der Daten zu den in dieser Ziffer genannten Zwecken ist für den Betrieb unserer Webseite zwingend erforderlich. Es besteht folglich keine Widerspruchsmöglichkeit für Sie.
+        </p>
+        <h4 id="weitere-informationen" class="mt-6 font-semibold text-primary text-lg">
+          Weitere Informationen
+        </h4>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Die Webseite wird gehostet durch:
+        </p>
+        <address class="mt-3 not-italic text-secondary leading-relaxed">
+          GitHub, Inc.<br />
+          88 Colin P. Kelly Jr. Street<br />
+          San Francisco, CA 94107<br />
+          USA
+        </address>
+        <h4 id="verarbeitung-ihrer-personenbezogenen-daten-in-drittlaender" class="mt-6 font-semibold text-primary text-lg">
+          Verarbeitung Ihrer personenbezogenen Daten in Drittländer
+        </h4>
+        <h4 id="die-verarbeitung-personenbezogener-daten-erfolgt-grundsaetzlich-innerhalb-der-europaeischen-union-eu-bzw-des-europaeischen-wirtschaftsraums-ewr-sofern-in-einzelfaellen-eine-uebermittlung-in-drittlaender-insbesondere-die-usa-erfolgt-geschieht-dies-ausschliesslich-unter-einhaltung-der-vorgaben-der-dsgvo-und-auf-grundlage-geeigneter-garantien-gemaess-art-45-oder-art-46-dsgvo" class="mt-6 font-semibold text-primary text-lg">
+          Die Verarbeitung personenbezogener Daten erfolgt grundsätzlich innerhalb der Europäischen Union (EU) bzw. des Europäischen Wirtschaftsraums (EWR). Sofern in Einzelfällen eine Übermittlung in Drittländer, insbesondere die USA, erfolgt, geschieht dies ausschließlich unter Einhaltung der Vorgaben der DSGVO und auf Grundlage geeigneter Garantien gemäß Art. 45 oder Art. 46 DSGVO.
+        </h4>
+        <h4 id="pflicht-zur-bereitstellung-ihrer-personenbezogenen-daten" class="mt-6 font-semibold text-primary text-lg">
+          Pflicht zur Bereitstellung Ihrer personenbezogenen Daten
+        </h4>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Sie sind zu einer Bekanntgabe personenbezogener Daten nicht verpflichtet. Ohne die oben genannten personenbezogenen Daten ist der Abruf dieser Website für dich aber nicht möglich.
+        </p>
+        <h2 id="2-2-terminvereinbarung" class="mt-12 font-semibold text-accent text-2xl lg:text-3xl">
+          2.2 Terminvereinbarung
         </h2>
-        <p class="mt-4 text-secondary">
-          Auch wenn auf dieser Website keine Daten verarbeitet werden, stehen Ihnen grundsätzlich
-          die Rechte gemäß DSGVO zu: Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung,
-          Datenübertragbarkeit und Widerspruch.
+        <h4 id="verarbeitungszweck-2" class="mt-6 font-semibold text-primary text-lg">
+          Verarbeitungszweck
+        </h4>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Über unsere Webseite haben Sie die Möglichkeit einen Termin zur Erstberatung mit uns zu vereinbaren.
         </p>
-        <p class="mt-4 text-secondary">
-          Sollten Sie Fragen oder Anliegen haben, können Sie uns jederzeit unter den oben angegebenen
-          Kontaktdaten erreichen.
+        <h4 id="art-der-daten-2" class="mt-6 font-semibold text-primary text-lg">
+          Art der Daten
+        </h4>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Folgende Daten werden im Zuge der Terminvereinbarung erhoben:
         </p>
-      </section>
-
-      <!-- Abschnitt 6 -->
-      <section class="mb-10" aria-labelledby="pp-updates">
-        <h2 id="pp-updates" class="font-semibold text-accent text-2xl">
-          6. Änderungen dieser Datenschutzerklärung
+        <ul class="mt-4 list-disc space-y-2 pl-6 text-secondary leading-relaxed">
+          <li>Datum und Uhrzeit Ihrer Buchung</li>
+          <li>Ihr Vorname</li>
+          <li>Ihr Nachname</li>
+          <li>Ihre E-Mail Adresse</li>
+          <li>Ihre Geschäftsadresse</li>
+          <li>Ihre Telefonnummer</li>
+          <li>Ein Freitextfeld für Ihre Anmerkungen</li>
+        </ul>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Bitte beachten Sie, dass Datum und Uhrzeit Ihrer Buchung, sowie Ihr Vor- und Nachname und Ihre Mailadresse Pflichtfelder darstellen. Alle übrigen Felder sind optional.
+        </p>
+        <h4 id="rechtsgrundlage-2" class="mt-6 font-semibold text-primary text-lg">
+          Rechtsgrundlage
+        </h4>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Soweit Ihre Anfrage auf den Abschluss oder die Durchführung eines Vertrags abzielt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist, erfolgt die Verarbeitung auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO.
+        </p>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Darüber hinaus verarbeiten wir Ihre personenbezogenen Daten auf Grundlage unseres berechtigten Interesses gemäß Art. 6 Abs. 1 lit. f DSGVO. Dieses liegt insbesondere in der Bearbeitung und Beantwortung von Anfragen, der Gewährleistung einer effizienten Kommunikation sowie der kontinuierlichen Verbesserung unserer Kommunikationsangebote. Die Verarbeitung dient zudem der Optimierung unserer Außendarstellung und der bedarfsgerechten Bereitstellung von Informationen. Im Rahmen der Interessenabwägung überwiegen keine schutzwürdigen Interessen oder Grundrechte der betroffenen Personen, die der Verarbeitung entgegenstehen.
+        </p>
+        <h4 id="dauer-der-speicherung-2" class="mt-6 font-semibold text-primary text-lg">
+          Dauer der Speicherung
+        </h4>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Personenbezogene Daten, die im Zusammenhang mit einer Kontaktanfrage erhoben werden, werden ausschließlich für die Bearbeitung des Anliegens gespeichert.
+        </p>
+        <h4 id="widerrufs-widerspruchs-und-loeschungsmoeglichkeit-2" class="mt-6 font-semibold text-primary text-lg">
+          Widerrufs-/ Widerspruchs- und Löschungsmöglichkeit
+        </h4>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Liegt die Verarbeitung Ihrer personenbezogenen Daten auf Grundlage eines berechtigten Interesses vor, können Sie dieser jederzeit mit Wirkung für die Zukunft per E-Mail an <a href="mailto:info@gim-gruppe.com" class="underline hover:no-underline">info@gim-gruppe.com</a> widersprechen.
+        </p>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Nach Eingang eines berechtigten Widerspruchs wird die weitere Korrespondenz eingestellt. Alle in diesem Zusammenhang erhobenen personenbezogenen Daten werden anschließend gelöscht, sofern keine gesetzlichen Aufbewahrungspflichten einer Löschung entgegenstehen.
+        </p>
+        <h4 id="weitere-informationen-2" class="mt-6 font-semibold text-primary text-lg">
+          Weitere Informationen
+        </h4>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Die Verarbeitung Ihrer Daten erfolgt durch:
+        </p>
+        <address class="mt-3 not-italic text-secondary leading-relaxed">
+          Microsoft Deutschland GmbH<br />
+          Walter-Gropius-Straße 5<br />
+          80807 München
+        </address>
+        <h4 id="verarbeitung-ihrer-personenbezogenen-daten-in-drittlaender-2" class="mt-6 font-semibold text-primary text-lg">
+          Verarbeitung Ihrer personenbezogenen Daten in Drittländer
+        </h4>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Die Verarbeitung personenbezogener Daten erfolgt grundsätzlich innerhalb der Europäischen Union (EU) bzw. des Europäischen Wirtschaftsraums (EWR). Sofern in Einzelfällen eine Übermittlung in Drittländer, insbesondere die USA, erfolgt, geschieht dies ausschließlich unter Einhaltung der Vorgaben der DSGVO und auf Grundlage geeigneter Garantien gemäß Art. 45 oder Art. 46 DSGVO.
+        </p>
+        <h4 id="pflicht-zur-bereitstellung-ihrer-personenbezogenen-daten-2" class="mt-6 font-semibold text-primary text-lg">
+          Pflicht zur Bereitstellung Ihrer personenbezogenen Daten
+        </h4>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Die Bereitstellung Ihrer personenbezogenen Daten erfolgt freiwillig. Bitte beachten Sie jedoch, dass Kontaktaufnahme ohne die hierfür erforderlichen Angaben nicht möglich ist.
+        </p>
+        <h3 id="2-3-google-web-fonts-lokales-hosting" class="mt-8 font-semibold text-accent text-xl lg:text-2xl">
+          2.3 Google Web Fonts (lokales Hosting)
+        </h3>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Diese Seite nutzt zur einheitlichen Darstellung von Schriftarten so genannte Web Fonts, die von Google bereitgestellt werden.  Die verwendeten Schriftarten sind lokal auf dem Webserver eingebunden. Eine Verbindung zu Servern externer Anbieter erfolgt hierbei nicht.
+        </p>
+        <h2 id="3-haftung-und-aktualitaet" class="mt-12 font-semibold text-accent text-2xl lg:text-3xl">
+          3. Haftung und Aktualität
         </h2>
-        <p class="mt-4 text-secondary">
-          Diese Datenschutzerklärung ist aktuell gültig und hat den Stand 11.10.2024.
-          Durch Änderungen unserer Website oder rechtliche Vorgaben kann eine Anpassung
-          dieser Erklärung erforderlich werden.
+        <h4 id="3-1-haftung-fuer-externe-verweise" class="mt-6 font-semibold text-primary text-lg">
+          3.1 Haftung für externe Verweise
+        </h4>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Diese Website sowie die dazugehörigen Datenschutzhinweise können Verweise auf externe Internetseiten enthalten, die von Dritten betrieben werden. Auf deren Inhalte besteht kein Einfluss. Daher kann für die Richtigkeit, Vollständigkeit oder Aktualität dieser externen Inhalte keine Verantwortung übernommen werden.
         </p>
-      </section>
-
+        <p class="mt-4 text-secondary leading-relaxed">
+          Für die Inhalte der verlinkten Seiten sind ausschließlich die jeweiligen Betreiber verantwortlich. Zum Zeitpunkt der Verlinkung wurden die externen Inhalte auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren dabei nicht erkennbar. Eine fortlaufende inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte für eine Rechtsverletzung nicht zumutbar. Werden Rechtsverstöße bekannt, werden entsprechende Verlinkungen unverzüglich entfernt.
+        </p>
+        <h4 id="3-2-aktualitaet-und-aenderungen-dieser-datenschutzhinweise" class="mt-6 font-semibold text-primary text-lg">
+          3.2 Aktualität und Änderungen dieser Datenschutzhinweise
+        </h4>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Diese Datenschutzhinweise werden regelmäßig überprüft und bei Bedarf angepasst, um sie an rechtliche, technische oder organisatorische Änderungen anzupassen. Es wird empfohlen, die Datenschutzhinweise in regelmäßigen Abständen einzusehen, um sich über den aktuellen Stand der Datenverarbeitung zu informieren.
+        </p>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Stand: Juli 2026
+        </p>
     </div>
   </LayoutContainer>
 </template>
-
-<style scoped>
-.privacy-policy-container {
-  background-color: #f9f9f9;
-}
-</style>
