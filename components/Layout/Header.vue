@@ -55,6 +55,10 @@ const menuitems = [
     path: "/services/kis-guard",
   },
   {
+    title: "GIM-Shop",
+    path: "https://shop.gim-gruppe.com/",
+  },
+  {
     title: "Über uns",
     path: "/about",
   },
@@ -89,13 +93,11 @@ watch(open, (val) => {
         <div v-for="(item, index) in menuitems" :key="index" class="relative group">
           <div v-if="item.children" class="relative">
             <div class="flex items-center gap-1">
-              <NuxtLink
-                v-if="item.clickable && item.path"
-                :to="item.path"
-                class="text-secondary hover:text-gray-900 text-sm"
-              >
+              <a v-if="item.path && item.path.startsWith('http')" :href="item.path" target="_blank" rel="noopener noreferrer" class="text-secondary hover:text-gray-900 text-sm">{{ item.title }}</a>
+              <NuxtLink v-else-if="item.clickable && item.path" :to="item.path" class="text-secondary hover:text-gray-900 text-sm">
                 {{ item.title }}
               </NuxtLink>
+              <NuxtLink v-else-if="item.path" :to="item.path" class="text-secondary hover:text-gray-900 text-sm">{{ item.title }}</NuxtLink>
               <span v-else class="text-secondary text-sm cursor-default">
                 {{ item.title }}
               </span>
