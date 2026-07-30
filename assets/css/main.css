@@ -49,9 +49,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 @layer base {
   /* Root-Schriftgröße: barrierefreundlich */
@@ -96,9 +93,21 @@ body {
   font-size: 1rem;
 }
 
-/* Fließtext – meist reicht Tailwind (prose, text-base), aber hier eine sanfte Basis */
-p {
-  margin-bottom: 1rem;
+/* Fließtext: mobil linksbündig, ab 640 px Blocksatz mit Silbentrennung.
+   Explizite Tailwind-Klassen wie text-center oder text-left bleiben wirksam. */
+@layer base {
+  p {
+    margin-bottom: 1rem;
+    text-align: left;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  @screen sm {
+    p {
+      text-align: justify;
+    }
+  }
 }
 
 /* Optional: sparsam verwendeter Text-Schatten für spezielle Überschriften */

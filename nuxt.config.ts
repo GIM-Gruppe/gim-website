@@ -21,9 +21,9 @@ export default defineNuxtConfig({
           type: 'text/javascript'
         },
         {
-          src: 'https://umami.gim.at-gim.cloud:3000/script.js',
+          src: 'http://umami.gim.at-gim.cloud:3000/script.js',
           defer: true,
-          'data-website-id': '675fbe79-a183-44a7-b1e9-f77549d9be12'
+          'data-website-id': 'ad4913ce-64b9-44ad-9eee-9ce28dad7db1'
         }
       ],
       noscript: [
