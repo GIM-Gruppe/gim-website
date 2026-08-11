@@ -19,7 +19,7 @@
     "@iconify/tailwind": "^1.1.3",
     "@nuxt/content": "^3.12.0",
     "@nuxt/icon": "^2.2.1",
-    "@nuxt/image": "^1.8.0",
+    "@nuxt/image": "^2.1.0",
     "@nuxtjs/i18n": "^10.2.3",
     "@tailwindcss/typography": "^0.5.10",
     "autoprefixer": "^10.4.16",

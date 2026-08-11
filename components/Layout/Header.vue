@@ -11,11 +11,11 @@ const menuRef = ref(null);
 const menuitems = [
   {
     title: "IT-Infrastruktur",
-    path: "/services/it-infrastructure",
+    path: "/services/it-infrastrukturmanagement",
   },
   {
     title: "Managed Services",
-    path: "/services/managed-services",
+    path: "/services/it-abteilung-outsourcen",
   },
   {
     title: "SAP Basis",

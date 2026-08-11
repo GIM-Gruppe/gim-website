@@ -21,7 +21,7 @@ export default defineNuxtConfig({
           type: 'text/javascript'
         },
         {
-          src: 'http://umami.gim.at-gim.cloud:3000/script.js',
+          src: 'http://metrics.gim.at-gim.cloud/script.js',
           defer: true,
           'data-website-id': 'ad4913ce-64b9-44ad-9eee-9ce28dad7db1'
         }
@@ -65,7 +65,20 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    '/': { prerender: true }
+    '/': { prerender: true },
+    '/services/it-infrastructure': {
+      redirect: {
+        to: '/services/it-infrastrukturmanagement',
+        statusCode: 301
+      }
+    },
+
+    '/services/managed-services': {
+      redirect: {
+        to: '/services/it-abteilung-outsourcen',
+        statusCode: 301
+      }
+    }
   },
 
   site: {
