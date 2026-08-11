@@ -1,0 +1,1 @@
+import{D as e,St as t,b as n,mt as r}from"./B4b-2GOK.js";import{t as i}from"./BDNMzG2s.js";var a={};function o(i,a){let o=t(`ContentDoc`);return r(),n(`main`,null,[e(o)])}var s=i(a,[[`render`,o]]);export{s as default};
