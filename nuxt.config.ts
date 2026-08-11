@@ -21,7 +21,7 @@ export default defineNuxtConfig({
           type: 'text/javascript'
         },
         {
-          src: 'http://metrics.gim.at-gim.cloud/script.js',
+          src: 'https://metrics.gim.at-gim.cloud/script.js',
           defer: true,
           'data-website-id': 'ad4913ce-64b9-44ad-9eee-9ce28dad7db1'
         }
