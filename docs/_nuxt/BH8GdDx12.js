@@ -1,0 +1,1 @@
+import{n as e}from"./BvhQZuWJ.js";var t=e=>{};function n(t,n){e({title:t,meta:[{name:`description`,content:n},{property:`og:title`,content:t},{property:`og:description`,content:n}]})}export{t as n,n as t};

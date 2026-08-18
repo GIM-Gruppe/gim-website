@@ -30,9 +30,9 @@ useSeoMeta(
         <h2 id="1-allgemeine-hinweise" class="mt-12 font-semibold text-accent text-2xl lg:text-3xl">
           1. Allgemeine Hinweise
         </h2>
-        <h3 id="1-1-verantwortliche-stelle" class="mt-8 font-semibold text-accent text-xl lg:text-2xl">
+        <h4 id="1-1-verantwortliche-stelle" class="mt-6 font-semibold text-primary text-lg">
           1.1 Verantwortliche Stelle
-        </h3>
+        </h4>
         <p class="mt-4 text-secondary leading-relaxed">
           Verantwortliche Stelle gemäß Art. 4 Nr. 7 DSGVO ist
         </p>
@@ -47,18 +47,18 @@ useSeoMeta(
         <p class="mt-4 text-secondary leading-relaxed">
           Weitere Informationen finden Sie im Impressum.
         </p>
-        <h2 id="1-2-personenbezogene-daten" class="mt-12 font-semibold text-accent text-2xl lg:text-3xl">
+        <h4 id="1-2-personenbezogene-daten" class="mt-6 font-semibold text-primary text-lg">
           1.2 Personenbezogene Daten
-        </h2>
+        </h4>
         <p class="mt-4 text-secondary leading-relaxed">
           Personenbezogene oder personenbeziehbare Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Hierzu gehören beispielsweise Name, Anschrift, Telefonnummer oder E-Mail-Adresse sowie Informationen über das Nutzungs- und Surfverhalten, sofern diese einer Person direkt oder indirekt zugeordnet werden können.
         </p>
         <p class="mt-4 text-secondary leading-relaxed">
           Die „betroffene Person“ im Sinne der DSGVO ist jede natürliche Person, über deren persönliche oder sachliche Verhältnisse die persönlichen Daten etwas aussagen.
         </p>
-        <h3 id="1-3-datenuebermittlung-an-dritte-subunternehmer-und-drittanbieter" class="mt-8 font-semibold text-accent text-xl lg:text-2xl">
+        <h4 id="1-3-datenuebermittlung-an-dritte-subunternehmer-und-drittanbieter" class="mt-6 font-semibold text-primary text-lg">
           1.3 Datenübermittlung an Dritte, Subunternehmer und Drittanbieter
-        </h3>
+        </h4>
         <p class="mt-4 text-secondary leading-relaxed">
           Personenbezogene Daten werden von uns ausschließlich unter Beachtung der geltenden gesetzlichen Bestimmungen an Dritte weitergegeben. Eine Übermittlung erfolgt insbesondere dann, wenn dies zur Erfüllung vertraglicher Pflichten, zur Durchführung von Abrechnungsprozessen oder aufgrund einer gesetzlichen Verpflichtung erforderlich ist.
         </p>
@@ -68,9 +68,9 @@ useSeoMeta(
         <p class="mt-4 text-secondary leading-relaxed">
           Nutzen wir Inhalte, Dienste oder sonstige Leistungen von Unternehmen mit Sitz außerhalb der Europäischen Union bzw. des Europäischen Wirtschaftsraums (nachfolgend gemeinsam „Drittanbieter“), kann es im Rahmen der Nutzung dieser Angebote zu einer Übermittlung personenbezogener Daten in sogenannte Drittländer kommen. Eine solche Datenübermittlung erfolgt nur, sofern die gesetzlichen Voraussetzungen erfüllt sind, insbesondere wenn für das betreffende Drittland ein angemessenes Datenschutzniveau besteht, die betroffene Person eingewilligt hat oder eine andere gesetzliche Grundlage die Übermittlung erlaubt.
         </p>
-        <h3 id="1-4-datensicherheit" class="mt-8 font-semibold text-accent text-xl lg:text-2xl">
+        <h4 id="1-4-datensicherheit" class="mt-6 font-semibold text-primary text-lg">
           1.4 Datensicherheit
-        </h3>
+        </h4>
         <p class="mt-4 text-secondary leading-relaxed">
           Zum Schutz personenbezogener Daten setzen wir umfassende technische und organisatorische Maßnahmen ein. Diese dienen dazu, Daten vor unbefugtem Zugriff, unbeabsichtigtem Verlust, unzulässiger Veränderung oder sonstiger missbräuchlicher Nutzung zu bewahren. Unsere Sicherheitsstandards überprüfen wir regelmäßig und passen diese bei Bedarf an neue technische Entwicklungen und aktuelle Sicherheitsanforderungen an.
         </p>
@@ -80,9 +80,9 @@ useSeoMeta(
         <p class="mt-4 text-secondary leading-relaxed">
           Auch intern legen wir großen Wert auf einen sorgfältigen und verantwortungsbewussten Umgang mit personenbezogenen Daten. Alle Mitarbeitende, werden regelmäßig für Datenschutz- und Sicherheitsanforderungen sensibilisiert. Zudem sind sie zur Wahrung der Vertraulichkeit sowie zur Einhaltung der datenschutzrechtlichen Vorgaben verpflichtet.
         </p>
-        <h3 id="1-5-rechtsgrundlagen" class="mt-8 font-semibold text-accent text-xl lg:text-2xl">
+        <h4 id="1-5-rechtsgrundlagen" class="mt-6 font-semibold text-primary text-lg">
           1.5 Rechtsgrundlagen
-        </h3>
+        </h4>
         <p class="mt-4 text-secondary leading-relaxed">
           Die Verarbeitung personenbezogener Daten erfolgt ausschließlich auf Grundlage der einschlägigen Bestimmungen der Datenschutz-Grundverordnung (DSGVO). Je nach Art und Zweck der Datenverarbeitung stützen wir uns dabei insbesondere auf folgende Rechtsgrundlagen:
         </p>
@@ -110,9 +110,9 @@ useSeoMeta(
         <p class="mt-4 text-secondary leading-relaxed">
           Ferner verarbeiten wir Ihre Daten auf Basis des §25 Telekommunikation-Digitale-Dienste-Datenschutz-Gesetz (TDDDG). Das Speichern von Informationen auf dem Endgerät eines Nutzers oder der Zugriff darauf ist grundsätzlich nur mit vorheriger Einwilligung zulässig. Eine Einwilligung ist jedoch nicht erforderlich, wenn dies technisch notwendig für die Datenübertragung oder zur Bereitstellung eines ausdrücklich vom Nutzer gewünschten digitalen Dienstes ist.
         </p>
-        <h3 id="1-6-ihre-datenschutzrechte" class="mt-8 font-semibold text-accent text-xl lg:text-2xl">
+        <h4 id="1-6-ihre-datenschutzrechte" class="mt-6 font-semibold text-primary text-lg">
           1.6 Ihre Datenschutzrechte
-        </h3>
+        </h4>
         <p class="mt-4 text-secondary leading-relaxed">
           Betroffenen Personen stehen im Zusammenhang mit der Verarbeitung ihrer personenbezogenen Daten die folgenden Rechte nach den geltenden datenschutzrechtlichen Bestimmungen zu:
         </p>
@@ -125,9 +125,9 @@ useSeoMeta(
           <li>Recht auf Widerspruch gegen die Verarbeitung personenbezogener Daten aus Gründen, die sich aus der besonderen Situation der betroffenen Person ergeben,</li>
           <li>Recht auf Widerruf einer erteilten Einwilligung mit Wirkung für die Zukunft. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Verarbeitung bleibt hiervon unberührt.</li>
         </ul>
-        <h3 id="1-7-beschwerderecht" class="mt-8 font-semibold text-accent text-xl lg:text-2xl">
+        <h4 id="1-7-beschwerderecht" class="mt-6 font-semibold text-primary text-lg">
           1.7 Beschwerderecht
-        </h3>
+        </h4>
         <p class="mt-4 text-secondary leading-relaxed">
           Sie haben das Recht, eine Beschwerde bei der zuständigen Datenschutzaufsichtsbehörde einzureichen, wenn die Sie der Ansicht sind, dass die Verarbeitung Ihrer personenbezogenen Daten gegen datenschutzrechtliche Vorschriften verstößt.
         </p>
@@ -141,9 +141,9 @@ Holstenstraße 98, 24103 Kiel
         <p class="mt-4 text-secondary leading-relaxed">
           <a href="https://www.datenschutzzentrum.de" target="_blank" rel="noopener noreferrer" class="underline hover:no-underline">https://www.datenschutzzentrum.de</a>
         </p>
-        <h3 id="1-8-ansprechpartner" class="mt-8 font-semibold text-accent text-xl lg:text-2xl">
+        <h4 id="1-8-ansprechpartner" class="mt-6 font-semibold text-primary text-lg">
           1.8 Ansprechpartner
-        </h3>
+        </h4>
         <p class="mt-4 text-secondary leading-relaxed">
           Sollten Sie Fragen zur Verarbeitung Ihrer personenbezogenen Daten oder zur Ausübung Ihrer Betroffenenrechte haben, dann wenden Sie sich bitte an:
         </p>
@@ -153,9 +153,9 @@ Holstenstraße 98, 24103 Kiel
         <h2 id="2-datenverarbeitung-im-rahmen-der-nutzung-von-webseitenfunktionen" class="mt-12 font-semibold text-accent text-2xl lg:text-3xl">
           2. Datenverarbeitung im Rahmen der Nutzung von Webseitenfunktionen
         </h2>
-        <h3 id="2-1-abruf-der-webseite" class="mt-8 font-semibold text-accent text-xl lg:text-2xl">
+        <h4 id="2-1-abruf-der-webseite" class="mt-6 font-semibold text-primary text-lg">
           2.1 Abruf der Webseite
-        </h3>
+        </h4>
         <h4 id="verarbeitungszweck" class="mt-6 font-semibold text-primary text-lg">
           Verarbeitungszweck
         </h4>
@@ -227,9 +227,9 @@ Holstenstraße 98, 24103 Kiel
         <p class="mt-4 text-secondary leading-relaxed">
           Sie sind zu einer Bekanntgabe personenbezogener Daten nicht verpflichtet. Ohne die oben genannten personenbezogenen Daten ist der Abruf dieser Website für dich aber nicht möglich.
         </p>
-        <h2 id="2-2-terminvereinbarung" class="mt-12 font-semibold text-accent text-2xl lg:text-3xl">
+        <h4 id="2-2-terminvereinbarung" class="mt-6 font-semibold text-primary text-lg">
           2.2 Terminvereinbarung
-        </h2>
+        </h4>
         <h4 id="verarbeitungszweck-2" class="mt-6 font-semibold text-primary text-lg">
           Verarbeitungszweck
         </h4>
@@ -301,11 +301,29 @@ Holstenstraße 98, 24103 Kiel
         <p class="mt-4 text-secondary leading-relaxed">
           Die Bereitstellung Ihrer personenbezogenen Daten erfolgt freiwillig. Bitte beachten Sie jedoch, dass Kontaktaufnahme ohne die hierfür erforderlichen Angaben nicht möglich ist.
         </p>
-        <h3 id="2-3-google-web-fonts-lokales-hosting" class="mt-8 font-semibold text-accent text-xl lg:text-2xl">
+        <h4 id="2-3-google-web-fonts-lokales-hosting" class="mt-6 font-semibold text-primary text-lg">
           2.3 Google Web Fonts (lokales Hosting)
-        </h3>
+        </h4>
         <p class="mt-4 text-secondary leading-relaxed">
           Diese Seite nutzt zur einheitlichen Darstellung von Schriftarten so genannte Web Fonts, die von Google bereitgestellt werden.  Die verwendeten Schriftarten sind lokal auf dem Webserver eingebunden. Eine Verbindung zu Servern externer Anbieter erfolgt hierbei nicht.
+        </p>
+        <h4 id="2-3-website-tracking-umami" class="mt-6 font-semibold text-primary text-lg">
+          2.4 Webanalyse durch Umami
+        </h4>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Zur statistischen Auswertung der Nutzung unserer Website verwenden wir die Open-Source-Lösung Umami. Die Analysesoftware wird von uns eigenständig auf unseren Servern betrieben. Das Hosting erfolgt auf Systemen der Hetzner Online GmbH mit Serverstandort Falkenstein, Deutschland. Die für die Auswertung anfallenden Informationen verbleiben innerhalb der Europäischen Union.
+        </p>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Bei der Nutzung von Umami verzichten wir auf den Einsatz von Cookies sowie auf Verfahren zur Wiedererkennung von Besuchern mittels Browser- oder Geräte-Fingerprinting. Ziel der Auswertung ist die Gewinnung allgemeiner Erkenntnisse darüber, wie unsere Website von den Besuchern genutzt wird.
+        </p>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Hierzu können insbesondere Informationen über besuchte Seiten, die jeweilige Aufenthaltsdauer, zuvor aufgerufene bzw. verweisende Seiten (Referrer), verwendete Browser und Geräte sowie grobe geografische Angaben, beispielsweise auf Länder- oder Regionsebene, ausgewertet werden. Die IP-Adresse wird nicht dauerhaft gespeichert und nicht dazu genutzt, einzelne Besucher zu bestimmen oder wiederzuerkennen. Eine Erstellung individueller Nutzerprofile findet nicht statt.
+        </p>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Soweit im Rahmen dieser Verarbeitung personenbezogene Daten betroffen sein sollten, stützen wir die Verarbeitung auf unser berechtigtes Interesse gemäß Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse liegt dabei in der statistischen Auswertung, die Nutzung unseres Online-Angebots besser zu verstehen und die Website hinsichtlich ihrer Inhalte, Bedienbarkeit und technischen Gestaltung weiterzuentwickeln. Ihre Verdaulichkeitsinteressen treten zurück, da wir keine individuellen Nutzerprofile erstellen und Sie weder eindeutig identifizierbar noch wiederkennbar sind.
+        </p>
+        <p class="mt-4 text-secondary leading-relaxed">
+          Für die beschriebene Webanalyse werden weder Cookies eingesetzt noch zu Analysezwecken Informationen auf dem Endgerät des Nutzers gespeichert oder von diesem ausgelesen.
         </p>
         <h2 id="3-haftung-und-aktualitaet" class="mt-12 font-semibold text-accent text-2xl lg:text-3xl">
           3. Haftung und Aktualität
