@@ -36,26 +36,26 @@ const menuitems = [
       },
     ],
   },
-  {
-    title: "Trainings",
-    clickable: false,
-    children: [
-      {
-        title: "Resilienztraining",
-        path: "/services/trainings/resilienz",
-      },
-      {
-        title: "CORESZON® Training",
-        path: "/services/trainings/coreszon",
-      },
-    ],
-  },
+  // {
+  //   title: "Trainings",
+  //   clickable: false,
+  //   children: [
+  //     {
+  //       title: "Resilienztraining",
+  //       path: "/services/trainings/resilienz",
+  //     },
+  //     {
+  //       title: "CORESZON® Training",
+  //       path: "/services/trainings/coreszon",
+  //     },
+  //   ],
+  // },
   {
     title: "KIS-Guard",
     path: "/services/kis-guard",
   },
   {
-    title: "GIM-Shop",
+    title: "Shop",
     path: "https://shop.gim-gruppe.com/",
   },
   {

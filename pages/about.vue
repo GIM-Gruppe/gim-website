@@ -258,20 +258,23 @@ watchEffect(async () => {
               <li
                 v-for="person in data?.team.persons"
                 :key="person.name"
+                class="flex flex-col items-center text-center"
               >
                 <LightboxImage
                   :src="person.image"
                   :alt="person.name"
-                  img-class="mx-auto h-24 w-24 rounded-full"
-                  button-class="mx-auto h-24 w-24 rounded-full"
+                  img-class="h-24 w-24 rounded-full"
+                  button-class="h-24 w-24 rounded-full"
                   loading="lazy"
                 />
+
                 <p
-                  class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900"
+                  class="mt-6 w-full text-center text-base font-semibold leading-7 tracking-tight text-gray-900"
                 >
                   {{ person.name }}
                 </p>
-                <div class="leading-6 text-gray-600 text-sm">
+
+                <div class="w-full text-center text-sm leading-6 text-gray-600">
                   {{ person.position }}
                 </div>
               </li>
