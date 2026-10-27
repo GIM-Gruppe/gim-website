@@ -132,6 +132,28 @@
           "title": "Mehr Resilienz, stärkere Bindung, weniger Stress, praxisnah"
         }
       ]
+    },
+    {
+      "name": "datenschutzberatung",
+      "title": "Datenschutzberatung",
+      "subtitle": "Datenschutz, der in Ihrem Unternehmen funktioniert – pragmatisch, persönlich und planbar.",
+      "description": "Wir unterstützen Unternehmen dabei, Datenschutz verständlich, strukturiert und praxistauglich umzusetzen – von der Dokumentation bis zum externen Datenschutzbeauftragten.",
+      "image": "/assets/img/online-4208112_1920.jpg",
+      "imagealt": "Person arbeitet am Laptop – Datenschutz im Büroalltag",
+      "subservice": [
+        {
+          "title": "Datenschutzdokumentation und Datenschutzhinweise"
+        },
+        {
+          "title": "Externer Datenschutzbeauftragter"
+        },
+        {
+          "title": "Auftragsverarbeitung, Lösch- und Aufbewahrungsfristen"
+        },
+        {
+          "title": "Schulung und Sensibilisierung von Mitarbeitenden"
+        }
+      ]
     }
   ]
 }

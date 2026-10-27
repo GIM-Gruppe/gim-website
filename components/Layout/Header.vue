@@ -51,6 +51,10 @@ const menuitems = [
   //   ],
   // },
   {
+    title: "Datenschutz",
+    path: "/services/datenschutzberatung",
+  },
+  {
     title: "KIS-Guard",
     path: "/services/kis-guard",
   },
