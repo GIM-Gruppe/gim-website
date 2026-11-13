@@ -14,6 +14,34 @@ useSeoMeta(
   'GIM-Website - Startseite',
   'Willkommen auf der GIM-Website – Ihr vertrauenswürdiger Partner für IT-Lösungen'
 )
+
+// Strukturierte Daten für das DIIND-Siegel – Inhalt unverändert vom Anbieter übernommen.
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: `
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "GIM GmbH",
+  "award": "Business Innovator",
+  "hasCertification": {
+    "@type": "Certification",
+    "name": "Business Innovator",
+    "description": "Auszeichnung für visionäre Unternehmen.",
+    "dateIssued": "2026-11-12",
+    "issuedBy": {
+      "@type": "Organization",
+      "name": "diind – Deutsches Innovationsinstitut"
+    },
+    "url": "https://diind.de"
+  }
+}
+      `.trim()
+    }
+  ]
+})
 </script>
 
 <template>
@@ -46,7 +74,24 @@ useSeoMeta(
         class="py-20"
         :title="data?.textwithcta?.title"
         :description="data?.textwithcta?.text"
-      />
+      >
+        <template #aside>
+          <div class="flex flex-col items-center text-center">
+            <img
+              src="/assets/img/diind-business-innovator-gim.png"
+              alt="Business Innovator Siegel der GIM GmbH, gültig bis 11/2027"
+              width="1414"
+              height="2048"
+              loading="lazy"
+              decoding="async"
+              class="h-auto w-[135px] sm:w-[150px] lg:w-[200px]"
+            />
+            <p class="mb-0 mt-3 text-xs text-secondary">
+              Business Innovator
+            </p>
+          </div>
+        </template>
+      </TextWithCta>
 
       <Features
         class="pb-20"
@@ -62,6 +107,7 @@ useSeoMeta(
         :description="data?.textimageleft?.text"
         :imgPos="'left'"
       />
+
       <!-- weitere CTAs ggf. später -->
     </LayoutContainer>
   </div>
