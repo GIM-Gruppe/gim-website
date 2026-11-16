@@ -1,13 +1,12 @@
 ---
-title: "Beispielartikel für den GIM Blog"
-description: "Dieser Beispielbeitrag zeigt, wie ein Blogartikel im neuen Bereich aufgebaut ist. Er kann später direkt über Pages CMS ersetzt oder gelöscht werden."
-date: "2026-11-16"
-published: true
-category: "Aktuelles"
-image: ""
-imageAlt: ""
+title: Beispielartikel für den GIM Blog
+description: Dieser Beispielbeitrag zeigt, wie ein Blogartikel im neuen Bereich
+  aufgebaut ist. Er kann später direkt über Pages CMS ersetzt oder gelöscht
+  werden.
+date: 2026-11-16
+published: false
+category: Aktuelles
 ---
-
 ## Ein einfacher redaktioneller Ablauf
 
 Neue Blogartikel werden künftig direkt in **Pages CMS** angelegt. Dort können Titel, Kurzbeschreibung, Veröffentlichungsdatum, Kategorie und der eigentliche Artikel gepflegt werden.
