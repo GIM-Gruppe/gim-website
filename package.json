@@ -5,13 +5,10 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "generate": "nuxt generate && cp static/* docs/",
+    "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "start dev": "npm run dev",
-    "deploy": "npm run generate && npm run move-dist && npm run commit-and-push",
-    "move-dist": "rimraf docs && mv dist docs",
-    "commit-and-push": "git add . && git commit -m 'Deploy to GitHub Pages' && git push"
+    "start dev": "npm run dev"
   },
   "devDependencies": {
     "@iconify-json/heroicons": "^1.2.3",

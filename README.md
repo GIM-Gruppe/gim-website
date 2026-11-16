@@ -237,3 +237,105 @@ Wenn du neue Komponenten baust, kannst du einmal kurz checken:
 4. Haben Bilder, Links, Buttons sinnvolle Labels / `alt`-Texte?
 
 Wenn du magst, können wir als nächsten Schritt mal gezielt ein Tool wie Axe / Lighthouse / WAVE virtuell „simulieren“ und auf Basis deiner Strukturen eine kleine Liste von „Low hanging fruits“ für BFSG-Niveau zusammenstellen 🍇
+
+
+---
+
+# Blog, Pages CMS und automatisches Deployment
+
+## Blog-Inhalte
+
+Blogartikel liegen unter:
+
+```text
+content/blog/*.md
+```
+
+Jeder Artikel besteht aus Frontmatter-Feldern für Titel, Kurzbeschreibung, Datum, Veröffentlichungsstatus, Kategorie und optionales Beitragsbild sowie dem eigentlichen Markdown-Inhalt.
+
+Die Blog-Collection ist in `.pages.yml` definiert. Neue Beiträge können dadurch direkt in Pages CMS angelegt, bearbeitet und gelöscht werden.
+
+Wichtige Felder:
+
+- `title`: Titel des Artikels
+- `description`: Kurztext für Übersicht und SEO
+- `date`: Veröffentlichungsdatum
+- `published`: Nur Beiträge mit aktivierter Veröffentlichung werden auf der Website angezeigt
+- `category`: Kategorie des Artikels
+- `image`: optionales Beitragsbild
+- `imageAlt`: Alternativtext des Beitragsbilds
+- `body`: eigentlicher Artikelinhalt im Rich-Text-Editor
+
+## Automatische Veröffentlichung
+
+Pages CMS speichert Änderungen direkt im GitHub-Repository. Das CMS baut die Nuxt-Website selbst nicht neu.
+
+Dafür gibt es den Workflow:
+
+```text
+.github/workflows/deploy-pages.yml
+```
+
+Bei jedem Push auf `main` passiert automatisch:
+
+```text
+Pages CMS
+   ↓
+Commit nach GitHub
+   ↓
+GitHub Actions
+   ↓
+npm ci
+   ↓
+npm run generate
+   ↓
+GitHub Pages Deployment
+```
+
+Es ist kein zweiter Commit mit den generierten Dateien notwendig.
+
+### GitHub-Pages-Dateien `CNAME` und `.nojekyll`
+
+Die beiden GitHub-Pages-Sonderdateien liegen dauerhaft in `public/`:
+
+```text
+public/CNAME
+public/.nojekyll
+```
+
+Nuxt kopiert den Inhalt von `public/` bei `npm run generate` automatisch in den erzeugten Ordner `docs/`. Deshalb ist kein nachträgliches `cp static/* docs/` mehr nötig. `public/` ist die einzige Quelle für diese Dateien; zusätzliche Kopien im Projekt-Root werden nicht benötigt.
+
+### Einmalige GitHub-Einstellung
+
+Im Repository:
+
+```text
+Settings
+→ Pages
+→ Build and deployment
+→ Source
+→ GitHub Actions
+```
+
+Falls der produktive Branch nicht `main` heißt, muss der Branch in `.github/workflows/deploy-pages.yml` entsprechend geändert werden.
+
+## Lokal testen
+
+```bash
+npm install
+npm run dev
+```
+
+Blogübersicht:
+
+```text
+http://localhost:3000/blog
+```
+
+Statischen Produktions-Build testen:
+
+```bash
+npm run generate
+```
+
+Der erzeugte Stand liegt durch die aktuelle Nitro-Konfiguration im Ordner `docs/`.

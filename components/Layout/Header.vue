@@ -63,6 +63,10 @@ const menuitems = [
     path: "https://shop.gim-gruppe.com/",
   },
   {
+    title: "Blog",
+    path: "/blog",
+  },
+  {
     title: "Über uns",
     path: "/about",
   },

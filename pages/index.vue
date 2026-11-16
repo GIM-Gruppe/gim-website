@@ -108,6 +108,8 @@ useHead({
         :imgPos="'left'"
       />
 
+      <BlogPreview />
+
       <!-- weitere CTAs ggf. später -->
     </LayoutContainer>
   </div>

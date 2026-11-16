@@ -49,6 +49,7 @@ import { defineComponent, h } from 'vue'
 const navigation = {
   main: [
     { name: 'Über Uns', href: '/about' },
+    { name: 'Blog', href: '/blog' },
     { name: 'Kontakt', href: '/contact' },
     { name: 'Impressum', href: '/impressum' },
     { name: 'Datenschutz', href: '/datenschutz' },

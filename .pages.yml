@@ -228,3 +228,74 @@ content:
               - name: title
                 label: Titel
                 type: string
+
+  - name: blog
+    label: Blog
+    type: collection
+    path: content/blog
+    format: yaml-frontmatter
+    filename:
+      template: "{title}.md"
+      field: false
+    operations:
+      rename: false
+    view:
+      fields: [title, date, category, published]
+      primary: title
+      sort: [date, title]
+      search: [title, description, category]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Titel
+        type: string
+        required: true
+      - name: description
+        label: Kurzbeschreibung
+        type: text
+        required: true
+        description: Wird auf der Blogübersicht und für Suchmaschinen verwendet.
+      - name: date
+        label: Veröffentlichungsdatum
+        type: date
+        required: true
+        options:
+          format: yyyy-MM-dd
+      - name: published
+        label: Veröffentlicht
+        type: boolean
+        default: true
+      - name: category
+        label: Kategorie
+        type: select
+        required: true
+        default: Aktuelles
+        options:
+          values:
+            - Aktuelles
+            - IT-Infrastruktur
+            - Managed Services
+            - SAP
+            - Datenschutz
+            - KIS-Guard
+      - name: image
+        label: Beitragsbild
+        type: image
+        options:
+          path: blog
+          rename: true
+      - name: imageAlt
+        label: Bildbeschreibung
+        type: string
+        description: Kurze Beschreibung des Bildes für Barrierefreiheit und SEO.
+      - name: body
+        label: Artikelinhalt
+        type: rich-text
+        required: true
+        options:
+          format: markdown
+          path: blog
+          rename: true
+          switcher: true
