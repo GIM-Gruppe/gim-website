@@ -2,7 +2,7 @@
 title: "Beispielartikel für den GIM Blog"
 description: "Dieser Beispielbeitrag zeigt, wie ein Blogartikel im neuen Bereich aufgebaut ist. Er kann später direkt über Pages CMS ersetzt oder gelöscht werden."
 date: "2026-11-16"
-published: true
+published: false
 category: "Aktuelles"
 image: ""
 imageAlt: ""

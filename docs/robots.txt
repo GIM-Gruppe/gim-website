@@ -1,8 +1,0 @@
-User-agent: Googlebot
-Disallow: /nogooglebot/
-
-User-agent: *
-Allow: /
-
-Sitemap: https://www.gim-gruppe.com/sitemap.xml
-Sitemap: https://gim-gruppe.com/sitemap.xml
