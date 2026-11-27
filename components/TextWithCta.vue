@@ -4,6 +4,8 @@ import { ref, onMounted, onUnmounted, computed } from "vue";
 const props = defineProps<{
   title: string;
   description: string;
+  appointmentLabel?: string;
+  servicesLabel?: string;
 }>();
 
 const isMobile = ref(false);
@@ -36,12 +38,13 @@ const btnSize = computed<"lg" | "xl">(() =>
 <template>
   <LayoutContainer as="section">
     <div
-      class="grid gap-10 lg:grid-cols-[minmax(0,1fr)_220px] lg:items-center lg:gap-12"
+      class="grid gap-10"
+      :class="{ 'lg:grid-cols-[minmax(0,1fr)_220px] lg:items-center lg:gap-12': $slots.aside }"
     >
       <div class="min-w-0">
         <!-- Text block -->
         <div class="flex flex-wrap items-center">
-          <div class="grow-0 max-w-3xl">
+          <div class="w-full">
             <h2 class="font-semibold">
               {{ props.title }}
             </h2>
@@ -57,14 +60,14 @@ const btnSize = computed<"lg" | "xl">(() =>
           <UiButton
             :size="btnSize"
             href="/contact"
-            label="Termin vereinbaren"
+            :label="props.appointmentLabel || 'Termin vereinbaren'"
             class="w-3/4 sm:w-1/3"
           />
           <UiButton
             :size="btnSize"
             :style="'outline'"
             href="/services"
-            label="Zu den Leistungen"
+            :label="props.servicesLabel || 'Zu den Leistungen'"
             class="w-3/4 sm:w-1/3"
           />
         </div>
