@@ -1,21 +1,17 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
 import { useSeoMeta } from '~/composables/seo'
+import page from '~/data/pages/impressum.json'
 
 definePageMeta({
   documentDriven: { page: false, surround: false }
 })
 
-useSeoMeta(
-  'GIM Website - Impressum',
-  'Rechtliche Informationen und Kontaktdaten der GIM GmbH'
-)
+useSeoMeta(page.seo.title, page.seo.description)
 
-// Clientseitige E-Mail-Erzeugung mit Base64
+// E-Mail-Link wird weiterhin clientseitig erzeugt.
 onMounted(() => {
-  // "info@gim-gruppe.com" in Base64
-  const encoded = 'aW5mb0BnaW0tZ3J1cHBlLmNvbQ==' // info@gim-gruppe.com
-  const email = atob(encoded)
+  const email = page.contact.email
 
   const container = document.getElementById('email-container')
   if (container) {
@@ -39,56 +35,55 @@ onMounted(() => {
         id="imprint-title"
         class="text-2xl font-bold mb-4"
       >
-        Impressum
+        {{ page.title }}
       </h1>
 
       <!-- Angaben gemäß § 5 TMG -->
       <section class="mb-4" aria-labelledby="imprint-company">
         <h2 id="imprint-company" class="text-xl font-semibold">
-          Angaben gemäß § 5 TMG:
+          {{ page.company.title }}
         </h2>
         <address class="mt-2 not-italic text-secondary leading-relaxed">
-          <strong>GIM GmbH</strong><br />
-          Gutenbergring 69A<br />
-          22848 Norderstedt<br />
-          Deutschland
+          <strong>{{ page.company.name }}</strong><br />
+          {{ page.company.street }}<br />
+          {{ page.company.city }}<br />
+          {{ page.company.country }}
         </address>
       </section>
 
       <!-- Vertretung -->
       <section class="mb-4" aria-labelledby="imprint-directors">
         <h2 id="imprint-directors" class="text-xl font-semibold">
-          Vertreten durch die Geschäftsführer:
+          {{ page.directors.title }}
         </h2>
         <ul class="mt-2 text-secondary list-none space-y-1">
-          <li>Lutz Thiele</li>
-          <li>Jonas Grossen</li>
+          <li v-for="(name, index) in page.directors.names" :key="index">{{ name }}</li>
         </ul>
       </section>
 
       <!-- Kontakt -->
       <section class="mb-4" aria-labelledby="imprint-contact">
         <h2 id="imprint-contact" class="text-xl font-semibold">
-          Kontakt:
+          {{ page.contact.title }}
         </h2>
         <p class="mt-2 text-secondary">
-          Telefon:
+          {{ page.contact.phoneLabel }}
           <a
-            href="tel:+494022898595"
+            :href="`tel:${page.contact.phone.replace(/[^+0-9]/g, '')}`"
             class="underline hover:no-underline"
           >
-            +49 40 22898595
+            {{ page.contact.phone }}
           </a>
           <br />
-          E-Mail:
+          {{ page.contact.emailLabel }}
           <span id="email-container" class="ml-1">
             <!-- Fallback-Text, wird clientseitig ersetzt -->
-            <span class="sr-only">E-Mail:</span>
+            <span class="sr-only">{{ page.contact.emailLabel }}</span>
           </span>
 
           <noscript>
             <span class="ml-1">
-              info [at] gim-gruppe [dot] com
+              {{ page.contact.email.replace('@', ' [at] ').replace(/\./g, ' [dot] ') }}
             </span>
           </noscript>
         </p>
@@ -97,22 +92,22 @@ onMounted(() => {
       <!-- Registereintrag -->
       <section class="mb-4" aria-labelledby="imprint-register">
         <h2 id="imprint-register" class="text-xl font-semibold">
-          Registereintrag:
+          {{ page.register.title }}
         </h2>
         <p class="mt-2 text-secondary">
-          Eintragung im Handelsregister.<br />
-          Registergericht: Amtsgericht Kiel<br />
-          Registernummer: HRB 28539
+          {{ page.register.text }}<br />
+          {{ page.register.court }}<br />
+          {{ page.register.number }}
         </p>
       </section>
 
       <!-- USt-ID -->
       <section class="mb-4" aria-labelledby="imprint-vat">
         <h2 id="imprint-vat" class="text-xl font-semibold">
-          Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:
+          {{ page.vat.title }}
         </h2>
         <p class="mt-2 text-secondary">
-          DE165 916 544
+          {{ page.vat.number }}
         </p>
       </section>
     </div>

@@ -1,0 +1,25 @@
+{
+  "seo": {
+    "title": "GIM Website - Kontakt",
+    "description": "Kontaktieren Sie die GIM GmbH. Finden Sie hier unsere Kontaktdaten und erreichen Sie uns per Telefon, E-Mail oder über unser Kontaktformular."
+  },
+  "intro": {
+    "eyebrow": "Kontakt",
+    "title": "Wir sind für Sie da!",
+    "subtitle": "Termin vereinbaren",
+    "text": "Wir freuen uns, dass Sie mit uns in Verbindung treten möchten. Unser engagiertes Team steht Ihnen gerne zur Verfügung und bemüht sich, Ihnen so schnell wie möglich zu antworten."
+  },
+  "address": {
+    "title": "Anschrift",
+    "street": "Gutenbergring 69A",
+    "city": "22848 Norderstedt"
+  },
+  "phone": {
+    "title": "Kontakt",
+    "label": "Telefonnummer:",
+    "number": "+49 40 22898595"
+  },
+  "bookingLabel": "Termin vereinbaren",
+  "image": "/assets/img/hands.jpg",
+  "imageAlt": "Zwei Hände, die Zusammenarbeit symbolisieren"
+}

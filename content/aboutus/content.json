@@ -19,7 +19,19 @@
   },
   "mission": {
     "title": "Unsere Mission",
-    "text": "Wir sind bestrebt, persönliche und individuelle Beratung zu bieten und Unternehmen dabei zu helfen, ihre IT-Prozesse zu implementieren, Ihren Digitalisierungsprozess zu beschleunigen damit Sie das Potenzial ihrer Ressourcen voll ausschöpfen.\n\nUnsere Aufgabe bei der GIM Gruppe ist es, KMUs durch die Optimierung ihrer IT-Infrastruktur und digitalen Prozesse zu unterstützen. Die IT ist ein Grundbestandteil Ihrer Unternehmensstrategie damit alles reibungslos funktioniert.\n\nUnser Ziel ist es, Managed Services und SAP-Basis-Services anzubieten, die speziell auf die Bedürfnisse jedes einzelnen Kunden zugeschnitten sind. Durch den Einsatz neuester Technologien und unseres Expertenwissens sorgen wir dafür, dass die Systeme unserer Kunden stets aktuell, effizient und zuverlässig sind und bleiben."
+    "text": "Wir sind bestrebt, persönliche und individuelle Beratung zu bieten und Unternehmen dabei zu helfen, ihre IT-Prozesse zu implementieren, Ihren Digitalisierungsprozess zu beschleunigen damit Sie das Potenzial ihrer Ressourcen voll ausschöpfen.\n\nUnsere Aufgabe bei der GIM Gruppe ist es, KMUs durch die Optimierung ihrer IT-Infrastruktur und digitalen Prozesse zu unterstützen. Die IT ist ein Grundbestandteil Ihrer Unternehmensstrategie damit alles reibungslos funktioniert.\n\nUnser Ziel ist es, Managed Services und SAP-Basis-Services anzubieten, die speziell auf die Bedürfnisse jedes einzelnen Kunden zugeschnitten sind. Durch den Einsatz neuester Technologien und unseres Expertenwissens sorgen wir dafür, dass die Systeme unserer Kunden stets aktuell, effizient und zuverlässig sind und bleiben.",
+    "leftBlocks": [
+      {
+        "title": "Mission",
+        "text": "Wir sind bestrebt, persönliche und individuelle Beratung zu bieten und Unternehmen dabei zu helfen, ihre IT-Prozesse zu implementieren, ihre Digitalisierung Prozess zu beschleunigen damit Sie das Potenzial ihrer Digitalen Ressourcen voll auszuschöpfen. "
+      }
+    ],
+    "rightBlocks": [
+      {
+        "title": "Alleinstellungsmerkmal",
+        "text": "Unser Team von Experten besitzt mehrjährige Erfahrung in IT-Infrastruktur, Managed Services und SAP-Basis Diensten. Wir haben von den “Großen” Unternehmen gelernt und möchten den “Kleinen” mit skalierbaren, modernen sowie individuellen Lösungen und Dienstleistungen helfen, ihre Effizienz, Schnelligkeit und Sicherheit zu optimieren und damit den Grundstein für mehr Wachstum zu legen."
+      }
+    ]
   },
   "breakImage": "/assets/img/john-schnobrich-FlPc9_VocJ4-unsplash.jpg",
   "gruende": {
@@ -98,5 +110,10 @@
         "image": "/assets/img/Placeholder Images/29d49274-903e-4e78-a168-6a7cf68629f5afgfbh.png"
       }
     ]
-  }
+  },
+  "seo": {
+    "title": "GIM Website - Über uns",
+    "description": "Erfahren Sie mehr über die GGIM GmbH. Entdecken Sie unsere Unternehmensgeschichte, Vision, Werte und unser Team."
+  },
+  "breakImageAlt": "Team und Arbeitsumgebung"
 }

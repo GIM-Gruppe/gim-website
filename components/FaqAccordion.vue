@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
+import { cmsBlock, cmsInline } from '~/utils/cms-html';
 
 type FaqContentBlock =
   | {
@@ -15,6 +16,7 @@ const props = defineProps<{
   title: string;
   items: {
     question: string;
+    answer?: string;
     answerParagraphs?: string[];
     bullets?: string[];
     content?: FaqContentBlock[];
@@ -118,18 +120,19 @@ function onLeave(el: Element) {
           >
             <div class="faq-inner pb-5">
               <div class="max-w-3xl space-y-4 leading-relaxed text-secondary [&_strong]:font-semibold">
-                <template v-if="item.content?.length">
+                <div v-if="item.answer !== undefined" class="space-y-4 [&_ul]:list-disc [&_ol]:list-decimal [&_ul]:space-y-2 [&_ol]:space-y-2 [&_ul]:pl-5 [&_ol]:pl-5 [&_a]:underline" v-html="cmsBlock(item.answer)" />
+                <template v-else-if="item.content?.length">
                   <template v-for="(block, contentIndex) in item.content" :key="`${item.question}-${contentIndex}`">
-                    <p v-if="block.type === 'paragraph'" v-html="block.html" />
+                    <p v-if="block.type === 'paragraph'" v-html="cmsInline(block.html)" />
                     <ul v-else class="list-disc space-y-2 pl-5">
-                      <li v-for="bullet in block.items" :key="bullet" v-html="bullet" />
+                      <li v-for="bullet in block.items" :key="bullet" v-html="cmsInline(bullet)" />
                     </ul>
                   </template>
                 </template>
                 <template v-else>
-                  <p v-for="paragraph in item.answerParagraphs" :key="paragraph" v-html="paragraph" />
+                  <p v-for="paragraph in item.answerParagraphs" :key="paragraph" v-html="cmsInline(paragraph)" />
                   <ul v-if="item.bullets?.length" class="list-disc space-y-2 pl-5">
-                    <li v-for="bullet in item.bullets" :key="bullet" v-html="bullet" />
+                    <li v-for="bullet in item.bullets" :key="bullet" v-html="cmsInline(bullet)" />
                   </ul>
                 </template>
               </div>

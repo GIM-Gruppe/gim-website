@@ -155,5 +155,13 @@
         }
       ]
     }
-  ]
+  ],
+  "seo": {
+    "title": "GIM Website - Leistungsübersicht",
+    "description": "Entdecken Sie die umfangreichen Dienstleistungen der GIM GmbH. Erfahren Sie mehr über unsere Beratungsleistungen und maßgeschneiderte Lösungen."
+  },
+  "sapSeo": {
+    "title": "GIM Website - SAP Basis Services",
+    "description": "Entdecken Sie die SAP Basis Services der GIM GmbH. Unser Expertenteam unterstützt Sie bei der Wartung, Optimierung und Verwaltung Ihrer SAP-Systeme."
+  }
 }
