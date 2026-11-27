@@ -1,0 +1,371 @@
+{
+  "seo": {
+    "title": "Datenschutzberatung in Hamburg & Norderstedt: Persönlich & planbar",
+    "description": "✅ Externer Datenschutzbeauftragter ✅ Vier Datenschutzpakete mit transparenten Kosten ✅ Persönlicher Ansprechpartner ► Jetzt unverbindlich beraten lassen!"
+  },
+  "hero": {
+    "eyebrow": "Datenschutzberatung",
+    "title": "Datenschutzberatung in Hamburg, Norderstedt und Umgebung – pragmatisch, persönlich und planbar",
+    "ctaLabel": "Jetzt unverbindlich zu Datenschutz beraten lassen",
+    "imageAlt": "Person arbeitet am Laptop – Datenschutz im Büroalltag",
+    "paragraphs": [
+      "<p><strong>Datenschutz muss im Unternehmen funktionieren – nicht nur auf dem Papier.</strong></p>",
+      "<p>Von Datenschutzhinweisen und Auftragsverarbeitungsverträgen über Löschkonzepte bis zur Betreuung durch einen externen Datenschutzbeauftragten: Wir unterstützen Unternehmen dabei, Datenschutz verständlich, strukturiert und praxistauglich umzusetzen.</p>",
+      "<p>Dabei setzen wir auf <strong>klare Zuständigkeiten, persönliche Ansprechpartner und transparente Kosten</strong>. Sie erhalten genau die Unterstützung, die zu Größe, Struktur und Anforderungen Ihres Unternehmens passt.</p>"
+    ],
+    "image": "/assets/img/online-4208112_1920.jpg",
+    "description": ""
+  },
+  "practice": {
+    "eyebrow": "Ausgangslage",
+    "title": "Datenschutz, der in Ihrem Unternehmen funktioniert",
+    "paragraph": "<p>Datenschutz betrifft heute nahezu jeden Unternehmensbereich. Mitarbeiterdaten, Kundendaten, Bewerbungen, Cloud-Dienste, Microsoft 365, Websites, Videoüberwachung oder externe Dienstleister bringen unterschiedliche Anforderungen mit sich.</p>",
+    "paragraph2": "<p>In vielen Unternehmen fehlt jedoch die Zeit, sich kontinuierlich mit diesen Themen auseinanderzusetzen. Dokumentationen werden einmal erstellt und anschließend nicht mehr gepflegt, Verantwortlichkeiten sind unklar oder neue Systeme werden eingeführt, ohne den Datenschutz frühzeitig zu berücksichtigen.</p>",
+    "paragraph3": "Genau hier setzen wir an.",
+    "paragraph4": "<p>Wir unterstützen Sie dabei, Ihre Datenschutzorganisation strukturiert aufzubauen und langfristig zu betreuen – verständlich, nachvollziehbar und ohne unnötige Bürokratie.</p>",
+    "ctaLabel": "Jetzt Datenschutz-Bedarf besprechen",
+    "image": "/assets/img/technology (2).jpg",
+    "imageAlt": "Datenschutz im Arbeitsalltag mit digitalen Geräten"
+  },
+  "services": {
+    "eyebrow": "Leistungsüberblick",
+    "title": "Unsere Leistungen im Datenschutz",
+    "paragraph": "<p>Unsere Datenschutzbetreuung wird auf Ihr Unternehmen abgestimmt. Je nach gewähltem Paket übernehmen wir unter anderem folgende Aufgaben:</p>",
+    "services": [
+      "Aufbau und Pflege der grundlegenden Datenschutzdokumentation",
+      "Datenschutzhinweise für Websites, Kunden, Beschäftigte und Bewerber",
+      "Erstellung und Prüfung von Vorlagen für Auftragsverarbeitungsverträge",
+      "Unterstützung beim Verzeichnis von Verarbeitungstätigkeiten",
+      "Beratung zu Aufbewahrungs- und Löschfristen",
+      "Unterstützung bei Auskunfts-, Berichtigungs- und Löschanfragen",
+      "Beratung beim Einsatz von Cloud-Diensten und externen Dienstleistern",
+      "Datenschutzrechtliche Begleitung neuer Systeme und Prozesse",
+      "Unterstützung und Dokumentation bei Videoüberwachung",
+      "Beratung bei Datenschutzvorfällen",
+      "Sensibilisierung und Schulung von Mitarbeitenden",
+      "Regelmäßige Datenschutz-Checks",
+      "Stellung eines externen Datenschutzbeauftragten",
+      "Kommunikation mit Datenschutzaufsichtsbehörden"
+    ],
+    "paragraph2": "<p>So entsteht keine Dokumentation für die Schublade, sondern eine Datenschutzorganisation, die sich in Ihren Unternehmensalltag integrieren lässt.</p>",
+    "ctaLabel": "Jetzt unverbindlich beraten lassen"
+  },
+  "packages": {
+    "eyebrow": "Betreuungsmodelle",
+    "title": "Datenschutzpakete für Unternehmen",
+    "paragraph": "<p>Nicht jedes Unternehmen benötigt den gleichen Umfang an Datenschutzbetreuung. Deshalb bieten wir <strong class=\"font-semibold\">vier klar definierte Betreuungsmodelle</strong> an.</p>",
+    "paragraph2": "<p>Die Einteilung nach Mitarbeiterzahl dient dabei als transparente Preis- und Leistungsstaffelung. Welche Datenschutzanforderungen tatsächlich für Ihr Unternehmen gelten, prüfen wir individuell.</p>",
+    "packages": [
+      {
+        "id": "XS",
+        "name": "Datenschutz Basis",
+        "audience": "Für Unternehmen mit 1–5 Mitarbeitenden",
+        "price": "89,00 €",
+        "priceNote": "netto / Monat",
+        "facts": [
+          "30 Minuten Beratung pro Monat inklusive",
+          "Einmaliges Onboarding: 249,00 € netto"
+        ],
+        "paragraphs": [
+          "Der unkomplizierte Einstieg in einen professionell organisierten Datenschutz.",
+          "Das XS-Paket eignet sich für kleinere Unternehmen, die ihre grundlegenden Datenschutzanforderungen strukturiert umsetzen möchten und bei Fragen einen festen Ansprechpartner benötigen."
+        ],
+        "features": [
+          "Bereitstellung und Pflege grundlegender Datenschutzvorlagen",
+          "Datenschutzhinweise für Website und Kunden",
+          "Vorlagen für Mitarbeiter- und Bewerberdatenschutz",
+          "Muster für Auftragsverarbeitungsverträge",
+          "Unterstützung bei allgemeinen Datenschutzfragen",
+          "Beratung zu externen Dienstleistern und Cloud-Diensten",
+          "Standardvorlagen und Hinweise zur Videoüberwachung",
+          "Unterstützung bei Auskunfts- und Löschanfragen",
+          "30 Minuten persönliche Datenschutzberatung pro Monat"
+        ],
+        "term": "Mindestvertragslaufzeit: 6 Monate",
+        "ctaLabel": "Jetzt XS-Paket anfragen",
+        "badge": ""
+      },
+      {
+        "id": "S",
+        "name": "Datenschutz Komfort",
+        "audience": "Für Unternehmen mit 6–19 Mitarbeitenden",
+        "price": "129,00 €",
+        "priceNote": "netto / Monat",
+        "facts": [
+          "1 Stunde Beratung pro Monat inklusive",
+          "Einmaliges Onboarding: 349,00 € netto"
+        ],
+        "paragraphs": [
+          "Laufende Datenschutzbetreuung für kleine und mittelständische Unternehmen, die mehr als eine reine Vorlagensammlung benötigen.",
+          "Wir unterstützen Sie bei der praktischen Umsetzung des Datenschutzes und stehen Ihnen kontinuierlich als Ansprechpartner zur Verfügung."
+        ],
+        "features": [
+          "Sämtliche grundlegenden Datenschutzunterlagen",
+          "Datenschutzhinweise für Website und digitale Dienste",
+          "Vorlagen für Mitarbeiter-, Bewerber- und Kundendatenschutz",
+          "Unterstützung bei Auftragsverarbeitungsverträgen",
+          "Beratung zu Cloud-Diensten und externen Dienstleistern",
+          "Unterstützung bei Aufbewahrungs- und Löschkonzepten",
+          "Beratung bei Videoüberwachung",
+          "Unterstützung bei Auskunfts- und Löschanfragen",
+          "Datenschutzinformationen und Schulungsunterlagen für Mitarbeitende",
+          "Unterstützung bei neuen digitalen Prozessen und Systemen",
+          "1 Stunde persönliche Datenschutzberatung pro Monat"
+        ],
+        "term": "Mindestvertragslaufzeit: 6 Monate",
+        "ctaLabel": "Jetzt S-Paket anfragen",
+        "badge": ""
+      },
+      {
+        "id": "M",
+        "name": "Datenschutz & externer Datenschutzbeauftragter",
+        "audience": "Für Unternehmen mit 20–49 Mitarbeitenden",
+        "price": "279,00 €",
+        "priceNote": "netto / Monat",
+        "facts": [
+          "2 Stunden Beratung pro Monat inklusive",
+          "Einmaliges Onboarding: 749,00 € netto"
+        ],
+        "paragraphs": [
+          "Umfassende Datenschutzbetreuung für mittelständische Unternehmen.",
+          "Neben der laufenden Beratung können wir – sofern erforderlich oder gewünscht – die Funktion Ihres externen Datenschutzbeauftragten übernehmen."
+        ],
+        "features": [
+          "Sämtliche Leistungen der grundlegenden Datenschutzbetreuung",
+          "Stellung eines externen Datenschutzbeauftragten, sofern vereinbart",
+          "Unterstützung bei der formellen Benennung und Meldung gegenüber der zuständigen Aufsichtsbehörde",
+          "Ansprechpartner für Geschäftsführung und Mitarbeitende",
+          "Ansprechpartner für betroffene Personen und Aufsichtsbehörden im Rahmen der DSB-Tätigkeit",
+          "Regelmäßiger Datenschutz-Check",
+          "Prüfung und Beratung zu eingesetzten IT- und Cloud-Systemen",
+          "Beratung zu Aufbewahrungs- und Löschfristen",
+          "Unterstützung bei Auftragsverarbeitungsstrukturen",
+          "Beratung und Dokumentation zur Videoüberwachung",
+          "Unterstützung bei Betroffenenanfragen",
+          "Unterstützung bei Datenschutzvorfällen",
+          "Datenschutzinformationen und Schulungsunterlagen für Mitarbeitende",
+          "2 Stunden Beratungs- und Betreuungszeit pro Monat inklusive"
+        ],
+        "term": "Mindestvertragslaufzeit: 12 Monate",
+        "ctaLabel": "Jetzt M-Paket anfragen",
+        "badge": "Externer Datenschutzbeauftragter möglich"
+      },
+      {
+        "id": "L",
+        "name": "Datenschutz Premium",
+        "audience": "Für Unternehmen ab 50 Mitarbeitenden oder mit erhöhtem Datenschutzbedarf",
+        "price": "ab 799,00 €",
+        "priceNote": "netto / Monat",
+        "facts": [
+          "Individuelles Beratungskontingent",
+          "Einmaliges Onboarding: ab 1.690,00 € netto"
+        ],
+        "paragraphs": [
+          "Das Premium-Paket richtet sich an größere Unternehmen, Unternehmen mit mehreren Standorten sowie Organisationen mit komplexen oder besonders sensiblen Datenverarbeitungen.",
+          "Die Betreuung wird individuell auf Unternehmensgröße, Systeme, Standorte und Datenschutzrisiken abgestimmt."
+        ],
+        "features": [
+          "Vollumfängliche Betreuung durch einen externen Datenschutzbeauftragten",
+          "Formelle Benennung und Kommunikation mit der zuständigen Aufsichtsbehörde",
+          "Regelmäßige Datenschutzprüfungen und Audits",
+          "Prüfung komplexer IT- und Cloud-Landschaften",
+          "Prüfung umfangreicher Dienstleister- und Auftragsverarbeitungsstrukturen",
+          "Erstellung und Überprüfung von Lösch- und Aufbewahrungskonzepten",
+          "Vertiefte Prüfung von Videoüberwachungssystemen",
+          "Datenschutzrechtliche Bewertung von Zutritts- und Zugangssystemen",
+          "Prüfung besonders sensibler personenbezogener Daten",
+          "Unterstützung bei Datenschutz-Folgenabschätzungen",
+          "Begleitung bei Datenschutzvorfällen",
+          "Unterstützung bei Betroffenenanfragen",
+          "Begleitung neuer Projekte und Systemeinführungen",
+          "Regelmäßige Mitarbeiterschulungen",
+          "Priorisierte Bearbeitung dringender Datenschutzanfragen",
+          "Individuell vereinbartes Beratungskontingent"
+        ],
+        "term": "Mindestvertragslaufzeit: 12 Monate",
+        "ctaLabel": "Jetzt individuelle Betreuung anfragen",
+        "badge": "Externer Datenschutzbeauftragter inklusive"
+      }
+    ],
+    "featuresTitle": "Enthaltene Leistungen"
+  },
+  "costs": {
+    "eyebrow": "Zusatzaufwand",
+    "title": "Transparente Kosten – auch wenn einmal mehr zu tun ist",
+    "paragraph": "In jedem Paket ist ein monatliches Beratungskontingent enthalten.",
+    "paragraph2": "<p>Dieses Kontingent kann für telefonische, digitale und schriftliche Beratung sowie für die Bearbeitung individueller datenschutzrechtlicher Fragestellungen genutzt werden.</p>",
+    "paragraph3": "<p>Über das enthaltene Kontingent hinausgehende Beratungs- und Dienstleistungen rechnen wir transparent nach tatsächlichem Aufwand ab:</p>",
+    "paragraph4": "90,00 € netto pro Stunde",
+    "paragraph5": "Abrechnung im 15-Minuten-Takt = 22,50 € netto je 15 Minuten",
+    "bullet": "Nicht genutztes Beratungskontingent verfällt zum Monatsende und wird nicht auf Folgemonate übertragen oder ausgezahlt.",
+    "bullet2": "Bei umfangreicheren Sonderprojekten stimmen wir den notwendigen Aufwand vor Beginn mit Ihnen ab."
+  },
+  "onboarding": {
+    "image": "/assets/img/john-schnobrich-FlPc9_VocJ4-unsplash.jpg",
+    "imageAlt": "Gemeinsame Durchsicht von Systemen und Prozessen am Laptop",
+    "eyebrow": "Onboarding",
+    "title": "Ein strukturiertes Onboarding als Grundlage",
+    "paragraph": "<p>Eine laufende Datenschutzbetreuung funktioniert nur, wenn wir Ihr Unternehmen und die bestehenden Prozesse kennen.</p>",
+    "paragraph2": "<p>Deshalb beginnt <strong class=\"font-semibold\">jedes Paket mit einem strukturierten Onboarding.</strong></p>",
+    "paragraph3": "Je nach Paket gehören dazu unter anderem:",
+    "onboardingItems": [
+      "Aufnahme Ihres Unternehmens und der verantwortlichen Ansprechpartner",
+      "Sichtung der bestehenden Datenschutzorganisation",
+      "Erfassung wesentlicher Verarbeitungstätigkeiten",
+      "Aufnahme relevanter IT-Systeme und Cloud-Dienste",
+      "Erfassung wichtiger Dienstleister und Auftragsverarbeiter",
+      "Sichtung vorhandener Datenschutzdokumente",
+      "Identifikation offensichtlicher Lücken und Risiken",
+      "Abstimmung der notwendigen Unterlagen",
+      "Festlegung der zukünftigen Kommunikations- und Betreuungswege"
+    ],
+    "paragraph4": "<p>Bei den Paketen M und L erfolgt zusätzlich die Aufnahme der für die Tätigkeit als externer Datenschutzbeauftragter erforderlichen Strukturen.</p>",
+    "paragraph5": "<p>Sollten wir während des Onboardings einen erheblichen zusätzlichen Bereinigungs- oder Projektbedarf feststellen, sprechen wir diesen vor zusätzlichen kostenpflichtigen Arbeiten mit Ihnen ab.</p>"
+  },
+  "process": {
+    "title": "So läuft die Datenschutzbetreuung mit uns ab",
+    "ctaLabel": "Jetzt unverbindliches Erstgespräch vereinbaren",
+    "steps": [
+      {
+        "title": "Erstgespräch und Bedarfsklärung",
+        "paragraphs": [
+          "<p>Zunächst sprechen wir über Ihr Unternehmen, bestehende Prozesse und die aktuellen Herausforderungen. Gemeinsam klären wir, welches Betreuungsmodell zu Ihnen passt.</p>"
+        ]
+      },
+      {
+        "title": "Datenschutz-Bestandsaufnahme",
+        "paragraphs": [
+          "<p>Im Onboarding erfassen wir relevante Prozesse, Systeme, Dienstleister und bestehende Datenschutzunterlagen. So erhalten wir einen nachvollziehbaren Überblick über den aktuellen Stand.</p>"
+        ]
+      },
+      {
+        "title": "Prioritäten und Maßnahmen",
+        "paragraphs": [
+          "<p>Wir identifizieren Handlungsbedarf und priorisieren die notwendigen Maßnahmen. Dabei konzentrieren wir uns zunächst auf die Themen, die für Ihr Unternehmen tatsächlich relevant sind.</p>"
+        ]
+      },
+      {
+        "title": "Umsetzung",
+        "paragraphs": [
+          "<p>Gemeinsam bringen wir Dokumentation, Prozesse und Datenschutzorganisation auf einen strukturierten Stand. Sie wissen dabei jederzeit, welche Maßnahmen durchgeführt werden und warum.</p>"
+        ]
+      },
+      {
+        "title": "Laufende Betreuung",
+        "paragraphs": [
+          "<p>Datenschutz endet nicht nach dem Onboarding. Neue Mitarbeitende, Systeme, Dienstleister und Geschäftsprozesse verändern auch die Datenschutzanforderungen.</p>",
+          "<p>Wir begleiten Sie deshalb langfristig und stehen Ihnen bei Fragen als persönlicher Ansprechpartner zur Verfügung.</p>"
+        ]
+      }
+    ]
+  },
+  "personal": {
+    "eyebrow": "Persönlich statt anonym",
+    "title": "Persönliche Datenschutzbetreuung statt anonymer Plattform",
+    "paragraph": "Datenschutz ist Vertrauenssache.",
+    "paragraph2": "<p>Deshalb setzen wir nicht ausschließlich auf automatisierte Portale und Vorlagen. Sie erhalten bei der GIM einen persönlichen Ansprechpartner, der Ihr Unternehmen und Ihre Prozesse kennt.</p>",
+    "image": "/assets/img/job.jpg",
+    "imageAlt": "Team bei einer Besprechung im Büro",
+    "personalPoints": [
+      {
+        "title": "Klare Kommunikation",
+        "paragraphs": [
+          "Datenschutz kann komplex sein. Unsere Aufgabe ist es, Ihnen verständlich zu erklären, was erforderlich ist und was nicht."
+        ]
+      },
+      {
+        "title": "Persönliche Ansprechpartner",
+        "paragraphs": [
+          "Bei Fragen wissen Sie, wen Sie erreichen können. Sie müssen Ihren Betrieb nicht bei jeder Anfrage erneut erklären."
+        ]
+      },
+      {
+        "title": "Praxisnahe Lösungen",
+        "paragraphs": [
+          "Datenschutz muss mit Ihren Geschäftsprozessen funktionieren. Wir suchen deshalb Lösungen, die rechtliche Anforderungen und betriebliche Realität sinnvoll zusammenbringen."
+        ]
+      },
+      {
+        "title": "IT und Datenschutz aus einer Hand",
+        "paragraphs": [
+          "Viele Datenschutzfragen sind heute unmittelbar mit IT-Systemen, Cloud-Diensten, Microsoft 365, Berechtigungen oder IT-Sicherheit verbunden.",
+          "Als IT-Dienstleister können wir technische und organisatorische Fragestellungen gemeinsam betrachten und müssen Datenschutz und IT nicht künstlich voneinander trennen."
+        ]
+      },
+      {
+        "title": "Wir reden Klartext",
+        "paragraphs": [
+          "Sie erhalten nachvollziehbare Empfehlungen und klare Prioritäten. Wir verkaufen Ihnen nicht mehr Datenschutzprojekt, als Ihr Unternehmen tatsächlich benötigt."
+        ]
+      }
+    ],
+    "ctaLabel": "Jetzt mit uns über Ihren Datenschutz sprechen"
+  },
+  "terms": {
+    "eyebrow": "Konditionen",
+    "title": "Vertragslaufzeiten",
+    "contractTerms": [
+      {
+        "packages": "Pakete XS und S",
+        "duration": "6 Monate",
+        "paragraphs": [
+          "<p>Der Vertrag kann mit einer Frist von <strong>30 Tagen zum Ende der jeweiligen Vertragslaufzeit</strong> gekündigt werden. Erfolgt keine fristgerechte Kündigung, verlängert sich der Vertrag um weitere <strong>6 Monate</strong>.</p>"
+        ]
+      },
+      {
+        "packages": "Pakete M und L",
+        "duration": "12 Monate",
+        "paragraphs": [
+          "<p>Der Vertrag kann ebenfalls mit einer Frist von <strong>30 Tagen zum Ende der jeweiligen Vertragslaufzeit</strong> gekündigt werden. Erfolgt keine fristgerechte Kündigung, verlängert sich der Vertrag um weitere <strong>12 Monate</strong>.</p>"
+        ]
+      }
+    ],
+    "eyebrow2": "Mindestvertragslaufzeit",
+    "paragraph": "Die Kündigung kann in Textform erfolgen.",
+    "paragraph2": "<p>Alle angegebenen Preise verstehen sich netto zuzüglich der jeweils geltenden gesetzlichen Umsatzsteuer.</p>"
+  },
+  "faq": {
+    "title": "Häufige Fragen zur Datenschutzbetreuung",
+    "items": [
+      {
+        "question": "Wann benötigt ein Unternehmen einen Datenschutzbeauftragten?",
+        "answer": "<p>Die Mitarbeiterzahl allein entscheidet nicht automatisch über die Pflicht zur Benennung eines Datenschutzbeauftragten.</p>\n<p>Nach § 38 BDSG besteht für nichtöffentliche Stellen unter anderem eine Benennungspflicht, wenn in der Regel <strong>mindestens 20 Personen ständig mit der automatisierten Verarbeitung personenbezogener Daten</strong> beschäftigt sind.</p>\n<p>Darüber hinaus kann unabhängig von dieser Personenzahl eine Verpflichtung bestehen, beispielsweise aufgrund bestimmter besonders risikoreicher Datenverarbeitungen.</p>\n<p><strong>Wir prüfen mit Ihnen, ob für Ihr Unternehmen eine gesetzliche Benennungspflicht besteht.</strong></p>"
+      },
+      {
+        "question": "Warum einen externen Datenschutzbeauftragten einsetzen?",
+        "answer": "<p>Ein externer Datenschutzbeauftragter stellt <strong>spezialisiertes Fachwissen</strong> bereit, ohne dass im eigenen Unternehmen dauerhaft entsprechende Ressourcen aufgebaut werden müssen.</p>\n<p>Gleichzeitig erhalten Geschäftsführung und Mitarbeitende einen <strong>festen Ansprechpartner</strong> für datenschutzrechtliche Fragestellungen.</p>"
+      },
+      {
+        "question": "Sind die Pakete nur für Unternehmen aus Hotellerie und Gastronomie geeignet?",
+        "answer": "<p><strong>Nein.</strong></p>\n<p>Unsere Datenschutzpakete stehen Unternehmen unterschiedlicher Branchen zur Verfügung. Für Hotellerie und Gastronomie bieten wir zusätzlich eine auf typische Branchenprozesse abgestimmte Betreuung.</p>"
+      },
+      {
+        "question": "Was zählt zum monatlichen Beratungskontingent?",
+        "answer": "<p>Zum Beratungskontingent gehören telefonische Gespräche, Videotermine, schriftliche Beratung sowie die Bearbeitung individueller Datenschutzfragen und vereinbarter Datenschutzaufgaben.</p>"
+      },
+      {
+        "question": "Was passiert, wenn das enthaltene Zeitkontingent nicht ausreicht?",
+        "answer": "<p>Zusätzliche Tätigkeiten rechnen wir transparent mit <strong>90,00 € netto pro Stunde im 15-Minuten-Takt</strong> ab.</p>\n<p>Dadurch bezahlen Sie zusätzlichen Aufwand nur dann, wenn dieser tatsächlich entsteht.</p>"
+      },
+      {
+        "question": "Kann nicht genutzte Beratungszeit angespart werden?",
+        "answer": "<p><strong>Nein.</strong> Nicht genutztes Beratungskontingent verfällt jeweils zum Monatsende.</p>\n<p>Dadurch können wir für alle betreuten Unternehmen verlässlich monatliche Betreuungskapazitäten vorhalten.</p>"
+      },
+      {
+        "question": "Können bereits vorhandene Datenschutzunterlagen übernommen werden?",
+        "answer": "<p><strong>Ja.</strong></p>\n<p>Im Rahmen des Onboardings prüfen wir vorhandene Dokumente und Prozesse. Sinnvolle bestehende Unterlagen müssen nicht unnötig neu erstellt werden.</p>"
+      },
+      {
+        "question": "Können Sie auch Unternehmen außerhalb von Hamburg und Norderstedt betreuen?",
+        "answer": "<p><strong>Ja.</strong></p>\n<p>Viele Leistungen der Datenschutzberatung können vollständig digital durchgeführt werden. Dadurch können wir Unternehmen bundesweit betreuen. Persönliche Termine können bei Bedarf individuell abgestimmt werden.</p>"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Datenschutz strukturiert angehen",
+    "paragraph": "<p>Sie möchten wissen, wie Ihr Unternehmen im Datenschutz aufgestellt ist oder ob eines unserer Betreuungspakete zu Ihnen passt?</p>",
+    "paragraph2": "<p>In einem unverbindlichen Erstgespräch klären wir Ihren aktuellen Stand und den tatsächlichen Unterstützungsbedarf.</p>",
+    "paragraph3": "<p>Sie bekommen eine klare Einschätzung – ohne unnötige Leistungen und ohne komplizierten Fachjargon.</p>",
+    "ctaLabel": "Jetzt unverbindliche Datenschutzberatung anfragen"
+  }
+}

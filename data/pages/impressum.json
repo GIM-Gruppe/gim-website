@@ -1,0 +1,38 @@
+{
+  "seo": {
+    "title": "GIM Website - Impressum",
+    "description": "Rechtliche Informationen und Kontaktdaten der GIM GmbH"
+  },
+  "title": "Impressum",
+  "company": {
+    "title": "Angaben gemäß § 5 TMG:",
+    "name": "GIM GmbH",
+    "street": "Gutenbergring 69A",
+    "city": "22848 Norderstedt",
+    "country": "Deutschland"
+  },
+  "directors": {
+    "title": "Vertreten durch die Geschäftsführer:",
+    "names": [
+      "Lutz Thiele",
+      "Jonas Grossen"
+    ]
+  },
+  "contact": {
+    "title": "Kontakt:",
+    "phoneLabel": "Telefon:",
+    "phone": "+49 40 22898595",
+    "emailLabel": "E-Mail:",
+    "email": "info@gim-gruppe.com"
+  },
+  "register": {
+    "title": "Registereintrag:",
+    "text": "Eintragung im Handelsregister.",
+    "court": "Registergericht: Amtsgericht Kiel",
+    "number": "Registernummer: HRB 28539"
+  },
+  "vat": {
+    "title": "Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:",
+    "number": "DE165 916 544"
+  }
+}

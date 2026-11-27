@@ -1,38 +1,31 @@
 <script setup lang="ts">
 import { useSeoMeta } from '~/composables/seo'
-definePageMeta({ documentDriven: { page: false, surround: false, }, });
+import data from '~/content/services/content.json'
 
-
-useSeoMeta(
-  'GIM Website - SAP Basis Services', // Title: Reflects that the page is about SAP Basis services
-  'Entdecken Sie die SAP Basis Services der GIM GmbH. Unser Expertenteam unterstützt Sie bei der Wartung, Optimierung und Verwaltung Ihrer SAP-Systeme.' // Description: Relevant and concise description for the SAP Basis services page
-)
-
-const { data, pending, error } = await useAsyncData('sap', async () => {
-  const doc = await queryCollection('content').path('/services/content').first()
-  return doc?.meta ?? null
-})
-// // console.log(data);
+definePageMeta({ documentDriven: { page: false, surround: false } })
+useSeoMeta(data.sapSeo.title, data.sapSeo.description)
+const service = data.services.find(item => item.name === 'sap')
 </script>
 
 <template>
-  <div v-if="pending">Loading...</div>
-  <div v-else-if="error">Failed to load content</div>
-  <div v-else>
+  <div v-if="service">
     <Breadcrumbs :items="[
       { label: 'Leistungen', to: '/services' },
       { label: 'SAP Basis' }
     ]" />
     <LayoutContainer>
-      <!-- <ServiceCard></ServiceCard> -->
+      
       <withProductScreenshotPanel
-        :title="data?.services[2].title"
-        :subtitle="data?.services[2].subtitle"
-        :description="data?.services[2].description"
-        :image=" data?.services[2].image"
-        :imagealt="data?.services[2].imagealt"
-        :features="data?.services[2].subservice"
+        :title="service.title"
+        :subtitle="service.subtitle"
+        :description="service.description"
+        :image=" service.image"
+        :imagealt="service.imagealt"
+        :features="service.subservice"
       ></withProductScreenshotPanel>
     </LayoutContainer>
   </div>
+  <LayoutContainer v-else class="py-8">
+    <p>Die SAP-Leistungsübersicht ist derzeit nicht verfügbar.</p>
+  </LayoutContainer>
 </template>

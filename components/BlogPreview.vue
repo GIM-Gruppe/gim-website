@@ -1,4 +1,5 @@
 <script setup lang="ts">
+const props = defineProps<{ copy: { eyebrow: string; title: string; allLabel: string; readLabel: string } }>()
 const { data: posts } = await useAsyncData('home-blog-preview', () => getPublishedBlogPosts(3))
 </script>
 
@@ -7,16 +8,16 @@ const { data: posts } = await useAsyncData('home-blog-preview', () => getPublish
     <div class="mb-8 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
       <div>
         <p class="mb-2 text-sm font-semibold uppercase tracking-[0.18em] text-secondary">
-          Aktuelles
+          {{ props.copy.eyebrow }}
         </p>
-        <h2 id="blog-preview-title" class="mb-0">Einblicke aus der GIM</h2>
+        <h2 id="blog-preview-title" class="mb-0">{{ props.copy.title }}</h2>
       </div>
 
       <NuxtLink
         to="/blog"
         class="inline-flex w-fit items-center gap-2 text-sm font-semibold text-secondary transition hover:text-primary"
       >
-        Alle Artikel
+        {{ props.copy.allLabel }}
         <span aria-hidden="true">→</span>
       </NuxtLink>
     </div>
@@ -52,7 +53,7 @@ const { data: posts } = await useAsyncData('home-blog-preview', () => getPublish
               {{ post.description }}
             </p>
             <span class="mt-auto text-sm font-semibold text-secondary">
-              Artikel lesen <span aria-hidden="true">→</span>
+              {{ props.copy.readLabel }} <span aria-hidden="true">→</span>
             </span>
           </div>
         </NuxtLink>

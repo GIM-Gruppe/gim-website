@@ -1,0 +1,13 @@
+{
+  "seo": {
+    "title": "Blog | GIM GmbH",
+    "description": "Aktuelle Einblicke, Fachthemen und Neuigkeiten der GIM GmbH."
+  },
+  "eyebrow": "GIM Blog",
+  "title": "Einblicke, Wissen und Neuigkeiten",
+  "description": "Fachliche Einblicke, aktuelle Themen und Neuigkeiten rund um unsere Arbeit und die IT-Welt.",
+  "emptyTitle": "Noch keine Artikel veröffentlicht",
+  "emptyText": "Neue Beiträge erscheinen hier, sobald sie veröffentlicht wurden.",
+  "readLabel": "Artikel lesen",
+  "backLabel": "Zurück zum Blog"
+}

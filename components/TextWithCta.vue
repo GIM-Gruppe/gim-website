@@ -41,7 +41,7 @@ const btnSize = computed<"lg" | "xl">(() =>
       class="grid gap-10"
       :class="{ 'lg:grid-cols-[minmax(0,1fr)_220px] lg:items-center lg:gap-12': $slots.aside }"
     >
-      <div class="min-w-0">
+      <div class="min-w-0" :class="{ 'max-w-3xl': !$slots.aside }">
         <!-- Text block -->
         <div class="flex flex-wrap items-center">
           <div class="w-full">

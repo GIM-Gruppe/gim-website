@@ -1,0 +1,204 @@
+{
+  "seo": {
+    "title": "SAP Beratung in Hamburg | GIM GmbH",
+    "description": "Maßgeschneiderter SAP-Support ✅Praxisnah, transparent, zuverlässig ✅Klare Lösungen und Prozesse ►Jetzt kontaktieren!"
+  },
+  "hero": {
+    "eyebrow": "SAP Basis",
+    "title": "SAP-Beratung in Hamburg und Umgebung für Unternehmen mit klaren Anforderungen",
+    "ctaLabel": "Jetzt für unverbindliche Erstberatung kontaktieren!",
+    "imageAlt": "Abstrakte SAP Beratung",
+    "paragraphs": [
+      "<p>In unserer SAP-Beratung für Unternehmen setzen wir auf <strong>praxisnahe Lösungen für Ihr SAP-Umfeld:</strong> klar, strukturiert und <strong>nah an den alltäglichen Anforderungen in Ihrem Betrieb</strong>. Wir unterstützen Sie mit <strong>Lösungen für gewachsene Prozesse, Support und einem persönlichen Ansprechpartner</strong>.</p>",
+      "<p>Kontaktieren Sie uns für <strong>zuverlässige SAP-Beratung, die Ihre Systeme intelligent an den Arbeitsalltag in Ihrer Firma anpasst.</strong> Wir freuen uns darauf, die für Sie passende SAP-Lösung zu schaffen!</p>"
+    ],
+    "image": "/assets/img/hero_network.png",
+    "description": ""
+  },
+  "relevance": {
+    "eyebrow": "Keine Standardberatung",
+    "title": "Warum SAP-Beratung für Unternehmen mehr als eine Standardberatung sein muss",
+    "paragraph": "<p>SAP-Landschaften sind so individuell wie Ihr Unternehmen. Damit Ihre <strong>Systeme optimal auf die Anforderungen in Ihrem Firmenalltag abgestimmt sind</strong>, <strong>reicht eine Standardberatung oft nicht aus</strong>. Wir <strong>finden für Sie die passenden Lösungen</strong> und übernehmen ihre Implementierung – <strong>praxisnah und effizient</strong>.</p>",
+    "paragraph2": "<p>Insbesondere dort, wo <strong>fachliche und technische Themen ineinandergreifen</strong>, brauchen Sie einen SAP-Berater in Hamburg, der über den IT-Tellerrand hinausschauen kann. Von uns bekommen Sie deshalb <strong>praxisnahe Beratung statt abstrakter Software-Konzepte</strong>.</p>",
+    "paragraph3": "<p>Kontaktieren Sie uns jetzt für ein <strong>unverbindliches Erstgespräch zu den SAP-Systemen in Ihrem Unternehmen</strong>!</p>",
+    "ctaLabel": "Jetzt Erstgespräch anfragen!",
+    "image": "/assets/img/analysis_structure.png",
+    "imageAlt": "SAP Beratung Analyse"
+  },
+  "services": {
+    "eyebrow": "Leistungsüberblick",
+    "title": "Unsere Leistungen in der SAP-Beratung für Hamburg und Umgebung",
+    "paragraph": "<p>Als SAP-Consulting-Firma in Hamburg helfen wir Ihnen dabei, SAP für Ihr Unternehmen maßgeschneidert einzurichten. <strong>Hier sind unsere Leistungen als SAP-Beratungshaus in Hamburg im Überblick:</strong></p>",
+    "consultingServices": [
+      "Analyse bestehender SAP-Prozesse",
+      "Optimierung von Abläufen",
+      "Technische SAP-Beratung",
+      "Unterstützung bei der Weiterentwicklung des Systems und Erweiterungen",
+      "Begleitung von Migrationen, wie z. B. eine S/4HANA-Migration",
+      "Praxisnahe Beratung mit Blick auf Umsetzbarkeit und betriebliche Anforderungen"
+    ],
+    "paragraph2": "<p><strong>Wir unterstützen Ihre IT-Abteilung bei allen SAP-Fragen</strong>. So <strong>halten wir Ihrem Team den Rücken für alltägliche Abläufe</strong> frei, während wir uns um Ihr SAP kümmern!</p>",
+    "ctaLabel": "Jetzt kontaktieren!"
+  },
+  "audience": {
+    "image": "/assets/img/process_steps.png",
+    "imageAlt": "SAP Beratung Prozess",
+    "eyebrow": "Relevanz",
+    "title": "Für welche Unternehmen in Hamburg und Umgebung SAP-Beratung besonders relevant ist",
+    "paragraph": "<p>Unsere Erfahrung zeigt, dass <strong>SAP-Consulting in Hamburg vor allem in diesen Fällen besonders relevant ist:</strong></p>",
+    "targetGroups": [
+      {
+        "title": "Unternehmen mit gewachsener SAP-Landschaft",
+        "text": "Ihre SAP-Systeme sind über die Jahre organisch gewachsen und benötigen eine stärkere Strukturierung und verbesserte Dokumentation."
+      },
+      {
+        "title": "Firmen mit Optimierungsbedarf",
+        "text": "SAP ist ein komplexes System. Für Business-Anwendungen muss es immer wieder optimiert werden, damit es ideal läuft. Dafür bieten wir beispielsweise SAP-Prozessberatung in Hamburg an."
+      },
+      {
+        "title": "Unternehmen vor Veränderungen oder Migrationen",
+        "text": "SAP-Migrationen übersteigen oft die Kapazitäten interner IT-Abteilungen. Eine SAP-Migrations-Beratung in Hamburg sorgt dafür, dass das Go-live und die kritische Phase danach ohne Beeinträchtigungen für Ihr Unternehmen ablaufen."
+      },
+      {
+        "title": "Organisationen mit speziellen Anforderungen an Entwicklung, Prozesse oder technische Betreuung",
+        "text": "Hat Ihr Unternehmen besondere Anforderungen an SAP und technische Systeme, ist externe Expertise hilfreich. Wir unterstützen Ihre interne IT-Abteilung mit punktueller und spezialisierter SAP-Beratung für Unternehmen in Hamburg."
+      },
+      {
+        "title": "Mittelstand mit Bedarf an direkter, pragmatischer Zusammenarbeit",
+        "text": "Gerade bei mittelständischen Unternehmen sind personelle und technische Kapazitäten ein Flaschenhals für IT-Systeme. Holen Sie sich externe Unterstützung ins Haus, um Ihr IT-Team zu entlasten. Wir schaffen pragmatische, praxistaugliche IT-Lösungen für Sie."
+      }
+    ],
+    "paragraph2": "<p><strong>Kontaktieren Sie uns für eine unverbindliche Erstberatung</strong> und besprechen Sie die SAP-Herausforderungen in Ihrer Firma mit uns!</p>",
+    "ctaLabel": "Jetzt für Erstberatung kontaktieren!"
+  },
+  "process": {
+    "title": "So läuft SAP-Beratung in Hamburg und Umgebung mit unserer IT-Consulting-Firma ab",
+    "ctaLabel": "Jetzt kontaktieren!",
+    "intro": "<p><strong>Arbeiten Sie mit uns zusammen, bieten wir Ihnen einen strukturierten Prozess für technische SAP-Beratung in Hamburg an.</strong></p>",
+    "steps": [
+      {
+        "title": "Analyse der Ausgangslage und Ziele",
+        "paragraphs": [
+          "<p>Wir starten mit einer <strong>Analyse Ihrer Ausgangslage und den Zielen für Ihr SAP-System</strong>. Dazu gehören beispielsweise die <strong>Untersuchung Ihrer bestehenden SAP-Landschaft sowie der existierenden Schnittstellen und Dokumentation</strong>.</p>"
+        ]
+      },
+      {
+        "title": "Bewertung von Prozessen, Systemen und Engpässen",
+        "paragraphs": [
+          "<p>Haben wir die notwendigen Informationen und Zugänge von Ihnen erhalten, untersuchen wir Ihr bestehendes SAP-System näher. Wir <strong>bewerten Prozesse und Systeme</strong> und legen ein Augenmerk darauf, Engpässe zu identifizieren.</p>"
+        ]
+      },
+      {
+        "title": "Erarbeitung konkreter Lösungsansätze",
+        "paragraphs": [
+          "<p><strong>Unsere Arbeit ist praxisnah, konkret und transparent.</strong> Wenn wir Lösungsansätze für Ihre SAP-Systeme erarbeiten, <strong>stehen wir im Dialog mit Ihnen</strong>. So können wir klären, welcher Lösungsansatz am besten für Ihr Unternehmen geeignet ist. Dank dieser <strong>offenen Kommunikation</strong> ist <strong>unsere Arbeit für Sie transparent und nachvollziehbar</strong>.</p>"
+        ]
+      },
+      {
+        "title": "Abstimmung mit Fachbereichen und IT",
+        "paragraphs": [
+          "<p>Wir stimmen unsere SAP-Lösungen mit den relevanten Fachbereichen und Ihrer IT ab. So <strong>entsteht ein SAP-System, das technisch fundiert ist und den Arbeitsalltag in Ihrem Betrieb unterstützt</strong>.</p>"
+        ]
+      },
+      {
+        "title": "Unterstützung bei Umsetzung, Entwicklung oder Migration",
+        "paragraphs": [
+          "<p>Auf Wunsch beraten wir Ihre IT-Abteilung bei der SAP-Umsetzung oder übernehmen diese für Sie. Je nach Ihren Kapazitäten kann es hier sinnvoller sein, <strong>Ihre SAP-Prozesse komplett an uns abzugeben</strong>. Insbesondere bei <strong>technisch komplexen Projekten wie einer S/4HANA-Migration</strong> ist es sinnvoll, <strong>Ihr IT-Team um unsere Kapazitäten zu ergänzen</strong>.</p>"
+        ]
+      },
+      {
+        "title": "Begleitung bis zur stabilen Anwendung im Alltag",
+        "paragraphs": [
+          "<p>Als SAP-Beratungshaus in Hamburg <strong>unterstützen wir Sie so lange, bis Ihre Systeme im Alltag stabil laufen</strong>. Darüber hinaus können Sie uns <strong>als verlässlichen Partner für Ihre SAP-Systeme buchen.</strong></p>"
+        ]
+      }
+    ]
+  },
+  "topics": {
+    "eyebrow": "Themenfelder",
+    "title": "Typische Themen in der SAP-Beratung für Unternehmen",
+    "paragraph": "<p>SAP ist ein komplexes System. Aufgrund dessen lohnt es sich, sich externe Unterstützung zu holen, auch wenn Sie eine gut funktionierende interne IT-Abteilung haben. <strong>Arbeiten wir mit Unternehmen in Hamburg zusammen, übernehmen wir oft diese Aufgaben:</strong></p>",
+    "topicItems": [
+      "Prozessoptimierung",
+      "technische Fragestellungen",
+      "Migration, wie z. B. von SAP ECC zu S/4HANA und SAP BW zu BW/4HANA",
+      "Analytics",
+      "Planung",
+      "Schnittstellen"
+    ],
+    "paragraph2": "<p>Kein Unternehmen arbeitet gleich. Umso wichtiger ist es, <strong>mit einem IT-Dienstleister zusammenzuarbeiten, der versteht, wie sich Veränderungen in der Softwarearchitektur auf den Alltag in Ihrem Betrieb auswirken können</strong>.</p>",
+    "paragraph3": "Als erfahrene SAP-Beratung schlagen wir die Brücke zwischen IT und Arbeitsabläufen!",
+    "ctaLabel": "Jetzt kontaktieren!"
+  },
+  "quality": {
+    "eyebrow": "Qualität",
+    "title": "Was gute SAP-Beratung auszeichnet",
+    "paragraph": "<p><strong>IT ist für uns Vertrauenssache.</strong> SAP-Beratung <strong>bedeutet nicht nur Systeme aufzusetzen, sondern auch klar und verlässlich zu agieren.</strong></p>",
+    "paragraph2": "<p><strong>Sind Sie auf der Suche nach einer guten SAP-Beratung in Hamburg, sollten Sie auf diese Faktoren achten:</strong></p>",
+    "qualityItems": [
+      "Klares Verständnis von Geschäftsprozessen",
+      "Technische Umsetzbarkeit und realistische Empfehlungen hierzu",
+      "Direkte Kommunikation",
+      "Belastbare Handlungsempfehlungen",
+      "Verzicht auf unnötige Komplexität",
+      "Verlässliche Ansprechpartner und Verbindlichkeit"
+    ],
+    "paragraph3": "<p><strong>Unser Team setzt sich gemeinsam für Ihren Erfolg ein!</strong> Sind Sie auf der Suche nach einem verlässlichen Ansprechpartner für SAP, <strong>buchen Sie jetzt ein unverbindliches Erstgespräch mit uns</strong>. So lernen Sie uns und unseren praxisnahen Ansatz kennen.</p>",
+    "ctaLabel": "Jetzt Erstgespräch buchen!",
+    "image": "/assets/img/stabilization_cloud.png",
+    "imageAlt": "SAP Beratung Stabilität"
+  },
+  "regional": {
+    "title": "SAP-Beratung in Hamburg und Umgebung: Direkte Kommunikation und kurze Wege",
+    "paragraph": "<p>Als SAP-Beratung für den Mittelstand in Hamburg <strong>unterstützen wir Unternehmen dabei, SAP optimal zu nutzen.</strong> Nutzen Sie unsere über 30-jährige Erfahrung und meistern Sie die digitale Transformation!</p>",
+    "paragraph2": "<p>Dafür bieten wir Ihnen eine <strong>partnerschaftliche Zusammenarbeit, Transparenz und Verbindlichkeit</strong>. Sie haben von Anfang an einen persönlichen Ansprechpartner bei uns. So sind die Zuständigkeiten geklärt und Sie erhalten zügig Hilfe, falls Sie ein akutes IT-Problem haben.</p>",
+    "paragraph3": "<p>Wir sind <strong>im Raum Hamburg und Umgebung ebenso wie deutschland- und europaweit remote für Sie einsatzfähig</strong>.</p>",
+    "paragraph4": "<p>Kommen Sie jetzt auf uns zu und <strong>vereinbaren Sie einen Termin für eine Erstberatung</strong>. Bei dieser Gelegenheit <strong>besprechen wir Ihre aktuelle SAP-Landschaft, mögliche Herausforderungen und wie wir Sie und Ihr IT-Team realistisch unterstützen können</strong>. Wir freuen uns auf Sie!</p>",
+    "ctaLabel": "Jetzt Erstberatung anfragen!",
+    "image": "/assets/img/golive_flow.png",
+    "imageAlt": "SAP Beratung Erstberatung"
+  },
+  "faq": {
+    "title": "FAQ: SAP-Beratung in Hamburg und Umgebung",
+    "items": [
+      {
+        "question": "Was umfasst eine SAP-Beratung?",
+        "answer": "<p><strong>Eine SAP-Beratung umfasst die Analyse Ihrer bestehenden SAP-Prozesse und -systeme.</strong> Wir können für Sie die <strong>Erarbeitung technischer Lösungsansätze</strong> für SAP sowie die <strong>Optimierung, Migration oder technische Weiterentwicklung</strong> Ihrer SAP-Systeme übernehmen.</p>"
+      },
+      {
+        "question": "Für welche Unternehmen ist SAP-Beratung sinnvoll?",
+        "answer": "<p>Als Unternehmen für SAP-Entwicklung in Hamburg unterstützen wir vor allem Unternehmen mit bestehender SAP-Landschaft. <strong>Eine Zusammenarbeit mit uns ist für Sie beispielsweise sinnvoll bei:</strong></p>\n<ul><li>Optimierungsbedarf</li><li>Technischen Herausforderungen</li><li>Geplanten Veränderungen wie Erweiterungen, Integrationen, Migrationen sowie Produktupdates und -upgrades</li><li>Begrenzten Kapazitäten Ihrer IT-Abteilung</li></ul>"
+      },
+      {
+        "question": "Worin unterscheidet sich eine gute SAP-Beratung von allgemeiner IT-Beratung?",
+        "answer": "<p><strong>Gutes SAP-Consulting verbindet SAP-Kenntnisse mit einem tiefen Prozessverständnis</strong>. Das heißt, dass die <strong>Beratungsfirma weiß, wie sich die technischen Zusammenhänge konkret im Unternehmensalltag äußern</strong>. Das <strong>Ergebnis einer SAP-Beratung soll den Arbeitsalltag in Ihrem Unternehmen unterstützen</strong> und erleichtern.</p>"
+      },
+      {
+        "question": "Unterstützt SAP-Beratung auch bei technischen Themen?",
+        "answer": "<p>Ja, wir bieten eine solche Unterstützung an. Wir kommen aus der technischen Basis. Das heißt, <strong>dass wir Expertise zu Systemarchitektur, Schnittstellen, Infrastruktur und Betrieb mitbringen</strong>. Das zahlt sich insbesondere bei SAP-Migrationen oder Weiterentwicklung Ihrer SAP-Systeme aus.</p>"
+      },
+      {
+        "question": "Ist SAP-Beratung auch für mittelständische Unternehmen in Hamburg und Umgebung relevant?",
+        "answer": "<p><strong>Ja, für den Mittelstand ist praxisnahe, effiziente und klare SAP-Beratung unerlässlich.</strong> Sind die <strong>Kapazitäten Ihrer IT-Abteilung eingeschränkt</strong>, ist es <strong>umso wichtiger, einen verlässlichen Partner für das SAP-Umfeld an Ihrer Seite zu haben</strong>.</p>"
+      },
+      {
+        "question": "Kann SAP-Beratung auch Entwicklung und Migration einbeziehen?",
+        "answer": "<p>Ja, eine Beratung kann diese Aspekte mit einbeziehen. In vielen IT-Projekten kommen unterschiedliche Bereiche zusammen. <strong>So kann die SAP-Beratung auch die Weiterentwicklung und Migration Ihres Systems beinhalten.</strong> Wir bieten für Sie beispielsweise eine SAP-S/4HANA-Beratung in Hamburg und arbeiten standardmäßig mit SAP Fiori, SAPUI5 und ABAP.</p>"
+      },
+      {
+        "question": "Wie läuft die Zusammenarbeit typischerweise ab?",
+        "answer": "<p><strong>Wir beginnen unsere Zusammenarbeit mit der Analyse Ihrer Ausgangssituation</strong>. Danach <strong>sprechen wir konkrete Handlungsempfehlungen aus</strong>. Dies erfolgt immer im Dialog mit Ihnen. So können Sie jederzeit nachvollziehen, weshalb welche Schritte implementiert wurden. Je nach Bedarf bieten wir Ihnen auch <strong>Unterstützung bei der Umsetzung und Weiterentwicklung Ihrer SAP-Systeme</strong>, ebenso wie eine <strong>langfristige Zusammenarbeit als externer SAP-Support.</strong></p>"
+      },
+      {
+        "question": "Ist eine SAP-Beratung nur in Hamburg vor Ort möglich?",
+        "answer": "<p><strong>Nein, wir betreuen Projekte in Hamburg und Umgebung ebenso wie deutschland- und europaweit.</strong> Unser Team arbeitet bevorzugt remote.</p>"
+      }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Unverbindlich sprechen",
+    "paragraph": "<p>Sind Sie auf der Suche nach einer verlässlichen SAP-Beratung mit praxistauglichen Lösungen in Hamburg?</p>",
+    "paragraph2": "<p>Dann kontaktieren Sie uns jetzt und vereinbaren Sie ein unverbindliches Erstgespräch mit uns.</p>",
+    "ctaLabel": "Jetzt kontaktieren!"
+  }
+}

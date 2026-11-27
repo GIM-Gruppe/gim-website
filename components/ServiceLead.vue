@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { cmsInline } from '~/utils/cms-html'
+
 const props = defineProps<{
   eyebrow?: string;
   title: string;
@@ -23,8 +25,8 @@ const props = defineProps<{
             {{ props.title }}
           </h1>
           <div class="mt-6 max-w-3xl space-y-4 text-secondary leading-relaxed [&_strong]:font-semibold">
-            <p v-if="props.description" v-html="props.description" />
-            <p v-for="paragraph in props.paragraphs" :key="paragraph" v-html="paragraph" />
+            <p v-if="props.description" v-html="cmsInline(props.description)" />
+            <p v-for="paragraph in props.paragraphs" :key="paragraph" v-html="cmsInline(paragraph)" />
           </div>
           <div v-if="props.ctaLabel && props.ctaHref" class="mt-8 flex flex-wrap gap-4">
             <UiButton :href="props.ctaHref" :label="props.ctaLabel" />

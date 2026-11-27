@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { cmsInline } from '~/utils/cms-html'
+
 const props = defineProps<{
   title: string;
   intro?: string;
@@ -20,8 +22,8 @@ const props = defineProps<{
           {{ props.title }}
         </h2>
         <div class="mt-4 space-y-4 text-secondary leading-relaxed [&_strong]:font-semibold">
-          <p v-if="props.intro" v-html="props.intro" />
-          <p v-for="paragraph in props.paragraphs" :key="paragraph" v-html="paragraph" />
+          <p v-if="props.intro" v-html="cmsInline(props.intro)" />
+          <p v-for="paragraph in props.paragraphs" :key="paragraph" v-html="cmsInline(paragraph)" />
         </div>
       </div>
 
@@ -41,7 +43,7 @@ const props = defineProps<{
               {{ step.title }}
             </h3>
             <div class="mt-3 space-y-4 text-secondary leading-relaxed [&_strong]:font-semibold">
-              <p v-for="paragraph in step.paragraphs" :key="paragraph" v-html="paragraph" />
+              <p v-for="paragraph in step.paragraphs" :key="paragraph" v-html="cmsInline(paragraph)" />
             </div>
           </div>
         </div>

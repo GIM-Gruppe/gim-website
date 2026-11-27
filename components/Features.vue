@@ -15,7 +15,7 @@ const props = defineProps<{
   <LayoutContainer as="section" topMargin bottomMargin>
     <div class="mt-16 md:mt-0">
       <!-- h2 statt h1, um Seitenhierarchie nicht zu sprengen -->
-      <h2 class="lg:tracking-tight font-semibold" v-html="props.title"></h2>
+      <h2 class="lg:tracking-tight font-semibold">{{ props.title }}</h2>
     </div>
 
     <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
