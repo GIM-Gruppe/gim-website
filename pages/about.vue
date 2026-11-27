@@ -1,59 +1,13 @@
 <script setup lang="ts">
-import { defineComponent, h, ref, watchEffect } from "vue";
-import { useSeoMeta } from "~/composables/seo";
-import { marked } from "marked"; // Importing markdown parser
-definePageMeta({ documentDriven: { page: false, surround: false, }, });
+import { useSeoMeta } from '~/composables/seo'
+import data from '~/content/aboutus/content.json'
 
-
-
-const { data, pending, error } = await useAsyncData('about', async () => {
-  const doc = await queryCollection('content').path('/aboutus/content').first()
-  return doc?.meta ?? null
-})
-
-useSeoMeta(
-  "GIM Website - Über uns", // Title
-  "Erfahren Sie mehr über die GGIM GmbH. Entdecken Sie unsere Unternehmensgeschichte, Vision, Werte und unser Team." // Description
-);
-
-const mobileMenuOpen = ref(false);
-
-const missionBlocks = [
-  { title: "Mission", text: "Wir sind bestrebt, persönliche und individuelle Beratung zu bieten und Unternehmen dabei zu helfen, ihre IT-Prozesse zu implementieren, ihre Digitalisierung Prozess zu beschleunigen damit Sie das Potenzial ihrer Digitalen Ressourcen voll auszuschöpfen. " },
-  { title: "Alleinstellungsmerkmal", text: "Unser Team von Experten besitzt mehrjährige Erfahrung in IT-Infrastruktur, Managed Services und SAP-Basis Diensten. Wir haben von den “Großen” Unternehmen gelernt und möchten den “Kleinen” mit skalierbaren, modernen sowie individuellen Lösungen und Dienstleistungen helfen, ihre Effizienz, Schnelligkeit und Sicherheit zu optimieren und damit den Grundstein für mehr Wachstum zu legen." },
-  // Add more blocks as needed
-];
-const leftBlocks = missionBlocks.slice(0, 1); // First block
-const rightBlocks = missionBlocks.slice(1, 2); // Second block
-
-const leftText = ref("");
-const rightText = ref("");
-
-watchEffect(async () => {
-  if (data.value?.mission?.textLeft) {
-    leftText.value = await marked(data.value.mission.textLeft);
-  }
-  if (data.value?.mission?.textRight) {
-    rightText.value = await marked(data.value.mission.textRight);
-  }
-});
-
-
-// Reactive reference to the mission text (for ensuring proper updates)
-const missionText = ref("");
-
-watchEffect(async () => {
-  if (data.value?.mission?.text) {
-    // Convert the markdown text to HTML
-    missionText.value = await marked(data.value.mission.text);
-  }
-});
+definePageMeta({ documentDriven: { page: false, surround: false } })
+useSeoMeta(data.seo.title, data.seo.description)
 </script>
 
 <template>
-  <div v-if="pending">Loading...</div>
-  <div v-else-if="error">Failed to load content</div>
-  <div v-else>
+  <div>
     <LayoutContainer>
       <div class="bg-white">
         <!-- WICHTIG: kein weiteres <main> hier, das gibt es schon im Layout -->
@@ -94,8 +48,8 @@ watchEffect(async () => {
                     >
                       <div class="relative">
                         <LightboxImage
-                          :src="data?.intro.images[0].image"
-                          :alt="data?.intro.images[0].imagealt"
+                          :src="data.intro.images[0]?.image"
+                          :alt="data.intro.images[0]?.imagealt"
                           img-class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                           button-class="w-full rounded-xl"
                           loading="lazy"
@@ -111,8 +65,8 @@ watchEffect(async () => {
                     >
                       <div class="relative">
                         <LightboxImage
-                          :src="data?.intro.images[1].image"
-                          :alt="data?.intro.images[1].imagealt"
+                          :src="data.intro.images[1]?.image"
+                          :alt="data.intro.images[1]?.imagealt"
                           img-class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                           button-class="w-full rounded-xl"
                           loading="lazy"
@@ -124,8 +78,8 @@ watchEffect(async () => {
                       </div>
                       <div class="relative">
                         <LightboxImage
-                          :src="data?.intro.images[2].image"
-                          :alt="data?.intro.images[2].imagealt"
+                          :src="data.intro.images[2]?.image"
+                          :alt="data.intro.images[2]?.imagealt"
                           img-class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                           button-class="w-full rounded-xl"
                           loading="lazy"
@@ -161,7 +115,7 @@ watchEffect(async () => {
                 <!-- Left blocks -->
                 <div class="leading-8 text-secondary">
                   <div
-                    v-for="block in leftBlocks"
+                    v-for="block in data.mission.leftBlocks"
                     :key="block.title"
                     class="mb-6"
                   >
@@ -174,7 +128,7 @@ watchEffect(async () => {
                 <!-- Right blocks -->
                 <div class="leading-8 text-secondary lg:mt-[50%]">
                   <div
-                    v-for="block in rightBlocks"
+                    v-for="block in data.mission.rightBlocks"
                     :key="block.title"
                     class="mb-6"
                   >
@@ -195,7 +149,7 @@ watchEffect(async () => {
           >
             <LightboxImage
               :src="data?.breakImage"
-              alt="Team und Arbeitsumgebung"
+              :alt="data.breakImageAlt"
               img-class="aspect-[5/2] w-full object-cover xl:rounded-3xl"
               button-class="w-full xl:rounded-3xl"
               loading="lazy"

@@ -39,6 +39,7 @@ const props = withDefaults(
           <p class="mt-4 text-secondary leading-relaxed">
             {{ props.description }}
           </p>
+          <slot name="after-text" />
         </div>
       </div>
     </div>

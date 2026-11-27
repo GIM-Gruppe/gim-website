@@ -23,7 +23,9 @@
   ],
   "textwithcta": {
     "title": "Willkommen bei der GIM",
-    "text": "GIM GmbH, Ihrem kompetenten Partner für IT-Infrastruktur, Managed Services und SAP Basis Dienstleistungen. Unser Unternehmen wurde gegründet, um gezielt die Bedürfnisse von Mittelständlern zu erfüllen, die häufig mit Herausforderungen wie begrenzten Budgets und knappen Ressourcen konfrontiert sind."
+    "text": "GIM GmbH, Ihrem kompetenten Partner für IT-Infrastruktur, Managed Services und SAP Basis Dienstleistungen. Unser Unternehmen wurde gegründet, um gezielt die Bedürfnisse von Mittelständlern zu erfüllen, die häufig mit Herausforderungen wie begrenzten Budgets und knappen Ressourcen konfrontiert sind.",
+    "appointmentLabel": "Termin vereinbaren",
+    "servicesLabel": "Zu den Leistungen"
   },
   "serviceoverview": {
     "title": "Unsere Leidenschaft ist Ihre IT",
@@ -65,5 +67,21 @@
     "text": "Unser Team von Experten besitzt mehrjährige Erfahrung in IT-Infrastruktur, Managed Services und SAP-Basis Diensten. Wir haben von den “Großen” Unternehmen gelernt und möchten den “Kleinen” mit skalierbaren, modernen sowie individuellen Lösungen und Dienstleistungen helfen, ihre Effizienz, Schnelligkeit und Sicherheit zu optimieren und damit den Grundstein für mehr Wachstum zu legen.",
     "image": "/assets/img/hand-3044387_1280.jpg",
     "imagealt": "fiber"
+  },
+  "seo": {
+    "title": "GIM-Website - Startseite",
+    "description": "Willkommen auf der GIM-Website – Ihr vertrauenswürdiger Partner für IT-Lösungen"
+  },
+  "award": {
+    "image": "/assets/img/diind-business-innovator-gim.png",
+    "imageAlt": "Business Innovator Siegel der GIM GmbH, gültig bis 11/2027",
+    "caption": "Business Innovator",
+    "description": "Die GIM GmbH wurde vom Deutschen Innovationsinstitut (diind) als Business Innovator ausgezeichnet. Die Auszeichnung steht für visionäre Unternehmen."
+  },
+  "blogPreview": {
+    "eyebrow": "Aktuelles",
+    "title": "Einblicke aus der GIM",
+    "allLabel": "Alle Artikel",
+    "readLabel": "Artikel lesen"
   }
 }

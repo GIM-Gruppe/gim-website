@@ -1,12 +1,10 @@
 <script setup lang="ts">
 import { useSeoMeta } from '~/composables/seo'
+import page from '~/data/pages/contact.json'
 
 definePageMeta({ documentDriven: { page: false, surround: false } })
 
-useSeoMeta(
-  'GIM Website - Kontakt',
-  'Kontaktieren Sie die GIM GmbH. Finden Sie hier unsere Kontaktdaten und erreichen Sie uns per Telefon, E-Mail oder über unser Kontaktformular.'
-)
+useSeoMeta(page.seo.title, page.seo.description)
 </script>
 
 <template>
@@ -18,18 +16,14 @@ useSeoMeta(
         >
           <p
             class="text-base font-semibold uppercase tracking-wide text-secondary"
-          >
-            Kontakt
-          </p>
+          >{{ page.intro.eyebrow }}</p>
           <h1
             id="contact-heading"
             class="font-heading font-bold tracking-tight text-primary"
           >
-            Wir sind für Sie da!
+            {{ page.intro.title }}
           </h1>
-          <div class="mx-auto mt-4 max-w-3xl text-secondary/80">
-            Termin vereinbaren
-          </div>
+          <div class="mx-auto mt-4 max-w-3xl text-secondary/80">{{ page.intro.subtitle }}</div>
         </div>
       </div>
 
@@ -38,9 +32,7 @@ useSeoMeta(
           <!-- Text / Kontaktinfos -->
           <div class="md:col-span-2 pr-6">
             <div class="mt-3 mb-12 text-secondary">
-              Wir freuen uns, dass Sie mit uns in Verbindung treten möchten.
-              Unser engagiertes Team steht Ihnen gerne zur Verfügung und bemüht
-              sich, Ihnen so schnell wie möglich zu antworten.
+              {{ page.intro.text }}
             </div>
 
             <ul class="mb-6 md:mb-0 space-y-4">
@@ -70,10 +62,10 @@ useSeoMeta(
                 </div>
                 <div class="ml-4 mb-4">
                   <h2 class="mb-2 text-lg font-medium leading-6 text-secondary">
-                    Anschrift
+                    {{ page.address.title }}
                   </h2>
-                  <p class="text-secondary text-base">Gutenbergring 69A</p>
-                  <p class="text-secondary text-base">22848 Norderstedt</p>
+                  <p class="text-secondary text-base">{{ page.address.street }}</p>
+                  <p class="text-secondary text-base">{{ page.address.city }}</p>
                 </div>
               </li>
 
@@ -104,16 +96,16 @@ useSeoMeta(
                 </div>
                 <div class="ml-4 mb-4">
                   <h2 class="mb-2 text-lg font-medium leading-6 text-secondary">
-                    Kontakt
+                    {{ page.phone.title }}
                   </h2>
                   <p class="text-secondary text-base">
-                    Telefonnummer:
+                    {{ page.phone.label }}
                     <a
-                      href="tel:+494022898595"
+                      :href="`tel:${page.phone.number.replace(/[^+0-9]/g, '')}`"
                       class="underline hover:no-underline"
-                      aria-label="Telefonnummer 0 4 0 22 89 85 95 anrufen"
+                      :aria-label="`${page.phone.number} anrufen`"
                     >
-                      +49 40 22898595
+                      {{ page.phone.number }}
                     </a>
                   </p>
                 </div>
@@ -122,7 +114,7 @@ useSeoMeta(
               <!-- Buchung -->
               <li class="flex">
                 <div class="mt-5">
-                  <Bookings />
+                  <Bookings :label="page.bookingLabel" />
                 </div>
               </li>
             </ul>
@@ -131,8 +123,8 @@ useSeoMeta(
           <!-- Bild -->
           <div class="h-full flex items-center justify-center">
             <LightboxImage
-              src="/assets/img/hands.jpg"
-              alt="Zwei Hände, die Zusammenarbeit symbolisieren"
+              :src="page.image"
+              :alt="page.imageAlt"
               img-class="w-full h-auto rounded-xl shadow-md object-cover"
               button-class="w-full rounded-xl"
               loading="lazy"

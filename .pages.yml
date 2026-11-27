@@ -2,300 +2,2540 @@ media:
   input: public/assets/img
   output: /assets/img
 content:
-  - name: home_page
-    label: Startseite
-    path: content/home/content.json
-    type: file
+- name: home_page
+  label: Startseite
+  path: content/home/content.json
+  type: file
+  fields:
+  - name: seo
+    label: Suchmaschinen (SEO)
+    component: seo
+    required: true
+  - name: carousel
+    label: Karusell
+    list: true
+    type: object
     fields:
-      - name: carousel
-        label: Karusell
-        list: true
-        type: object
-        fields:
-          - name: title1
-            label: Titel1
-            type: string
-          - name: title2
-            label: Titel2
-            type: string
-          - name: text
-            label: Text
-            type: string
-          - name: background_image
-            label: Hintergrundbild
-            type: image
-
-      - name: textwithcta
-        label: Willkommenstext
-        type: object
-        fields:
-          - name: title
-            label: Titel
-            type: string
-          - name: text
-            label: Text
-            type: text
-
-      - name: serviceoverview
-        label: Serviceübersicht
-        type: object
-        fields:
-          - name: title
-            label: Titel
-            type: string
-          - name: services
-            label: Dienstleistungen
-            type: object
-            list: true
-            fields:
-              - name: icon
-                label: Symbol
-                type: string
-              - name: title
-                label: Titel
-                type: string
-              - name: description
-                label: Beschreibung
-                type: text
-
-      - name: textimageleft
-        label: Text mit Bild (L)
-        type: object
-        fields:
-          - name: title
-            label: Titel
-            type: string
-          - name: text
-            label: Text
-            type: text
-          - name: image
-            label: Bild
-            type: image
-          - name: imagealt
-            label: Bildbeschreibung
-            type: string
-
-  - name: aboutus_page
-    label: Über uns Seite
-    path: content/aboutus/content.json
-    type: file
+    - name: title1
+      label: Titel1
+      type: string
+    - name: title2
+      label: Titel2
+      type: string
+    - name: text
+      label: Text
+      type: string
+    - name: background_image
+      label: Hintergrundbild
+      type: image
+  - name: textwithcta
+    label: Willkommenstext
+    type: object
     fields:
-      - name: intro
-        label: Einleitungstext mit Bild
-        type: object
-        fields:
-          - name: title
-            label: Titel
-            type: string
-          - name: subtitle
-            label: Untertitel
-            type: text
-          - name: images
-            label: Bilder
-            type: object
-            list: true
-            fields:
-              - name: image
-                label: Bild
-                type: image
-              - name: imagealt
-                label: Bildbeschreibung
-                type: string
-      - name: mission
-        label: Unsere Mission
-        type: object
-        fields:
-          - name: title
-            label: Titel
-            type: string
-          - name: text
-            label: Text
-            type: rich-text
-      - name: breakImage
-        label: Trennbild
-        type: image
-        
-      - name: gruende
-        label: Gründe für unser Unternehmen
-        type: object
-        fields:
-          - name: title
-            label: Titel
-            type: string
-          - name: subtitle
-            label: Untertitel
-            type: string
-          - name: gruende
-            label: Gründe
-            type: object
-            list: true
-            fields:
-              - name: title
-                label: Titel
-                type: string
-              - name: description
-                label: Beschreibung
-                type: text
-
-      - name: kooperationen
-        label: Kooperationspartner
-        type: object
-        fields:
-          - name: title
-            label: Titel
-            type: string
-          - name: subtitle
-            label: Untertitel
-            type: string
-          - name: partner
-            label: Partner
-            type: object
-            list: true
-            fields:
-              - name: partnername
-                label: Partnername
-                type: string
-              - name: description
-                label: Beschreibung
-                type: text
-              - name: partnerimage
-                label: Partnerlogo
-                type: image
-            
-      - name: team
-        label: Team
-        type: object
-        fields:
-          - name: title
-            label: Titel
-            type: string
-          - name: subtitle
-            label: Untertitel
-            type: string
-          - name: persons
-            label: Personen
-            type: object
-            list: true
-            fields:
-              - name: name
-                label: Name
-                type: string
-              - name: position
-                label: Position
-                type: string
-              - name: image
-                label: Bild
-                type: image
-  - name: services
-    label: Leistungen
-    path: content/services/content.json
-    type: file
+    - name: title
+      label: Titel
+      type: string
+    - name: text
+      label: Text
+      type: text
+    - name: appointmentLabel
+      label: 'Button: Termin vereinbaren'
+      type: string
+    - name: servicesLabel
+      label: 'Button: Leistungen'
+      type: string
+    required: true
+  - name: serviceoverview
+    label: Serviceübersicht
+    type: object
     fields:
+    - name: title
+      label: Titel
+      type: string
+    - name: services
+      label: Dienstleistungen
+      type: object
+      list: true
+      fields:
+      - name: icon
+        label: Symbol
+        type: string
       - name: title
         label: Titel
         type: string
-      - name: subtitle
-        label: Untertitel
-        type: string
-      - name: services
-        label: Leistungen
-        type: object
-        list: true
-        fields:
-          - name: name
-            label: Name
-            type: string
-          - name: title
-            label: Titel
-            type: string
-          - name: subtitle
-            label: Untertitel
-            type: string
-          - name: description
-            label: Beschreibung
-            type: text
-          - name: image
-            label: Bild
-            type: image
-          - name: imagealt
-            label: Bildbeschreibung
-            type: string
-          - name: subservice
-            label: Unterleistungen
-            type: object
-            list: true
-            fields:
-              - name: title
-                label: Titel
-                type: string
-
-  - name: blog
-    label: Blog
-    type: collection
-    path: content/blog
-    format: yaml-frontmatter
-    filename:
-      template: "{title}.md"
-      field: false
-    operations:
-      rename: false
-    view:
-      fields: [title, date, category, published]
-      primary: title
-      sort: [date, title]
-      search: [title, description, category]
-      default:
-        sort: date
-        order: desc
-    fields:
-      - name: title
-        label: Titel
-        type: string
-        required: true
       - name: description
-        label: Kurzbeschreibung
+        label: Beschreibung
         type: text
-        required: true
-        description: Wird auf der Blogübersicht und für Suchmaschinen verwendet.
-      - name: date
-        label: Veröffentlichungsdatum
-        type: date
-        required: true
-        options:
-          format: yyyy-MM-dd
-      - name: published
-        label: Veröffentlicht
-        type: boolean
-        default: true
-      - name: category
-        label: Kategorie
-        type: select
-        required: true
-        default: Aktuelles
-        options:
-          values:
-            - Aktuelles
-            - IT-Infrastruktur
-            - Managed Services
-            - SAP
-            - Datenschutz
-            - KIS-Guard
+    required: true
+  - name: textimageleft
+    label: Was zeichnet uns aus
+    type: object
+    fields:
+    - name: title
+      label: Titel
+      type: string
+    - name: text
+      label: Text
+      type: text
+    - name: image
+      label: Bild
+      type: image
+    - name: imagealt
+      label: Bildbeschreibung
+      type: string
+    required: true
+  - name: award
+    label: Auszeichnung (Was zeichnet uns aus)
+    type: object
+    fields:
+    - name: image
+      label: Siegel
+      type: image
+    - name: imageAlt
+      label: Bildbeschreibung
+      type: string
+    - name: caption
+      label: Titel der Auszeichnung
+      type: string
+    - name: description
+      label: Beschreibung
+      type: text
+    required: true
+  - name: blogPreview
+    label: Blogvorschau
+    type: object
+    fields:
+    - name: eyebrow
+      label: Dachzeile
+      type: string
+    - name: title
+      label: Überschrift
+      type: string
+    - name: allLabel
+      label: Link zur Übersicht
+      type: string
+    - name: readLabel
+      label: Link zum Artikel
+      type: string
+    required: true
+- name: aboutus_page
+  label: Über uns Seite
+  path: content/aboutus/content.json
+  type: file
+  fields:
+  - name: seo
+    label: Suchmaschinen (SEO)
+    component: seo
+    required: true
+  - name: intro
+    label: Einleitungstext mit Bild
+    type: object
+    fields:
+    - name: title
+      label: Titel
+      type: string
+    - name: subtitle
+      label: Untertitel
+      type: text
+    - name: images
+      label: Bilder
+      type: object
+      list:
+        min: 3
+        max: 3
+        collapsible: true
+      fields:
       - name: image
-        label: Beitragsbild
+        label: Bild
         type: image
-        options:
-          path: blog
-          rename: true
-      - name: imageAlt
+      - name: imagealt
         label: Bildbeschreibung
         type: string
-        description: Kurze Beschreibung des Bildes für Barrierefreiheit und SEO.
-      - name: body
-        label: Artikelinhalt
-        type: rich-text
+      description: Das bestehende Layout zeigt genau drei Bilder.
+    required: true
+  - name: mission
+    label: Unsere Mission
+    type: object
+    fields:
+    - name: title
+      label: Titel
+      type: string
+    - name: text
+      label: Archivtext (bisher nicht angezeigt)
+      type: rich-text
+      readonly: true
+      description: Bestehender, im alten Frontend nicht verwendeter Text. Die sichtbaren Texte stehen in den beiden Spalten
+        unten.
+    - name: leftBlocks
+      label: Linke Spalte
+      type: object
+      fields:
+      - name: title
+        label: Überschrift
+        type: string
+      - name: text
+        label: Text
+        type: text
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{title}'
+    - name: rightBlocks
+      label: Rechte Spalte
+      type: object
+      fields:
+      - name: title
+        label: Überschrift
+        type: string
+      - name: text
+        label: Text
+        type: text
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{title}'
+    required: true
+  - name: breakImage
+    label: Trennbild
+    type: image
+  - name: breakImageAlt
+    label: 'Trennbild: Bildbeschreibung'
+    type: string
+  - name: gruende
+    label: Gründe für unser Unternehmen
+    type: object
+    fields:
+    - name: title
+      label: Titel
+      type: string
+    - name: subtitle
+      label: Untertitel
+      type: string
+    - name: gruende
+      label: Gründe
+      type: object
+      list: true
+      fields:
+      - name: title
+        label: Titel
+        type: string
+      - name: description
+        label: Beschreibung
+        type: text
+    required: true
+  - name: kooperationen
+    label: Kooperationspartner
+    type: object
+    fields:
+    - name: title
+      label: Titel
+      type: string
+    - name: subtitle
+      label: Untertitel
+      type: string
+    - name: partner
+      label: Partner
+      type: object
+      list: true
+      fields:
+      - name: partnername
+        label: Partnername
+        type: string
+      - name: description
+        label: Beschreibung
+        type: text
+      - name: partnerimage
+        label: Partnerlogo
+        type: image
+    description: Bestehende Daten; derzeit nicht im Frontend angezeigt.
+    required: true
+  - name: team
+    label: Team
+    type: object
+    fields:
+    - name: title
+      label: Titel
+      type: string
+    - name: subtitle
+      label: Untertitel
+      type: string
+    - name: persons
+      label: Personen
+      type: object
+      list: true
+      fields:
+      - name: name
+        label: Name
+        type: string
+      - name: position
+        label: Position
+        type: string
+      - name: image
+        label: Bild
+        type: image
+    required: true
+- name: services
+  label: Leistungen
+  path: content/services/content.json
+  type: file
+  fields:
+  - name: seo
+    label: Suchmaschinen (SEO)
+    component: seo
+    required: true
+  - name: sapSeo
+    label: 'SAP-Übersicht: Suchmaschinen (SEO)'
+    component: seo
+    required: true
+  - name: title
+    label: Titel
+    type: string
+  - name: subtitle
+    label: Untertitel
+    type: string
+  - name: services
+    label: Leistungen
+    type: object
+    list: true
+    fields:
+    - name: name
+      label: Routenkennung (bestehende Seite)
+      type: string
+      description: Technische Routenkennung. Bestehende Kennungen nicht ändern, außer die zugehörige Route wird ebenfalls
+        im Code angepasst.
+      required: true
+    - name: title
+      label: Titel
+      type: string
+    - name: subtitle
+      label: Untertitel
+      type: string
+    - name: description
+      label: Beschreibung
+      type: text
+    - name: image
+      label: Bild
+      type: image
+    - name: imagealt
+      label: Bildbeschreibung
+      type: string
+    - name: subservice
+      label: Unterleistungen
+      type: object
+      list: true
+      fields:
+      - name: title
+        label: Titel
+        type: string
+- name: page_it_infrastrukturmanagement
+  label: IT-Infrastrukturmanagement
+  path: data/pages/services/it-infrastrukturmanagement.json
+  type: file
+  format: json
+  fields:
+  - name: seo
+    label: Suchmaschinen (SEO)
+    component: seo
+    required: true
+  - name: hero
+    label: Einleitung
+    component: hero
+    required: true
+  - name: relevance
+    label: Proaktive Betreuung
+    type: object
+    fields:
+    - name: eyebrow
+      label: Dachzeile / Kurzlabel 1
+      type: string
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: paragraph3
+      label: Absatz 3
+      component: rich_paragraph
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    - name: image
+      label: Bild
+      type: image
+    - name: imageAlt
+      label: Bildbeschreibung
+      type: string
+    required: true
+  - name: services
+    label: Leistungsüberblick
+    type: object
+    fields:
+    - name: eyebrow
+      label: Dachzeile / Kurzlabel 1
+      type: string
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: infrastructureServices
+      label: Leistungen
+      list: true
+      component: rich_text
+    - name: paragraph3
+      label: Absatz 3
+      component: rich_paragraph
+    - name: paragraph4
+      label: Absatz 4
+      component: rich_paragraph
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    required: true
+  - name: audience
+    label: Zielgruppen
+    type: object
+    fields:
+    - name: image
+      label: Bild
+      type: image
+    - name: imageAlt
+      label: Bildbeschreibung
+      type: string
+    - name: eyebrow
+      label: Dachzeile / Kurzlabel 1
+      type: string
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: targetGroups
+      label: Zielgruppen
+      type: string
+      list: true
+    - name: paragraph3
+      label: Absatz 3
+      component: rich_paragraph
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    required: true
+  - name: process
+    label: Ablauf
+    type: object
+    fields:
+    - name: title
+      label: Überschrift
+      type: string
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    - name: steps
+      label: Ablaufschritte
+      component: process_steps
+    required: true
+  - name: areas
+    label: Betreuungsbereiche
+    type: object
+    fields:
+    - name: eyebrow
+      label: Dachzeile / Kurzlabel 1
+      type: string
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: managedAreas
+      label: Betreuungsbereiche
+      list: true
+      component: rich_text
+    - name: paragraph2
+      label: Absatz 2
+      type: string
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    required: true
+  - name: quality
+    label: Qualitätsmerkmale
+    type: object
+    fields:
+    - name: eyebrow
+      label: Dachzeile / Kurzlabel 1
+      type: string
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: qualityItems
+      label: Qualitätsmerkmale
+      list: true
+      component: rich_text
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: paragraph3
+      label: Absatz 3
+      type: string
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    required: true
+  - name: personal
+    label: Persönliche Betreuung
+    type: object
+    fields:
+    - name: eyebrow
+      label: Dachzeile / Kurzlabel 1
+      type: string
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: paragraph3
+      label: Absatz 3
+      component: rich_paragraph
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    - name: image
+      label: Bild
+      type: image
+    - name: imageAlt
+      label: Bildbeschreibung
+      type: string
+    required: true
+  - name: cta
+    label: Kontaktaufforderung
+    type: object
+    fields:
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    required: true
+  - name: faq
+    label: Häufige Fragen
+    type: object
+    fields:
+    - name: title
+      label: Überschrift
+      type: string
+    - name: items
+      label: Fragen und Antworten
+      component: faq_items
+    required: true
+  - name: finalCta
+    label: Abschließender Kontaktbutton
+    type: object
+    fields:
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    required: true
+- name: page_it_abteilung_outsourcen
+  label: IT-Abteilung outsourcen
+  path: data/pages/services/it-abteilung-outsourcen.json
+  type: file
+  format: json
+  fields:
+  - name: seo
+    label: Suchmaschinen (SEO)
+    component: seo
+    required: true
+  - name: hero
+    label: Einleitung
+    component: hero
+    required: true
+  - name: challenges
+    label: Herausforderungen
+    type: object
+    fields:
+    - name: eyebrow
+      label: Dachzeile / Kurzlabel 1
+      type: string
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: challenges
+      label: Herausforderungen
+      list: true
+      component: rich_text
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    - name: image
+      label: Bild
+      type: image
+    - name: imageAlt
+      label: Bildbeschreibung
+      type: string
+    required: true
+  - name: services
+    label: Leistungen
+    type: object
+    fields:
+    - name: eyebrow
+      label: Dachzeile / Kurzlabel 1
+      type: string
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: services
+      label: Leistungen
+      list: true
+      component: rich_text
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    required: true
+  - name: models
+    label: Betreuungsmodelle
+    type: object
+    fields:
+    - name: eyebrow
+      label: Dachzeile / Kurzlabel 1
+      type: string
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: managedModels
+      label: Betreuungsmodelle
+      type: string
+      list: true
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    required: true
+  - name: audience
+    label: Zielgruppen
+    type: object
+    fields:
+    - name: image
+      label: Bild
+      type: image
+    - name: imageAlt
+      label: Bildbeschreibung
+      type: string
+    - name: eyebrow
+      label: Dachzeile / Kurzlabel 1
+      type: string
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: targetGroups
+      label: Zielgruppen
+      list: true
+      component: rich_text
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    required: true
+  - name: limitations
+    label: Grenzen des Outsourcings
+    type: object
+    fields:
+    - name: eyebrow
+      label: Dachzeile / Kurzlabel 1
+      type: string
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    required: true
+  - name: process
+    label: Ablauf
+    type: object
+    fields:
+    - name: title
+      label: Überschrift
+      type: string
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    - name: steps
+      label: Ablaufschritte
+      component: process_steps
+    required: true
+  - name: benefits
+    label: Vorteile
+    type: object
+    fields:
+    - name: eyebrow
+      label: Dachzeile / Kurzlabel 1
+      type: string
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: benefits
+      label: Vorteile
+      type: string
+      list: true
+    - name: paragraph3
+      label: Absatz 3
+      component: rich_paragraph
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    required: true
+  - name: criteria
+    label: Qualitätsmerkmale
+    type: object
+    fields:
+    - name: eyebrow
+      label: Dachzeile / Kurzlabel 1
+      type: string
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: criteria
+      label: Kriterien
+      list: true
+      component: rich_text
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    - name: image
+      label: Bild
+      type: image
+    - name: imageAlt
+      label: Bildbeschreibung
+      type: string
+    required: true
+  - name: cta
+    label: Kontaktaufforderung
+    type: object
+    fields:
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: finalOptions
+      label: Optionen
+      type: string
+      list: true
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: paragraph3
+      label: Absatz 3
+      component: rich_paragraph
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    required: true
+  - name: faq
+    label: Häufige Fragen
+    type: object
+    fields:
+    - name: title
+      label: Überschrift
+      type: string
+    - name: items
+      label: Fragen und Antworten
+      component: faq_items
+    required: true
+  - name: finalCta
+    label: Abschließender Kontaktbutton
+    type: object
+    fields:
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    required: true
+- name: page_kis_guard
+  label: KIS GUARD
+  path: data/pages/services/kis-guard.json
+  type: file
+  format: json
+  fields:
+  - name: seo
+    label: Suchmaschinen (SEO)
+    component: seo
+    required: true
+  - name: hero
+    label: Einleitung
+    component: hero
+    required: true
+  - name: resilience
+    label: Digitale Resilienz und zentrale Funktionen
+    type: object
+    fields:
+    - name: eyebrow
+      label: Dachzeile / Kurzlabel 1
+      type: string
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: eyebrow2
+      label: Dachzeile / Kurzlabel 2
+      type: string
+    - name: subheading
+      label: Zwischenüberschrift
+      type: string
+    - name: paragraph3
+      label: Absatz 3
+      type: string
+    - name: paragraph4
+      label: Absatz 4
+      component: rich_paragraph
+    - name: image
+      label: Bild
+      type: image
+    - name: imageAlt
+      label: Bildbeschreibung
+      type: string
+    - name: eyebrow3
+      label: Dachzeile / Kurzlabel 3
+      type: string
+    - name: solutionFeatures
+      label: Zentrale Funktionen
+      type: object
+      fields:
+      - name: title
+        label: Überschrift
+        type: string
+      - name: points
+        label: Stichpunkte
+        type: string
+        list: true
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{title}'
+    required: true
+  - name: capabilities
+    label: Funktionen
+    type: object
+    fields:
+    - name: eyebrow
+      label: Dachzeile / Kurzlabel 1
+      type: string
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: capabilities
+      label: Funktionen
+      type: object
+      fields:
+      - name: title
+        label: Überschrift
+        type: string
+      - name: text
+        label: Text
+        type: text
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{title}'
+    required: true
+  - name: audience
+    label: Zielgruppen und Sicherheit
+    type: object
+    fields:
+    - name: image
+      label: Bild
+      type: image
+    - name: imageAlt
+      label: Bildbeschreibung
+      type: string
+    - name: eyebrow
+      label: Dachzeile / Kurzlabel 1
+      type: string
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: targetGroups
+      label: Zielgruppen
+      type: string
+      list: true
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    required: true
+  - name: security
+    label: Sicherheit und Nachvollziehbarkeit
+    type: object
+    fields:
+    - name: eyebrow
+      label: Dachzeile / Kurzlabel 1
+      type: string
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: image
+      label: Bild
+      type: image
+    - name: imageAlt
+      label: Bildbeschreibung
+      type: string
+    required: true
+  - name: process
+    label: Ablauf
+    type: object
+    fields:
+    - name: title
+      label: Überschrift
+      type: string
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    - name: steps
+      label: Ablaufschritte
+      component: process_steps
+    required: true
+  - name: faq
+    label: Häufige Fragen
+    type: object
+    fields:
+    - name: title
+      label: Überschrift
+      type: string
+    - name: items
+      label: Fragen und Antworten
+      component: faq_items
+    required: true
+  - name: cta
+    label: Kontaktaufforderung
+    type: object
+    fields:
+    - name: eyebrow
+      label: Dachzeile / Kurzlabel 1
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    required: true
+- name: page_datenschutzberatung
+  label: Datenschutzberatung
+  path: data/pages/services/datenschutzberatung.json
+  type: file
+  format: json
+  fields:
+  - name: seo
+    label: Suchmaschinen (SEO)
+    component: seo
+    required: true
+  - name: hero
+    label: Einleitung
+    component: hero
+    required: true
+  - name: practice
+    label: Datenschutz in der Praxis
+    type: object
+    fields:
+    - name: eyebrow
+      label: Dachzeile / Kurzlabel 1
+      type: string
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: paragraph3
+      label: Absatz 3
+      type: string
+    - name: paragraph4
+      label: Absatz 4
+      component: rich_paragraph
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    - name: image
+      label: Bild
+      type: image
+    - name: imageAlt
+      label: Bildbeschreibung
+      type: string
+    required: true
+  - name: services
+    label: Leistungen
+    type: object
+    fields:
+    - name: eyebrow
+      label: Dachzeile / Kurzlabel 1
+      type: string
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: services
+      label: Leistungen
+      type: string
+      list: true
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    required: true
+  - name: packages
+    label: Datenschutzpakete
+    type: object
+    fields:
+    - name: eyebrow
+      label: Dachzeile / Kurzlabel 1
+      type: string
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: packages
+      label: Pakete
+      type: object
+      fields:
+      - name: id
+        label: Paketkennung
+        type: string
         required: true
-        options:
-          format: markdown
-          path: blog
-          rename: true
-          switcher: true
+        description: Eindeutige Kennung des Pakets, z. B. XS oder M.
+      - name: name
+        label: Name
+        type: string
+      - name: audience
+        label: Zielgruppe
+        type: string
+      - name: price
+        label: Preis
+        type: string
+      - name: priceNote
+        label: Preiszusatz
+        type: string
+      - name: facts
+        label: Eckdaten
+        type: string
+        list: true
+      - name: paragraphs
+        label: Absätze
+        type: text
+        list: true
+      - name: features
+        label: Enthaltene Leistungen
+        type: string
+        list: true
+      - name: term
+        label: Vertragslaufzeit
+        type: string
+      - name: ctaLabel
+        label: Button-Beschriftung
+        type: string
+      - name: badge
+        label: Zusatzlabel
+        type: string
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{name}'
+    - name: featuresTitle
+      label: Überschrift der enthaltenen Leistungen
+      type: string
+    required: true
+  - name: costs
+    label: Zusatzaufwand und Kosten
+    type: object
+    fields:
+    - name: eyebrow
+      label: Dachzeile / Kurzlabel 1
+      type: string
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      type: string
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: paragraph3
+      label: Absatz 3
+      component: rich_paragraph
+    - name: paragraph4
+      label: Absatz 4
+      type: string
+    - name: paragraph5
+      label: Absatz 5
+      type: string
+    - name: bullet
+      label: Listenpunkt 1
+      type: text
+    - name: bullet2
+      label: Listenpunkt 2
+      type: string
+    required: true
+  - name: onboarding
+    label: Onboarding
+    type: object
+    fields:
+    - name: image
+      label: Bild
+      type: image
+    - name: imageAlt
+      label: Bildbeschreibung
+      type: string
+    - name: eyebrow
+      label: Dachzeile / Kurzlabel 1
+      type: string
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: paragraph3
+      label: Absatz 3
+      type: string
+    - name: onboardingItems
+      label: Onboarding-Leistungen
+      type: string
+      list: true
+    - name: paragraph4
+      label: Absatz 4
+      component: rich_paragraph
+    - name: paragraph5
+      label: Absatz 5
+      component: rich_paragraph
+    required: true
+  - name: process
+    label: Ablauf
+    type: object
+    fields:
+    - name: title
+      label: Überschrift
+      type: string
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    - name: steps
+      label: Ablaufschritte
+      component: process_steps
+    required: true
+  - name: personal
+    label: Persönliche Betreuung
+    type: object
+    fields:
+    - name: eyebrow
+      label: Dachzeile / Kurzlabel 1
+      type: string
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      type: string
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: image
+      label: Bild
+      type: image
+    - name: imageAlt
+      label: Bildbeschreibung
+      type: string
+    - name: personalPoints
+      label: Vorteile der persönlichen Betreuung
+      type: object
+      fields:
+      - name: title
+        label: Überschrift
+        type: string
+      - name: paragraphs
+        label: Absätze
+        type: text
+        list: true
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{title}'
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    required: true
+  - name: terms
+    label: Vertragslaufzeiten
+    type: object
+    fields:
+    - name: eyebrow
+      label: Dachzeile / Kurzlabel 1
+      type: string
+    - name: title
+      label: Überschrift
+      type: string
+    - name: contractTerms
+      label: Vertragsbedingungen
+      type: object
+      fields:
+      - name: packages
+        label: Pakete
+        type: string
+      - name: duration
+        label: Laufzeit
+        type: string
+      - name: paragraphs
+        label: Absätze
+        list: true
+        component: rich_text
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{packages}'
+    - name: eyebrow2
+      label: Dachzeile / Kurzlabel 2
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      type: string
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    required: true
+  - name: faq
+    label: Häufige Fragen
+    type: object
+    fields:
+    - name: title
+      label: Überschrift
+      type: string
+    - name: items
+      label: Fragen und Antworten
+      component: faq_items
+    required: true
+  - name: cta
+    label: Kontaktaufforderung
+    type: object
+    fields:
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: paragraph3
+      label: Absatz 3
+      component: rich_paragraph
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    required: true
+- name: page_sap_sap_beratung
+  label: SAP-Beratung
+  path: data/pages/services/sap/sap-beratung.json
+  type: file
+  format: json
+  fields:
+  - name: seo
+    label: Suchmaschinen (SEO)
+    component: seo
+    required: true
+  - name: hero
+    label: Einleitung
+    component: hero
+    required: true
+  - name: relevance
+    label: Relevanz
+    type: object
+    fields:
+    - name: eyebrow
+      label: Dachzeile / Kurzlabel 1
+      type: string
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: paragraph3
+      label: Absatz 3
+      component: rich_paragraph
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    - name: image
+      label: Bild
+      type: image
+    - name: imageAlt
+      label: Bildbeschreibung
+      type: string
+    required: true
+  - name: services
+    label: Leistungen
+    type: object
+    fields:
+    - name: eyebrow
+      label: Dachzeile / Kurzlabel 1
+      type: string
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: consultingServices
+      label: Beratungsleistungen
+      type: string
+      list: true
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    required: true
+  - name: audience
+    label: Zielgruppen
+    type: object
+    fields:
+    - name: image
+      label: Bild
+      type: image
+    - name: imageAlt
+      label: Bildbeschreibung
+      type: string
+    - name: eyebrow
+      label: Dachzeile / Kurzlabel 1
+      type: string
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: targetGroups
+      label: Zielgruppen
+      type: object
+      fields:
+      - name: title
+        label: Überschrift
+        type: string
+      - name: text
+        label: Text
+        type: text
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{title}'
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    required: true
+  - name: process
+    label: Ablauf
+    type: object
+    fields:
+    - name: title
+      label: Überschrift
+      type: string
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    - name: intro
+      label: Einleitender Absatz
+      component: rich_text
+    - name: steps
+      label: Ablaufschritte
+      component: process_steps
+    required: true
+  - name: topics
+    label: Typische Themen
+    type: object
+    fields:
+    - name: eyebrow
+      label: Dachzeile / Kurzlabel 1
+      type: string
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: topicItems
+      label: Themen
+      type: string
+      list: true
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: paragraph3
+      label: Absatz 3
+      type: string
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    required: true
+  - name: quality
+    label: Qualitätsmerkmale
+    type: object
+    fields:
+    - name: eyebrow
+      label: Dachzeile / Kurzlabel 1
+      type: string
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: qualityItems
+      label: Qualitätsmerkmale
+      type: string
+      list: true
+    - name: paragraph3
+      label: Absatz 3
+      component: rich_paragraph
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    - name: image
+      label: Bild
+      type: image
+    - name: imageAlt
+      label: Bildbeschreibung
+      type: string
+    required: true
+  - name: regional
+    label: Regionale Betreuung
+    type: object
+    fields:
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: paragraph3
+      label: Absatz 3
+      component: rich_paragraph
+    - name: paragraph4
+      label: Absatz 4
+      component: rich_paragraph
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    - name: image
+      label: Bild
+      type: image
+    - name: imageAlt
+      label: Bildbeschreibung
+      type: string
+    required: true
+  - name: faq
+    label: Häufige Fragen
+    type: object
+    fields:
+    - name: title
+      label: Überschrift
+      type: string
+    - name: items
+      label: Fragen und Antworten
+      component: faq_items
+    required: true
+  - name: cta
+    label: Kontaktaufforderung
+    type: object
+    fields:
+    - name: eyebrow
+      label: Dachzeile / Kurzlabel 1
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    required: true
+- name: page_sap_sap_basisdienstleister
+  label: SAP-Basisdienstleister
+  path: data/pages/services/sap/sap-basisdienstleister.json
+  type: file
+  format: json
+  fields:
+  - name: seo
+    label: Suchmaschinen (SEO)
+    component: seo
+    required: true
+  - name: hero
+    label: Einleitung
+    component: hero
+    required: true
+  - name: relevance
+    label: Relevanz und Vorteile
+    type: object
+    fields:
+    - name: eyebrow
+      label: Dachzeile / Kurzlabel 1
+      type: string
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: benefits
+      label: Vorteile
+      type: string
+      list: true
+    - name: paragraph3
+      label: Absatz 3
+      component: rich_paragraph
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    - name: image
+      label: Bild
+      type: image
+    - name: imageAlt
+      label: Bildbeschreibung
+      type: string
+    required: true
+  - name: services
+    label: Leistungen
+    type: object
+    fields:
+    - name: eyebrow
+      label: Dachzeile / Kurzlabel 1
+      type: string
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: serviceItems
+      label: Leistungen
+      type: string
+      list: true
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: paragraph3
+      label: Absatz 3
+      type: string
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    required: true
+  - name: audience
+    label: Zielgruppen
+    type: object
+    fields:
+    - name: image
+      label: Bild
+      type: image
+    - name: imageAlt
+      label: Bildbeschreibung
+      type: string
+    - name: eyebrow
+      label: Dachzeile / Kurzlabel 1
+      type: string
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: targetGroups
+      label: Zielgruppen
+      type: string
+      list: true
+    - name: paragraph3
+      label: Absatz 3
+      component: rich_paragraph
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    required: true
+  - name: process
+    label: Ablauf
+    type: object
+    fields:
+    - name: title
+      label: Überschrift
+      type: string
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    - name: intro
+      label: Einleitender Absatz
+      component: rich_text
+    - name: steps
+      label: Ablaufschritte
+      component: process_steps
+    required: true
+  - name: tasks
+    label: Aufgaben und erweiterte Leistungen
+    type: object
+    fields:
+    - name: eyebrow
+      label: Dachzeile / Kurzlabel 1
+      type: string
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: image
+      label: Bild
+      type: image
+    - name: imageAlt
+      label: Bildbeschreibung
+      type: string
+    - name: taskItems
+      label: Aufgaben
+      type: string
+      list: true
+    - name: paragraph3
+      label: Absatz 3
+      component: rich_paragraph
+    - name: extendedServices
+      label: Erweiterte Leistungen
+      type: object
+      fields:
+      - name: title
+        label: Überschrift
+        type: string
+      - name: text
+        label: Text
+        type: text
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{title}'
+    - name: paragraph4
+      label: Absatz 4
+      component: rich_paragraph
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    required: true
+  - name: quality
+    label: Qualitätsmerkmale
+    type: object
+    fields:
+    - name: eyebrow
+      label: Dachzeile / Kurzlabel 1
+      type: string
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: qualityItems
+      label: Qualitätsmerkmale
+      type: string
+      list: true
+    - name: paragraph3
+      label: Absatz 3
+      component: rich_paragraph
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    - name: image
+      label: Bild
+      type: image
+    - name: imageAlt
+      label: Bildbeschreibung
+      type: string
+    required: true
+  - name: regional
+    label: Regionale Betreuung
+    type: object
+    fields:
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: regionalItems
+      label: Regionale Vorteile
+      type: string
+      list: true
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: paragraph3
+      label: Absatz 3
+      component: rich_paragraph
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    - name: image
+      label: Bild
+      type: image
+    - name: imageAlt
+      label: Bildbeschreibung
+      type: string
+    required: true
+  - name: faq
+    label: Häufige Fragen
+    type: object
+    fields:
+    - name: title
+      label: Überschrift
+      type: string
+    - name: items
+      label: Fragen und Antworten
+      component: faq_items
+    required: true
+  - name: cta
+    label: Kontaktaufforderung
+    type: object
+    fields:
+    - name: eyebrow
+      label: Dachzeile / Kurzlabel 1
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      type: string
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    required: true
+- name: page_sap_s4hana_migration
+  label: S/4HANA-Migration
+  path: data/pages/services/sap/s4hana-migration.json
+  type: file
+  format: json
+  fields:
+  - name: seo
+    label: Suchmaschinen (SEO)
+    component: seo
+    required: true
+  - name: hero
+    label: Einleitung
+    component: hero
+    required: true
+  - name: risks
+    label: Technische Herausforderungen
+    type: object
+    fields:
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: bullet
+      label: Listenpunkt 1
+      type: string
+    - name: bullet2
+      label: Listenpunkt 2
+      type: string
+    - name: bullet3
+      label: Listenpunkt 3
+      type: string
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: image
+      label: Bild
+      type: image
+    - name: imageAlt
+      label: Bildbeschreibung
+      type: string
+    required: true
+  - name: resources
+    label: Interne Ressourcen
+    type: object
+    fields:
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    required: true
+  - name: consulting
+    label: Beratung
+    type: object
+    fields:
+    - name: image
+      label: Bild
+      type: image
+    - name: imageAlt
+      label: Bildbeschreibung
+      type: string
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: paragraph3
+      label: Absatz 3
+      component: rich_paragraph
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    required: true
+  - name: audience
+    label: Zielgruppen
+    type: object
+    fields:
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: bullet
+      label: Listenpunkt 1
+      type: string
+    - name: bullet2
+      label: Listenpunkt 2
+      type: string
+    - name: bullet3
+      label: Listenpunkt 3
+      type: text
+    - name: bullet4
+      label: Listenpunkt 4
+      type: string
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    required: true
+  - name: process
+    label: Ablauf
+    type: object
+    fields:
+    - name: title
+      label: Überschrift
+      type: string
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    - name: intro
+      label: Einleitender Absatz
+      component: rich_text
+    - name: steps
+      label: Ablaufschritte
+      component: process_steps
+    required: true
+  - name: challenges
+    label: Typische Herausforderungen
+    type: object
+    fields:
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: bullet
+      label: Listenpunkt 1
+      component: rich_text
+    - name: bullet2
+      label: Listenpunkt 2
+      component: rich_text
+    - name: bullet3
+      label: Listenpunkt 3
+      component: rich_text
+    - name: bullet4
+      label: Listenpunkt 4
+      component: rich_text
+    - name: bullet5
+      label: Listenpunkt 5
+      component: rich_text
+    - name: bullet6
+      label: Listenpunkt 6
+      component: rich_text
+    - name: paragraph3
+      label: Absatz 3
+      component: rich_paragraph
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    required: true
+  - name: quality
+    label: Qualitätsmerkmale
+    type: object
+    fields:
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: bullet
+      label: Listenpunkt 1
+      type: string
+    - name: bullet2
+      label: Listenpunkt 2
+      type: string
+    - name: bullet3
+      label: Listenpunkt 3
+      type: string
+    - name: bullet4
+      label: Listenpunkt 4
+      type: string
+    - name: bullet5
+      label: Listenpunkt 5
+      type: string
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    - name: image
+      label: Bild
+      type: image
+    - name: imageAlt
+      label: Bildbeschreibung
+      type: string
+    required: true
+  - name: regional
+    label: Regionale Betreuung
+    type: object
+    fields:
+    - name: image
+      label: Bild
+      type: image
+    - name: imageAlt
+      label: Bildbeschreibung
+      type: string
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: bullet
+      label: Listenpunkt 1
+      type: string
+    - name: bullet2
+      label: Listenpunkt 2
+      type: string
+    - name: bullet3
+      label: Listenpunkt 3
+      type: string
+    - name: paragraph3
+      label: Absatz 3
+      component: rich_paragraph
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    required: true
+  - name: cta
+    label: Erstgespräch
+    type: object
+    fields:
+    - name: title
+      label: Überschrift
+      type: string
+    - name: paragraph
+      label: Absatz 1
+      component: rich_paragraph
+    - name: paragraph2
+      label: Absatz 2
+      component: rich_paragraph
+    - name: subheading
+      label: Zwischenüberschrift
+      type: string
+    - name: paragraph3
+      label: Absatz 3
+      component: rich_paragraph
+    - name: bullet
+      label: Listenpunkt 1
+      type: string
+    - name: bullet2
+      label: Listenpunkt 2
+      type: string
+    - name: bullet3
+      label: Listenpunkt 3
+      type: string
+    - name: paragraph4
+      label: Absatz 4
+      component: rich_paragraph
+    - name: paragraph5
+      label: Absatz 5
+      component: rich_paragraph
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    - name: image
+      label: Bild
+      type: image
+    - name: imageAlt
+      label: Bildbeschreibung
+      type: string
+    required: true
+  - name: faq
+    label: Häufige Fragen
+    type: object
+    fields:
+    - name: title
+      label: Überschrift
+      type: string
+    - name: items
+      label: Fragen und Antworten
+      component: faq_items
+    required: true
+- name: contact_page
+  label: Kontakt
+  type: file
+  path: data/pages/contact.json
+  format: json
+  fields:
+  - name: seo
+    label: Suchmaschinen (SEO)
+    component: seo
+    required: true
+  - name: intro
+    label: Einleitung
+    type: object
+    fields:
+    - name: eyebrow
+      label: Dachzeile
+      type: string
+    - name: title
+      label: Überschrift
+      type: string
+    - name: subtitle
+      label: Untertitel
+      type: string
+    - name: text
+      label: Text
+      type: text
+    required: true
+  - name: address
+    label: Anschrift
+    type: object
+    fields:
+    - name: title
+      label: Überschrift
+      type: string
+    - name: street
+      label: Straße
+      type: string
+    - name: city
+      label: PLZ und Ort
+      type: string
+    required: true
+  - name: phone
+    label: Telefon
+    type: object
+    fields:
+    - name: title
+      label: Überschrift
+      type: string
+    - name: label
+      label: Beschriftung
+      type: string
+    - name: number
+      label: Telefonnummer
+      type: string
+      required: true
+    required: true
+  - name: bookingLabel
+    label: 'Terminbuchung: Button-Beschriftung'
+    type: string
+  - name: image
+    label: Bild
+    type: image
+  - name: imageAlt
+    label: Bildbeschreibung
+    type: string
+- name: impressum_page
+  label: Impressum
+  type: file
+  path: data/pages/impressum.json
+  format: json
+  fields:
+  - name: seo
+    label: Suchmaschinen (SEO)
+    component: seo
+    required: true
+  - name: title
+    label: Seitentitel
+    type: string
+  - name: company
+    label: Unternehmensangaben
+    type: object
+    fields:
+    - name: title
+      label: Überschrift
+      type: string
+    - name: name
+      label: Unternehmen
+      type: string
+    - name: street
+      label: Straße
+      type: string
+    - name: city
+      label: PLZ und Ort
+      type: string
+    - name: country
+      label: Land
+      type: string
+    required: true
+  - name: directors
+    label: Geschäftsführung
+    type: object
+    fields:
+    - name: title
+      label: Überschrift
+      type: string
+    - name: names
+      label: Namen
+      type: string
+      list: true
+    required: true
+  - name: contact
+    label: Kontakt
+    type: object
+    fields:
+    - name: title
+      label: Überschrift
+      type: string
+    - name: phoneLabel
+      label: 'Telefon: Beschriftung'
+      type: string
+    - name: phone
+      label: Telefonnummer
+      type: string
+      required: true
+    - name: emailLabel
+      label: 'E-Mail: Beschriftung'
+      type: string
+    - name: email
+      label: E-Mail-Adresse
+      type: string
+      required: true
+      pattern: ^[^\s@]+@[^\s@]+\.[^\s@]+$
+    required: true
+  - name: register
+    label: Registereintrag
+    type: object
+    fields:
+    - name: title
+      label: Überschrift
+      type: string
+    - name: text
+      label: Text
+      type: string
+    - name: court
+      label: Registergericht
+      type: string
+    - name: number
+      label: Registernummer
+      type: string
+    required: true
+  - name: vat
+    label: Umsatzsteuer-ID
+    type: object
+    fields:
+    - name: title
+      label: Überschrift
+      type: string
+    - name: number
+      label: USt-ID
+      type: string
+    required: true
+- name: privacy_page
+  label: Datenschutzhinweise
+  type: file
+  path: data/pages/datenschutz.json
+  format: json
+  fields:
+  - name: seo
+    label: Suchmaschinen (SEO)
+    component: seo
+    required: true
+  - name: title
+    label: Seitentitel
+    type: string
+  - name: intro
+    label: Einleitung
+    component: rich_text
+  - name: sections
+    label: Hauptabschnitte
+    type: object
+    fields:
+    - name: id
+      label: Sprungmarke (bestehender Link)
+      type: string
+      readonly: true
+    - name: title
+      label: Überschrift
+      type: string
+      required: true
+    - name: body
+      label: Abschnittstext
+      component: rich_text
+    - name: subsections
+      label: Unterabschnitte
+      type: object
+      fields:
+      - name: id
+        label: Sprungmarke (bestehender Link)
+        type: string
+        readonly: true
+      - name: title
+        label: Überschrift
+        type: string
+        required: true
+      - name: body
+        label: Abschnittstext
+        component: rich_text
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{title}'
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{title}'
+- name: blog_page
+  label: Blog – Übersichtsseite
+  type: file
+  path: data/pages/blog.json
+  format: json
+  fields:
+  - name: seo
+    label: Suchmaschinen (SEO)
+    component: seo
+    required: true
+  - name: eyebrow
+    label: Dachzeile
+    type: string
+  - name: title
+    label: Überschrift
+    type: string
+  - name: description
+    label: Einleitung
+    type: text
+  - name: emptyTitle
+    label: Überschrift ohne Artikel
+    type: string
+  - name: emptyText
+    label: Text ohne Artikel
+    type: text
+  - name: readLabel
+    label: Linktext zum Artikel
+    type: string
+  - name: backLabel
+    label: Linktext zurück zum Blog
+    type: string
+- name: blog
+  label: Blog
+  type: collection
+  path: content/blog
+  format: yaml-frontmatter
+  filename:
+    template: '{title}.md'
+    field: false
+  operations:
+    rename: false
+  view:
+    fields:
+    - title
+    - date
+    - category
+    - published
+    primary: title
+    sort:
+    - date
+    - title
+    search:
+    - title
+    - description
+    - category
+    default:
+      sort: date
+      order: desc
+  fields:
+  - name: title
+    label: Titel
+    type: string
+    required: true
+  - name: description
+    label: Kurzbeschreibung
+    type: text
+    required: true
+    description: Wird auf der Blogübersicht und für Suchmaschinen verwendet.
+  - name: date
+    label: Veröffentlichungsdatum
+    type: date
+    required: true
+    options:
+      format: yyyy-MM-dd
+  - name: published
+    label: Veröffentlicht
+    type: boolean
+    default: true
+  - name: category
+    label: Kategorie
+    type: select
+    required: true
+    default: Aktuelles
+    options:
+      values:
+      - Aktuelles
+      - IT-Infrastruktur
+      - Managed Services
+      - SAP
+      - Datenschutz
+      - KIS-Guard
+  - name: image
+    label: Beitragsbild
+    type: image
+    options:
+      path: blog
+      rename: true
+  - name: imageAlt
+    label: Bildbeschreibung
+    type: string
+    description: Kurze Beschreibung des Bildes für Barrierefreiheit und SEO.
+  - name: body
+    label: Artikelinhalt
+    type: rich-text
+    required: true
+    options:
+      format: markdown
+      path: blog
+      rename: true
+      switcher: true
+components:
+  seo:
+    type: object
+    fields:
+    - name: title
+      label: Seitentitel
+      type: string
+      required: true
+    - name: description
+      label: Meta-Beschreibung
+      type: text
+      required: true
+  process_steps:
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{title}'
+    fields:
+    - name: title
+      label: Überschrift
+      type: string
+      required: true
+    - name: paragraphs
+      label: Absätze
+      list: true
+      component: rich_text
+  faq_items:
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{question}'
+    fields:
+    - name: question
+      label: Frage
+      type: string
+      required: true
+    - name: answer
+      label: Antwort
+      required: true
+      component: rich_text
+  hero:
+    type: object
+    fields:
+    - name: eyebrow
+      label: Dachzeile
+      type: string
+    - name: title
+      label: Überschrift
+      type: string
+      required: true
+    - name: description
+      label: Einleitender Absatz (optional)
+      component: rich_text
+    - name: paragraphs
+      label: Absätze
+      list: true
+      description: Ein Listeneintrag entspricht einem Absatz. Fett, Kursiv und Links sind möglich.
+      component: rich_text
+    - name: ctaLabel
+      label: Button-Beschriftung
+      type: string
+    - name: image
+      label: Bild
+      type: image
+    - name: imageAlt
+      label: Bildbeschreibung
+      type: string
+  rich_text:
+    type: rich-text
+    options:
+      format: html
+      media: false
+      switcher: true
+  rich_paragraph:
+    type: rich-text
+    options:
+      format: html
+      media: false
+      switcher: true
+    description: Ein Absatz im bestehenden Layout. Weitere Absätze sind über Zeilenumbrüche im Editor möglich.

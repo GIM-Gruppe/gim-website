@@ -1,12 +1,10 @@
 <script setup lang="ts">
 import { useSeoMeta } from '~/composables/seo'
+import page from '~/data/pages/blog.json'
 
 const { data: posts, pending, error } = await useAsyncData('blog-posts', () => getPublishedBlogPosts())
 
-useSeoMeta(
-  'Blog | GIM GmbH',
-  'Aktuelle Einblicke, Fachthemen und Neuigkeiten der GIM GmbH.'
-)
+useSeoMeta(page.seo.title, page.seo.description)
 </script>
 
 <template>
@@ -14,11 +12,11 @@ useSeoMeta(
     <section class="py-14 sm:py-20" aria-labelledby="blog-title">
       <div class="max-w-3xl">
         <p class="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-secondary">
-          GIM Blog
+          {{ page.eyebrow }}
         </p>
-        <h1 id="blog-title" class="mb-5">Einblicke, Wissen und Neuigkeiten</h1>
+        <h1 id="blog-title" class="mb-5">{{ page.title }}</h1>
         <p class="max-w-2xl text-left text-lg leading-8 text-secondary">
-          Fachliche Einblicke, aktuelle Themen und Neuigkeiten rund um unsere Arbeit und die IT-Welt.
+          {{ page.description }}
         </p>
       </div>
     </section>
@@ -36,9 +34,9 @@ useSeoMeta(
         v-else-if="!posts?.length"
         class="rounded-2xl border border-gray-200 bg-gray-50 px-6 py-12 text-center"
       >
-        <h2 class="mb-3 text-2xl text-secondary">Noch keine Artikel veröffentlicht</h2>
+        <h2 class="mb-3 text-2xl text-secondary">{{ page.emptyTitle }}</h2>
         <p class="mb-0 text-center text-secondary">
-          Neue Beiträge erscheinen hier, sobald sie veröffentlicht wurden.
+          {{ page.emptyText }}
         </p>
       </div>
 
@@ -73,7 +71,7 @@ useSeoMeta(
                 {{ post.description }}
               </p>
               <span class="mt-auto text-sm font-semibold text-secondary">
-                Artikel lesen <span aria-hidden="true">→</span>
+                {{ page.readLabel }} <span aria-hidden="true">→</span>
               </span>
             </div>
           </NuxtLink>

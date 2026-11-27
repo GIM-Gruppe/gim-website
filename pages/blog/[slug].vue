@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useSeoMeta } from '~/composables/seo'
+import page from '~/data/pages/blog.json'
 
 const route = useRoute()
 const path = `/blog/${String(route.params.slug)}`
@@ -30,7 +31,7 @@ useSeoMeta(
         class="mb-10 inline-flex items-center gap-2 text-sm font-semibold text-secondary transition hover:text-primary"
       >
         <span aria-hidden="true">←</span>
-        Zurück zum Blog
+        {{ page.backLabel }}
       </NuxtLink>
 
       <header class="mb-10 border-b border-gray-200 pb-10">

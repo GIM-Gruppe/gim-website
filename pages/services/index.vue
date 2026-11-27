@@ -1,31 +1,13 @@
 <script setup lang="ts">
-//TODO: CLEAN UP -> new components
-
-// const props = defineProps<{
-//   title: string
-//   subtitle: string
-//   services: any
-// }>()
 import { useSeoMeta } from '~/composables/seo'
-definePageMeta({ documentDriven: { page: false, surround: false, }, });
+import data from '~/content/services/content.json'
 
-
-useSeoMeta(
-  'GIM Website - Leistungsübersicht', // Title: Reflects that the page is about services
-  'Entdecken Sie die umfangreichen Dienstleistungen der GIM GmbH. Erfahren Sie mehr über unsere Beratungsleistungen und maßgeschneiderte Lösungen.' // Description: Relevant and concise description for the service overview page
-)
-
-const { data, pending, error } = await useAsyncData('services', async () => {
-  const doc = await queryCollection('content').path('/services/content').first()
-  return doc?.meta ?? null
-})
-// console.log(data);
+definePageMeta({ documentDriven: { page: false, surround: false } })
+useSeoMeta(data.seo.title, data.seo.description)
 </script>
 
 <template>
-  <div v-if="pending">Loading...</div>
-  <div v-else-if="error">Failed to load content</div>
-  <div v-else>
+  <div>
     <div class="bg-white py-8 sm:py-16">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-2xl lg:mx-0">

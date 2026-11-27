@@ -1,0 +1,231 @@
+{
+  "seo": {
+    "title": "SAP-Basisdienstleister in Hamburg | GIM GmbH",
+    "description": "SAP-Support für Mittelständler ✅Zuverlässige Unterstützung für IT-Abteilungen ✅Punktuell oder langfristig ►Jetzt kontaktieren!"
+  },
+  "hero": {
+    "eyebrow": "SAP Basis",
+    "title": "SAP-Basisdienstleister in Hamburg und Umgebung: Für stabile und sichere SAP-Systeme!",
+    "ctaLabel": "Jetzt Termin vereinbaren!",
+    "imageAlt": "Abstrakte stabile SAP-Systemlandschaft",
+    "paragraphs": [
+      "<p>Wenn Sie möchten, dass Ihre SAP-Systeme stabil und optimal funktionieren, benötigen Sie einen erfahrenen Partner an Ihrer Seite.</p>",
+      "<p>Wir bieten Ihnen SAP-Systembetreuung in Hamburg, damit Ihr Geschäft reibungslos am Laufen bleibt!</p>"
+    ],
+    "image": "/assets/img/stabilization_cloud.png",
+    "description": ""
+  },
+  "relevance": {
+    "eyebrow": "Stabiler Betrieb",
+    "title": "Warum ein SAP-Basisdienstleister in Hamburg und Umgebung für viele Unternehmen sinnvoll ist",
+    "paragraph": "<p>Wenn Sie SAP verwenden, ist eine <strong>sichere und zuverlässige Funktion der SAP-Basis unerlässlich</strong>. Wir bieten Ihnen hierfür eine technische Betreuung, die Ihre SAP-Umgebungen robust und stabil am Laufen hält – mit <strong>maßgeschneiderten Lösungen für den Alltag in Ihrem Unternehmen.</strong></p>",
+    "paragraph2": "<p>Arbeiten Sie mit einem <strong>SAP-Basisdienstleister in Hamburg und Umgebung zusammen, lohnt sich das unter anderem aus diesen Gründen. Sie:</strong></p>",
+    "benefits": [
+      "Entlasten Ihre internen IT-Teams",
+      "Sparen Zeit bei Betrieb und Überwachung von SAP-Systemen",
+      "Erhalten schnelle Hilfe bei Fehlern, Ausfällen und Engpässen in Ihrer SAP-Landschaft",
+      "Holen sich spezialisierte Kenntnisse für die SAP-Basis in Ihr Unternehmen",
+      "Sichern sich externe technische Unterstützung für erweiterte Performance"
+    ],
+    "paragraph3": "<p>Kontaktieren Sie uns jetzt für <strong>zuverlässigen SAP-Basis-Support von einem erfahrenen Team</strong>. In einem unverbindlichen Ersttermin besprechen wir gerne mit Ihnen, wie wir <strong>Sie mit unserer Arbeit realistisch unterstützen können</strong>.</p>",
+    "ctaLabel": "Jetzt Beratungstermin anfragen!",
+    "image": "/assets/img/analysis_structure.png",
+    "imageAlt": "SAP-Basis Analyse"
+  },
+  "services": {
+    "eyebrow": "Leistungen",
+    "title": "Unsere Leistungen als SAP-Basisdienstleister in Hamburg und Umgebung",
+    "paragraph": "<p>Die Arbeit mit einem SAP-Basisdienstleister entlastet Ihre IT-Abteilung und bringt Ruhe und Verlässlichkeit in die Arbeit mit Ihren IT-Systemen. <strong>Wir können unter anderem folgende Aufgaben für Sie unternehmen:</strong></p>",
+    "serviceItems": [
+      "SAP-Basis Betreuung",
+      "Projektsteuerung",
+      "S/4HANA-Migration",
+      "Überwachung und Monitoring",
+      "Performance-Optimierung",
+      "Fehleranalyse und Support",
+      "Cyber-Sicherheitsanalyse",
+      "Systemwartung und technische Administration",
+      "Unterstützung bei Patches, Updates und Changes",
+      "Stabilisierung laufender SAP-Systeme"
+    ],
+    "paragraph2": "<p>Wir <strong>erarbeiten für Sie ein individuelles SAP-Dienstleistungskonzept</strong>, das <strong>auf die Bedürfnisse Ihres Unternehmens zugeschnitten ist.</strong></p>",
+    "paragraph3": "Kommen Sie jetzt auf uns zu, um ein unverbindliches Beratungsgespräch zu vereinbaren.",
+    "ctaLabel": "Jetzt unverbindliche Beratung anfragen!"
+  },
+  "audience": {
+    "image": "/assets/img/process_steps.png",
+    "imageAlt": "SAP-Basis Support Prozess",
+    "eyebrow": "Relevanz",
+    "title": "Für welche Unternehmen in Hamburg und Umgebung SAP-Basis-Support besonders relevant ist",
+    "paragraph": "<p>SAP-Basis-Betreuung in Hamburg ist für Sie <strong>besonders sinnvoll, wenn Ihr Unternehmen knappe technische Ressourcen hat</strong> oder <strong>zusätzlich SAP-Expertise benötigt</strong>.</p>",
+    "paragraph2": "<p><strong>Unserer Erfahrung nach profitieren Firmen besonders von einem externen SAP-Basisdienstleister in diesen Situationen:</strong></p>",
+    "targetGroups": [
+      "Unternehmen mit eigener SAP-Landschaft",
+      "Firmen mit knappen IT-Ressourcen oder kleinen internen IT-Teams",
+      "Mittelständische Firmen ohne großes internes SAP-Basis-Team",
+      "Unternehmen mit hohen Anforderungen an Verfügbarkeit und Stabilität",
+      "Organisationen mit steigender technischer Komplexität"
+    ],
+    "paragraph3": "<p>Gerne beraten wir Sie dazu, wie eine für Sie passende SAP-Betriebsunterstützung in Hamburg aussehen kann. Kontaktieren Sie uns jetzt für ein unverbindliches Erstgespräch!</p>",
+    "ctaLabel": "Jetzt Erstgespräch anfragen!"
+  },
+  "process": {
+    "title": "So arbeitet ein SAP-Basisdienstleister in Hamburg und Umgebung mit Ihrer IT zusammen",
+    "ctaLabel": "Jetzt SAP-Basis-Support anfragen!",
+    "intro": "<p><strong>Arbeiten Sie mit uns, erwartet Sie dieser bewährte Prozess:</strong></p>",
+    "steps": [
+      {
+        "title": "Analyse der bestehenden SAP-Systemlandschaft",
+        "paragraphs": [
+          "<p><strong>Zu Beginn analysieren wir Ihre bestehende SAP-Landschaft.</strong> Wir stellen beispielsweise folgende Fragen: Welche Schnittstellen existieren? Welche Prozesse sind dokumentiert? Wo bestehen Lücken? Welche Probleme plagen Sie?</p>"
+        ]
+      },
+      {
+        "title": "Bewertung von Betriebsrisiken und Engpässen",
+        "paragraphs": [
+          "<p>Zu jedem Zeitpunkt unserer Zusammenarbeit legen wir großen Wert auf Transparenz. Wir bewerten Betriebsrisiken und Systemengpässe und <strong>lassen Sie wissen, was für einen robusten SAP-Betrieb realistisch möglich und notwendig ist.</strong></p>"
+        ]
+      },
+      {
+        "title": "Aufbau klarer Zuständigkeiten und Supportwege",
+        "paragraphs": [
+          "<p>Wenn wir mit Ihnen zusammenarbeiten, gibt es <strong>zwischen Ihnen und unserem Team klare Zuständigkeiten</strong>. <strong>Externe IT-Unterstützung ist besonders effektiv</strong>, wenn <strong>Aufgaben und Ansprechpartner für Support definiert sind.</strong></p>"
+        ]
+      },
+      {
+        "title": "Laufende Überwachung und technische Betreuung",
+        "paragraphs": [
+          "<p>In unserer Arbeit für Sie <strong>überwachen wir Ihre SAP-Systeme laufend.</strong> Währenddessen kann sich Ihr <strong>internes IT-Team auf seine alltäglichen Aufgaben konzentrieren</strong>.</p>"
+        ]
+      },
+      {
+        "title": "Unterstützung bei Störungen, Änderungen und Optimierungen",
+        "paragraphs": [
+          "<p>Treten Störungen auf oder gibt es Änderungs- oder Optimierungsbedarf im laufenden Betrieb, werden wir für Sie aktiv. <strong>Wir greifen proaktiv ein.</strong></p>"
+        ]
+      },
+      {
+        "title": "Langfristige Stabilisierung und Entlastung Ihrer internen IT",
+        "paragraphs": [
+          "<p><strong>Unsere Arbeit für Sie ist darauf ausgelegt, Ihre SAP-Systeme dauerhaft zu stabilisieren.</strong> Dadurch entsteht eine <strong>Entlastung Ihres IT-Teams</strong>. <strong>Wir kümmern uns um Ihr SAP</strong>, während Ihre interne IT Ihrer Arbeit nachgehen kann.</p>"
+        ]
+      }
+    ]
+  },
+  "tasks": {
+    "eyebrow": "Typische Aufgaben",
+    "title": "Typische Aufgaben eines SAP-Basisdienstleisters in Hamburg und Umgebung",
+    "paragraph": "<p>Arbeiten Sie mit uns, <strong>können Sie darauf bauen, dass wir transparent mit Ihnen kommunizieren.</strong> So erhalten Sie in uns einen <strong>verlässlichen und soliden Partner für die SAP-Betriebsunterstützung in Hamburg.</strong></p>",
+    "paragraph2": "<p><strong>Wir können beispielsweise folgende SAP-Aufgaben für Sie übernehmen:</strong></p>",
+    "image": "/assets/img/risks_fragmentation.png",
+    "imageAlt": "SAP-Basis typische Aufgaben",
+    "taskItems": [
+      "Monitoring",
+      "Job- und Systemüberwachung",
+      "Fehleranalyse und -behebung",
+      "Performance-Themen und Optimierung der Leistung",
+      "Berechtigungen und technische Sicherheit",
+      "Transport- und Mandantenmanagement",
+      "Updates und Wartungsaufgaben",
+      "Unterstützung bei Systemkopien und technischen Änderungen"
+    ],
+    "paragraph3": "<p>Eine stabile SAP-Landschaft erfordert mehr als reines Monitoring und die Behebung von Störungen. <strong>Als erfahrener SAP-Basisdienstleister begleiten wir Sie ganzheitlich</strong>– von der technischen Basis bis zur strategischen Weiterentwicklung Ihrer Systeme. <strong>Wir bieten auch diese erweiterten Leistungen für Sie an:</strong></p>",
+    "extendedServices": [
+      {
+        "title": "Datenbankadministration (HANA, Oracle u. a.)",
+        "text": "Ihre SAP-Datenbank ist das Herzstück Ihrer Systemlandschaft. Wir sorgen für einen stabilen, sicheren und performanten Betrieb, damit Ihre Geschäftsprozesse jederzeit ohne Unterbrechung laufen."
+      },
+      {
+        "title": "Systemlandschaftsplanung und Sizing",
+        "text": "Ob Neuaufbau, Erweiterung oder Konsolidierung: Wir unterstützen Sie bei der Planung und Dimensionierung Ihrer SAP-Systemlandschaft. So sind Ihre Systeme optimal auf Ihre Anforderungen abgestimmt."
+      },
+      {
+        "title": "Kernel-Updates und betriebssystemnahe Administration",
+        "text": "Ein aktueller SAP-Kernel und ein stabiles Betriebssystem bilden die Grundlage für einen sicheren und unterbrechungsfreien Betrieb. Wir übernehmen die regelmäßige Wartung und Pflege auf allen relevanten Systemebenen – zuverlässig und vorausschauend."
+      },
+      {
+        "title": "High Availability und Disaster Recovery",
+        "text": "Ungeplante Ausfallzeiten verursachen Kosten und gefährden Ihre Geschäftsprozesse. Wir entwickeln für Sie durchdachte Hochverfügbarkeits- und Wiederherstellungskonzepte, damit Ihre SAP-Systeme auch im Ernstfall zuverlässig weiterlaufen."
+      }
+    ],
+    "paragraph4": "<p>Wenden Sie sich jetzt an uns für eine <strong>zuverlässige und maßgeschneiderte SAP-Basis-Administration</strong> in Hamburg.</p>",
+    "ctaLabel": "Jetzt SAP-Support erhalten!"
+  },
+  "quality": {
+    "eyebrow": "Qualität",
+    "title": "Was einen guten SAP-Basisdienstleister in Hamburg und Umgebung auszeichnet",
+    "paragraph": "<p><strong>Effektive SAP-Arbeit ist klar, verlässlich und baut auf technischer Expertise auf.</strong> Eine gute <a href=\"/services/sap/sap-beratung\" class=\"font-semibold text-primary underline underline-offset-4 hover:text-primary/80\">SAP-Beratung in Hamburg</a> <strong>übernimmt technische Aufgaben für Sie</strong> und <strong>bespricht ehrlich mit Ihnen, welche Risiken und Herausforderungen in Ihrem System bestehen</strong>.</p>",
+    "paragraph2": "<p><strong>Möchten Sie einen erstklassigen SAP-Basis-Service in Hamburg beauftragen, sollten Sie nach diesen Eigenschaften suchen:</strong></p>",
+    "qualityItems": [
+      "Technische Tiefe und Expertise",
+      "Schnelle Reaktionsfähigkeit",
+      "Klare, offene Kommunikation",
+      "Realistische Einschätzung Ihrer Systeme und Situation",
+      "Verlässlicher Support mit klar definierten Ansprechpartnern",
+      "Strukturierte Zusammenarbeit mit Ihrem internen IT-Team",
+      "Fokus auf Betriebsstabilität statt Verkaufsrhetorik"
+    ],
+    "paragraph3": "<p><strong>Fragen Sie jetzt technischen SAP-Support in Hamburg bei uns an</strong>. Wir freuen uns darauf, von Ihnen zu hören!</p>",
+    "ctaLabel": "Jetzt für zuverlässigen SAP-Support anfragen!",
+    "image": "/assets/img/golive_flow.png",
+    "imageAlt": "SAP-Basis Verlässlichkeit"
+  },
+  "regional": {
+    "title": "SAP-Basis in Hamburg und Umgebung mit regionalem Ansprechpartner",
+    "paragraph": "<p>Wir unterstützen Unternehmen in Hamburg und Umgebung, ebenso wie remote in Europa und weltweit. <strong>Eine Zusammenarbeit mit uns bietet Ihnen:</strong></p>",
+    "regionalItems": [
+      "Kurze Kommunikationswege",
+      "Persönliche Abstimmung",
+      "Schnelle Erreichbarkeit",
+      "Remote-Arbeit und überregionale Einsetzbarkeit"
+    ],
+    "paragraph2": "<p><strong>Wir übernehmen die SAP-Basis-Administration in Hamburg für Sie, damit Ihr IT-Team sich um seine alltäglichen Aufgaben kümmern kann.</strong></p>",
+    "paragraph3": "<p>Kommen Sie noch heute auf uns zu und <strong>lernen Sie uns und unsere Arbeit in einem unverbindlichen Erstgespräch kennen</strong>.</p>",
+    "ctaLabel": "Jetzt SAP-Basisdienstleister in Hamburg und Umgebung anfragen!",
+    "image": "/assets/img/stabilization_cloud.png",
+    "imageAlt": "SAP-Basis regionaler Ansprechpartner"
+  },
+  "faq": {
+    "title": "FAQ: SAP-Basisdienstleister in Hamburg und Umgebung",
+    "items": [
+      {
+        "question": "Was macht ein SAP-Basisdienstleister?",
+        "answer": "<p>Als SAP-Basisdienstleister <strong>unterstützen wir vorrangig mittelständische Unternehmen beim Betrieb ihrer SAP-Systeme</strong>. <strong>Wir bieten technischen Support unter anderem zu:</strong></p>\n<ul><li>Monitoring</li><li>Wartung</li><li>Fehleranalyse</li><li>Performance-Themen</li><li>Sicherheit</li><li>Updates</li><li>Technischer Stabilisierung Ihrer SAP-Systemlandschaft</li></ul>"
+      },
+      {
+        "question": "Wann lohnt sich ein externer SAP-Basis-Dienstleister?",
+        "answer": "<p>Es gibt viele Gründe, weshalb sich die Zusammenarbeit mit einem externen SAP-Dienstleister für mittelständische Unternehmen lohnt. <strong>Fehlt Ihrem Betrieb internes SAP-Know-how oder ist Ihre IT-Abteilung zu klein oder überlastet</strong>, erweitert externer SAP-Support Ihre Ressourcen. Zudem erhalten Sie in uns einen <strong>verlässlichen Partner für den laufenden technischen Betrieb Ihrer SAP-Landschaft</strong>.</p>"
+      },
+      {
+        "question": "Welche Aufgaben gehören zur SAP-Basis-Betreuung?",
+        "answer": "<p><strong>SAP-Systemlandschafts-Betreuung in Hamburg kann typischerweise folgende Aufgaben für Sie übernehmen:</strong></p>\n<ul><li>Systemüberwachung</li><li>Performance-Analysen</li><li>Transportwesen und -management</li><li>Technische Betreuung und allgemeine Unterstützung des Betriebes</li><li>Support bei Störungen, Wartungsarbeiten, Updates</li></ul>\n<p>Zu Beginn einer Zusammenarbeit <strong>besprechen wir mit Ihnen, welche Tätigkeiten sich für Sie wirklich lohnen</strong>. So erhalten Sie maßgeschneiderten SAP-Support.</p>"
+      },
+      {
+        "question": "Für welche Unternehmen ist SAP-Basis-Support relevant?",
+        "answer": "<p>SAP-Basis-Support in Hamburg lohnt sich vor allem <strong>für Unternehmen, die eine bestehende SAP-Systemlandschaft haben oder haben wollen</strong>. Neben Support bieten wir so auch Installationen oder S/4 SandboxSysteme (z. B. Fully Activated S/4HANA) an.</p>\n<p>Wenn Sie auf <strong>stabile Verfügbarkeit, Sicherheit und eine saubere technische Betreuung angewiesen sind,</strong> zahlt sich externe SAP-Unterstützung auf jeden Fall aus!</p>"
+      },
+      {
+        "question": "Unterstützt ein SAP-Basisdienstleister auch bei akuten Problemen?",
+        "answer": "<p>Ja, wir bieten eine solche Unterstützung an. Ein Teil unserer Leistung für Unternehmen besteht im <strong>technischen Support bei akuten Problemen</strong>. Wir bieten beispielsweise Incident Management, Recovery-Services und schaffen Betriebsstabilität für Sie. Dazu führen wir für Sie eine Fehleranalyse durch, um für die Zukunft Lösungen mit Ihrem Team und Partnern zu finden und umzusetzen.</p>"
+      },
+      {
+        "question": "Ist SAP-Basis-Support auch mit kleiner interner IT-Abteilung möglich?",
+        "answer": "<p><strong>Ja, gerade für Unternehmen mit einer kleinen internen IT-Abteilung lohnt sich externe Unterstützung besonders.</strong> Mit unserer Arbeit erhalten Sie SAP Application Management und können die Arbeit Ihres IT-Teams punktuell oder langfristig mit unserer SAP-Expertise ergänzen.</p>"
+      },
+      {
+        "question": "Geht es bei SAP-Basis nur um Fehlerbehebung?",
+        "answer": "<p>Nein, denn eine gute SAP-Basis-Betreuung arbeitet präventiv. <strong>Wir bewerkstelligen für unsere Mandanten einen stabilen und sicheren Betrieb Ihrer SAP-Systemlandschaft. Daneben können wir für Sie:</strong></p>\n<ul><li>Patches testen und Releasewechsel durchführen</li><li>Berechtigungen erstellen und widerrufen</li><li>SAP-Security überwachen</li><li>Backups und Systemkopien erstellen</li><li>Schnittstellenüberwachung einrichten</li></ul>\n<p><strong>Lehnen Sie sich entspannt zurück in dem Wissen, dass Ihre SAP-Systeme von uns gut betreut werden.</strong></p>"
+      },
+      {
+        "question": "Ist die Betreuung nur in Hamburg möglich?",
+        "answer": "<p>Nein, wir arbeiten sowohl in Hamburg und Umgebung als auch überregional. Unser Team ist hauptsächlich remote aktiv, sodass wir Aufträge europa- und sogar weltweit annehmen können.</p>"
+      }
+    ]
+  },
+  "cta": {
+    "eyebrow": "SAP-Basis-Support anfragen",
+    "paragraph": "Benötigen Sie zuverlässige Unterstützung für Ihre SAP-Systemlandschaft?",
+    "paragraph2": "<p>Dann kontaktieren Sie uns jetzt und vereinbaren Sie ein unverbindliches Gespräch zu Ihrem SAP-Basis-Support.</p>",
+    "ctaLabel": "Jetzt unverbindlich SAP-Basis-Support anfragen!"
+  }
+}

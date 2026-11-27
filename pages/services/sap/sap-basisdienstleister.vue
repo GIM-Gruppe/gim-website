@@ -1,252 +1,11 @@
 <script setup lang="ts">
 import { useSeoMeta } from '~/composables/seo'
+import { cmsInline } from '~/utils/cms-html'
+import page from '~/data/pages/services/sap/sap-basisdienstleister.json'
 
 definePageMeta({ documentDriven: { page: false, surround: false } })
 
-useSeoMeta(
-  'SAP-Basisdienstleister in Hamburg | GIM GmbH',
-  'SAP-Support für Mittelständler ✅Zuverlässige Unterstützung für IT-Abteilungen ✅Punktuell oder langfristig ►Jetzt kontaktieren!'
-)
-
-const hero = '/assets/img/stabilization_cloud.png'
-const analysisImage = '/assets/img/analysis_structure.png'
-const processImage = '/assets/img/process_steps.png'
-const risksImage = '/assets/img/risks_fragmentation.png'
-const golive = '/assets/img/golive_flow.png'
-
-const benefits = [
-  'Entlasten Ihre internen IT-Teams',
-  'Sparen Zeit bei Betrieb und Überwachung von SAP-Systemen',
-  'Erhalten schnelle Hilfe bei Fehlern, Ausfällen und Engpässen in Ihrer SAP-Landschaft',
-  'Holen sich spezialisierte Kenntnisse für die SAP-Basis in Ihr Unternehmen',
-  'Sichern sich externe technische Unterstützung für erweiterte Performance'
-]
-
-const serviceItems = [
-  'SAP-Basis Betreuung',
-  'Projektsteuerung',
-  'S/4HANA-Migration',
-  'Überwachung und Monitoring',
-  'Performance-Optimierung',
-  'Fehleranalyse und Support',
-  'Cyber-Sicherheitsanalyse',
-  'Systemwartung und technische Administration',
-  'Unterstützung bei Patches, Updates und Changes',
-  'Stabilisierung laufender SAP-Systeme'
-]
-
-const targetGroups = [
-  'Unternehmen mit eigener SAP-Landschaft',
-  'Firmen mit knappen IT-Ressourcen oder kleinen internen IT-Teams',
-  'Mittelständische Firmen ohne großes internes SAP-Basis-Team',
-  'Unternehmen mit hohen Anforderungen an Verfügbarkeit und Stabilität',
-  'Organisationen mit steigender technischer Komplexität'
-]
-
-const processSteps = [
-  {
-    title: 'Analyse der bestehenden SAP-Systemlandschaft',
-    paragraphs: [
-      '<strong>Zu Beginn analysieren wir Ihre bestehende SAP-Landschaft.</strong> Wir stellen beispielsweise folgende Fragen: Welche Schnittstellen existieren? Welche Prozesse sind dokumentiert? Wo bestehen Lücken? Welche Probleme plagen Sie?'
-    ]
-  },
-  {
-    title: 'Bewertung von Betriebsrisiken und Engpässen',
-    paragraphs: [
-      'Zu jedem Zeitpunkt unserer Zusammenarbeit legen wir großen Wert auf Transparenz. Wir bewerten Betriebsrisiken und Systemengpässe und <strong>lassen Sie wissen, was für einen robusten SAP-Betrieb realistisch möglich und notwendig ist.</strong>'
-    ]
-  },
-  {
-    title: 'Aufbau klarer Zuständigkeiten und Supportwege',
-    paragraphs: [
-      'Wenn wir mit Ihnen zusammenarbeiten, gibt es <strong>zwischen Ihnen und unserem Team klare Zuständigkeiten</strong>. <strong>Externe IT-Unterstützung ist besonders effektiv</strong>, wenn <strong>Aufgaben und Ansprechpartner für Support definiert sind.</strong>'
-    ]
-  },
-  {
-    title: 'Laufende Überwachung und technische Betreuung',
-    paragraphs: [
-      'In unserer Arbeit für Sie <strong>überwachen wir Ihre SAP-Systeme laufend.</strong> Währenddessen kann sich Ihr <strong>internes IT-Team auf seine alltäglichen Aufgaben konzentrieren</strong>.'
-    ]
-  },
-  {
-    title: 'Unterstützung bei Störungen, Änderungen und Optimierungen',
-    paragraphs: [
-      'Treten Störungen auf oder gibt es Änderungs- oder Optimierungsbedarf im laufenden Betrieb, werden wir für Sie aktiv. <strong>Wir greifen proaktiv ein.</strong>'
-    ]
-  },
-  {
-    title: 'Langfristige Stabilisierung und Entlastung Ihrer internen IT',
-    paragraphs: [
-      '<strong>Unsere Arbeit für Sie ist darauf ausgelegt, Ihre SAP-Systeme dauerhaft zu stabilisieren.</strong> Dadurch entsteht eine <strong>Entlastung Ihres IT-Teams</strong>. <strong>Wir kümmern uns um Ihr SAP</strong>, während Ihre interne IT Ihrer Arbeit nachgehen kann.'
-    ]
-  }
-]
-
-const taskItems = [
-  'Monitoring',
-  'Job- und Systemüberwachung',
-  'Fehleranalyse und -behebung',
-  'Performance-Themen und Optimierung der Leistung',
-  'Berechtigungen und technische Sicherheit',
-  'Transport- und Mandantenmanagement',
-  'Updates und Wartungsaufgaben',
-  'Unterstützung bei Systemkopien und technischen Änderungen'
-]
-
-const extendedServices = [
-  {
-    title: 'Datenbankadministration (HANA, Oracle u. a.)',
-    text: 'Ihre SAP-Datenbank ist das Herzstück Ihrer Systemlandschaft. Wir sorgen für einen stabilen, sicheren und performanten Betrieb, damit Ihre Geschäftsprozesse jederzeit ohne Unterbrechung laufen.'
-  },
-  {
-    title: 'Systemlandschaftsplanung und Sizing',
-    text: 'Ob Neuaufbau, Erweiterung oder Konsolidierung: Wir unterstützen Sie bei der Planung und Dimensionierung Ihrer SAP-Systemlandschaft. So sind Ihre Systeme optimal auf Ihre Anforderungen abgestimmt.'
-  },
-  {
-    title: 'Kernel-Updates und betriebssystemnahe Administration',
-    text: 'Ein aktueller SAP-Kernel und ein stabiles Betriebssystem bilden die Grundlage für einen sicheren und unterbrechungsfreien Betrieb. Wir übernehmen die regelmäßige Wartung und Pflege auf allen relevanten Systemebenen – zuverlässig und vorausschauend.'
-  },
-  {
-    title: 'High Availability und Disaster Recovery',
-    text: 'Ungeplante Ausfallzeiten verursachen Kosten und gefährden Ihre Geschäftsprozesse. Wir entwickeln für Sie durchdachte Hochverfügbarkeits- und Wiederherstellungskonzepte, damit Ihre SAP-Systeme auch im Ernstfall zuverlässig weiterlaufen.'
-  }
-]
-
-const qualityItems = [
-  'Technische Tiefe und Expertise',
-  'Schnelle Reaktionsfähigkeit',
-  'Klare, offene Kommunikation',
-  'Realistische Einschätzung Ihrer Systeme und Situation',
-  'Verlässlicher Support mit klar definierten Ansprechpartnern',
-  'Strukturierte Zusammenarbeit mit Ihrem internen IT-Team',
-  'Fokus auf Betriebsstabilität statt Verkaufsrhetorik'
-]
-
-const regionalItems = [
-  'Kurze Kommunikationswege',
-  'Persönliche Abstimmung',
-  'Schnelle Erreichbarkeit',
-  'Remote-Arbeit und überregionale Einsetzbarkeit'
-]
-
-const faqItems = [
-  {
-    question: 'Was macht ein SAP-Basisdienstleister?',
-    content: [
-      {
-        type: 'paragraph' as const,
-        html: 'Als SAP-Basisdienstleister <strong>unterstützen wir vorrangig mittelständische Unternehmen beim Betrieb ihrer SAP-Systeme</strong>. <strong>Wir bieten technischen Support unter anderem zu:</strong>'
-      },
-      {
-        type: 'bullets' as const,
-        items: [
-          'Monitoring',
-          'Wartung',
-          'Fehleranalyse',
-          'Performance-Themen',
-          'Sicherheit',
-          'Updates',
-          'Technischer Stabilisierung Ihrer SAP-Systemlandschaft'
-        ]
-      }
-    ]
-  },
-  {
-    question: 'Wann lohnt sich ein externer SAP-Basis-Dienstleister?',
-    content: [
-      {
-        type: 'paragraph' as const,
-        html: 'Es gibt viele Gründe, weshalb sich die Zusammenarbeit mit einem externen SAP-Dienstleister für mittelständische Unternehmen lohnt. <strong>Fehlt Ihrem Betrieb internes SAP-Know-how oder ist Ihre IT-Abteilung zu klein oder überlastet</strong>, erweitert externer SAP-Support Ihre Ressourcen. Zudem erhalten Sie in uns einen <strong>verlässlichen Partner für den laufenden technischen Betrieb Ihrer SAP-Landschaft</strong>.'
-      }
-    ]
-  },
-  {
-    question: 'Welche Aufgaben gehören zur SAP-Basis-Betreuung?',
-    content: [
-      {
-        type: 'paragraph' as const,
-        html: '<strong>SAP-Systemlandschafts-Betreuung in Hamburg kann typischerweise folgende Aufgaben für Sie übernehmen:</strong>'
-      },
-      {
-        type: 'bullets' as const,
-        items: [
-          'Systemüberwachung',
-          'Performance-Analysen',
-          'Transportwesen und -management',
-          'Technische Betreuung und allgemeine Unterstützung des Betriebes',
-          'Support bei Störungen, Wartungsarbeiten, Updates'
-        ]
-      },
-      {
-        type: 'paragraph' as const,
-        html: 'Zu Beginn einer Zusammenarbeit <strong>besprechen wir mit Ihnen, welche Tätigkeiten sich für Sie wirklich lohnen</strong>. So erhalten Sie maßgeschneiderten SAP-Support.'
-      }
-    ]
-  },
-  {
-    question: 'Für welche Unternehmen ist SAP-Basis-Support relevant?',
-    content: [
-      {
-        type: 'paragraph' as const,
-        html: 'SAP-Basis-Support in Hamburg lohnt sich vor allem <strong>für Unternehmen, die eine bestehende SAP-Systemlandschaft haben oder haben wollen</strong>. Neben Support bieten wir so auch Installationen oder S/4 SandboxSysteme (z. B. Fully Activated S/4HANA) an.'
-      },
-      {
-        type: 'paragraph' as const,
-        html: 'Wenn Sie auf <strong>stabile Verfügbarkeit, Sicherheit und eine saubere technische Betreuung angewiesen sind,</strong> zahlt sich externe SAP-Unterstützung auf jeden Fall aus!'
-      }
-    ]
-  },
-  {
-    question: 'Unterstützt ein SAP-Basisdienstleister auch bei akuten Problemen?',
-    content: [
-      {
-        type: 'paragraph' as const,
-        html: 'Ja, wir bieten eine solche Unterstützung an. Ein Teil unserer Leistung für Unternehmen besteht im <strong>technischen Support bei akuten Problemen</strong>. Wir bieten beispielsweise Incident Management, Recovery-Services und schaffen Betriebsstabilität für Sie. Dazu führen wir für Sie eine Fehleranalyse durch, um für die Zukunft Lösungen mit Ihrem Team und Partnern zu finden und umzusetzen.'
-      }
-    ]
-  },
-  {
-    question: 'Ist SAP-Basis-Support auch mit kleiner interner IT-Abteilung möglich?',
-    content: [
-      {
-        type: 'paragraph' as const,
-        html: '<strong>Ja, gerade für Unternehmen mit einer kleinen internen IT-Abteilung lohnt sich externe Unterstützung besonders.</strong> Mit unserer Arbeit erhalten Sie SAP Application Management und können die Arbeit Ihres IT-Teams punktuell oder langfristig mit unserer SAP-Expertise ergänzen.'
-      }
-    ]
-  },
-  {
-    question: 'Geht es bei SAP-Basis nur um Fehlerbehebung?',
-    content: [
-      {
-        type: 'paragraph' as const,
-        html: 'Nein, denn eine gute SAP-Basis-Betreuung arbeitet präventiv. <strong>Wir bewerkstelligen für unsere Mandanten einen stabilen und sicheren Betrieb Ihrer SAP-Systemlandschaft. Daneben können wir für Sie:</strong>'
-      },
-      {
-        type: 'bullets' as const,
-        items: [
-          'Patches testen und Releasewechsel durchführen',
-          'Berechtigungen erstellen und widerrufen',
-          'SAP-Security überwachen',
-          'Backups und Systemkopien erstellen',
-          'Schnittstellenüberwachung einrichten'
-        ]
-      },
-      {
-        type: 'paragraph' as const,
-        html: '<strong>Lehnen Sie sich entspannt zurück in dem Wissen, dass Ihre SAP-Systeme von uns gut betreut werden.</strong>'
-      }
-    ]
-  },
-  {
-    question: 'Ist die Betreuung nur in Hamburg möglich?',
-    content: [
-      {
-        type: 'paragraph' as const,
-        html: 'Nein, wir arbeiten sowohl in Hamburg und Umgebung als auch überregional. Unser Team ist hauptsächlich remote aktiv, sodass wir Aufträge europa- und sogar weltweit annehmen können.'
-      }
-    ]
-  }
-]
+useSeoMeta(page.seo.title, page.seo.description)
 </script>
 
 <template>
@@ -258,32 +17,30 @@ const faqItems = [
     ]" />
 
     <ServiceLead
-      eyebrow="SAP Basis"
-      title="SAP-Basisdienstleister in Hamburg und Umgebung: Für stabile und sichere SAP-Systeme!"
-      :paragraphs="[
-        'Wenn Sie möchten, dass Ihre SAP-Systeme stabil und optimal funktionieren, benötigen Sie einen erfahrenen Partner an Ihrer Seite.',
-        'Wir bieten Ihnen SAP-Systembetreuung in Hamburg, damit Ihr Geschäft reibungslos am Laufen bleibt!'
-      ]"
-      cta-label="Jetzt Termin vereinbaren!"
+      :eyebrow="page.hero.eyebrow"
+      :title="page.hero.title"
+      :paragraphs="page.hero.paragraphs"
+      :cta-label="page.hero.ctaLabel"
       cta-href="/contact"
-      :image-src="hero"
-      image-alt="Abstrakte stabile SAP-Systemlandschaft"
+      :image-src="page.hero.image"
+      :image-alt="page.hero.imageAlt"
+      :description="page.hero.description"
     />
 
     <section class="bg-gray-50">
       <LayoutContainer class="py-10 md:py-14 lg:py-16">
         <div class="grid gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(280px,0.95fr)] lg:items-center">
           <div class="max-w-3xl">
-            <p class="text-sm font-semibold uppercase tracking-[0.18em] text-primary">Stabiler Betrieb</p>
-            <h2 class="mt-3 font-semibold">Warum ein SAP-Basisdienstleister in Hamburg und Umgebung für viele Unternehmen sinnvoll ist</h2>
+            <p class="text-sm font-semibold uppercase tracking-[0.18em] text-primary">{{ page.relevance.eyebrow }}</p>
+            <h2 class="mt-3 font-semibold">{{ page.relevance.title }}</h2>
             <div class="mt-6 space-y-4 text-secondary leading-relaxed [&_strong]:font-semibold">
-              <p>Wenn Sie SAP verwenden, ist eine <strong>sichere und zuverlässige Funktion der SAP-Basis unerlässlich</strong>. Wir bieten Ihnen hierfür eine technische Betreuung, die Ihre SAP-Umgebungen robust und stabil am Laufen hält – mit <strong>maßgeschneiderten Lösungen für den Alltag in Ihrem Unternehmen.</strong></p>
-              <p>Arbeiten Sie mit einem <strong>SAP-Basisdienstleister in Hamburg und Umgebung zusammen, lohnt sich das unter anderem aus diesen Gründen. Sie:</strong></p>
+              <p v-html="cmsInline(page.relevance.paragraph)"></p>
+              <p v-html="cmsInline(page.relevance.paragraph2)"></p>
             </div>
 
             <div class="mt-8 space-y-4">
               <div
-                v-for="benefit in benefits"
+                v-for="benefit in page.relevance.benefits"
                 :key="benefit"
                 class="flex gap-4 border-l-2 border-primary/50 pl-5"
               >
@@ -292,14 +49,14 @@ const faqItems = [
             </div>
 
             <div class="mt-8 space-y-4 text-secondary leading-relaxed [&_strong]:font-semibold">
-              <p>Kontaktieren Sie uns jetzt für <strong>zuverlässigen SAP-Basis-Support von einem erfahrenen Team</strong>. In einem unverbindlichen Ersttermin besprechen wir gerne mit Ihnen, wie wir <strong>Sie mit unserer Arbeit realistisch unterstützen können</strong>.</p>
+              <p v-html="cmsInline(page.relevance.paragraph3)"></p>
             </div>
             <div class="mt-8">
-              <UiButton href="/contact" label="Jetzt Beratungstermin anfragen!" />
+              <UiButton href="/contact" :label="page.relevance.ctaLabel" />
             </div>
           </div>
 
-          <LightboxImage :src="analysisImage" alt="SAP-Basis Analyse" img-class="h-[300px] w-full rounded-[1.75rem] object-cover md:h-[420px]" button-class="w-full rounded-[1.75rem]" loading="lazy" />
+          <LightboxImage :src="page.relevance.image" :alt="page.relevance.imageAlt" img-class="h-[300px] w-full rounded-[1.75rem] object-cover md:h-[420px]" button-class="w-full rounded-[1.75rem]" loading="lazy" />
         </div>
       </LayoutContainer>
     </section>
@@ -307,16 +64,16 @@ const faqItems = [
     <section class="bg-white">
       <LayoutContainer class="py-10 md:py-14 lg:py-16">
         <div class="max-w-3xl">
-          <p class="text-sm font-semibold uppercase tracking-[0.18em] text-primary">Leistungen</p>
-          <h2 class="mt-3 font-semibold">Unsere Leistungen als SAP-Basisdienstleister in Hamburg und Umgebung</h2>
+          <p class="text-sm font-semibold uppercase tracking-[0.18em] text-primary">{{ page.services.eyebrow }}</p>
+          <h2 class="mt-3 font-semibold">{{ page.services.title }}</h2>
           <div class="mt-6 space-y-4 text-secondary leading-relaxed [&_strong]:font-semibold">
-            <p>Die Arbeit mit einem SAP-Basisdienstleister entlastet Ihre IT-Abteilung und bringt Ruhe und Verlässlichkeit in die Arbeit mit Ihren IT-Systemen. <strong>Wir können unter anderem folgende Aufgaben für Sie unternehmen:</strong></p>
+            <p v-html="cmsInline(page.services.paragraph)"></p>
           </div>
         </div>
 
         <div class="mt-10 grid gap-x-10 gap-y-5 md:grid-cols-2">
           <div
-            v-for="service in serviceItems"
+            v-for="service in page.services.serviceItems"
             :key="service"
             class="flex gap-4 border-t border-black/10 pt-5"
           >
@@ -327,10 +84,10 @@ const faqItems = [
 
         <div class="mt-10 grid gap-8 border-t border-black/10 pt-8 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center">
           <div class="max-w-3xl space-y-4 text-secondary leading-relaxed [&_strong]:font-semibold">
-            <p>Wir <strong>erarbeiten für Sie ein individuelles SAP-Dienstleistungskonzept</strong>, das <strong>auf die Bedürfnisse Ihres Unternehmens zugeschnitten ist.</strong></p>
-            <p>Kommen Sie jetzt auf uns zu, um ein unverbindliches Beratungsgespräch zu vereinbaren.</p>
+            <p v-html="cmsInline(page.services.paragraph2)"></p>
+            <p>{{ page.services.paragraph3 }}</p>
           </div>
-          <UiButton href="/contact" label="Jetzt unverbindliche Beratung anfragen!" />
+          <UiButton href="/contact" :label="page.services.ctaLabel" />
         </div>
       </LayoutContainer>
     </section>
@@ -338,18 +95,18 @@ const faqItems = [
     <section class="bg-gray-50">
       <LayoutContainer class="py-10 md:py-14 lg:py-16">
         <div class="grid gap-10 lg:grid-cols-[minmax(280px,0.82fr)_minmax(0,1.18fr)] lg:items-start">
-          <LightboxImage :src="processImage" alt="SAP-Basis Support Prozess" img-class="h-[320px] w-full rounded-[1.75rem] object-cover md:h-[460px]" button-class="w-full rounded-[1.75rem] lg:sticky lg:top-24" loading="lazy" />
+          <LightboxImage :src="page.audience.image" :alt="page.audience.imageAlt" img-class="h-[320px] w-full rounded-[1.75rem] object-cover md:h-[460px]" button-class="w-full rounded-[1.75rem] lg:sticky lg:top-24" loading="lazy" />
           <div>
-            <p class="text-sm font-semibold uppercase tracking-[0.18em] text-primary">Relevanz</p>
-            <h2 class="mt-3 font-semibold">Für welche Unternehmen in Hamburg und Umgebung SAP-Basis-Support besonders relevant ist</h2>
+            <p class="text-sm font-semibold uppercase tracking-[0.18em] text-primary">{{ page.audience.eyebrow }}</p>
+            <h2 class="mt-3 font-semibold">{{ page.audience.title }}</h2>
             <div class="mt-6 space-y-4 text-secondary leading-relaxed [&_strong]:font-semibold">
-              <p>SAP-Basis-Betreuung in Hamburg ist für Sie <strong>besonders sinnvoll, wenn Ihr Unternehmen knappe technische Ressourcen hat</strong> oder <strong>zusätzlich SAP-Expertise benötigt</strong>.</p>
-              <p><strong>Unserer Erfahrung nach profitieren Firmen besonders von einem externen SAP-Basisdienstleister in diesen Situationen:</strong></p>
+              <p v-html="cmsInline(page.audience.paragraph)"></p>
+              <p v-html="cmsInline(page.audience.paragraph2)"></p>
             </div>
 
             <div class="mt-8 grid gap-4 sm:grid-cols-2">
               <div
-                v-for="target in targetGroups"
+                v-for="target in page.audience.targetGroups"
                 :key="target"
                 class="flex gap-3"
               >
@@ -359,10 +116,10 @@ const faqItems = [
             </div>
 
             <div class="mt-8 space-y-4 text-secondary leading-relaxed">
-              <p>Gerne beraten wir Sie dazu, wie eine für Sie passende SAP-Betriebsunterstützung in Hamburg aussehen kann. Kontaktieren Sie uns jetzt für ein unverbindliches Erstgespräch!</p>
+              <p v-html="cmsInline(page.audience.paragraph3)"></p>
             </div>
             <div class="mt-8">
-              <UiButton href="/contact" label="Jetzt Erstgespräch anfragen!" />
+              <UiButton href="/contact" :label="page.audience.ctaLabel" />
             </div>
           </div>
         </div>
@@ -370,10 +127,10 @@ const faqItems = [
     </section>
 
     <ProcessSteps
-      title="So arbeitet ein SAP-Basisdienstleister in Hamburg und Umgebung mit Ihrer IT zusammen"
-      intro="<strong>Arbeiten Sie mit uns, erwartet Sie dieser bewährte Prozess:</strong>"
-      :steps="processSteps"
-      cta-label="Jetzt SAP-Basis-Support anfragen!"
+      :title="page.process.title"
+      :intro="page.process.intro"
+      :steps="page.process.steps"
+      :cta-label="page.process.ctaLabel"
       cta-href="/contact"
     />
 
@@ -381,19 +138,19 @@ const faqItems = [
       <LayoutContainer class="py-10 md:py-14 lg:py-16">
         <div class="grid gap-8 lg:grid-cols-[minmax(0,0.95fr)_minmax(280px,0.75fr)] lg:items-start">
           <div class="max-w-4xl">
-            <p class="text-sm font-semibold uppercase tracking-[0.18em] text-primary">Typische Aufgaben</p>
-            <h2 class="mt-3 font-semibold">Typische Aufgaben eines SAP-Basisdienstleisters in Hamburg und Umgebung</h2>
+            <p class="text-sm font-semibold uppercase tracking-[0.18em] text-primary">{{ page.tasks.eyebrow }}</p>
+            <h2 class="mt-3 font-semibold">{{ page.tasks.title }}</h2>
             <div class="mt-6 space-y-4 text-secondary leading-relaxed [&_strong]:font-semibold">
-              <p>Arbeiten Sie mit uns, <strong>können Sie darauf bauen, dass wir transparent mit Ihnen kommunizieren.</strong> So erhalten Sie in uns einen <strong>verlässlichen und soliden Partner für die SAP-Betriebsunterstützung in Hamburg.</strong></p>
-              <p><strong>Wir können beispielsweise folgende SAP-Aufgaben für Sie übernehmen:</strong></p>
+              <p v-html="cmsInline(page.tasks.paragraph)"></p>
+              <p v-html="cmsInline(page.tasks.paragraph2)"></p>
             </div>
           </div>
-          <LightboxImage :src="risksImage" alt="SAP-Basis typische Aufgaben" img-class="h-56 w-full rounded-[1.75rem] object-cover" button-class="hidden w-full rounded-[1.75rem] lg:block" loading="lazy" />
+          <LightboxImage :src="page.tasks.image" :alt="page.tasks.imageAlt" img-class="h-56 w-full rounded-[1.75rem] object-cover" button-class="hidden w-full rounded-[1.75rem] lg:block" loading="lazy" />
         </div>
 
         <div class="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           <div
-            v-for="task in taskItems"
+            v-for="task in page.tasks.taskItems"
             :key="task"
             class="rounded-xl border border-black/10 px-4 py-3 text-sm font-medium text-secondary"
           >
@@ -403,12 +160,12 @@ const faqItems = [
 
         <div class="mt-8 grid gap-8 border-t border-black/10 pt-8 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-start">
           <div class="space-y-4 text-secondary leading-relaxed [&_strong]:font-semibold">
-            <p>Eine stabile SAP-Landschaft erfordert mehr als reines Monitoring und die Behebung von Störungen. <strong>Als erfahrener SAP-Basisdienstleister begleiten wir Sie ganzheitlich</strong>– von der technischen Basis bis zur strategischen Weiterentwicklung Ihrer Systeme. <strong>Wir bieten auch diese erweiterten Leistungen für Sie an:</strong></p>
+            <p v-html="cmsInline(page.tasks.paragraph3)"></p>
           </div>
 
           <div class="space-y-5">
             <article
-              v-for="item in extendedServices"
+              v-for="item in page.tasks.extendedServices"
               :key="item.title"
               class="border-l-2 border-primary/50 pl-5"
             >
@@ -419,8 +176,8 @@ const faqItems = [
         </div>
 
         <div class="mt-10 grid gap-8 border-t border-black/10 pt-8 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center">
-          <p class="max-w-3xl text-secondary leading-relaxed [&_strong]:font-semibold">Wenden Sie sich jetzt an uns für eine <strong>zuverlässige und maßgeschneiderte SAP-Basis-Administration</strong> in Hamburg.</p>
-          <UiButton href="/contact" label="Jetzt SAP-Support erhalten!" />
+          <p class="max-w-3xl text-secondary leading-relaxed [&_strong]:font-semibold" v-html="cmsInline(page.tasks.paragraph4)"></p>
+          <UiButton href="/contact" :label="page.tasks.ctaLabel" />
         </div>
       </LayoutContainer>
     </section>
@@ -429,16 +186,16 @@ const faqItems = [
       <LayoutContainer class="py-10 md:py-14 lg:py-16">
         <div class="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(280px,0.85fr)] lg:items-center">
           <div class="max-w-4xl">
-            <p class="text-sm font-semibold uppercase tracking-[0.18em] text-primary">Qualität</p>
-            <h2 class="mt-3 font-semibold">Was einen guten SAP-Basisdienstleister in Hamburg und Umgebung auszeichnet</h2>
+            <p class="text-sm font-semibold uppercase tracking-[0.18em] text-primary">{{ page.quality.eyebrow }}</p>
+            <h2 class="mt-3 font-semibold">{{ page.quality.title }}</h2>
             <div class="mt-6 space-y-4 text-secondary leading-relaxed [&_strong]:font-semibold">
-              <p><strong>Effektive SAP-Arbeit ist klar, verlässlich und baut auf technischer Expertise auf.</strong> Eine gute <NuxtLink to="/services/sap/sap-beratung" class="font-semibold text-primary underline underline-offset-4 hover:text-primary/80">SAP-Beratung in Hamburg</NuxtLink> <strong>übernimmt technische Aufgaben für Sie</strong> und <strong>bespricht ehrlich mit Ihnen, welche Risiken und Herausforderungen in Ihrem System bestehen</strong>.</p>
-              <p><strong>Möchten Sie einen erstklassigen SAP-Basis-Service in Hamburg beauftragen, sollten Sie nach diesen Eigenschaften suchen:</strong></p>
+              <p v-html="cmsInline(page.quality.paragraph)"></p>
+              <p v-html="cmsInline(page.quality.paragraph2)"></p>
             </div>
 
             <div class="mt-8 grid gap-4 sm:grid-cols-2">
               <div
-                v-for="quality in qualityItems"
+                v-for="quality in page.quality.qualityItems"
                 :key="quality"
                 class="flex gap-3"
               >
@@ -448,14 +205,14 @@ const faqItems = [
             </div>
 
             <div class="mt-8 space-y-4 text-secondary leading-relaxed [&_strong]:font-semibold">
-              <p><strong>Fragen Sie jetzt technischen SAP-Support in Hamburg bei uns an</strong>. Wir freuen uns darauf, von Ihnen zu hören!</p>
+              <p v-html="cmsInline(page.quality.paragraph3)"></p>
             </div>
             <div class="mt-8">
-              <UiButton href="/contact" label="Jetzt für zuverlässigen SAP-Support anfragen!" />
+              <UiButton href="/contact" :label="page.quality.ctaLabel" />
             </div>
           </div>
 
-          <LightboxImage :src="golive" alt="SAP-Basis Verlässlichkeit" img-class="h-[320px] w-full rounded-[1.75rem] object-cover md:h-[420px]" button-class="w-full rounded-[1.75rem]" loading="lazy" />
+          <LightboxImage :src="page.quality.image" :alt="page.quality.imageAlt" img-class="h-[320px] w-full rounded-[1.75rem] object-cover md:h-[420px]" button-class="w-full rounded-[1.75rem]" loading="lazy" />
         </div>
       </LayoutContainer>
     </section>
@@ -464,14 +221,14 @@ const faqItems = [
       <div class="overflow-hidden rounded-[2rem] bg-primary px-6 py-8 text-white shadow-lg shadow-primary/10 md:px-8 md:py-10 lg:px-10 lg:py-12">
         <div class="grid gap-8 lg:grid-cols-[minmax(0,1fr)_300px] lg:items-center">
           <div class="max-w-4xl">
-            <h2 class="font-semibold text-white">SAP-Basis in Hamburg und Umgebung mit regionalem Ansprechpartner</h2>
+            <h2 class="font-semibold text-white">{{ page.regional.title }}</h2>
             <div class="mt-6 space-y-4 leading-relaxed text-white/90 [&_strong]:font-semibold [&_strong]:text-white">
-              <p>Wir unterstützen Unternehmen in Hamburg und Umgebung, ebenso wie remote in Europa und weltweit. <strong>Eine Zusammenarbeit mit uns bietet Ihnen:</strong></p>
+              <p v-html="cmsInline(page.regional.paragraph)"></p>
             </div>
 
             <div class="mt-8 grid gap-3 sm:grid-cols-2">
               <div
-                v-for="item in regionalItems"
+                v-for="item in page.regional.regionalItems"
                 :key="item"
                 class="rounded-full border border-white/30 px-5 py-3 text-sm font-semibold text-white"
               >
@@ -480,38 +237,34 @@ const faqItems = [
             </div>
 
             <div class="mt-8 space-y-4 leading-relaxed text-white/90 [&_strong]:font-semibold [&_strong]:text-white">
-              <p><strong>Wir übernehmen die SAP-Basis-Administration in Hamburg für Sie, damit Ihr IT-Team sich um seine alltäglichen Aufgaben kümmern kann.</strong></p>
-              <p>Kommen Sie noch heute auf uns zu und <strong>lernen Sie uns und unsere Arbeit in einem unverbindlichen Erstgespräch kennen</strong>.</p>
+              <p v-html="cmsInline(page.regional.paragraph2)"></p>
+              <p v-html="cmsInline(page.regional.paragraph3)"></p>
             </div>
 
             <div class="mt-8">
-              <UiButton href="/contact" label="Jetzt SAP-Basisdienstleister in Hamburg und Umgebung anfragen!" class="!border-white !text-primary hover:!bg-white/90" />
+              <UiButton href="/contact" :label="page.regional.ctaLabel" class="!border-white !text-primary hover:!bg-white/90" />
             </div>
           </div>
 
-          <LightboxImage :src="hero" alt="SAP-Basis regionaler Ansprechpartner" img-class="h-72 w-full rounded-[1.75rem] object-cover" button-class="w-full rounded-[1.75rem]" loading="lazy" />
+          <LightboxImage :src="page.regional.image" :alt="page.regional.imageAlt" img-class="h-72 w-full rounded-[1.75rem] object-cover" button-class="w-full rounded-[1.75rem]" loading="lazy" />
         </div>
       </div>
     </LayoutContainer>
 
     <FaqAccordion
-      title="FAQ: SAP-Basisdienstleister in Hamburg und Umgebung"
-      :items="faqItems"
+      :title="page.faq.title"
+      :items="page.faq.items"
     />
 
     <LayoutContainer as="section" class="pb-16 md:pb-20 lg:pb-24">
       <div class="border-t border-black/10 pt-8 md:flex md:items-center md:justify-between md:gap-8">
         <div class="max-w-3xl">
-          <p class="text-sm font-semibold uppercase tracking-[0.18em] text-primary">SAP-Basis-Support anfragen</p>
-          <p class="mt-3 text-lg font-semibold leading-snug md:text-xl">
-            Benötigen Sie zuverlässige Unterstützung für Ihre SAP-Systemlandschaft?
-          </p>
-          <p class="mt-3 text-secondary leading-relaxed">
-            Dann kontaktieren Sie uns jetzt und vereinbaren Sie ein unverbindliches Gespräch zu Ihrem SAP-Basis-Support.
-          </p>
+          <p class="text-sm font-semibold uppercase tracking-[0.18em] text-primary">{{ page.cta.eyebrow }}</p>
+          <p class="mt-3 text-lg font-semibold leading-snug md:text-xl">{{ page.cta.paragraph }}</p>
+          <p class="mt-3 text-secondary leading-relaxed" v-html="cmsInline(page.cta.paragraph2)"></p>
         </div>
         <div class="mt-6 shrink-0 md:mt-0">
-          <UiButton href="/contact" label="Jetzt unverbindlich SAP-Basis-Support anfragen!" />
+          <UiButton href="/contact" :label="page.cta.ctaLabel" />
         </div>
       </div>
     </LayoutContainer>
